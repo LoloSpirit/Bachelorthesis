@@ -1,0 +1,129 @@
+\documentclass[fontsize=11pt,%
+twoside,
+BCOR          = 8mm]{scrreprt}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{tikzpagenodes}
+\usepackage[locale=DE]{siunitx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[nohyperlinks]{acronym}
+\graphicspath{ {images/} }
+\usepackage{times}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{tocloft}
+\usepackage{datetime}
+\usepackage{tabu}
+\usepackage{fancyhdr}
+\geometry{a4paper, tmargin=1in, rmargin=1in, bmargin=1in, lmargin=1in}
+\usepackage[backend=biber]{biblatex}
+
+\definecolor{jluhellblau}{RGB}{220, 230, 235}
+\definecolor{pantoneblack}{RGB}{0,0,0}
+\definecolor{jlugrau}{RGB}{83, 96, 107}
+\definecolor{jlublau}{RGB}{0, 105, 179}
+\definecolor{chaptergrey}{rgb}{0.7,0.7,0.7}
+\definecolor{thmgreen}{RGB}{128,186,36}
+\definecolor{thmgrau}{RGB}{74,92,102}
+\definecolor{thmblau}{RGB}{0,59,209}
+\definecolor{thmbhellblau}{RGB}{64,255,237}
+%-----------------------------------------
+% Editables of the document
+%-----------------------------------------
+\newcommand{\thesistitle}{Bachelorarbeit} % Title of the Thesis, change here
+\author{Lorenz Saalmann}
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+% References are to be added in reference.bib and cited in any part of the document. Read any examples online on how to add references. You can also use Google Scholar to get the reference formatted for BibTex.
+
+% For Figures and Subfigures
+\usepackage{graphicx, caption, subcaption}
+\usepackage{physics}
+
+% Package to keep images in place
+\usepackage{float}
+
+
+% Package for enumerate
+\usepackage{enumitem}
+
+
+\addbibresource{reference.bib}
+
+% Page Style
+\pagestyle{fancy}
+% Kopfzeile definieren
+\fancyhead[L]{\leftmark} % Links: Kapitelname
+\fancyhead[R]{\thepage}  % Rechts: Seitenzahl
+\fancyfoot{}
+
+% Line Spacing
+\usepackage{setspace}
+
+% To make uppercase words
+\usepackage{textcase}
+
+% Kapitelnummer mit Punkt formatieren
+\renewcommand{\chapterformat}{\thechapter.\enskip}
+
+\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={\thesistitle}, pdfkeywords={}]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\begin{document}
+\noindent
+
+% To expand the word spacing
+\spaceskip=1.2\fontdimen2\font plus 1.2\fontdimen3\font
+minus 1.2\fontdimen4\font
+
+\input{schmutztitel}
+
+\KOMAoptions{twoside=true}
+\input{titlepage}
+
+\input{Abstract}
+\cleardoublepage
+
+\tableofcontents
+\cleardoublepage
+
+\listoffigures
+\listoftables
+\chapter*{Abk\"{u}rzungsverzeichnis}
+\begin{acronym}
+\acro{eu}[JLU]{\dotfill Justus-Liebig-Universit\"{a}t Gie{\ss}en}
+\acro{eu}[LEO]{\dotfill Low Earth Orbit}
+\acro{eu}[RIT]{\dotfill Radiofrequenzionentriebwerk}
+\acro{eu}[HET]{\dotfill Hall-Effekt-Thruster}
+\acro{eu}[DI]{\dotfill Direct Ionisation}
+\acro{eu}[EA]{\dotfill Excitation Ionisation}
+\acro{eu}[MCP]{\dotfill Micro Channel Plate}
+
+\end{acronym}
+\cleardoublepage
+
+% Main Content
+\onehalfspacing
+
+\cleardoublepage
+
+\input{Einführung}
+\input{Elektronenstoßionisation}
+\input{Experimenteller Aufbau}
+
+\fontsize{12pt}{12pt}\selectfont
+
+% Change Bibliography to References
+\renewcommand\bibname{Literaturverzeichnis}
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+
+\printbibliography
+
+
+\end{document}
