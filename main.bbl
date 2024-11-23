@@ -45,33 +45,6 @@
       \field{title}{Ion thrusters for electric propulsion: Scientific issues developing a niche technology into a game changer}
       \field{year}{2020}
     \endentry
-    \entry{Ebinger}{thesis}{}{}
-      \name{author}{1}{}{%
-        {{hash=84c9de8e81386a6d3a74f4de0909ac84}{%
-           family={Ebinger},
-           familyi={E\bibinitperiod},
-           given={Benjamin\bibnamedelima Janosch},
-           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {JLU}%
-      }
-      \strng{namehash}{84c9de8e81386a6d3a74f4de0909ac84}
-      \strng{fullhash}{84c9de8e81386a6d3a74f4de0909ac84}
-      \strng{fullhashraw}{84c9de8e81386a6d3a74f4de0909ac84}
-      \strng{bibnamehash}{84c9de8e81386a6d3a74f4de0909ac84}
-      \strng{authorbibnamehash}{84c9de8e81386a6d3a74f4de0909ac84}
-      \strng{authornamehash}{84c9de8e81386a6d3a74f4de0909ac84}
-      \strng{authorfullhash}{84c9de8e81386a6d3a74f4de0909ac84}
-      \strng{authorfullhashraw}{84c9de8e81386a6d3a74f4de0909ac84}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Messung von Wirkungsquerschnitten der Elektronenstoßionisation von Xenonionen mit einer neuen Hochleistungselektronenkanone}
-      \field{type}{phdthesis}
-      \field{year}{2020}
-    \endentry
     \entry{Holzte}{article}{}{}
       \name{author}{1}{}{%
         {{hash=f95a60b3ad6c9c9bf2f4caada7be9f8a}{%
@@ -118,6 +91,43 @@
       \field{title}{A broad-application microchannel-plate detector system for advanced particle or photon detection tasks: large area imaging, precise multi-hit timing information and high detection rate}
       \field{volume}{477}
       \field{year}{2002}
+    \endentry
+    \entry{EII}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=02f813d651df9d8c304f37b5e4d64867}{%
+           family={S.\bibnamedelimi M.\bibnamedelimi Younger},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           given={P.\bibnamedelimi J.\bibnamedelimi O.\bibnamedelimi Teubner},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=295b2232bb6df4974174c627b1a323bc}{%
+           family={T.\bibnamedelimi D.\bibnamedelimi Märk},
+           familyi={T\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={G.\bibnamedelimi H.\bibnamedelimi Dunn},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag Wien}%
+      }
+      \strng{namehash}{02f813d651df9d8c304f37b5e4d64867}
+      \strng{fullhash}{02f813d651df9d8c304f37b5e4d64867}
+      \strng{fullhashraw}{02f813d651df9d8c304f37b5e4d64867}
+      \strng{bibnamehash}{02f813d651df9d8c304f37b5e4d64867}
+      \strng{authorbibnamehash}{02f813d651df9d8c304f37b5e4d64867}
+      \strng{authornamehash}{02f813d651df9d8c304f37b5e4d64867}
+      \strng{authorfullhash}{02f813d651df9d8c304f37b5e4d64867}
+      \strng{authorfullhashraw}{02f813d651df9d8c304f37b5e4d64867}
+      \strng{editorbibnamehash}{295b2232bb6df4974174c627b1a323bc}
+      \strng{editornamehash}{295b2232bb6df4974174c627b1a323bc}
+      \strng{editorfullhash}{295b2232bb6df4974174c627b1a323bc}
+      \strng{editorfullhashraw}{295b2232bb6df4974174c627b1a323bc}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Electron Impact Ionisation}
+      \field{year}{1985}
     \endentry
     \entry{MCP}{patent}{}{}
       \name{author}{1}{}{%
@@ -169,7 +179,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Informationsblatt CO2-Faktoren}
-      \field{year}{2042}
+      \field{year}{2024}
     \endentry
   \enddatalist
   \missing{Straub}

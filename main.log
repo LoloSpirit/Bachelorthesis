@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  22 NOV 2024 22:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  23 NOV 2024 18:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1387,7 +1387,7 @@ chapter 2.
 [15
 
 ]
-<images/EA.png, id=166, 685.56125pt x 287.0725pt>
+<images/EA.png, id=170, 685.56125pt x 287.0725pt>
 File: images/EA.png Graphic file (type png)
 <use images/EA.png>
 Package pdftex.def Info: images/EA.png  used on input line 25.
@@ -1397,21 +1397,32 @@ Package pdftex.def Info: images/EA.png  used on input line 25.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+Underfull \vbox (badness 3701) has occurred while \output is active []
+
+
 
 [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [17 <./images/EA.png>]
 
-[18]) (./Experimenteller Aufbau.tex
+[18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[19]
+
+
+[19]) (./Experimenteller Aufbau.tex
+
+[20]
 chapter 3.
 
 
-[20
+[21
 
 ]
-<images/Zero-B_Aufbau.pdf, id=200, 388.69545pt x 329.13756pt>
+<images/Zero-B_Aufbau.pdf, id=217, 388.69545pt x 329.13756pt>
 File: images/Zero-B_Aufbau.pdf Graphic file (type pdf)
 <use images/Zero-B_Aufbau.pdf>
 Package pdftex.def Info: images/Zero-B_Aufbau.pdf  used on input line 19.
@@ -1426,33 +1437,33 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[21]
+[22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[22 <./images/Zero-B_Aufbau.pdf>]
+[23 <./images/Zero-B_Aufbau.pdf>]
 
-[23]
-<images/MCP.png, id=222, 511.9125pt x 281.05pt>
+[24]
+<images/MCP.png, id=239, 511.9125pt x 281.05pt>
 File: images/MCP.png Graphic file (type png)
 <use images/MCP.png>
 Package pdftex.def Info: images/MCP.png  used on input line 35.
 (pdftex.def)             Requested size: 321.85881pt x 176.70648pt.
-<images/DLD.png, id=225, 416.55624pt x 221.82875pt>
+<images/DLD.png, id=242, 416.55624pt x 221.82875pt>
 File: images/DLD.png Graphic file (type png)
 <use images/DLD.png>
 Package pdftex.def Info: images/DLD.png  used on input line 42.
 (pdftex.def)             Requested size: 241.39565pt x 128.55243pt.
 
 
-[24 <./images/MCP.png>])
+[25 <./images/MCP.png>])
 
-[25 <./images/DLD.png>]
+[26 <./images/DLD.png>]
 
-[26]
+[27]
 
-[27
+[28
 
 
 ] (./main.aux)
@@ -1476,18 +1487,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41603 strings out of 473584
- 838782 string characters out of 5728329
+ 41616 strings out of 473584
+ 838967 string characters out of 5728329
  1939905 words of memory out of 5000000
- 63835 multiletter control sequences out of 15000+600000
+ 63842 multiletter control sequences out of 15000+600000
  585854 words of font info for 84 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  125i,12n,121p,10948b,3234s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (27 pages, 3249808 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (28 pages, 3271710 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 295 compressed objects within 3 object streams
- 67 named destinations out of 1000 (max. 500000)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 406 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
