@@ -59,10 +59,10 @@ $N_i(A^{q+})$ ist dabei die Anzahl der erzeugten Ionen $A^{q+}$ und $N_e$ die An
 \end{equation}
 Da später nur ein Teil der erzeugten Ionen von einem Detektor nachgewiesen werden kann, wird für $l$ nur der Durchmesser der aktiven Fläche des Detektors berücksichtigt. 
 
-Um eine akkurate Aufnahme des Ionisierungsquerschnitts zu erhalten, müssen die Anzahlen der Elektronen und Ionen möglichst genau gemessen werden. Die Anzahl der Elektronen muss durch die Messung des tatsächlichen Elektronenstroms bestimmt werden. Wie in der Anlange von Straub, wird auch in dieser Arbeit ein Elektronenstrahl aus einer Elektronenkanone verwendet, welcher auf ein Ladungsmesser gezielt wird.
+Wie man leicht erkennt, ist die genaue Messung der Elektronen- und Ionenzahlen für eine akkurate Aufnahme der Ionisierungsquerschnitte zentral. Um eine absolute Aussage treffen zu können, muss auch die Teilchendichte des Gases absolut gemessen werden.
 
 \section{Ansätze theoretischer Beschreibungen}
-Die theoretische Beschreibung von Elektronenstoßionisation ist ein hochkomplexes Problem. Selbst bei der einfachen DI hat man es im finalen Zustand mit drei freien Teilchen zutun, die über die Coulombkraft miteinander wechselwirken. Dabei handelt es sich um das famose Drei-Körper-Problem, für das es keine analytische Lösung gibt. Für die Wechselwirkung mit den gebundenen Zuständen im Atom wird eine quantenmechanische Beschreibung vom Atom erfordert. Während mit der Schrödingergleichung und numerischen Methoden inzwischen Atome mit vielen gebundenen Zuständen gut approximiert werden können, wird die Beschreibung des Problems mit gebundenen und mehreren freien Elektronen sehr schnell sehr komplex. Trotzdem sind einige Ansätze entwickelt worden, die die Stoßionisierungsquerschnitte für Atome gut nähern können.
+Die theoretische Beschreibung von Elektronenstoßionisation ist ein hochkomplexes Problem. Selbst bei der einfachen DI hat man es im finalen Zustand mit drei freien Teilchen zutun, die über die Coulombkraft miteinander wechselwirken. Dabei handelt es sich um das famose Drei-Körper-Problem, für das es keine analytische Lösung gibt. Für die Wechselwirkung mit den gebundenen Zuständen im Atom wird eine quantenmechanische Beschreibung vom Atom gefordert. Während mit der Schrödingergleichung und numerischen Methoden inzwischen Atome mit vielen gebundenen Zuständen gut approximiert werden können, wird die Beschreibung des Problems mit gebundenen und mehreren freien Elektronen sehr schnell sehr komplex. Trotzdem sind einige Ansätze entwickelt worden, die die Stoßionisierungsquerschnitte für Atome gut nähern können.
 
 \subsection{Störungstheorie}
 Die Idee der Störungstheorie ist es, ein komplexes quantenmechanisches Problem, das analytisch nicht lösbar ist, aber einem lösbareren Problem ähnelt, als das lösbare Problem plus eine Störung zu betrachten. Hierbei wird der Hamiltonoperator $\hat{\mathcal{H}}$ in einen Teil für das ungestörte Atom und einen Störterm $\hat{\mathcal{V}}$ aufgeteilt:
@@ -73,12 +73,27 @@ Dieser wird dann zur Lösung der Schrödingergleichung verwendet, wobei $\Psi$ d
 \begin{equation}
     \hat{\mathcal{H}} \Psi = i\hslash\frac{\partial}{\partial t}\Psi.
 \end{equation}
-Wie der Störterm gewählt wird, hängt vom gewählten Ansatz ab und kann sehr komplex sein. Um die Stoßionisation zu beschreiben, muss der Störterm so gewählt werden, dass er die Wechselwirkung zwischen dem einfallenden Elektron und dem Atom beschreibt. Dafür werden verschiedene vereinfachte Modelle verwendet, die je nur unter bestimmten Bedingungen gute Näherungen der Ionisationsquerschnitte liefern. Eine unnachgiebige Lösung wurde noch nicht gefunden, besonders wenn man versucht die Ionisation von Molekülen oder indirekte Prozesse zu beschreiben. Die meisten Ansätze haben gemeinsam, dass $\hat{\mathcal{V}} = \hat{\mathcal{V}}_{e^-} + \hat{\mathcal{V}}_{WW}$ wählen, wobei $\hat{\mathcal{V}}_{e^-}$ das Elektron und $\hat{\mathcal{V}}_{WW}$ die Wechselwirkung  beschreibt. 
+Wie der Störterm gewählt wird, hängt vom gewählten Ansatz ab und ist entscheidend für die Komplexität und Genauigkeit der Rechnung. Um die Stoßionisation zu beschreiben, muss der Störterm so gewählt werden, dass er die Wechselwirkung zwischen dem einfallenden Elektron und dem Atom beschreibt. Dafür werden verschiedene vereinfachte Modelle verwendet, die je nur unter bestimmten Bedingungen gute Näherungen der Ionisationsquerschnitte liefern. Eine unnachgiebige Lösung wurde noch nicht gefunden, besonders wenn man versucht die Ionisation von Molekülen oder indirekte Prozesse zu beschreiben. Die meisten Ansätze haben gemeinsam, dass $\hat{\mathcal{V}} = \hat{\mathcal{V}}_{e^-} + \hat{\mathcal{V}}_{WW}$ wählen, wobei $\hat{\mathcal{V}}_{e^-}$ das Elektron und $\hat{\mathcal{V}}_{WW}$ die Wechselwirkung  beschreibt. 
 
-Die folgende Beschreibung orientiert sich an der von Younger \cite{EII}. Einige Methoden basieren auf der Partialwellen-Approximation (engl. \textit{Partial Wave Approximation}, PWA), bei der die Wellenfunktion jedes Elektrons als eine Kugelwelle beschrieben wird. Die Gesamtwellenfunktion ist dann die Summe der einzelnen Kugelwellen:
+Die folgende Beschreibung orientiert sich an der von Younger \cite{EII}. Einige Methoden basieren auf der Partialwellen-Approximation (engl. \textit{Partial Wave Approximation}, PWA), bei der die Wellenfunktion $\Psi$ jedes Elektrons als eine Kugelwelle beschrieben wird. Die Gesamtwellenfunktion ist dann die Summe der einzelnen Kugelwellen:
 \begin{equation}
     \Psi (\vec K, \vec r) = \sum_{lm}a_{lm}Y_{lm}(\theta, \phi) F_l(K,r).
 \end{equation}
-Dabei sind $Y_{lm}(\theta,\phi)$ die winkelabhängigen Kugelflächenfunktionen und $F_l(K,r)$ die Radialfunktionen, die vom Abstand $r$ abhängt und bei der $K$ den Impuls beschreibt. $a_{lm}$ ist die Amplitude der Kugelwelle.     
+Dabei sind $Y_{lm}(\theta,\phi)$ die winkelabhängigen Kugelflächenfunktionen und $F_l(K,r)$ die Radialfunktionen, die vom Abstand $r$ abhängt und bei der $K$ den Impuls des Elektrons beschreibt. $a_{lm}$ ist die Amplitude der Kugelwelle. $F_l(K,r)$ muss die radiale Schrödingergleichung erfüllen. Bei einem kugelsymmetrischen Potential ist die radialen Schrödingergleichung
+\begin{equation}
+    E u = \underbrace{\frac{\hslash^2}{2m}\frac{d^2 u}{dr^2}}_{\substack{\text{$E_{Kin}$-Term}}} + \left[\underbrace{\frac{\hslash^2}{2m} \frac{l(l+1)}{r^2}}_{\substack{\text{Zentrifugalterm}}} + \underbrace{V(r)}_{\substack{\text{Potential}}} \right] u.
+\end{equation}
+Dabei wird $u(K,r) = rF_l(K,r)$ verwendet, um die Rechnung zu vereinfachen.
+Wenn man die Interaktion in der Nähe des Atomkerns beschreiben will ($Kr \ll 1$), kann keiner der Terme vernachlässigt werden. Verschiedene Ansätze unterscheiden sich in der Wahl des Potentials $V(r)$. 
+
+Bei der Plane-Wave Born Approximation wird das Potential als $V(r) = 0$ angenommen, was nur für sehr hohe Elektronenenergien gute Näherungen liefert und der Beschreibung reiner Elektronenstreuung ähnelt.
+
+Eine andere Wahl ist $V(r) = -\frac{Z}{r}$, was dem Coulombpotential des Atomkerns entspricht. Dieser Ansatz wird als Coulomb-Approximation bezeichnet und eignet sich zur Beschreibung der Ionisation von Ionen.
+
+Die Distorted-Wave Born Approximation fügt dem Potential noch einen Störterm hinzu, der die gebundenen Elektronen beschreiben soll. Dieser Ansatz ist für die Beschreibung der Ionisation von Atomen besser geeignet, da er die Wechselwirkung zwischen dem einfallenden Elektron und den gebundenen Elektronen besser beschreibt. Der Rechenaufwand ist allerdings schnell sehr hoch.
+
+Neben störungstheoretischen Ansätzen gibt es auch andere Methoden, die mit größerem Aufwand bessere Näherungen liefern. Dazu gehören rein numerische Methoden und hybride Ansätze, die störungstheoretische und numerische Methoden kombinieren. Da in dieser Arbeit keine theoretische Beschreibung der Ionisation durchgeführt wird, wird hier nicht weiter auf die Methoden eingegangen.
+
+Zusammenfassend kann man sagen, dass die theoretische Beschreibung der Elektronenstoßionisation noch teil aktueller Forschung ist und man in der Realität auf empirische Daten zurückgreifen muss, um seine Ergebnisse zu vergleichen. Im Rahmen dieser Arbeit wird Straubs Arbeit \cite{Straub} mehrfach als Referenz verwendendet. 
 
 \section{Einzelstoßbedingung}

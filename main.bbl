@@ -156,6 +156,32 @@
       \field{year}{1996}
       \field{dateera}{ce}
     \endentry
+    \entry{Straub}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8b0c526fc1ada9b49f013c7fc76b3c08}{%
+           family={Straub\bibnamedelimb H.\bibnamedelimi C.},
+           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={et\bibnamedelima al.},
+           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b0c526fc1ada9b49f013c7fc76b3c08}
+      \strng{fullhash}{8b0c526fc1ada9b49f013c7fc76b3c08}
+      \strng{fullhashraw}{8b0c526fc1ada9b49f013c7fc76b3c08}
+      \strng{bibnamehash}{8b0c526fc1ada9b49f013c7fc76b3c08}
+      \strng{authorbibnamehash}{8b0c526fc1ada9b49f013c7fc76b3c08}
+      \strng{authornamehash}{8b0c526fc1ada9b49f013c7fc76b3c08}
+      \strng{authorfullhash}{8b0c526fc1ada9b49f013c7fc76b3c08}
+      \strng{authorfullhashraw}{8b0c526fc1ada9b49f013c7fc76b3c08}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review A}
+      \field{number}{2}
+      \field{title}{Absolute partial and total cross sections for electron-impact ionization of argon from threshold to 1000 eV}
+      \field{volume}{52}
+      \field{year}{1995}
+    \endentry
     \entry{CO2}{article}{}{}
       \name{author}{1}{}{%
         {{hash=89a68ab9fd7ca8618aead83f9c1e9767}{%
@@ -182,7 +208,6 @@
       \field{year}{2024}
     \endentry
   \enddatalist
-  \missing{Straub}
 \endrefsection
 \endinput
 

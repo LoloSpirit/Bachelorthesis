@@ -1,18 +1,20 @@
 \babel@toc {german}{}\relax 
-\contentsline {chapter}{\numberline {1}Einführung}{11}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Zielsetzung}{13}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Flugzeitmessung}{13}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Grundlagen der Elektronenstoßionisation}{15}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Ionisationsprozesse}{15}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Mehrstufige Ionisationsprozesse}{16}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Resonante Prozesse}{18}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Ionisierungsquerschnitt}{18}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Ansätze theoretischer Beschreibungen}{19}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Störungstheorie}{20}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Einzelstoßbedingung}{20}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Experimenteller Aufbau}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Vakuumkammer und Komponenten}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Detektorsystem}{24}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Konditionierung des Detektors}{25}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Signalverarbeitung}{26}{section.3.4}%
-\contentsline {chapter}{Literaturverzeichnis}{28}{section*.9}%
+\contentsline {chapter}{\numberline {1}Einführung}{13}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Zielsetzung}{15}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Flugzeitmessung}{15}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Grundlagen der Elektronenstoßionisation}{17}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Ionisationsprozesse}{17}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Mehrstufige Ionisationsprozesse}{18}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Resonante Prozesse}{20}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Ionisierungsquerschnitt}{20}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Ansätze theoretischer Beschreibungen}{21}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Störungstheorie}{21}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Einzelstoßbedingung}{23}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Experimenteller Aufbau}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Vakuumkammer und Komponenten}{24}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Detektorsystem}{27}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Konditionierung des Detektors}{28}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Signalverarbeitung}{29}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Flugzeitmessung}{30}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Positionssensitive Auflösung}{31}{subsection.3.4.2}%
+\contentsline {chapter}{Literaturverzeichnis}{33}{section*.11}%
