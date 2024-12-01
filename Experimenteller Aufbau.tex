@@ -2,6 +2,13 @@
 \label{chap:Aufbau}
 Im Folgenden wird der Aufbau des Experiments und das Zusammenwirken der verschiedenen Komponenten erläutert. Die meisten Elemente wurden nicht im Rahmen dieser Arbeit verbaut, sondern sind bereits von vorherigen Arbeiten der Arbeitsgruppe vorhanden. Diese sind in \cite{Holzte} beschrieben. Abbildung \ref{fig:Aufbau} zeigt den schematischen Aufbau der Vakuumkammer und der für das Experiment relevanten Komponenten.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=1.2\textwidth]{Zero-B_Aufbau.pdf}
+    \caption[Schematischer Aufbau der Zero-B Vakuumkammer]{Schematischer Aufbau der Zero-B Vakuumkammer und der Elektronenstoßionisation. Die Elektronen werden von der Elektronenkanone erzeugt. Sie stoßen mit den Neutralgasteilchen und ionisieren diese durch Stoßionisation. Die entstehenden Ionen werden durch ein elektrisches Feld auf die Detektorplatten beschleunigt und erzeugen dort ein Signal. Sie können mit einer elektromagnetischen Linse fokussiert werden.}
+    \label{fig:Aufbau}
+\end{figure}
+
 \section{Vakuumkammer und Druckmessung}
 Die Experimente finden in einer Vakuumanlage mit einer kubischen Hauptkammer statt, von der alle anderen Komponenten abzweigen. Die Kammer hat eine Seitenlänge von 30 cm. Sie besteht auch $\mu$-Metall, damit das Magnetfeld im Inneren der Kammer minimal ist. Das ist wichtig, damit die Elektronen nicht von äußeren Magnetfeldern abgelenkt werden. Die Abschirmung reduziert das Magnetfeld auf unter 15 mG \cite{Holzte}. Die Kammer ist mit einer Turbomolekularpumpe und einer Vorpumpe ausgestattet. Diese können ein Vakuum in der Größenordnung von 10$^{-8}$ mBar nach Ausheizen der Kammer erreichen. 
 
@@ -10,34 +17,45 @@ Am überliegenden Flange ist ein kapazitiver Drucksensor angebracht, der \textit
 Zum Einlassen der zu untersuchenden Gase ist ein temperaturgesteuertes Regelventil verbaut. Dieses kann sehr empfindlich eingestellt werden, sodass der Gasdruck im Betrieb genau bestimmt werden kann. An das Ventil ist dann eine Gasflasche über einen Druckminderer angeschlossen. Das Gas kann so direkt in die Hauptkammer eingelassen werden, wo dann die Ionisation stattfindet.
 
 \section{Elektronenstrahl und Ablenkplatte}
-Für die Elektronenstoßionisation ist eine Heizkathoden-Elektronenkanone an einer der seitlichen Flange verbaut. Dabei handelt es sich um ein energieverstellbares Gerät von Kimball Physics, die \textit{ELG-2/EGPS-1022}. Es kann einen Energiebereich zwischen 1 eV bis 2 keV abdecken. Der Strahl ist in der Ebene ablenkbar und kann variabel fokussiert werden. Die thermische Energieschärfe der verschossenen Elektronen beträgt 0,5 eV bei der Verwendung der Tantal-Heitzkathode. Außerdem ist es möglich die Kanone in einem gepulsten Betrieb zu benutzen, was für dieses Experiment benötig wird. Dabei werden die Elektronen von einer Gitterspannung abgebremst und nur über Spannungspulse für kurze Strahldauern durchgelassen. Einen Querschnitt der Elektronenkanone zeigt Abbildung \ref{fig:EGun}.
+Für die Elektronenstoßionisation ist eine Heizkathoden-Elektronenkanone an einer der seitlichen Flange verbaut. Dabei handelt es sich um ein energieverstellbares Gerät von Kimball Physics, die \textit{ELG-2/EGPS-1022}. Es kann einen Energiebereich zwischen 1 eV bis 2 keV abdecken. Der Strahl ist in der Ebene ablenkbar und kann variabel fokussiert werden. Die thermische Energieschärfe der verschossenen Elektronen beträgt 0,5 eV bei der Verwendung einer Tantal-Heitzkathode. Außerdem ist es möglich die Kanone in einem gepulsten Betrieb zu benutzen, was für dieses Experiment benötig wird. Dabei werden die Elektronen von einer Gitterspannung abgebremst und nur über Spannungspulse für kurze Strahldauern durchgelassen. Die Frequenz darf 5 kHz nicht überschreiten. Einen Querschnitt der Elektronenkanone zeigt Abbildung \ref{fig:EGun}. Eingestellt werden kann die Kanone über eine mitgelieferte Steuerungseinheit. Um eine optimale Fokussierung zu finden, muss für jede Energie die Anoden- und Fokusspannung angepasst werden.
 
 \begin{figure}
     \centering
-    \includegraphics[width=.9\textwidth]{EGun.png}
+    \includegraphics[width=.8\textwidth]{EGun.png}
     \caption[Querschnitt der Elektronenkanone]{Querschnitt der Elektronenkanone von Kimball Physics. Die Elektronen werden durch eine Heizkathode (Cathode) erzeugt und durch eine Gitterspannung (Grid) beschleunigt. Sie können fokussiert und abgelenkt werden.}
     \label{fig:EGun}
 \end{figure}
 
-Der Kanone gegenüber ist ein Faraday-Cup angebracht. Mit diesem kann die tatsächliche, momentane Elektronenstromstärke gemessen werden. Eine genaue Messung des Elektronenstroms ist für eine Messung des Wirkungsquerschnittes essenziell. Der Faraday-Cup ist ein Metallzylinder, der von einem Isolator umgeben ist und dient als Ladungsgefäß. Er ist mit einem Elektrometer, dem \textit{DDPCA-300} von FEMTO, verbunden, welches den Strom und die Ladung auf dem Cup im Femto-Ampere und Pico-Coulomb Bereich messen kann. Für diese Messung wurde ein besonders großer Faraday-Cup mit einem Durchmesser von 30 mm und einer Tiefe von 70 mm verwendet. Das hat zwei Gründe: Zum einen ist die Fläche des Cups groß genug, um den gesamten Elektronenstrom aufzufangen - auch wenn er leicht vom magnetischen Restfeld abgelenkt wurde. Zum anderen ist die Tiefe des Cups möglichst groß gewählt, damit es unwahrscheinlicher ist, dass aus dem Cup durch Stoßionisation entstandene Ionen in die Kammer gelangen. Von der Verwendung eines Repeller-Rings wurde, wie auch in \cite{Holzte} beschrieben, abgesehen, da das elektrische Feld Einfluss auf die Messung nehmen könnte.
+Der Kanone gegenüber ist ein Faraday-Cup angebracht. Mit diesem kann die tatsächliche, momentane Elektronenstromstärke gemessen werden. Eine genaue Messung des Elektronenstroms ist für eine Messung des Wirkungsquerschnittes und für das Finden eines guten Arbeitspunktes für die Elektronenkanone essenziell. Der Faraday-Cup ist ein Metallzylinder, der von einem Isolator umgeben ist und dient als einfaches Ladungsgefäß. Er ist mit einem Elektrometer, dem \textit{DDPCA-300} von FEMTO, verbunden, welches den Strom und die Ladung auf dem Cup im Femto-Ampere und Pico-Coulomb Bereich messen kann. Für die Messung der Ladung ist es wichtig, dass die von der Elektronenkanone im gepulsten Betrieb akkumulierte Ladung dem Rauschen deutlich überwiegt. Deshalb ist es, besonders für geringe Elektronenenergien, lohnenswert den Elektronenstrom bestmöglich einzustellen und ein rauscharmes Kabel zu verwenden. Für diese Messung wurde ein besonders großer Faraday-Cup mit einem Durchmesser von 30 mm und einer Tiefe von 70 mm verwendet. Das hat zwei Gründe: Zum einen ist die Fläche des Cups groß genug, um den gesamten Elektronenstrom aufzufangen - auch wenn er nicht perfekt fokussiert ist oder vom magnetischen Restfeld abgelenkt wurde, was essentiell für die Messung ist. Zum anderen ist die Tiefe des Cups möglichst groß gewählt, damit es unwahrscheinlicher ist, dass aus dem Cup durch Stoßionisation entstandene Ionen in die Kammer gelangen. Von dem sonst aus diesem Grund verwendeten Repeller-Ring wurde abgesehen, da das elektrische Feld Einfluss auf die Messung nehmen könnte.
 
-Parallel zum Elektronenstrahl ist eine Ablenkplatte angebracht, auf welcher eine Spannung das elektrische Feld zur Beschleunigung der Ionisationsprodukte auf die Detektorplatten erzeugt. Die Ablenkplatte ist mit einem Hochspannungspulsgenerator von AVTECH verbunden, dem AVR-E2. Dieser kann hochfrequente Pulse von bis zu 6 kV mit einer Flankenanstiegszeit von wenigen Nanosekunden erzeugen.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1.2\textwidth]{Zero-B_Aufbau.pdf}
-    \caption[Schematischer Aufbau der Zero-B Vakuumkammer]{Schematischer Aufbau der Zero-B Vakuumkammer und der Elektronenstoßionisation. Die Elektronen werden von der Elektronenkanone erzeugt. Sie stoßen mit den Neutralgasteilchen und ionisieren diese durch Stoßionisation. Die entstehenden Ionen werden durch ein elektrisches Feld auf die Detektorplatten beschleunigt und erzeugen dort ein Signal. Sie können mit einer elektromagnetischen Linse fokussiert werden.}
-    \label{fig:Aufbau}
-\end{figure}
+In der Mitte der Kammer durchquert der Strahl einen zylindrischen Plattenkondesator, wobei er die Bodenplatte mit einem Abstand von etwa 1,5 cm parallel passiert. Auf der Bodenplatte kann über einen Hochspannungspulsgenerator (PVX-4130) ein elektrisches Feld angelegt, um die Ionisationsprodukte auf die Detektorplatten zu beschleunigen. Dieser kann hochfrequente Pulse von bis zu 6 kV mit einer Flankenanstiegszeit von wenigen Nanosekunden erzeugen. Der Spannungspuls wird leicht verzögert ausgelöst. Die Deckenplatte hat in der Mitte ein kreisförmiges Loch mit 2 cm Durchmesser, durch das die Ionen Richtung Detektor gelangen. Auf diesem befindet sich ein Goldnetz (88\% Transparenz), das Restfelder hinter dem Plattenkondensator reduzieren soll. Die Frotplatte des Detektors liegt, wie im nächsten Abschnitt genauer beschrieben, auf einem negativen Potential von -2,5 kV, so dass sich bei einem Spannungspuls von 4 kV und einem einfach geladenen Ion eine kinetische Energie $E_{kin} = e \cdot (U_{Detektor} - U_{Kondensator}) = 6,5$ keV ergibt.
 
 \section{Detektorsystem}
-Bei dem in dieser Arbeit verwendeten Detektor handelt es sich um einen positionssensitiven Mikrokanalplattendetektor (engl. \textit{micro channel plate detector}, MCP-Detektor) der Firma Roentdek. MCP-Detektoren sind eine verbreitete Detektortechnologie, die es ermöglicht den Auftreffzeitpunkt von einzelnen Ionen, Elektronen oder Photonen zu bestimmen. Mit einer Widerstandsanode kann die Position der durch die Platten verstärkten Signale anschließend bestimmt werden. So kann ein \textit{Bild} der detektierten Teilchen erzeugt werden. Im Versuchsaufbau schirmt ein Goldnetz mit hoher Transparenz (88 \%) den Detektor von elektromagnetischen Störungen und Restfeldern ab. Der Detektor hat eine aktive Fläche von 80 mm Durchmesser und eine Auflösung von 10 $\mu$m. Die Detektionseffizienz liegt bei in etwa 50 \% und wird von der Transparenz der Detektorplatten bestimmt.
+Bei dem in dieser Arbeit verwendeten Detektor handelt es sich um einen positionssensitiven Mikrokanalplattendetektor (engl. \textit{micro channel plate detector}, MCP-Detektor) der Firma Roentdek. MCP-Detektoren sind eine verbreitete Detektortechnologie, die es ermöglicht den Auftreffzeitpunkt von einzelnen Ionen, Elektronen oder Photonen zu bestimmen. Mit einer Widerstandsanode kann die Position der durch die Platten verstärkten Signale anschließend bestimmt werden. So kann ein \textit{Bild} der detektierten Teilchen erzeugt werden. Im Versuchsaufbau schirmt das soeben erwähnte Goldnetz den Detektor von elektromagnetischen Störungen und Restfeldern ab. Die für den Detektor typischen Leistungsparameter sind in Tabelle \ref{tab:MCP} aufgeführt. Der für das Experiment verwendete Detektor ist ein \textit{delay-line} Detektor, genauer der \textit{DLD80} von Roentdek.
 
-Die Mikrokanalplatten des Detektors dienen der Verstärkung von eintreffenden Signalen über die Erzeugung von Sekundärelektronen. Sie bestehen aus Glas, welches mit einer sehr hohen Dichte von kleinen, geraden Kanälen durchzogen ist, welche die gegenüberliegenden Seiten verbinden. Bei der Herstellung wird das Glas dafür, ähnlich wie bei der Herstellung von Glasfasern, gezogen und in bis zu 1 mm Dicke Scheiben geschnitten. Der Durchmesser der Kanäle liegt bei einigen Mikrometern. Die Innenwände der Kanäle bestehen aus einem halbleitendem Material, an welches eine Spannung entlang der Kanäle angelegt wird. Diese beschleunigt die Elektronen entlang des Kanals. Trifft ein Teilchen auf die Wand eines Kanals der Detektorplatten, löst es Sekundärelektronen durch Stoßionisation aus. Diese stoßen entlang des Kanals wiederum mit der Wand und es entsteht eine Elektronenlawine. Diesen verstärkenden Effekt macht man sich zunutze, um aus einzelnen Teilchen eine messbare Ladungswolke zu erzeugen. Um die Wahrscheinlichkeit einer Kollision einfallender Teilchen mit den Kanalwänden zu steigern, sind die Kanäle um etwa \ang{10} gegenüber der Flächennormalen geneigt. 
+% table of typical values for MCP detectors
+\begin{table}[h]
+    \centering
+    \caption{Von Roentdek angegebene typische Parameter für den MCP-Detektor}
+    \begin{tabular}{c|c}
+        Parameter & Wert \\
+        \hline
+        Aktive Fläche & 80 mm \\
+        Effizienz & $>$ 50\% \\
+        räumliche Auflösung & $<$ 0,1 mm \\
+        Zeitauflösung & $<$ 0,2 ns \\
+        maximale Rate & 1 MHz \\
+        Totzeit & 10-20 ns \\
+        Kanaldurchmesser & 25 $\mu$m \\
+        Plattendicke & 1,5 mm \\
+        Vorzugswinkel & \ang{8} $\pm$ \ang{1} \\
 
-Typischerweise werden zwei MCPs hintereinander verwendet, wobei sie um \ang{180} zueinander gedreht sind. Sie befinden sich in einer sogenannten \textit{Chevron}-Konfiguration. Die zweite Platte wird verwendet, um die Verstärkung weiter zu erhöhen und Ionen-Feedback zu minimieren. Ionen-Feedback beschreibt das Zurückfließen von Ionen in die Kammer. Die hohe Anzahl an Elektronen in den Kanälen der MCPs können Restgas ionisieren, welches dann aufgrund der Beschleunigungsspannung rückwärts durch die Kanäle in die Kammer gelangen könnte. 
+    \end{tabular}
+    \label{tab:MCP}
+\end{table}
 
-Wie in \cite{Detektorsystem} dargestellt, gibt es unterschiedliche Ansätze die zweidimensionale Positionsinformation der durch die Platten erzeugten Ladungswolke zu ermitteln. Der für das Experiment verwendete Detektor ist ein \textit{delay-line} Detektor, genauer der \textit{DLD80} von Roentdek. Das Konzept macht sich zu Nutzen, dass eine auf ein Drahtgitter treffende Ladungswolke ein elektrisches Signal in den Leitern erzeugen. Dieses hat eine Laufzeit in der Größenordnung einier Nanosekunde bis es an den Enden des Leiters ankommt. Anhand dieser Laufzeitdifferenz kann die Position auf dem Detektor in einer Dimension bestimmt werden. Mithilfe eines zweiten, um \ang{90} gedrehten, Leiters, kann die Position zweidimensional dargestellt werden. Der Detektor hat eine aktive Fläche mit einem Durchmesser von 80 mm.
+\subsection{Mikrokanalplatten}
+Die Mikrokanalplatten des Detektors dienen der Verstärkung von eintreffenden Signalen über die Erzeugung von Sekundärelektronen. Sie bestehen aus Glas, welches mit einer sehr hohen Dichte von kleinen, geraden Kanälen durchzogen ist, welche die gegenüberliegenden Seiten verbinden. Bei der Herstellung wird das Glas dafür, ähnlich wie bei der Herstellung von Glasfasern, gezogen und in Millimeterdicke Scheiben geschnitten. Der Durchmesser der Kanäle liegt bei einigen Mikrometern. Die Innenwände der Kanäle bestehen aus einem halbleitendem Material, an welches eine Spannung entlang der Kanäle angelegt wird. Diese beschleunigt die Elektronen entlang des Kanals. Trifft ein Teilchen auf die Wand eines Kanals der Detektorplatten, löst es Sekundärelektronen durch Stoßionisation aus. Diese stoßen entlang des Kanals wiederum mit der Wand und es entsteht eine Elektronenlawine. Das Prinzip ist in Abbildung \ref{fig:MCP} dargestellt. Diesen verstärkenden Effekt macht man sich zunutze, um aus einzelnen Teilchen eine messbare Ladungswolke zu erzeugen. Um die Wahrscheinlichkeit einer Kollision einfallender Teilchen mit den Kanalwänden zu steigern, sind die Kanäle um etwa \ang{8} gegenüber der Flächennormalen geneigt. 
 
 \begin{figure}
     \centering
@@ -46,6 +64,11 @@ Wie in \cite{Detektorsystem} dargestellt, gibt es unterschiedliche Ansätze die 
     \label{fig:MCP} 
 \end{figure}
 
+Typischerweise werden zwei MCPs hintereinander verwendet, wobei sie um \ang{180} zueinander gedreht sind. Sie befinden sich in einer sogenannten \textit{Chevron}-Konfiguration. Die zweite Platte wird verwendet, um die Verstärkung weiter zu erhöhen und Ionen-Feedback zu minimieren. Ionen-Feedback beschreibt das Zurückfließen von Ionen in die Kammer. Die hohe Anzahl an Elektronen in den Kanälen der MCPs können Restgas ionisieren, welches dann aufgrund der Beschleunigungsspannung rückwärts durch die Kanäle in die Kammer gelangen könnte. Die auf die Frontplatte angelegte Spannung bestimmt, mit welcher Energie die Ionen auf die Platte treffen. Im Optimalfall sollte sie so einstellt werden, dass die Detektionsrate unabhängig von der Spannung wird. Ziel ist, das alle auf den Dektektor treffenden Ionen genügend Energie haben, um Elektronen auszulösen und somit detektiert zu werden. Abbildung x zeigt den Zusammenhang von Frontplattenspannung und Rate. Hier kann man sehen, dass man mit diesem MCP nicht vollständig in die Sättigung kommt, wenn man innerhalb des empfohlenen Spannungsbereichs bleibt. Bei der Aufnahme sämtlicher Daten werden im Folgenden möglichst große Spannungen größer 2400 V gewählt, um möglichst alle Ionen nachweisen zu können.FIGURE
+
+\subsection{Positionsbestimmung}
+Wie in \cite{Detektorsystem} dargestellt, gibt es unterschiedliche Ansätze die zweidimensionale Positionsinformation der durch die Platten erzeugten Ladungswolke zu ermitteln. Das Konzept macht sich zu Nutzen, dass eine auf ein Drahtgitter treffende Ladungswolke ein elektrisches Signal in den Leitern erzeugen. Dieses hat eine Laufzeit in der Größenordnung einiger Nanosekunde bis es an den Enden des Leiters ankommt. Anhand dieser Laufzeitdifferenz kann die Position auf dem Detektor in einer Dimension bestimmt werden. Mithilfe eines zweiten, um \ang{90} gedrehten, Leiters, kann die Position zweidimensional dargestellt werden. In Abbildung \ref{fig:DLD} sieht man die Drahtstruktur für die Messung einer Dimension. Der Detektor hat eine aktive Fläche mit einem Durchmesser von 80 mm. In dieser Arbeit ist die Bestimmung der Auftreffpositionen zweitrangig und wird in erster Linie dafür verwendet zu validieren, dass die Ionen tatsächlich primär aus der Elektronenstoßionisation stammen und nicht zufällig verteilt sind. Der Geburtsort der Ionen wird auf dem Bild des Detektors indirekt abgebildet und zeigt deutlich den Strahl der Elektronenkanone. Abbildung \ref{fig:Strahl} zeigt ein solches Beispiel einer positionssensitiven Messung.
+
 \begin{figure}
     \centering
     \includegraphics[width=.6\textwidth]{DLD.png}
@@ -53,8 +76,15 @@ Wie in \cite{Detektorsystem} dargestellt, gibt es unterschiedliche Ansätze die 
     \label{fig:DLD} 
 \end{figure}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=1.05\textwidth]{Strahl.png}
+    \caption[Abbild des Strahls auf dem Detektor]{Positionsbestimmung der detektierten Teilche auf dem Detektor zeigen den Strahl auf dem Detektor. Da der Detektor schief verbaut ist wurde das Bild im Nachhinein gedreht. Die 4 cm breite Kupferblende begrenzt den Strahl an den Seiten.}
+    \label{fig:Strahl} 
+\end{figure}
+
 \section{Konditionierung des Detektors}
-Nachdem der Detektor eingebaut ist, muss er einer Konditionierung unterzogen werden, damit er ohne Risiko beschädigt zu werden verwendet werden kann. Zur Konditionierung soll die Spannung zwischen den MCPs in 100 V Schritten erhöht werden und je für einige Minuten konstant gelassen werden. Das hat den Hintergrund, dass Partikel, wie zum Beispiel Staubteilchen, sich von den MCPs oder Teilen des Detektors lösen können und bei schnellem Ansteigen der Spannung Schaden an den Platten hinterlassen können. Beim Konditionieren können diese Partikel sich nach und nach lösen und bekommen nur minimale kinetische Energie zugeführt. Außerdem können Überschläge bei möglichst geringer Potenzialdifferenz festgestellt werden, welche ebenfalls von Partikeln begünstigt werden können. Für die Spannungsversorgung der Detektorplatten wird eine Hochspannungsquelle verwendet, die mit einem Überstromschutz bei sprunghaft ansteigendem Strom abschaltet. Bei einem Vakuum mit einem Druck kleiner als 10$^{-6}$ mBar kann die Konditionierung begonnen werden und wird über mehrere Stunden durchgeführt bis zu einer Potenzialdifferenz von 2,7 kV. Nach jedem Erhöhen der Spannung wird der sich eingestellte Strom notiert. Mit Strom und Spannung kann über das Ohm'sche Gesetz der Widerstand berechnet werden, welcher in etwa konstant bleiben oder sich mit steigender Spannung etwas verkleinern sollte. Tabelle \ref{tab:Konditionierung} im Anhang zeigt die notierten Werte für die Konditionierung ab 880 V, welche ohne Probleme durchgeführt werden konnte. Nach einmaliger Konditionierung kann der Detektor mit einer Geschwindigkeit von etwa 40 V/s ohne weiteres hochgefahren werden.
+Nachdem der Detektor eingebaut ist, muss er einer Konditionierung unterzogen werden, damit er ohne Risiko beschädigt zu werden verwendet werden kann. Zur Konditionierung soll die Spannung zwischen den MCPs in 100 V Schritten erhöht werden und je für einige Minuten konstant gelassen werden. Das hat den Hintergrund, dass Partikel, wie zum Beispiel Staubteilchen, sich von den MCPs oder Teilen des Detektors lösen können und bei schnellem Ansteigen der Spannung Schäden an den Platten hinterlassen können. Beim Konditionieren können diese Partikel sich nach und nach lösen und bekommen nur minimale kinetische Energie zugeführt. Außerdem können Überschläge bei möglichst geringer Potenzialdifferenz festgestellt werden, welche ebenfalls von Partikeln begünstigt werden können. Für die Spannungsversorgung der Detektorplatten wird eine Hochspannungsquelle verwendet, die mit einem Überstromschutz bei sprunghaft ansteigendem Strom abschaltet. Die Konditionierung wird im Vakuum über mehrere Stunden bis zu einer Potenzialdifferenz von 2,7 kV durchgeführt. Nach jedem Erhöhen der Spannung wird der sich eingestellte Strom notiert und der Widerstand berechnet, welcher in etwa konstant bleiben oder sich mit steigender Spannung etwas verkleinern sollte. Tabelle \ref{tab:Konditionierung} im Anhang zeigt die notierten Werte für die Konditionierung ab 880 V, welche ohne Probleme durchgeführt werden konnte. Nach einmaliger Konditionierung kann der Detektor mit einer Geschwindigkeit von etwa 40 V/s ohne weiteres hochgefahren werden.
 
 \section{Signalverarbeitung}
 Die auf der Anode des Detektors entstehenden Signale müssen weiterverarbeitet werden, um sie für die Auswertung zu nutzen. Ein Großteil der Signalverarbeitung wird in dieser Arbeit analog umgesetzt. Viele der verwendeten Geräte sind ältere, aber verlässliche Nuclear Instrumentation Module (NIM). Diese können sehr modular in einem Rack verbaut und über BNC-Kabel verbunden werden. Im Folgenden wird die Signalverarbeitung zur Flugzeitmessung und die zur positionssensitiven Auflösung der Ionen unterschieden.
@@ -64,7 +94,7 @@ Eine schematische Übersicht der Verarbeitung ist in Abbildung \ref{fig:ToF} zu 
 
 \begin{figure} 
     \centering
-    \includegraphics[width=1\textwidth]{ToF_Signals.png}
+    \includegraphics[width=.9\textwidth]{ToF_Signals.png}
     \caption[Schematisch dargestellter Signalfluß der ToF-Messung]{Schematisch dargestellter Signalfluß der ToF-Messung. Der Signalfluß erfolgt, mit Ausname der Elektronenkanone, von links nach rechts. Die verwendeten Geräte sind stark vereinfacht abgebildet, wobei die wichtigsten Einstellungen inkludiert wurden. Die jeweilige Form der Signale ist über den Verbindungen gezeigt und ist rein qualitativ. Power Supplies sowie Anzeigegeräte sind nicht abgebildet.}
     \label{fig:ToF} 
 \end{figure}
@@ -75,20 +105,22 @@ Für die Bestimmumg des Auftreffzeitpunktes wird vom Detektor ein Spannungssigna
 
 \begin{figure}
     \centering
-    \includegraphics[width=.8\textwidth]{cfd.png}
-    \caption[Prinzip des Constant Fraction Discriminators]{Prinzip des Constant Fraction Discriminators. Links: Zeitpunkte beim Überschreiten eines Schwellwertes sind unterschiedlich, rechts: der Zeitpunkt beim Überschreiten eines Bruchteils des Signals ist unabhängig vom Pegel.\\
+    \includegraphics[width=.7\textwidth]{cfd.png}
+    \caption[Prinzip des Constant Fraction Discriminators]{Prinzip des Constant Fraction Discriminators. Links: Zeitpunkte beim Überschreiten eines Schwellwertes sind unterschiedlich, rechts: Der Zeitpunkt beim Überschreiten eines Bruchteils des Signals ist unabhängig vom Pegel.\\
     \small Quelle: https://commons.wikimedia.org/w/index.php?curid=534201}
     \label{fig:CFD} 
 \end{figure}
 
 Der über den CFD ermittelte Auftreffzeitpunkt kann dann als Stoppsignal für die Flugzeitmessung dienen. Um die Information über die Zeitdifferenz zwischen dem Start- und Stoppsignal zu erhalten, wird ein Time-to-Pulse-Height-Converter (TPHC) Modul verwendet. Dieses erzeugt ein Signal, dessen Höhe proportional zur zeitlichen Differenz eines Start- und Stoppulses ist. Um diese Funktionalität umzusetzen wird im TPHC ein Kondensator aufgeladen, wobei die Spannung über den Kondensator proportional zur Ladezeit steigt. Kommt kein Stoppsignal, wird der Kondensator nach einer eingestellten maximal Dauer über einen Widerstand wieder entladen. Schließlich kann der Spannungspuls über einen Analog-Digital-Converter (ADC) digitalisiert und am Computer ausgelesen werden.
 
+Dank des Pulsgenerators kann die Messung mehrere tausend Mal in jeder Sekunde durchgeführt werden. Begrenzend ist dabei die Elektronenkanone, die, wie bereits erwähnt, mit maximal 5 kHz gepulst werden kann. Abbildung \ref{fig:Signal} zeigt qualitativ den zeitlichen Verlauf der relevanten Signale der Flugzeitmessung.
+
 \begin{figure}
     \centering
-    \includegraphics[width=1\textwidth]{Signalverlauf.png}
+    \includegraphics[width=.9\textwidth]{Signalverlauf.png}
     \caption[Aufgenommenener Verlauf der relevanten Signale der ToF-Messung]{Aufgenommenener Verlauf der relevanten Signale. (a) zeigt den initialen Spannungspuls aus dem Pulsgenerator, mit dem auch die Elektronenkanone getriggert wird. Über einen Delay-Generator wird das verspätete Signal (c) erzeugt, um die Ablenkspannung (b) anzusteuern. (d) zeigt das Signal, welches auf der Anode des Detektors entsteht, nachdem es durch den CFD gelaufen ist. Die zeitliche Differenz aus (c) und (d) entspricht der Flugzeit}
     \label{fig:Signal} 
 \end{figure}
 
 \subsection{Positionssensitive Auflösung}
-Sie werden bereits in der Elektronik des Detektors verstärkt, wobei darauf geachtet werden muss, dass die Pulse nicht den Verstärker sättigen. Ihre Höhe hängt von der Spannung auf der Front-Platte des Detektors ab und RoentDek empfielt die Differenz nicht höher als 2600 V zu wählen. 
+Die auf dem Drahtgitter entstandenden Signale werden mittels eines Verstärkers von Roentdek verstärkt, wobei darauf geachtet werden muss, dass die Pulse nicht den Verstärker sättigen. Haben die Ionen eine zu große Energie, verliert die Messung der Position an Genauigkeit. Wie auch bei der Verarbeitung der Signale für die Flugzeitmessung wird ein CFD verwendet, um den Zeitpunkt der Signale zu bestimmen. Die analoge Ausgabe des CFD wird dann einem ADC übergeben, der ausgestattet mit der Elektronik von Roentdek die Signale digitalisiert und für die Auswertung am Computer präpariert. Am Computer kann dann das Programm \textit{Cobold} (von Roentdek) verwendet werden, um die von der Hardware ausgelesenen Daten zu visualisieren und zu analysieren. Da die Positionsinformationen nur für die Validierung der Messung verwendet werden, wird auf eine detaillierte Beschreibung der Verarbeitung verzichtet.
