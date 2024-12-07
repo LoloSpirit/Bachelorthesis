@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  1 DEC 2024 15:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  7 DEC 2024 17:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1360,12 +1360,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [12]
 
 [13]
-<images/Restgas_tof.png, id=175, 722.7pt x 361.35pt>
+<images/Restgas_tof.png, id=181, 722.7pt x 361.35pt>
 File: images/Restgas_tof.png Graphic file (type png)
 <use images/Restgas_tof.png>
 Package pdftex.def Info: images/Restgas_tof.png  used on input line 42.
 (pdftex.def)             Requested size: 382.20465pt x 191.10106pt.
-<images/Restgas.png, id=176, 722.7pt x 361.35pt>
+<images/Restgas.png, id=182, 722.7pt x 361.35pt>
 File: images/Restgas.png Graphic file (type png)
 <use images/Restgas.png>
 Package pdftex.def Info: images/Restgas.png  used on input line 50.
@@ -1386,7 +1386,7 @@ chapter 2.
 [17
 
 ]
-<images/EA.png, id=203, 685.56125pt x 287.0725pt>
+<images/EA.png, id=209, 685.56125pt x 287.0725pt>
 File: images/EA.png Graphic file (type png)
 <use images/EA.png>
 Package pdftex.def Info: images/EA.png  used on input line 25.
@@ -1413,7 +1413,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [21]
-Overfull \hbox (16.96693pt too wide) in paragraph at lines 81--83
+Underfull \vbox (badness 1881) has occurred while \output is active []
+
+
+
+[22]
+Overfull \hbox (16.96693pt too wide) in paragraph at lines 88--90
 \OT1/ptm/m/n/10.95 schreibt. $\OML/cmm/m/it/10.95 a[]$ \OT1/ptm/m/n/10.95 ist die Am-pli-tu-de der Ku-gel-wel-le. $\OML/cmm/m/it/10.95 F[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K; r\OT1/cmr/m/n/10.95 )$ \OT1/ptm/m/n/10.95 muss die ra-dia-le Schr[]odingergleichung
  []
 
@@ -1422,16 +1427,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[22])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
 [23]
 
-[24] (./Experimenteller Aufbau.tex
+[24])
+
+[25]
+
+[26
+
+
+] (./Experimenteller Aufbau.tex
 chapter 3.
-<images/Zero-B_Aufbau.pdf, id=252, 388.69545pt x 329.13756pt>
+<images/Zero-B_Aufbau.pdf, id=273, 388.69545pt x 329.13756pt>
 File: images/Zero-B_Aufbau.pdf Graphic file (type pdf)
 <use images/Zero-B_Aufbau.pdf>
 Package pdftex.def Info: images/Zero-B_Aufbau.pdf  used on input line 7.
@@ -1443,29 +1450,27 @@ Overfull \hbox (80.46317pt too wide) in paragraph at lines 7--8
 
 
 
-[25
-
-
+[27
 
 ]
 
-[26 <./images/Zero-B_Aufbau.pdf>]
-<images/EGun.png, id=273, 952.55875pt x 717.68124pt>
+[28 <./images/Zero-B_Aufbau.pdf>]
+<images/EGun.png, id=293, 952.55875pt x 717.68124pt>
 File: images/EGun.png Graphic file (type png)
 <use images/EGun.png>
 Package pdftex.def Info: images/EGun.png  used on input line 24.
 (pdftex.def)             Requested size: 321.85881pt x 242.49716pt.
 
 
-[27]
+[29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[28 <./images/EGun.png>]
+[30 <./images/EGun.png>]
 
-[29]
-<images/MCP.png, id=289, 511.9125pt x 281.05pt>
+[31]
+<images/MCP.png, id=311, 511.9125pt x 281.05pt>
 File: images/MCP.png Graphic file (type png)
 <use images/MCP.png>
 Package pdftex.def Info: images/MCP.png  used on input line 62.
@@ -1475,13 +1480,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[30 <./images/MCP.png>]
-<images/DLD.png, id=301, 416.55624pt x 221.82875pt>
+[32 <./images/MCP.png>]
+<images/DLD.png, id=323, 416.55624pt x 221.82875pt>
 File: images/DLD.png Graphic file (type png)
 <use images/DLD.png>
 Package pdftex.def Info: images/DLD.png  used on input line 74.
 (pdftex.def)             Requested size: 241.39565pt x 128.55243pt.
-<images/Strahl.png, id=304, 722.7pt x 240.6591pt>
+<images/Strahl.png, id=326, 722.7pt x 240.6591pt>
 File: images/Strahl.png Graphic file (type png)
 <use images/Strahl.png>
 Package pdftex.def Info: images/Strahl.png  used on input line 81.
@@ -1493,18 +1498,18 @@ Overfull \hbox (20.11732pt too wide) in paragraph at lines 81--82
 
 
 
-[31 <./images/DLD.png>]
+[33 <./images/DLD.png>]
 
-[32 <./images/Strahl.png>]
-<images/ToF_Signals.png, id=320, 1042.89626pt x 795.97375pt>
+[34 <./images/Strahl.png>]
+<images/ToF_Signals.png, id=340, 1042.89626pt x 795.97375pt>
 File: images/ToF_Signals.png Graphic file (type png)
 <use images/ToF_Signals.png>
 Package pdftex.def Info: images/ToF_Signals.png  used on input line 97.
 (pdftex.def)             Requested size: 362.08733pt x 276.3602pt.
 
 
-[33 <./images/ToF_Signals.png>]
-<images/cfd.png, id=327, 2890.8pt x 1239.63126pt>
+[35 <./images/ToF_Signals.png>]
+<images/cfd.png, id=347, 2890.8pt x 1239.63126pt>
 File: images/cfd.png Graphic file (type png)
 <use images/cfd.png>
 Package pdftex.def Info: images/cfd.png  used on input line 108.
@@ -1514,8 +1519,8 @@ Underfull \vbox (badness 1210) has occurred while \output is active []
 
 
 
-[34 <./images/cfd.png>]
-<images/Signalverlauf.png, id=334, 462.528pt x 346.896pt>
+[36 <./images/cfd.png>]
+<images/Signalverlauf.png, id=354, 462.528pt x 346.896pt>
 File: images/Signalverlauf.png Graphic file (type png)
 <use images/Signalverlauf.png>
 Package pdftex.def Info: images/Signalverlauf.png  used on input line 120.
@@ -1525,36 +1530,40 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[35 <./images/Signalverlauf.png>]
-<images/PosSig.png, id=341, 973.6375pt x 463.7325pt>
+[37 <./images/Signalverlauf.png>]
+<images/PosSig.png, id=362, 973.6375pt x 463.7325pt>
 File: images/PosSig.png Graphic file (type png)
 <use images/PosSig.png>
 Package pdftex.def Info: images/PosSig.png  used on input line 130.
 (pdftex.def)             Requested size: 362.08733pt x 172.45575pt.
 )
 
-[36 <./images/PosSig.png>] (./Auswertung.tex
+[38 <./images/PosSig.png>] (./Auswertung.tex
 chapter 4.
 )
 
-[37
+[39
 
 
 
 ]
 
-[38
+[40
 
 
 ] (./Anhang.tex)
 
-[39
+[41
 
 ]
 
-[40]
+[42]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 135.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
 
-[41
+[43
 
 
 ] (./main.aux)
@@ -1569,18 +1578,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41758 strings out of 473584
- 841615 string characters out of 5728329
- 1938905 words of memory out of 5000000
- 63944 multiletter control sequences out of 15000+600000
- 588084 words of font info for 89 fonts, out of 8000000 for 9000
+ 41816 strings out of 473584
+ 842490 string characters out of 5728329
+ 1939905 words of memory out of 5000000
+ 63986 multiletter control sequences out of 15000+600000
+ 590323 words of font info for 93 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  125i,12n,121p,10948b,1955s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (41 pages, 5018534 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (43 pages, 5035251 bytes).
 PDF statistics:
- 535 PDF objects out of 1000 (max. 8388607)
- 420 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 278 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 573 PDF objects out of 1000 (max. 8388607)
+ 454 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

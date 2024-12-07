@@ -7,18 +7,21 @@
 \contentsline {subsection}{\numberline {2.1.1}Mehrstufige Ionisationsprozesse}{18}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Resonante Prozesse}{20}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}Ionisierungsquerschnitt}{20}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Ansätze theoretischer Beschreibungen}{21}{section.2.3}%
+\contentsline {subsection}{\numberline {2.2.1}Lotz-Formel}{21}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Ansätze theoretischer Beschreibungen}{22}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Störungstheorie}{22}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Einzelstoßbedingung}{24}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Experimenteller Aufbau}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Vakuumkammer und Druckmessung}{25}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Elektronenstrahl und Ablenkplatte}{27}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Detektorsystem}{29}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Mikrokanalplatten}{29}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Positionsbestimmung}{31}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Konditionierung des Detektors}{31}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Signalverarbeitung}{32}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Flugzeitmessung}{33}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Positionssensitive Auflösung}{36}{subsection.3.5.2}%
-\contentsline {chapter}{\numberline {4}Auswertung}{37}{chapter.4}%
-\contentsline {chapter}{Literaturverzeichnis}{41}{section*.19}%
+\contentsline {subsection}{\numberline {2.4.1}Einzelstoßbedingung aus der Perspektive des Atoms}{24}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Einzelstoßbedingung aus der Perspektive des Elektrons}{25}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3}Experimenteller Aufbau}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Vakuumkammer und Druckmessung}{27}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Elektronenstrahl und Ablenkplatte}{29}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Detektorsystem}{31}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Mikrokanalplatten}{31}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Positionsbestimmung}{33}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Konditionierung des Detektors}{33}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Signalverarbeitung}{34}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Flugzeitmessung}{35}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Positionssensitive Auflösung}{38}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {4}Auswertung}{39}{chapter.4}%
+\contentsline {chapter}{Literaturverzeichnis}{43}{section*.19}%

@@ -59,7 +59,14 @@ $N_i(A^{q+})$ ist dabei die Anzahl der erzeugten Ionen $A^{q+}$ und $N_e$ die An
 \end{equation}
 Da später nur ein Teil der erzeugten Ionen von einem Detektor nachgewiesen werden kann, wird für $l$ nur der auf der aktiven Fläche des Detektors sichtbare Teil des Elektronenstrahls verwendet. Aus diesem kann die für das Experiment effektive Länge $l$ abgeleitet werden.
 
-Wie man leicht erkennt, ist die genaue Messung der Elektronen- und Ionenzahlen für eine akkurate Aufnahme der Ionisierungsquerschnitte zentral. Um eine absolute Aussage treffen zu können, muss auch die Teilchendichte des Gases absolut gemessen werden.
+Wie man leicht erkennt, ist die genaue Messung der Elektronen- und Ionenzahlen für eine akkurate Aufnahme der Ionisierungsquerschnitte zentral. Außerdem wird angenommen, dass die Einzelstoßbedingung erfüllt ist. Diese wird in \ref{chap:Einzelstoß} erläutert. Um eine absolute Aussage treffen zu können, muss auch die Teilchendichte des Gases absolut bestimmt werden.
+
+\subsection{Lotz-Formel}
+Eine empirische Formel für den Stoßionisationsquerschnitt entwickelte Wolfgang Lotz Ende der 1960er Jahre \cite{Lotz}. Mit dieser kann eine praktische Abschätzung des Ionisierungsquerschnitts gemacht werden. Die Formel basiert auf experimentellen Daten und berücksichtigt nur die direkte Ionisation. Trotzdem liefert sie gute Näherungen für die Ionisation von Atomen bei geringeren Elektronenenergien und ist auch für die Bestimmung der Ionisationsschwelle geeignet. Die Lotz-Formel ist gegeben durch den Ausdruck:
+\begin{equation}
+    \sigma_i = \sum_{i=1}^{N} a_i n_i \frac{ \ln (\frac{E_e}{P_i}) }{E_e P_i} \left( 1 - b_i e ^{-c_i \frac{E_e}{P_i - 1}}\right)
+\end{equation}
+
 
 \section{Ansätze theoretischer Beschreibungen}
 Die theoretische Beschreibung von Elektronenstoßionisation ist ein hochkomplexes Problem. Selbst bei der einfachen DI hat man es im finalen Zustand mit drei freien Teilchen zutun, die über die Coulombkraft miteinander wechselwirken. Dabei handelt es sich um das famose Drei-Körper-Problem, für das es keine analytische Lösung gibt. Für die Wechselwirkung mit den gebundenen Zuständen im Atom wird eine quantenmechanische Beschreibung vom Atom gefordert. Während mit der Schrödingergleichung und numerischen Methoden inzwischen Atome mit vielen gebundenen Zuständen gut approximiert werden können, wird die Beschreibung des Problems mit gebundenen und mehreren freien Elektronen sehr schnell sehr komplex. Trotzdem sind einige Ansätze entwickelt worden, die die Stoßionisierungsquerschnitte für Atome gut nähern können.
@@ -97,3 +104,22 @@ Neben störungstheoretischen Ansätzen gibt es auch andere Methoden, die mit gr�
 Zusammenfassend kann man sagen, dass die theoretische Beschreibung der Elektronenstoßionisation noch teil aktueller Forschung ist und man in der Realität auf empirische Daten zurückgreifen muss, um seine Ergebnisse zu vergleichen. Im Rahmen dieser Arbeit wird Straubs Arbeit \cite{Straub} mehrfach als Referenz verwendendet. 
 
 \section{Einzelstoßbedingung}
+\label{chap:Einzelstoß}
+Unter dem Begriff Einzelstoßbedingung werden zwei unterschiedliche, für diese Arbeit relevante Aspekte beschrieben: die Anzahl der Wechselwirkungspartner aus der Perspektive eines Atoms und die Anzahl der Stöße beim Durchqueren des Gases aus der Perspektive eines Elektrons. Sie werden im Folgenden getrennt betrachtet und erläutert.
+
+\subsection{Einzelstoßbedingung aus der Perspektive des Atoms}
+Alle der soeben genannten Prozesse, sowie Beschreibungen wurden unter der Annahme erläutert, dass nur ein einzelnes Elektron gleichtzeitg mit einem Target im einfallenden Zustand wechselwirkt. Diese Annahme dient dazu, die Ionisationsprozesse in ihrer einfachsten Form betrachten und analysieren zu können, ohne noch komplexere Mehrteilchenprozesse berücksichtigen zu müssen. Die Interaktion findet dann unter der Einzelstoßbedingung statt. Auch wenn die Einzelstoßbedingung in einem RIT in der Regel nicht erfüllt ist, ist sie für die Messung des Ionisierungsquerschnitts in dieser Arbeit essenziell. Denn nur so kann die Anzahl der erzeugten Ionen mit der Anzahl der Elektronen sinnvoll in Beziehung gesetzt werden und mit dem Lotz-Plott verglichen werden. Ob diese Einzelstoßbedingung erfüllt ist, hängt im Wesentlichen von der Elektronendichte ab. Diese kann über den Extraktionsstrom der Elektronenkanone und die Strahlzeit eingestellt werden.
+
+Außerdem ist zu beachten, dass mehrere Wechselwirkungen, die nacheinander jeweils nur mit einem Elektron stattfinden, auch zur Verfälschung der Messung führen können. Ein Atom kann über mehrere einfache DI-Prozesse mehrfach ionisiert werden und das Ion kann im Nachhinein nicht von einem mehrfach geladenen Ion unterschieden werden, das durch einen einzelnen Prozess entstanden ist. Insofern kann auch hier die Einzelstoßbedingung verletzt sein. In dieser Arbeit kann dieser Effekt vermieden werden, in dem die Strahlzeiten der Elektronenkanone so kurz gewählt werden, dass die Wahrscheinlichkeit für mehrfache Ionisationen sehr gering ist.
+
+\subsection{Einzelstoßbedingung aus der Perspektive des Elektrons}
+Betrachtet man ein Elektron, was ein Gas durchquert, so hängt die Anzahl der Stöße mit Atomen aus diesem Gas von der mittleren freien Weglänge $\lambda$ und der durch das Gas zurückgelegten Entfernung $d$ ab. Die mittlere freie Weglänge ist dabei die durchschnittliche Entfernung, die ein Elektron zurücklegt, bevor es mit einem Atom wechselwirkt und ist gegeben durch:
+\begin{equation}
+    \lambda = \frac{1}{n \cdot \sigma},
+\end{equation}
+wobei $n$ die Teilchendichte und $\sigma$ der Stoßquerschnitt ist.
+Folgende Beziehung beschreibt die mittlere Anzahl der Stöße $N$:
+\begin{equation}
+    N = \frac{d}{\lambda}.
+\end{equation}
+Wenn man eine rein klassische Abschätzung macht und die Atome als harte Kugeln annimmt, kann man den Wirkungsquerschnitt als eine Fläche mit dem Radius des Atoms beschreiben. 

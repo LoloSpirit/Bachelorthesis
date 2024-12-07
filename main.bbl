@@ -66,6 +66,35 @@
       \field{labelnamesource}{author}
       \field{year}{2024}
     \endentry
+    \entry{Lotz}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b397a264c1e71da885107a8dca56211d}{%
+           family={Lotz},
+           familyi={L\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b397a264c1e71da885107a8dca56211d}
+      \strng{fullhash}{b397a264c1e71da885107a8dca56211d}
+      \strng{fullhashraw}{b397a264c1e71da885107a8dca56211d}
+      \strng{bibnamehash}{b397a264c1e71da885107a8dca56211d}
+      \strng{authorbibnamehash}{b397a264c1e71da885107a8dca56211d}
+      \strng{authornamehash}{b397a264c1e71da885107a8dca56211d}
+      \strng{authorfullhash}{b397a264c1e71da885107a8dca56211d}
+      \strng{authorfullhashraw}{b397a264c1e71da885107a8dca56211d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Zeitschrift für Physik}
+      \field{number}{2}
+      \field{title}{An empirical formula for the electron-impact ionization crosssection.}
+      \field{volume}{206}
+      \field{year}{1967}
+      \verb{doi}
+      \verb 10.1007/BF01325928
+      \endverb
+    \endentry
     \entry{Detektorsystem}{article}{}{}
       \name{author}{1}{}{%
         {{hash=bd3b12c062b4b3f5206bb7766359d7d4}{%
