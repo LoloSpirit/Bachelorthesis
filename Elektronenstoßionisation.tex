@@ -64,9 +64,9 @@ Wie man leicht erkennt, ist die genaue Messung der Elektronen- und Ionenzahlen f
 \subsection{Lotz-Formel}
 Eine empirische Formel für den Stoßionisationsquerschnitt entwickelte Wolfgang Lotz Ende der 1960er Jahre \cite{Lotz}. Mit dieser kann eine praktische Abschätzung des Ionisierungsquerschnitts gemacht werden. Die Formel basiert auf experimentellen Daten und berücksichtigt nur die direkte Ionisation. Trotzdem liefert sie gute Näherungen für die Ionisation von Atomen bei geringeren Elektronenenergien und ist auch für die Bestimmung der Ionisationsschwelle geeignet. Die Lotz-Formel ist gegeben durch den Ausdruck:
 \begin{equation}
-    \sigma_i = \sum_{i=1}^{N} a_i n_i \frac{ \ln (\frac{E_e}{P_i}) }{E_e P_i} \left( 1 - b_i e ^{-c_i \frac{E_e}{P_i - 1}}\right)
+    \sigma = \sum_{i=1}^{N} a_i n_i \frac{ \ln (E_e / P_i) }{E_e P_i} \left( 1 - b_i e ^{-c_i (E_e / P_i-1)}\right).
 \end{equation}
-
+Dabei sind $a_i$, $b_i$ und $c_i$ Konstanten, die für jedes Target spezifisch sind. $E_e$ ist die Energie des einfallenden Elektrons. Die Lotz-Formel nimmt an, dass alle $n_i$ Elektronen jeder Schale einen Beitrag zum Gesamtionisationsquerschnitt machen können, solange ihre Bindungsenergie $P_i$ kleiner als $E_e$ ist. Daher wird über die $N$ Schalen des Targets eine Summe gebildet. Die Formel kann auch für Moleküle verwendet werden, wenn die Ionisationsenergien bekannt sind.
 
 \section{Ansätze theoretischer Beschreibungen}
 Die theoretische Beschreibung von Elektronenstoßionisation ist ein hochkomplexes Problem. Selbst bei der einfachen DI hat man es im finalen Zustand mit drei freien Teilchen zutun, die über die Coulombkraft miteinander wechselwirken. Dabei handelt es sich um das famose Drei-Körper-Problem, für das es keine analytische Lösung gibt. Für die Wechselwirkung mit den gebundenen Zuständen im Atom wird eine quantenmechanische Beschreibung vom Atom gefordert. Während mit der Schrödingergleichung und numerischen Methoden inzwischen Atome mit vielen gebundenen Zuständen gut approximiert werden können, wird die Beschreibung des Problems mit gebundenen und mehreren freien Elektronen sehr schnell sehr komplex. Trotzdem sind einige Ansätze entwickelt worden, die die Stoßionisierungsquerschnitte für Atome gut nähern können.
@@ -122,4 +122,7 @@ Folgende Beziehung beschreibt die mittlere Anzahl der Stöße $N$:
 \begin{equation}
     N = \frac{d}{\lambda}.
 \end{equation}
-Wenn man eine rein klassische Abschätzung macht und die Atome als harte Kugeln annimmt, kann man den Wirkungsquerschnitt als eine Fläche mit dem Radius des Atoms beschreiben. 
+Wenn man eine rein klassische Abschätzung macht und die Atome als harte Kugeln annimmt, kann man den Wirkungsquerschnitt als eine Fläche mit dem Radius des Atoms beschreiben. Wichtig ist, das $N$ deutlich kleiner als 1 ist, um die Einzelstoßbedingung für jedes Elektron zu erfüllen. 
+
+\subsection{Umsetzung im Experiment}
+Um alle Mehrteilchen- und Mehrfachstoßeffekte in der Praxis vernachlässigen zu können, werden die Paramter, also der Gasdruck, die Pulslänge und Frequenz, sowie der Extraktionsstrom der Elektronenkanone so gewählt, dass pro Puls im Mittel nur ein Stoß stattfindet. Das wird das durch eine kurze Strahlzeit erreicht und über die Rate der Signale am Detektor überprüft. Diese wird bei allen Messungen auf unter 300 Hz gehalten, da, wie im Folgenden noch genau beschrieben, ein Anteil von etwa 1/10 der Ionen detektiert werden können und die Kanone mit einer Rate von etwa 3 kHz gepulst wird.
