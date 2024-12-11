@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  8 DEC 2024 19:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  11 DEC 2024 15:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -477,7 +477,15 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks37
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/acronym/acronym.sty
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/acronym/acronym.sty
 Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/bigfoot/suffix.sty
 Package: suffix 2006/07/15 1.5a Variant command support
@@ -529,7 +537,7 @@ Class scrreprt Warning: Usage of package `tocloft' together
 (scrreprt)              `part', `section', `subsection',
 (scrreprt)              `subsubsection', `paragraph' and `subparagraph'.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `tocloft' on input line 18.
+(scrreprt)              package `tocloft' on input line 19.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
@@ -674,7 +682,7 @@ Class scrreprt Warning: Usage of package `fancyhdr' together
 (scrreprt)              `\addtokomafont' for the page style elements need
 (scrreprt)              explicite user intervention to work.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `fancyhdr' on input line 21.
+(scrreprt)              package `fancyhdr' on input line 22.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2024/04/23 v4.2 Extensive control of page headers and footers
@@ -1061,30 +1069,30 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count506
 \@quotereset=\count507
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 76.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 77.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count508
@@ -1118,7 +1126,7 @@ Package siunitx Warning: Detected the "physics" package:
 (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 76.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 77.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1167,13 +1175,13 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 76.
-Package biblatex Info: Reference segment=0 on input line 76.
+Package biblatex Info: Reference section=0 on input line 77.
+Package biblatex Info: Reference segment=0 on input line 77.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 76.
+Package hyperref Info: Link coloring OFF on input line 77.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1185,7 +1193,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 76.
+(scrreprt)           before \begin{document} on input line 77.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -1268,9 +1276,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 85.
+(typearea)              on input line 86.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 85.
+(typearea)             dimensions of LaTeX on input line 86.
  (./titlepage.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1345,6 +1353,14 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface.
 
 
+Overfull \hbox (19.91602pt too wide) in paragraph at lines 7--9
+\OT1/ptm/m/n/10.95 Der ho-he spe-zi-fi-sche Im-puls elek-tri-scher Trieb-wer-ke ist im We-sent-li-chen dar-auf zur[]uckzuf[]uhren,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [11
 
@@ -1360,33 +1376,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [12]
 
 [13]
-<images/Restgas_tof.png, id=183, 722.7pt x 361.35pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[14]
+<images/Restgas_tof.png, id=193, 722.7pt x 361.35pt>
 File: images/Restgas_tof.png Graphic file (type png)
 <use images/Restgas_tof.png>
-Package pdftex.def Info: images/Restgas_tof.png  used on input line 42.
+Package pdftex.def Info: images/Restgas_tof.png  used on input line 46.
 (pdftex.def)             Requested size: 382.20465pt x 191.10106pt.
-<images/Restgas.png, id=184, 722.7pt x 361.35pt>
+<images/Restgas.png, id=194, 722.7pt x 361.35pt>
 File: images/Restgas.png Graphic file (type png)
 <use images/Restgas.png>
-Package pdftex.def Info: images/Restgas.png  used on input line 50.
+Package pdftex.def Info: images/Restgas.png  used on input line 54.
 (pdftex.def)             Requested size: 422.43932pt x 211.22073pt.
 )
 
-[14]
+[15 <./images/Restgas_tof.png>]
 
-[15 <./images/Restgas_tof.png> <./images/Restgas.png>]
-
-[16
-
-
-] (./Elektronenstoßionisation.tex
+[16 <./images/Restgas.png>] (./Elektronenstoßionisation.tex
 chapter 2.
 
 
 [17
 
+
+
 ]
-<images/EA.png, id=211, 685.56125pt x 287.0725pt>
+<images/EA.png, id=214, 685.56125pt x 287.0725pt>
 File: images/EA.png Graphic file (type png)
 <use images/EA.png>
 Package pdftex.def Info: images/EA.png  used on input line 25.
@@ -1408,11 +1426,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [19 <./images/EA.png>]
 
 [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [21]
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
+
 
 [22]
-Overfull \hbox (16.96693pt too wide) in paragraph at lines 88--90
+Overfull \hbox (16.96693pt too wide) in paragraph at lines 89--91
 \OT1/ptm/m/n/10.95 schreibt. $\OML/cmm/m/it/10.95 a[]$ \OT1/ptm/m/n/10.95 ist die Am-pli-tu-de der Ku-gel-wel-le. $\OML/cmm/m/it/10.95 F[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K; r\OT1/cmr/m/n/10.95 )$ \OT1/ptm/m/n/10.95 muss die ra-dia-le Schr[]odingergleichung
  []
 
@@ -1427,137 +1451,152 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [25]
 
-[26
-
-
-] (./Experimenteller Aufbau.tex
+[26] (./Experimenteller Aufbau.tex
 chapter 3.
-<images/Zero-B_Aufbau.pdf, id=275, 388.69545pt x 329.13756pt>
-File: images/Zero-B_Aufbau.pdf Graphic file (type pdf)
-<use images/Zero-B_Aufbau.pdf>
-Package pdftex.def Info: images/Zero-B_Aufbau.pdf  used on input line 7.
-(pdftex.def)             Requested size: 482.78516pt x 408.81439pt.
-
-Overfull \hbox (80.46317pt too wide) in paragraph at lines 7--8
- [][] 
- []
-
 
 
 [27
 
-]
 
-[28 <./images/Zero-B_Aufbau.pdf>]
+
+]
+<images/SchematischerAufbau.png, id=283, 1192.455pt x 774.895pt>
+File: images/SchematischerAufbau.png Graphic file (type png)
+<use images/SchematischerAufbau.png>
+Package pdftex.def Info: images/SchematischerAufbau.png  used on input line 8.
+(pdftex.def)             Requested size: 563.24832pt x 366.00977pt.
+
+
+[28 <./images/SchematischerAufbau.png>]
+
+[29
+
+
+]
 <images/EGun.png, id=295, 952.55875pt x 717.68124pt>
 File: images/EGun.png Graphic file (type png)
 <use images/EGun.png>
-Package pdftex.def Info: images/EGun.png  used on input line 24.
+Package pdftex.def Info: images/EGun.png  used on input line 26.
 (pdftex.def)             Requested size: 321.85881pt x 242.49716pt.
 
-
-[29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [30 <./images/EGun.png>]
+<images/Kammer_3D.png, id=303, 791.95876pt x 774.895pt>
+File: images/Kammer_3D.png Graphic file (type png)
+<use images/Kammer_3D.png>
+Package pdftex.def Info: images/Kammer_3D.png  used on input line 37.
+(pdftex.def)             Requested size: 482.78516pt x 472.38966pt.
 
-[31]
-<images/MCP.png, id=313, 511.9125pt x 281.05pt>
-File: images/MCP.png Graphic file (type png)
-<use images/MCP.png>
-Package pdftex.def Info: images/MCP.png  used on input line 62.
-(pdftex.def)             Requested size: 321.85881pt x 176.70648pt.
+Overfull \hbox (80.46317pt too wide) in paragraph at lines 37--38
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[32 <./images/MCP.png>]
-<images/DLD.png, id=325, 416.55624pt x 221.82875pt>
+[31]
+
+[32 <./images/Kammer_3D.png>]
+<images/MCP.png, id=316, 511.9125pt x 281.05pt>
+File: images/MCP.png Graphic file (type png)
+<use images/MCP.png>
+Package pdftex.def Info: images/MCP.png  used on input line 71.
+(pdftex.def)             Requested size: 321.85881pt x 176.70648pt.
+
+Underfull \vbox (badness 5832) has occurred while \output is active []
+
+
+
+[33]
+
+[34 <./images/MCP.png>]
+<images/DLD.png, id=333, 416.55624pt x 221.82875pt>
 File: images/DLD.png Graphic file (type png)
 <use images/DLD.png>
-Package pdftex.def Info: images/DLD.png  used on input line 74.
+Package pdftex.def Info: images/DLD.png  used on input line 83.
 (pdftex.def)             Requested size: 241.39565pt x 128.55243pt.
-<images/Strahl.png, id=328, 722.7pt x 240.6591pt>
+<images/Strahl.png, id=336, 722.7pt x 240.6591pt>
 File: images/Strahl.png Graphic file (type png)
 <use images/Strahl.png>
-Package pdftex.def Info: images/Strahl.png  used on input line 81.
+Package pdftex.def Info: images/Strahl.png  used on input line 90.
 (pdftex.def)             Requested size: 422.43932pt x 140.673pt.
 
-Overfull \hbox (20.11732pt too wide) in paragraph at lines 81--82
+Overfull \hbox (20.11732pt too wide) in paragraph at lines 90--91
  [][] 
  []
 
 
 
-[33 <./images/DLD.png>]
-
-[34 <./images/Strahl.png>]
-<images/ToF_Signals.png, id=342, 1042.89626pt x 795.97375pt>
+[35 <./images/DLD.png>]
+<images/ToF_Signals.png, id=344, 1042.89626pt x 795.97375pt>
 File: images/ToF_Signals.png Graphic file (type png)
 <use images/ToF_Signals.png>
-Package pdftex.def Info: images/ToF_Signals.png  used on input line 97.
+Package pdftex.def Info: images/ToF_Signals.png  used on input line 106.
 (pdftex.def)             Requested size: 362.08733pt x 276.3602pt.
 
 
-[35 <./images/ToF_Signals.png>]
-<images/cfd.png, id=349, 2890.8pt x 1239.63126pt>
+[36 <./images/Strahl.png>]
+
+[37 <./images/ToF_Signals.png>]
+<images/cfd.png, id=357, 2890.8pt x 1239.63126pt>
 File: images/cfd.png Graphic file (type png)
 <use images/cfd.png>
-Package pdftex.def Info: images/cfd.png  used on input line 108.
+Package pdftex.def Info: images/cfd.png  used on input line 117.
 (pdftex.def)             Requested size: 281.62416pt x 120.75479pt.
 
 Underfull \vbox (badness 1210) has occurred while \output is active []
 
 
 
-[36 <./images/cfd.png>]
-<images/Signalverlauf.png, id=356, 462.528pt x 346.896pt>
+[38 <./images/cfd.png>]
+<images/Signalverlauf.png, id=364, 462.528pt x 346.896pt>
 File: images/Signalverlauf.png Graphic file (type png)
 <use images/Signalverlauf.png>
-Package pdftex.def Info: images/Signalverlauf.png  used on input line 120.
+Package pdftex.def Info: images/Signalverlauf.png  used on input line 129.
 (pdftex.def)             Requested size: 362.08733pt x 271.5782pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[37 <./images/Signalverlauf.png>]
-<images/PosSig.png, id=364, 973.6375pt x 463.7325pt>
+<images/PosSig.png, id=366, 973.6375pt x 463.7325pt>
 File: images/PosSig.png Graphic file (type png)
 <use images/PosSig.png>
-Package pdftex.def Info: images/PosSig.png  used on input line 130.
+Package pdftex.def Info: images/PosSig.png  used on input line 139.
 (pdftex.def)             Requested size: 362.08733pt x 172.45575pt.
 )
 
-[38 <./images/PosSig.png>] (./Auswertung.tex
+[39]
+
+[40 <./images/Signalverlauf.png> <./images/PosSig.png>] (./Auswertung.tex
 chapter 4.
 )
 
-[39
+[41
 
 
 
 ]
 
-[40
+[42
 
 
 ] (./Anhang.tex)
 
-[41
+[43
 
 ]
 
-[42]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 135.
+[44]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 136.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
-[43
+[45
 
 
 ] (./main.aux)
@@ -1572,18 +1611,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41818 strings out of 473584
- 842512 string characters out of 5728329
- 1939905 words of memory out of 5000000
- 63987 multiletter control sequences out of 15000+600000
+ 41905 strings out of 473584
+ 844920 string characters out of 5728329
+ 1940905 words of memory out of 5000000
+ 64060 multiletter control sequences out of 15000+600000
  590323 words of font info for 93 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  125i,12n,121p,10948b,1955s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (43 pages, 5036346 bytes).
+Output written on main.pdf (45 pages, 5679580 bytes).
 PDF statistics:
- 578 PDF objects out of 1000 (max. 8388607)
- 459 compressed objects within 5 object streams
- 114 named destinations out of 1000 (max. 500000)
- 310 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 586 PDF objects out of 1000 (max. 8388607)
+ 465 compressed objects within 5 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 315 words of extra memory for PDF output out of 10000 (max. 10000000)
 
