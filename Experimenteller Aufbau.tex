@@ -1,6 +1,38 @@
 \chapter{Experimenteller Aufbau}
 \label{chap:Aufbau}
-Im Folgenden wird der Aufbau des Experiments und das Zusammenwirken der verschiedenen Komponenten erläutert. Die meisten Elemente wurden nicht im Rahmen dieser Arbeit verbaut, sondern sind bereits von vorherigen Arbeiten der Arbeitsgruppe vorhanden. Diese sind in \cite{Holzte} beschrieben. Abbildung \ref{fig:Aufbau} zeigt den schematischen Aufbau der Vakuumkammer und des Experiments.
+Im Folgenden wird zunächst die Methodik und anschließend der Aufbau des Experiments und das Zusammenwirken der verschiedenen Komponenten erläutert. Die meisten Elemente wurden nicht im Rahmen dieser Arbeit verbaut, sondern sind bereits von vorherigen Arbeiten der Arbeitsgruppe vorhanden. Diese sind in \cite{Holzte} beschrieben. Abbildung \ref{fig:Aufbau} zeigt den schematischen Aufbau der Vakuumkammer und des Experiments.
+
+\section{Methodik}
+Im Folgenden wird das Grundprinzip der Anlage erläutert und erklärt, wie diese für die Charakterisierung von Treibstoffen in einem RIT verwendet werden kann.
+
+\subsection{Ionisation} 
+Die Ionisation des Treibstoffs und dessen Beschleunigung können in einem RIT in der Regel als voneinander getrennte Prozesse betrachtet werden \cite{ion}. Um das Verhalten eines Gases, und somit auch seine Effizienz als Treibgas in einem RIT zu bewerten, ist es wichtig das im Entladungsgefäß gezündete Plasma möglichst gut zu verstehen. Die Ionisation wird nicht in einem RIT über Magnetfelder eingeleitet, sondern mit einer Elektronenkanone. Da primär die Wirkungsquerschnitte und die Zusammensetzung der Menge von erzeugten Ionen von Relevanz sind, kann die Testanlage so deutlich simpler gestaltet werden und es wird kein Radiofrequenzgenerator benötigt. Basierend auf früheren Arbeiten der Arbeitsgruppe für Ionentriebwerke an der JLU, wird in dieser Arbeit die bestehen Anlage \textit{ZeroB} ausgebaut. Für das Messen der relevanten Größen müssen die Ionen nachgewiesen und identifiziert werden können. Dafür soll zunächst ein neuer Detektor installiert werden, der eine höhere Auflösung und einen größeren Durchmesser aufweist. Mithilfe des Detektors kann der Zeitpunkt des Auftreffens und der Ort einzelner Ionen bestimmt werden. Damit die Ionen konsistent auf den Detektor treffen, werden sie mit einem elektrischen Feld beschleunigt und ihre Flugzeit gemessen. Der Aufbau der Anlage ähnelt dem von Straub et al. aus \cite{Straub}, der bereits in den 90er-Jahren viele Flugzeitspektren und Wirkungsquerschnitte mittels Elektronenstoßionisationen aufgenommen hat. Eine genaue Beschreibung des Experimentellen Aufbaus ist in Kapitel \ref{chap:Aufbau} zu finden.
+
+Um alle Mehrteilchen- und Mehrfachstoßeffekte in der Praxis vernachlässigen zu können, werden die Paramter, also der Gasdruck, die Pulslänge und Frequenz, sowie der Extraktionsstrom der Elektronenkanone so gewählt, dass pro Puls im Mittel nur ein Stoß stattfindet. Das wird das durch eine kurze Strahlzeit erreicht und über die Rate der Signale am Detektor überprüft. Diese wird bei allen Messungen auf unter 300 Hz gehalten, da, wie im Folgenden noch genau beschrieben, ein Anteil von etwa 1/10 der Ionen detektiert werden können und die Kanone mit einer Rate von etwa 3 kHz gepulst wird.
+
+\subsection{Flugzeitmessung}
+Eine Flugzeitmessung ist eine der zentralen Methoden in der Massenspektroskopie. Sie basiert darauf die Flugzeit einzelner zuvor beschleunigter Teilchen für eine bestimmte Strecke im Vakuum zu messen. In dieser Arbeit wird über eine Flugzeitmessung das Masse-zu-Ladungsverhältnis einzelner Ionen bestimmt. Im Folgenden wird gezeigt, wie die Geschwindigkeit und Flugzeit von Ionen einen Rückschluss auf ihre Masse und Ladung geben.
+
+Durch Anlegen eines elektrischen Feldes, können elektrisch geladene Teilchen über die Coulombkraft beschleunigt werden. Die Beschleunigung $a$ welche Ionen mit der Ladung $q_i$ und Masse $m_i$ erfahren, wenn sie sich in einem elektrischen Feld mit der Feldstärke $E$ befinden wird in Formel \ref{eq:beschleunigung} beschrieben: 
+\begin{equation}
+    \label{eq:beschleunigung}
+    a = \frac{q_i}{m_i} \cdot E.
+\end{equation}
+Die Flugzeit $t_f$ der Ionen über einer festen Strecke $d$ im Feld kann dann wie folgt beschrieben werden:
+\begin{equation}
+    t_f = \sqrt{\frac{m_i}{q_i}} \cdot \sqrt{\frac{2d}{E}} = \sqrt{\frac{m_i}{q_i}} \cdot \sqrt{\frac{2}{U}} \cdot d.
+\end{equation}
+Hieraus ist offensichtlich, dass eine Variation der Flugzeit allein von ihrem Masse-zu-Ladungsverhältnis $\frac{m_i}{q_i}$ abhängt, wenn die Spannung $U$ und der Abstand $d$ konstant bleiben. Treten die Ionen aus dem Feld aus fliegen sie weiter mit konstanter Geschwindigkeit, unabhängig ihrer Eigenschaften. Ein Flugzeitspektrum zeigt dann höher geladene Ionen desselben Elements mit einer geringeren Flugzeit. In der Theorie ist dises Spektrum diskret für verschiedene Masse zu Ladungsverhältnisse, im Labor sind die Peaks jedoch etwas ausgedehnt, wie in Abbildung \ref{fig:rest_tof} zu sehen. Das liegt daran, dass der Ort der Entstehung der Teilchen nicht genau gemessen werden kann, sondern von der Breite des Elektronenstrahls abhängt.
+
+Um die Flugzeit experimentell zu bestimmen, wird ein Start- und Stoppsignal benötigt. Der Startzeitpunkt muss den Eintritt in das elektrische Feld markieren und der Stoppzeitpunkt das Auftreffen auf einen Detektor. Kritisch ist dabei, die Flugzeit mit hinreichender Genauigkeit unabhängig vom Ion zu bestimmen. Typische Flugzeiten sind in diesem Aufbau in der Größenordnung von Mikrosekunden. Wie auch in der Arbeit von Straub et al. wird ein Pulsgenerator verwendet, der einen Hochspannungspuls auf einer Ablenkplatte, und damit das elektrische Feld zur Beschleunigung der Ionen erzeugt. Der Puls, der diese Spannung triggert wird auch als Startsignal verwendet. Diese Flugzeitmessung wird in Kapitel \ref{chap:Sim} auch ausgiebig simuliert.
+
+\begin{figure}
+    \centering
+    \hspace*{-.8cm}
+    \includegraphics[width=.95\textwidth]{Restgas_tof.png}
+    \caption[Flugzeitspektrum der Restgase]{Unskaliertes Flugzeitspektrum der Restgase in der Vakuumkammer. Die Zeitachse ist in willkürlichen Einheiten angegeben. Zur Bestimmung der Masse-zu-Ladungsverhältnisse muss das Spektrum anhand einiger Annahmen skaliert werden.}
+    \label{fig:rest_tof}
+\end{figure}
 
 \section{Vakuumkammer und Druckmessung}
 Die Experimente finden in einer Vakuumanlage mit einer kubischen Hauptkammer statt, von der alle anderen Komponenten abzweigen. Die Kammer hat eine Seitenlänge von 30 cm. Sie besteht auch $\mu$-Metall, damit das Magnetfeld im Inneren der Kammer minimal ist. Das ist wichtig, damit die Elektronen nicht von äußeren Magnetfeldern abgelenkt werden. Die Abschirmung reduziert das Magnetfeld auf unter 15 mG \cite{Holzte}. Die Kammer ist mit einer Turbomolekularpumpe und einer Vorpumpe ausgestattet. Diese können ein Vakuum in der Größenordnung von 10$^{-8}$ mBar nach Ausheizen der Kammer erreichen. Am überliegenden Flange ist ein kapazitiver Drucksensor angebracht, der \textit{MKS Barathron 690A.1TRB}. Dieser misst den Druck bis zu 3 $\cdot 10^{-6}$ mbar mit einer Genauigkeit von 0,08 \%. Dafür wird das Restgas auf \ang{45}C aufgeheizt. Die Temperaturdifferenz zum restlichen Aufbau muss später berücksichtig werden. Ein zweiter Druckmesser ist ein Bayard-Alpert-Glühkathoden-Ionisationsvakuummeter, welches Drücke bis unter $10^{-8}$ mbar messen kann. Dieses dient als Referenz, damit das genauere kapazitive Messystem genullt werden kann und erweist sich als ausgesprochen praktisch bei der Arbeit mit dem Hochvakuum.
@@ -73,20 +105,13 @@ Die Mikrokanalplatten des Detektors dienen der Verstärkung von eintreffenden Si
 Typischerweise werden zwei MCPs hintereinander verwendet, wobei sie um \ang{180} zueinander gedreht sind. Sie befinden sich in einer sogenannten \textit{Chevron}-Konfiguration. Die zweite Platte wird verwendet, um die Verstärkung weiter zu erhöhen und Ionen-Feedback zu minimieren. Ionen-Feedback beschreibt das Zurückfließen von Ionen in die Kammer. Die hohe Anzahl an Elektronen in den Kanälen der MCPs können Restgas ionisieren, welches dann aufgrund der Beschleunigungsspannung rückwärts durch die Kanäle in die Kammer gelangen könnte. Die auf die Frontplatte angelegte Spannung bestimmt, mit welcher Energie die Ionen auf die Platte treffen. Im Optimalfall sollte sie so einstellt werden, dass die Detektionsrate unabhängig von der Spannung wird. Ziel ist, das alle auf den Dektektor treffenden Ionen genügend Energie haben, um Elektronen auszulösen und somit detektiert zu werden. Abbildung x zeigt den Zusammenhang von Frontplattenspannung und Rate. Hier kann man sehen, dass man mit diesem MCP nicht vollständig in die Sättigung kommt, wenn man innerhalb des empfohlenen Spannungsbereichs bleibt. Bei der Aufnahme sämtlicher Daten werden im Folgenden möglichst große Spannungen größer 2400 V gewählt, um möglichst alle Ionen nachweisen zu können.FIGURE
 
 \subsection{Positionsbestimmung}
-Wie in \cite{Detektorsystem} dargestellt, gibt es unterschiedliche Ansätze die zweidimensionale Positionsinformation der durch die Platten erzeugten Ladungswolke zu ermitteln. Das Konzept macht sich zu Nutzen, dass eine auf ein Drahtgitter treffende Ladungswolke ein elektrisches Signal in den Leitern erzeugt. Dieses hat eine Laufzeit in der Größenordnung einiger Nanosekunde bis es an den Enden des Leiters ankommt. Anhand dieser Laufzeitdifferenz kann die Position auf dem Detektor in einer Dimension bestimmt werden. Mithilfe eines zweiten, um \ang{90} gedrehten, Leiters, kann die Position zweidimensional dargestellt werden. In Abbildung \ref{fig:DLD} sieht man die Drahtstruktur für die Messung einer Dimension. Der Detektor hat eine aktive Fläche mit einem Durchmesser von 80 mm. In dieser Arbeit ist die Bestimmung der Auftreffpositionen zweitrangig und wird in erster Linie dafür verwendet zu validieren, dass die Ionen tatsächlich primär aus der Elektronenstoßionisation stammen und nicht zufällig verteilt sind. Der Geburtsort der Ionen wird auf dem Bild des Detektors indirekt abgebildet und zeigt deutlich den Strahl der Elektronenkanone. Abbildung \ref{fig:Strahl} zeigt ein solches Beispiel einer positionssensitiven Messung.
+Wie in \cite{Detektorsystem} dargestellt, gibt es unterschiedliche Ansätze die zweidimensionale Positionsinformation der durch die Platten erzeugten Ladungswolke zu ermitteln. Das Konzept macht sich zu Nutzen, dass eine auf ein Drahtgitter treffende Ladungswolke ein elektrisches Signal in den Leitern erzeugt. Dieses hat eine Laufzeit in der Größenordnung einiger Nanosekunde bis es an den Enden des Leiters ankommt. Anhand dieser Laufzeitdifferenz kann die Position auf dem Detektor in einer Dimension bestimmt werden. Mithilfe eines zweiten, um \ang{90} gedrehten, Leiters, kann die Position zweidimensional dargestellt werden. In Abbildung \ref{fig:DLD} sieht man die Drahtstruktur für die Messung einer Dimension. Der Detektor hat eine aktive Fläche mit einem Durchmesser von 80 mm. In dieser Arbeit ist die Bestimmung der Auftreffpositionen zweitrangig und wird in erster Linie dafür verwendet zu validieren, dass die Ionen tatsächlich primär aus der Elektronenstoßionisation stammen und nicht zufällig verteilt sind. Der Geburtsort der Ionen wird auf dem Bild des Detektors indirekt abgebildet und zeigt deutlich den Strahl der Elektronenkanone. Die Auswertung der Positionsbestimmung erfolgt in in Kapitel \ref{chap:Auswertung}.
 
 \begin{figure}
     \centering
     \includegraphics[width=.6\textwidth]{DLD.png}
     \caption[Funktionsprinzip der Laufzeitmessung des Detektors]{Funktionsprinzip der Laufzeitmessung in einer Dimension aus \cite{Detektorsystem}. Der Leiter ist mäanderförmig aufgebaut, um die Laufzeit zu verlängern und die Positionsgenauigkeit zu erhöhen. Das Signal propagiert in beide Richtungen mit der effektiven Geschwindigkeit $v_\perp$.}
     \label{fig:DLD} 
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1.05\textwidth]{Strahl.png}
-    \caption[Abbild des Strahls auf dem Detektor]{Positionsbestimmung der detektierten Teilche auf dem Detektor zeigen den Strahl auf dem Detektor. Da der Detektor schief verbaut ist wurde das Bild im Nachhinein gedreht. Die 4 cm breite Kupferblende begrenzt den Strahl an den Seiten.}
-    \label{fig:Strahl} 
 \end{figure}
 
 \section{Konditionierung des Detektors}
@@ -119,7 +144,7 @@ Für die Bestimmumg des Auftreffzeitpunktes wird vom Detektor ein Spannungssigna
 
 Der über den CFD ermittelte Auftreffzeitpunkt kann dann als Stoppsignal für die Flugzeitmessung dienen. Um die Information über die Zeitdifferenz zwischen dem Start- und Stoppsignal zu erhalten, wird ein Time-to-Pulse-Height-Converter (TPHC) Modul verwendet. Dieses erzeugt ein Signal, dessen Höhe proportional zur zeitlichen Differenz eines Start- und Stoppulses ist. Um diese Funktionalität umzusetzen wird im TPHC ein Kondensator aufgeladen, wobei die Spannung über den Kondensator proportional zur Ladezeit steigt. Kommt kein Stoppsignal, wird der Kondensator nach einer eingestellten maximal Dauer über einen Widerstand wieder entladen. Schließlich kann der Spannungspuls über einen Analog-Digital-Converter (ADC) digitalisiert und am Computer ausgelesen werden. Abbildung \ref{fig:Signal} zeigt qualitativ den zeitlichen Verlauf der relevanten Signale der Flugzeitmessung. Anhand vieler Messungen kann ein Spektrum der Flugzeiten erstellt werden.
 
-Dank des Pulsgenerators kann die Messung mehrere tausend Mal in jeder Sekunde durchgeführt werden. Begrenzend ist dabei die Elektronenkanone, die, wie bereits erwähnt, mit maximal 5 kHz gepulst werden kann. Für die meisten Messungen wurde eine Frequenz von etwa 3 kHz verwendet.
+Dank des Pulsgenerators kann die Messung mehrere tausendmal in jeder Sekunde durchgeführt werden. Begrenzend ist dabei die Elektronenkanone, die, wie bereits erwähnt, mit maximal 5 kHz gepulst werden kann. Für die meisten Messungen wurde eine Frequenz von etwa 3 kHz verwendet.
 
 \begin{figure}
     \centering
