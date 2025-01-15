@@ -47,7 +47,7 @@ Bei der Ionisation von Atomen und Molekülen kann auch ein resonanter Prozess ei
 Der bei einem solchen resonanten Prozess entstehende Energiezustand kann allerdings nicht wirklich als Energieniveau bezeichnet werden, da er über der Ionisationsenergie liegt \cite{EII}. Der Zustand ist instabil und endet häufig in Autoionisation. Da Moleküle aufgrund ihrer zusätzlichen Freiheitsgrade (Rotation, Schwingung) und überlappenden Orbitalen mehr diskrete Energieniveaus haben, sind resonante Prozesse beim Stoß von Elektronen mit Molekülen häufiger. Das sorgt auch für zusätzliche Dissoziation und wird als dissioziative Elektronenanlagerung (engl. \textit{Dissociative Electron Attachment}, DEA) bezeichnet, wenn dieses beim Einfang des Elektrons zerfällt. Resonante Ionisationsprozesse treten zudem besonders beim Stoß von Elektronen und Ionen auf, weil das positive Potential anziehend auf das Elektron wirkt und haben somit weniger Relevanz bei der Ionisation von Atomen.
 
 \section{Ionisierungsquerschnitt}
-Der Ionisierungsquerschnitt beschreibt, wie effektiv das Analytgas ionisiert werden kann. Der Querschnitt setzt sich dabei aus den einzelnen Querschnitten der verschiedenen, beschriebenen Ionisationsprozesse zusammen, kann aber in dem in dieser Arbeit beschriebenen Experiment nur integral aufgenommen werden. Man kann ihn allerdings für jede der verschiedenen Ionenarten aufnehmen und die Anteile ermitteln. Aus der Summe aller ionischen Produkte ergibt sich ein Gesamtionisierungsquerschnitt. Unter der Bedingung, dass nur sehr wenige der Elektronen eine Kollision mit einem Targetatom haben, kann der Stoßionisierungsquerschnitt wie folgt beschrieben werden:
+Der Ionisierungsquerschnitt beschreibt, wie effektiv das Analytgas ionisiert werden kann. Der Querschnitt setzt sich dabei aus den einzelnen Querschnitten der verschiedenen, beschriebenen Ionisationsprozesse zusammen, kann aber in dem in dieser Arbeit beschriebenen Experiment nur integral aufgenommen werden. Er kann allerdings für jede der verschiedenen Ionenarten aufgenommen und die Anteile ermittelt werden. Aus der Summe aller ionischen Produkte ergibt sich ein Gesamtionisierungsquerschnitt. Unter der Bedingung, dass nur sehr wenige der Elektronen eine Kollision mit einem Targetatom haben, kann der Stoßionisierungsquerschnitt wie folgt beschrieben werden:
 
 \begin{equation}
     \sigma_{\text{i}}(A^{q+}) = \frac{N_{\text{i}}(A^{q+})}{N_{\text{e}} \cdot n l}.
@@ -59,11 +59,11 @@ $N_i(A^{q+})$ ist dabei die Anzahl der erzeugten Ionen $A^{q+}$ und $N_e$ die An
 \end{equation}
 Da später nur ein Teil der erzeugten Ionen von einem Detektor nachgewiesen werden kann, wird für $l$ nur der auf der aktiven Fläche des Detektors sichtbare Teil des Elektronenstrahls verwendet. Aus diesem kann die für das Experiment effektive Länge $l$ abgeleitet werden.
 
-Wie man leicht erkennt, ist die genaue Messung der Elektronen- und Ionenzahlen für eine akkurate Aufnahme der Ionisierungsquerschnitte zentral. Außerdem wird angenommen, dass die Einzelstoßbedingung erfüllt ist. Diese wird in \ref{chap:Einzelstoß} erläutert. Um eine absolute Aussage treffen zu können, muss auch die Teilchendichte des Gases absolut bestimmt werden.
+Wie leicht zu erkennen ist, ist die genaue Messung der Elektronen- und Ionenzahlen für eine akkurate Aufnahme der Ionisierungsquerschnitte zentral. Außerdem wird angenommen, dass die Einzelstoßbedingung erfüllt ist. Diese wird in \ref{chap:Einzelstoß} erläutert. Um eine absolute Aussage treffen zu können, muss auch die Teilchendichte des Gases absolut bestimmt werden.
 
 
 \section{Ansätze theoretischer Beschreibungen}
-Die theoretische Beschreibung von Elektronenstoßionisation ist ein hochkomplexes Problem. Selbst bei der einfachen DI hat man es im finalen Zustand mit drei freien Teilchen zutun, die über die Coulombkraft miteinander wechselwirken. Dabei handelt es sich um das famose Drei-Körper-Problem, für das es keine analytische Lösung gibt. Für die Wechselwirkung mit den gebundenen Zuständen im Atom wird eine quantenmechanische Beschreibung vom Atom gefordert. Während mit der Schrödingergleichung und numerischen Methoden inzwischen Atome mit vielen gebundenen Zuständen gut approximiert werden können, wird die Beschreibung des Problems mit gebundenen und mehreren freien Elektronen sehr schnell sehr komplex. Trotzdem sind einige Ansätze entwickelt worden, die die Stoßionisierungsquerschnitte für Atome gut nähern können.
+Die theoretische Beschreibung von Elektronenstoßionisation ist ein hochkomplexes Problem. Selbst bei der einfachen DI gibt es im finalen Zustand drei freien Teilchen, die über die Coulombkraft miteinander wechselwirken. Dabei handelt es sich um das famose Drei-Körper-Problem, für das es keine analytische Lösung gibt. Für die Wechselwirkung mit den gebundenen Zuständen im Atom wird eine quantenmechanische Beschreibung vom Atom gefordert. Während mit der Schrödingergleichung und numerischen Methoden inzwischen Atome mit vielen gebundenen Zuständen gut approximiert werden können, wird die Beschreibung des Problems mit gebundenen und mehreren freien Elektronen sehr schnell sehr komplex. Trotzdem sind einige Ansätze entwickelt worden, die die Stoßionisierungsquerschnitte für Atome gut nähern können.
 
 \subsection{Lotz-Formel}
 Eine empirische Formel zur Berechnung des Ionisationsquerschnitts entwickelte Wolfgang Lotz Ende der 1960er Jahre \cite{Lotz}. Mit dieser kann eine praktische Abschätzung des Ionisierungsquerschnitts gemacht werden. Die Formel basiert auf experimentellen Daten und berücksichtigt nur die direkte Ionisation. Trotzdem liefert sie gute Näherungen für die Ionisation von Atomen bei geringeren Elektronenenergien und ist auch für die Bestimmung der Ionisationsschwelle geeignet. Die Lotz-Formel ist gegeben durch den Ausdruck:
@@ -81,7 +81,7 @@ Dieser wird dann zur Lösung der Schrödingergleichung verwendet, wobei $\Psi$ d
 \begin{equation}
     \hat{\mathcal{H}} \Psi = i\hslash\frac{\partial}{\partial t}\Psi.
 \end{equation}
-Wie der Störterm gewählt wird, hängt vom gewählten Ansatz ab und ist entscheidend für die Komplexität und Genauigkeit der Rechnung. Um die Stoßionisation zu beschreiben, muss der Störterm so gewählt werden, dass er die Wechselwirkung zwischen dem einfallenden Elektron und dem Atom beschreibt. Dafür werden verschiedene vereinfachte Modelle verwendet, die je nur unter bestimmten Bedingungen gute Näherungen der Ionisationsquerschnitte liefern. Eine unnachgiebige Lösung wurde noch nicht gefunden, besonders wenn man versucht die Ionisation von Molekülen oder indirekte Prozesse zu beschreiben. Die meisten Ansätze haben gemeinsam, dass $\hat{\mathcal{V}} = \hat{\mathcal{V}}_{e^-} + \hat{\mathcal{V}}_{WW}$ wählen, wobei $\hat{\mathcal{V}}_{e^-}$ das Elektron und $\hat{\mathcal{V}}_{WW}$ die Wechselwirkung  beschreibt. 
+Wie der Störterm gewählt wird, hängt vom gewählten Ansatz ab und ist entscheidend für die Komplexität und Genauigkeit der Rechnung. Um die Stoßionisation zu beschreiben, muss der Störterm so gewählt werden, dass er die Wechselwirkung zwischen dem einfallenden Elektron und dem Atom beschreibt. Dafür werden verschiedene vereinfachte Modelle verwendet, die je nur unter bestimmten Bedingungen gute Näherungen der Ionisationsquerschnitte liefern. Eine unnachgiebige Lösung wurde noch nicht gefunden, besonders wenn versucht wird die Ionisation von Molekülen oder indirekte Prozesse zu beschreiben. Die meisten Ansätze haben gemeinsam, dass $\hat{\mathcal{V}} = \hat{\mathcal{V}}_{e^-} + \hat{\mathcal{V}}_{WW}$ wählen, wobei $\hat{\mathcal{V}}_{e^-}$ das Elektron und $\hat{\mathcal{V}}_{WW}$ die Wechselwirkung  beschreibt. 
 
 Die folgende Beschreibung orientiert sich an der von Younger \cite{EII}. Einige Methoden basieren auf der Partialwellen-Approximation (engl. \textit{Partial Wave Approximation}, PWA), bei der die Wellenfunktion $\Psi$ jedes Elektrons als eine Kugelwelle beschrieben wird. Die Gesamtwellenfunktion ist dann die Summe der einzelnen Kugelwellen:
 \begin{equation}
@@ -92,7 +92,7 @@ Dabei sind $Y_{lm}(\theta,\phi)$ die winkelabhängigen Kugelflächenfunktionen u
     E u = \underbrace{\frac{\hslash^2}{2m}\frac{d^2 u}{dr^2}}_{\substack{\text{$E_{Kin}$-Term}}} + \left[\underbrace{\frac{\hslash^2}{2m} \frac{l(l+1)}{r^2}}_{\substack{\text{Zentrifugalterm}}} + \underbrace{V(r)}_{\substack{\text{Potential}}} \right] u.
 \end{equation}
 Dabei wird $u(K,r) = rF_l(K,r)$ verwendet, um die Rechnung zu vereinfachen.
-Wenn man die Interaktion in der Nähe des Atomkerns beschreiben will ($Kr \ll 1$), kann keiner der Terme vernachlässigt werden. Verschiedene Ansätze unterscheiden sich in der Wahl des Potentials $V(r)$. 
+Wenn die Interaktion in der Nähe des Atomkerns beschrieben werden soll ($Kr \ll 1$), kann keiner der Terme vernachlässigt werden. Verschiedene Ansätze unterscheiden sich in der Wahl des Potentials $V(r)$. 
 
 Bei der Plane-Wave Born Approximation wird das Potential als $V(r) = 0$ angenommen, was nur für sehr hohe Elektronenenergien gute Näherungen liefert und der Beschreibung reiner Elektronenstreuung ähnelt.
 
@@ -102,7 +102,7 @@ Die Distorted-Wave Born Approximation fügt dem Potential noch einen Störterm h
 
 Neben störungstheoretischen Ansätzen gibt es auch andere Methoden, die mit größerem Aufwand bessere Näherungen liefern. Dazu gehören rein numerische Methoden und hybride Ansätze, die störungstheoretische und numerische Methoden kombinieren. Da in dieser Arbeit keine theoretische Beschreibung der Ionisation durchgeführt wird, wird hier nicht weiter auf die Methoden eingegangen.
 
-Zusammenfassend kann man sagen, dass die theoretische Beschreibung der Elektronenstoßionisation noch teil aktueller Forschung ist und man in der Realität auf empirische Daten zurückgreifen muss, um seine Ergebnisse zu vergleichen. Im Rahmen dieser Arbeit wird Straubs Arbeit \cite{Straub} mehrfach als Referenz verwendendet. 
+Zusammenfassend kann gesagt werden, dass die theoretische Beschreibung der Elektronenstoßionisation noch teil aktueller Forschung ist und in der Realität häufig auf empirische Daten zurückgegriffen weden muss, um Ergebnisse zu vergleichen. Im Rahmen dieser Arbeit wird Straubs Arbeit \cite{Straub} mehrfach als Referenz verwendendet. 
 
 \section{Einzelstoßbedingung}
 \label{chap:Einzelstoß}
@@ -123,4 +123,4 @@ Folgende Beziehung beschreibt die mittlere Anzahl der Stöße $N$:
 \begin{equation}
     N = \frac{d}{\lambda}.
 \end{equation}
-Wenn man eine rein klassische Abschätzung macht und die Atome als harte Kugeln annimmt, kann man den Wirkungsquerschnitt als eine Fläche mit dem Radius des Atoms beschreiben. Wichtig ist, das $N$ deutlich kleiner als 1 ist, um die Einzelstoßbedingung für jedes Elektron zu erfüllen. 
+Wenn man eine rein klassische Abschätzung macht und die Atome als harte Kugeln annimmt, kann der Wirkungsquerschnitt als eine Fläche mit dem Radius des Atoms beschrieben werden. Wichtig ist, das $N$ deutlich kleiner als 1 ist, um die Einzelstoßbedingung für jedes Elektron zu erfüllen. 
