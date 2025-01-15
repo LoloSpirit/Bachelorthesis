@@ -23,7 +23,8 @@ Wie erwartet können die größten Peaks auf ionisierte Wassermoleküle, sowie W
     \label{fig:rest}
 \end{figure}
 
-\subsection{Ermittlung des Strahlprofils aus den Positionsdaten}
+\subsection{Ermittlung des Elektronenstrahlprofils aus den Positionsdaten}
+Die Positionen der detektierten Ionen auf dem Detektor können genutzt werden, um das Strahlprofil, also die räumliche Verteilung der Teilchen in einem Schnitt des Strahls, zu bestimmen. Um das Strahlprofil über die ganze abgebildete Länge zu mitteln, wird Daten-Binning genutzt. Das bedeutet, dass für jede y-Koordinate in einem \textit{Bin} die Counts aller detektierten Ionen aufsummiert werden. Das Ergebnis ist ein Histogramm, das die räumliche Verteilung der Elektronen entlange der y-Achse zeigt. Das Ergebnis ist in Abb. \ref{fig:Strahlprofil} dargestellt. Für das Profil des Strahls wird eine Gauß-Verteilung erwartet, da thermische Effekte und Beugung die Position der Elektronen zufällig beeinflussen. Mit einem Fit der Daten mit einer Gauß-Funktion kann die Breite des Strahls bestimmt werden. In der Abbildung ist zu erkennen, dass die Abweichung der Daten vom Fit sehr klein ist. Über die Parameter der gefittetn Funktion kann die volle Breite bei halbem Maximum (FWHM) des Strahls bestimmt werden. Sie beträgt 1.94 mm. 
 
 \begin{figure}
     \centering
@@ -34,7 +35,7 @@ Wie erwartet können die größten Peaks auf ionisierte Wassermoleküle, sowie W
 
 \begin{figure}
     \centering
-    \includegraphics[width=.8\textwidth]{Strahlprofil.png}
+    \includegraphics[width=1\textwidth]{Strahlprofil.png}
     \caption[Gemitteltes Strahlprofil]{Gemitteltes Strahlprofil aus den Positionen der detektierten Ionen. Die Daten wurden mit einem Gaußfit gefittet, um die Breite des Strahls zu bestimmen. In grau-schraffiert eingezeichnet ist die volle Breite bei halbem Maximum (FWHM) des Strahls abgebildet.}
     \label{fig:Strahlprofil} 
 \end{figure}
