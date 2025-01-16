@@ -13,8 +13,12 @@ BCOR          = 8mm]{scrreprt}
 \usepackage[nohyperlinks]{acronym}
 \graphicspath{ {images/} }
 \usepackage{times}
+\usepackage{color}
 \usepackage{geometry}
 \usepackage{setspace}
+\usepackage[T1]{fontenc}
+
+\newcommand{\hsp}{\hspace{20pt}}
 \usepackage{tocloft}
 \usepackage{datetime}
 \usepackage{tabu}
@@ -31,6 +35,7 @@ BCOR          = 8mm]{scrreprt}
 \definecolor{thmgrau}{RGB}{74,92,102}
 \definecolor{thmblau}{RGB}{0,59,209}
 \definecolor{thmbhellblau}{RGB}{64,255,237}
+\definecolor{ptraorange}{RGB}{240, 201, 31}
 %-----------------------------------------
 % Editables of the document
 %-----------------------------------------
@@ -68,14 +73,13 @@ BCOR          = 8mm]{scrreprt}
 \usepackage{textcase}
 
 % Kapitelnummer mit Punkt formatieren
-\renewcommand{\chapterformat}{\thechapter.\enskip}
+\renewcommand{\chapterformat}{\setkomafont{chapter}\chapterfont\bfseries\Huge \textcolor{gray}{\thechapter \enskip \Big|} \enskip}
 
 \usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={\thesistitle}, pdfkeywords={}]{hyperref}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1em}
 
 \begin{document}
-\noindent
 
 % To expand the word spacing
 \spaceskip=1.2\fontdimen2\font plus 1.2\fontdimen3\font
@@ -106,6 +110,7 @@ minus 1.2\fontdimen4\font
 \acro{eu}[TPHC]{\dotfill Time-to-Pulse-Height-Converter}
 \acro{eu}[TOF]{\dotfill Time-of-Flight}
 \acro{eu}[CFD]{\dotfill Constant Fraction Discriminator}
+\acro{eu}[FWHM]{\dotfill Full Width at Half Maximum}
 
 \end{acronym}
 \cleardoublepage
@@ -124,6 +129,8 @@ minus 1.2\fontdimen4\font
 \input{Experimenteller Aufbau}
 \cleardoublepage
 \input{Auswertung}
+\cleardoublepage
+\input{Simulation}
 \cleardoublepage
 \input{Anhang}
 

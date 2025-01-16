@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  15 JAN 2025 18:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  16 JAN 2025 13:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -517,7 +517,12 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks39
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 116.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
 
 Class scrreprt Warning: Usage of package `tocloft' together
 (scrreprt)              with a KOMA-Script class is not recommended.
@@ -537,7 +542,7 @@ Class scrreprt Warning: Usage of package `tocloft' together
 (scrreprt)              `part', `section', `subsection',
 (scrreprt)              `subsubsection', `paragraph' and `subparagraph'.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `tocloft' on input line 19.
+(scrreprt)              package `tocloft' on input line 23.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
@@ -682,7 +687,7 @@ Class scrreprt Warning: Usage of package `fancyhdr' together
 (scrreprt)              `\addtokomafont' for the page style elements need
 (scrreprt)              explicite user intervention to work.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `fancyhdr' on input line 22.
+(scrreprt)              package `fancyhdr' on input line 26.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2024/04/23 v4.2 Extensive control of page headers and footers
@@ -1069,30 +1074,27 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count506
 \@quotereset=\count507
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 77.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (./main.aux)
+(./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count508
@@ -1126,7 +1128,7 @@ Package siunitx Warning: Detected the "physics" package:
 (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 77.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 82.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1173,16 +1175,17 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 77.
-Package biblatex Info: Reference segment=0 on input line 77.
+Package biblatex Info: ... file 'main.bbl' not found.
+
+No file main.bbl.
+Package biblatex Info: Reference section=0 on input line 82.
+Package biblatex Info: Reference segment=0 on input line 82.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 77.
- (./main.out) (./main.out)
+Package hyperref Info: Link coloring OFF on input line 82.
+(./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -1193,7 +1196,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 77.
+(scrreprt)           before \begin{document} on input line 82.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -1238,15 +1241,20 @@ File: images/THM_logo-eps-converted-to.pdf Graphic file (type pdf)
 <use images/THM_logo-eps-converted-to.pdf>
 Package pdftex.def Info: images/THM_logo-eps-converted-to.pdf  used on input line 11.
 (pdftex.def)             Requested size: 341.97614pt x 50.38228pt.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 17.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1phv.fd
-File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 18.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-<images/PTRA_logo.png, id=11, 139.52126pt x 81.30376pt>
+<images/PTRA_logo.png, id=9, 139.52126pt x 81.30376pt>
 File: images/PTRA_logo.png Graphic file (type png)
 <use images/PTRA_logo.png>
-Package pdftex.def Info: images/PTRA_logo.png  used on input line 32.
-(pdftex.def)             Requested size: 72.84071pt x 42.44815pt.
+Package pdftex.def Info: images/PTRA_logo.png  used on input line 36.
+(pdftex.def)             Requested size: 86.49748pt x 50.40656pt.
+<images/Fachschaftslogo.png, id=11, 401.5pt x 401.5pt>
+File: images/Fachschaftslogo.png Graphic file (type png)
+<use images/Fachschaftslogo.png>
+Package pdftex.def Info: images/Fachschaftslogo.png  used on input line 38.
+(pdftex.def)             Requested size: 72.84071pt x 72.83662pt.
 
 
 [1
@@ -1254,7 +1262,7 @@ Package pdftex.def Info: images/PTRA_logo.png  used on input line 32.
 
 
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./images/logo1.jpg> <./images/THM_logo-eps-converted-to.pdf> <./images/PTRA_logo.png>])
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./images/logo1.jpg> <./images/THM_logo-eps-converted-to.pdf> <./images/PTRA_logo.png> <./images/Fachschaftslogo.png>])
 
 [2
 
@@ -1276,20 +1284,29 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 86.
+(typearea)              on input line 90.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 86.
+(typearea)             dimensions of LaTeX on input line 90.
  (./titlepage.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+Overfull \hbox (1.20525pt too wide) in paragraph at lines 17--18
+\T1/phv/b/n/17.28 ei-nes Stoÿionisations-TOF-Massenspektrometers 
+ []
+
+
+Overfull \hbox (15.92522pt too wide) in paragraph at lines 20--23
+[]\T1/phv/b/n/14.4 Development and Ion-Optical Si-mu-la-ti-on of an Electron-Impact
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 40--47
- [][] 
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 41--48
+[][]  
  []
 
 
@@ -1353,12 +1370,7 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface.
 
 
-Overfull \hbox (19.91602pt too wide) in paragraph at lines 7--9
-\OT1/ptm/m/n/10.95 Der ho-he spe-zi-fi-sche Im-puls elek-tri-scher Trieb-wer-ke ist im We-sent-li-chen dar-auf zur[]uckzuf[]uhren,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1509) has occurred while \output is active []
 
 
 
@@ -1369,6 +1381,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
+
+LaTeX Warning: Citation 'ion' on page 12 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'CO2' on page 12 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'ion' on page 12 undefined on input line 18.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1398,11 +1420,14 @@ chapter 3.
 [17
 
 ]
-<images/EA.png, id=216, 685.56125pt x 287.0725pt>
+<images/EA.png, id=213, 685.56125pt x 287.0725pt>
 File: images/EA.png Graphic file (type png)
 <use images/EA.png>
 Package pdftex.def Info: images/EA.png  used on input line 25.
 (pdftex.def)             Requested size: 362.08733pt x 151.62643pt.
+
+
+LaTeX Warning: Citation 'EII' on page 18 undefined on input line 29.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1419,7 +1444,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [19 <./images/EA.png>]
 
+LaTeX Warning: Citation 'EII' on page 20 undefined on input line 47.
+
+
+
 [20]
+
+LaTeX Warning: Citation 'Lotz' on page 21 undefined on input line 69.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1430,9 +1463,8 @@ Underfull \vbox (badness 1057) has occurred while \output is active []
 
 
 [22]
-Overfull \hbox (16.96693pt too wide) in paragraph at lines 89--91
-\OT1/ptm/m/n/10.95 schreibt. $\OML/cmm/m/it/10.95 a[]$ \OT1/ptm/m/n/10.95 ist die Am-pli-tu-de der Ku-gel-wel-le. $\OML/cmm/m/it/10.95 F[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K; r\OT1/cmr/m/n/10.95 )$ \OT1/ptm/m/n/10.95 muss die ra-dia-le Schr[]odingergleichung
- []
+
+LaTeX Warning: Citation 'EII' on page 23 undefined on input line 86.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1440,6 +1472,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [23]
+
+LaTeX Warning: Citation 'Straub' on page 24 undefined on input line 105.
+
+
 
 [24])
 
@@ -1451,11 +1487,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] (./Experimenteller Aufbau.tex
 chapter 4.
 
+LaTeX Warning: Citation 'Holzte' on page 27 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'ion' on page 27 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'Straub' on page 27 undefined on input line 9.
+
+
 
 [27
 
 ]
-Underfull \vbox (badness 1189) has occurred while \output is active []
+Underfull \vbox (badness 1215) has occurred while \output is active []
 
 
 
@@ -1463,18 +1508,21 @@ Underfull \vbox (badness 1189) has occurred while \output is active []
 
 LaTeX Warning: Reference `chap:Sim' on page 29 undefined on input line 27.
 
-<images/Restgas_tof.png, id=297, 722.7pt x 361.35pt>
+<images/Restgas_tof.png, id=282, 722.7pt x 361.35pt>
 File: images/Restgas_tof.png Graphic file (type png)
 <use images/Restgas_tof.png>
 Package pdftex.def Info: images/Restgas_tof.png  used on input line 32.
 (pdftex.def)             Requested size: 382.20465pt x 191.10106pt.
+
+LaTeX Warning: Citation 'Holzte' on page 29 undefined on input line 38.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [29 <./images/Restgas_tof.png>]
-<images/SchematischerAufbau.png, id=305, 774.895pt x 1192.455pt>
+<images/SchematischerAufbau.png, id=288, 774.895pt x 1192.455pt>
 File: images/SchematischerAufbau.png Graphic file (type png)
 <use images/SchematischerAufbau.png>
 Package pdftex.def Info: images/SchematischerAufbau.png  used on input line 43.
@@ -1488,7 +1536,7 @@ LaTeX Warning: Float too large for page by 114.91559pt on input line 46.
 [30]
 
 [31 <./images/SchematischerAufbau.png>]
-<images/EGun.png, id=317, 952.55875pt x 717.68124pt>
+<images/EGun.png, id=300, 952.55875pt x 717.68124pt>
 File: images/EGun.png Graphic file (type png)
 <use images/EGun.png>
 Package pdftex.def Info: images/EGun.png  used on input line 53.
@@ -1499,7 +1547,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [32 <./images/EGun.png>]
-<images/Kammer_3D.png, id=324, 791.95876pt x 774.895pt>
+<images/Kammer_3D.png, id=308, 791.95876pt x 774.895pt>
 File: images/Kammer_3D.png Graphic file (type png)
 <use images/Kammer_3D.png>
 Package pdftex.def Info: images/Kammer_3D.png  used on input line 64.
@@ -1520,12 +1568,19 @@ Underfull \vbox (badness 5970) has occurred while \output is active []
 [33]
 
 [34 <./images/Kammer_3D.png>]
-<images/MCP.png, id=336, 511.9125pt x 281.05pt>
+<images/MCP.png, id=320, 511.9125pt x 281.05pt>
 File: images/MCP.png Graphic file (type png)
 <use images/MCP.png>
 Package pdftex.def Info: images/MCP.png  used on input line 98.
 (pdftex.def)             Requested size: 321.85881pt x 176.70648pt.
-<images/MCP_Sensitivity.png, id=339, 418.4433pt x 320.8788pt>
+
+
+LaTeX Warning: Citation 'MCP' on page 35 undefined on input line 99.
+
+
+LaTeX Warning: Citation 'MCP' on page 35 undefined on input line 99.
+
+<images/MCP_Sensitivity.png, id=321, 418.4433pt x 320.8788pt>
 File: images/MCP_Sensitivity.png Graphic file (type png)
 <use images/MCP_Sensitivity.png>
 Package pdftex.def Info: images/MCP_Sensitivity.png  used on input line 107.
@@ -1535,11 +1590,30 @@ Package pdftex.def Info: images/MCP_Sensitivity.png  used on input line 107.
 [35]
 
 [36 <./images/MCP.png> <./images/MCP_Sensitivity.png>]
-<images/DLD.png, id=355, 416.55624pt x 221.82875pt>
+
+LaTeX Warning: Citation 'Detektorsystem' on page 37 undefined on input line 115.
+
+<images/DLD.png, id=335, 416.55624pt x 221.82875pt>
 File: images/DLD.png Graphic file (type png)
 <use images/DLD.png>
 Package pdftex.def Info: images/DLD.png  used on input line 119.
 (pdftex.def)             Requested size: 241.39565pt x 128.55243pt.
+
+LaTeX Warning: Citation 'Detektorsystem' on page 37 undefined on input line 120.
+
+
+LaTeX Warning: Citation 'Detektorsystem' on page 37 undefined on input line 120.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+[][][]|\T1/ptm/m/n/10.95 Funk-ti-ons-prin-zip der Lauf-zeit-mes-sung in ei-ner Di-men-si-on aus
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 120--120
+\T1/ptm/m/n/10.95 [[]]. Der Lei-ter ist mä-an-der-för-mig auf-ge-baut, um die
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1551,12 +1625,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [38 <./images/DLD.png>]
-<images/ToF_Signals.png, id=371, 1042.89626pt x 795.97375pt>
+<images/ToF_Signals.png, id=348, 1042.89626pt x 795.97375pt>
 File: images/ToF_Signals.png Graphic file (type png)
 <use images/ToF_Signals.png>
 Package pdftex.def Info: images/ToF_Signals.png  used on input line 135.
 (pdftex.def)             Requested size: 362.08733pt x 276.3602pt.
-<images/cfd.png, id=373, 2890.8pt x 1239.63126pt>
+<images/cfd.png, id=350, 2890.8pt x 1239.63126pt>
 File: images/cfd.png Graphic file (type png)
 <use images/cfd.png>
 Package pdftex.def Info: images/cfd.png  used on input line 146.
@@ -1566,7 +1640,7 @@ Package pdftex.def Info: images/cfd.png  used on input line 146.
 [39]
 
 [40 <./images/ToF_Signals.png>]
-<images/Signalverlauf.png, id=384, 462.528pt x 346.896pt>
+<images/Signalverlauf.png, id=361, 462.528pt x 346.896pt>
 File: images/Signalverlauf.png Graphic file (type png)
 <use images/Signalverlauf.png>
 Package pdftex.def Info: images/Signalverlauf.png  used on input line 158.
@@ -1576,7 +1650,7 @@ Package pdftex.def Info: images/Signalverlauf.png  used on input line 158.
 [41 <./images/cfd.png>]
 
 [42 <./images/Signalverlauf.png>]
-<images/PosSig.png, id=396, 973.6375pt x 463.7325pt>
+<images/PosSig.png, id=373, 973.6375pt x 463.7325pt>
 File: images/PosSig.png Graphic file (type png)
 <use images/PosSig.png>
 Package pdftex.def Info: images/PosSig.png  used on input line 168.
@@ -1595,15 +1669,12 @@ chapter 5.
 [45
 
 ]
-<images/Restgas.png, id=412, 722.7pt x 361.35pt>
+<images/Restgas.png, id=389, 722.7pt x 361.35pt>
 File: images/Restgas.png Graphic file (type png)
 <use images/Restgas.png>
 Package pdftex.def Info: images/Restgas.png  used on input line 21.
 (pdftex.def)             Requested size: 422.43932pt x 211.22073pt.
-
-
-[46 <./images/Restgas.png>]
-<images/Strahl.png, id=421, 641.0349pt x 229.8186pt>
+<images/Strahl.png, id=393, 641.0349pt x 229.8186pt>
 File: images/Strahl.png Graphic file (type png)
 <use images/Strahl.png>
 Package pdftex.def Info: images/Strahl.png  used on input line 31.
@@ -1613,16 +1684,20 @@ Overfull \hbox (20.11732pt too wide) in paragraph at lines 31--32
  [][] 
  []
 
-<images/Strahlprofil.png, id=422, 585.387pt x 324.4923pt>
+<images/Strahlprofil.png, id=394, 585.387pt x 324.4923pt>
 File: images/Strahlprofil.png Graphic file (type png)
 <use images/Strahlprofil.png>
 Package pdftex.def Info: images/Strahlprofil.png  used on input line 38.
 (pdftex.def)             Requested size: 402.32199pt x 223.01859pt.
 )
 
-[47 <./images/Strahl.png>]
+[46]
 
-[48 <./images/Strahlprofil.png>] (./Anhang.tex)
+[47 <./images/Restgas.png> <./images/Strahl.png>]
+
+[48 <./images/Strahlprofil.png>] (./Simulation.tex
+chapter 6.
+)
 
 [49
 
@@ -1630,16 +1705,20 @@ Package pdftex.def Info: images/Strahlprofil.png  used on input line 38.
 
 ]
 
-[50]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 138.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+[50
+
+
+] (./Anhang.tex)
 
 [51
 
+]
 
-] (./main.aux)
+[52]
+
+LaTeX Warning: Empty bibliography on input line 145.
+
+(./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1650,23 +1729,31 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41952 strings out of 473584
- 845913 string characters out of 5728329
- 1940905 words of memory out of 5000000
- 64090 multiletter control sequences out of 15000+600000
- 590323 words of font info for 93 fonts, out of 8000000 for 9000
+ 42052 strings out of 473584
+ 845106 string characters out of 5728329
+ 1939905 words of memory out of 5000000
+ 64196 multiletter control sequences out of 15000+600000
+ 615271 words of font info for 108 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  125i,12n,121p,10948b,2669s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (51 pages, 5729768 bytes).
+
+pdfTeX warning (dest): name{section*.22} has been referenced but does not exist, replaced by a fixed one
+
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (52 pages, 5852794 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 523 compressed objects within 6 object streams
- 132 named destinations out of 1000 (max. 500000)
- 373 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 635 PDF objects out of 1000 (max. 8388607)
+ 505 compressed objects within 6 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 388 words of extra memory for PDF output out of 10000 (max. 10000000)
 
