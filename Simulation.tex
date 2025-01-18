@@ -1,4 +1,25 @@
 \chapter{Simulation der Ionenoptik}
 \label{chap:Simulation}
-Eine Simulation der Ionenoptik des Massenspektrometers ist sinvoll, um die Messergebnisse zu überprüfen, die Genauigkeit des Massenspektrometers zu bestimmen und Optimierungsansätze herrauszuarbeiten. Dafür wird das Programm \textit{SIMION} genutzt, das die Bewegung von Ionen in elektrischen und magnetischen Feldern simulieren kann. Im Vergleich zu anderen Programmen ist \textit{SIMION} besonders geeignet, da es auf Ionen- und Elektronenoptik spezialisiert ist und die Möglichkeit bietet, die Simulationen mit geringem Aufwand mit eigenen Programmen zu erweitern. Im Folgenden soll die Methodik der Simulation und die Limitationen erläutert werden und im Anschluss die Ergebnisse der Simulationen präsentiert werden.
+Eine Simulation der Ionenoptik des Massenspektrometers ist sinvoll, um die Messergebnisse zu überprüfen, die Genauigkeit des Massenspektrometers zu bestimmen und Optimierungsansätze herrauszuarbeiten. Dafür wird das Programm \textit{SIMION} genutzt, das die Bewegung von geladenen Teilchen in elektrischen und magnetischen Feldern simulieren kann. Im Vergleich zu anderen Programmen ist \textit{SIMION} besonders geeignet, da es auf Ionen- und Elektronenoptik spezialisiert ist und die Möglichkeit bietet, die Simulationen mit geringem Aufwand mit eigenen Programmen zu erweitern. Im Folgenden soll die Methodik der Simulation und die Limitationen erläutert werden und im Anschluss die Ergebnisse der Simulationen präsentiert werden.
+
 \section{SIMION: Methodik und Limitation}
+Zu Grunde der Simulationen liegt bei Simion die numerische Lösung der Laplace-Gleichung (\ref{eq:laplace}) für das elektrische Potential $\Phi$ in einem gegebenen Raum \cite{SIMION}.
+\begin{equation}
+    \label{eq:laplace}
+    \nabla^2 \Phi = 0.
+\end{equation}
+Um diese partielle Differentialgleichung zu lösen, nutzt das Programm finite Differenzverfahren (FDM), mit denen eine Ableitung über die Differenz zweier benachbarter Punkte approximiert wird. Dafür muss der Raum diskretisiert, also in ein Gitter aus Punkten aufgeteilt werden. Dabei ist es möglich mehrere Gitter mit verschiedenen Auflösungen zu definieren und diese innerhalb einer Simulation zu nutzen. Damit die iterative Lösung der Laplace-Gleichung schnell konvergiert, wird Überrelaxation (engl. \textit{Optimized Over-Relaxation, OOR}) verwendet. Statt bei jeder Iteration exakt nach der FDM zu aktualisieren, wird eine gewichtete Mischung aus der neuen und alten Lösung genommen. Um das Potential eines Gitters in jedem Punkt errechnen zu können, werden als Randbedingungen vom Nutzer definierte Elektroden und die Ränder der Simulation verwendet.
+Elektroden bilden dabei Dirichlet-Randbedinungen, welche das genaue Potential an dem Ort festlegen. Für die Ränder der Simulation werden Neumann-Randbedinungen angenommen, die die Ableitung des Potentials entlang der zum Rand normalen Richtung festlegen. Diese werden auf 0 definiert, was den Vorteil hat, dass sich das Elektrische Feld 
+\begin{equation}
+    \vec E = -\nabla \Phi
+\end{equation}
+außerhalb des Simulationsbereiches so fort setzt, als ob er sich in einem unendlichen Raum befindet \cite{SIMION}.
+
+Das elektrische Feld $E$ kann dann mit dem errechneten Potential an jedem Ort bestimmt werden, um die Beschleunigung der Lorentzkraft auf geladene Teilchen zu ermitteln. Für die Iteration der Trajektorien wird eine Runge-Kutta-Verfahren 4. Ordnung angewandt. Die zeitliche Schrittweite ist dabei variabel. In einer Simulation werden vom Nutzer definierte Teilchen nach einander in das Feld gesetzt und ihre Trajektorie berechnet. 
+
+Limitierend ist allgemein, dass die Teilchen dabei selbst nicht das Potential beeinflussen. Das bedeutet, dass sie auch nicht miteinander wechselwirken können und keine Raumladungseffekte berücksichtigt werden. Da innheralb dieser Arbeit aber unter Einzelstoßbedinungen gearbeitet wird, ist das nicht relevant. Angenommen wird auch, dass die Felder statisch sind und somit werden zeitabhängige Effekte, wie der Maxwell'sche Verschiebungsstrom, nicht berücksichtigt. Es ist aber trotzdem möglich die Felder in Abhängigkeit der Zeit mit eigener Programmierung zu verändern. Solange die Frequenz der Änderung nicht zu hoch ist, können sie als quasi-statisch angenommen werden.
+
+
+
+
+
