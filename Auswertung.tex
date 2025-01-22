@@ -2,12 +2,84 @@
 \label{chap:Auswertung}
 In diesem Kapitel sollen die im Experiment gewonnen Messdaten ausgewertet werden. Bereits bei einer Kalibrationsmessreihe mit Argon konnten aufgrund einer Fehlfunktion der Elektronenkanone keine vollständigen Wirkungsquerschnitte aufgenommen werden. Die Zahl der Elektronen, die für die Berechnung des Wirkungsquerschnittes benötigt werden, kann nicht ausreichend genau eingestellt werden, sodass gerade bei geringeren Energien keine Messung möglich ist. Nach einer Reperatur sollte dies wieder möglich sein. 
 
-Aus diesem Grund kann nur eine qualitative Auswertung einer Kalibrationsmessung mit Argon, sowie eines Restgasspektrums durchgeführt werden. Anschließend folgt eine Simulation der Ionenoptik des Massenspektrometers, mit der alternativ die Genauigkeit des Massenspektrometers überprüft werden kann. Sämtliche Auswertung der Messdaten, sowie alle eigenen Plots in dieser Arbeit wurden mit Python und der \textit{Matplotlib}-Bibliothek erstellt.
+Aus diesem Grund kann nur eine qualitative Auswertung einer Kalibrationsmessung mit Argon, sowie eines Restgasspektrums durchgeführt werden. Anschließend folgt eine Simulation der Ionenoptik des Massenspektrometers, mit der alternativ die Genauigkeit des Massenspektrometers überprüft werden kann.
 
-\section{Auswertung der Messdaten}
-\subsection{Kalibrationsmessung mit Argon}
+\section{Kalibrationsmessung mit Argon}
+Um die Anlage mit einem bereits gut untersuchten Gas zu Testen, wurde eine Testreihe mit Argon durchgeführt. Da es bereits Probleme mit der Bestimmung der Elektronenzahl aufgrund einer Fehlfunktion der Kanone gab, können nur qualitative Aussagen getroffen werden. 
 
-\subsection{Restgasspektrum}
+Die Auswertung der Messdaten erfolgt über einen digitalen Vielkanalanalysator (engl. \textit{multi channel analyzer}, MCA), der auf einem Computer Histogramme der aus der Flugzeit generieten Pulshöhen erstellt. Diese werden dann mit Python weiter ausgewertet und dargestellt. Zunächst muss das Flugzeitspektrum in ein Massenspektrum umgerechnet werden. Diese Umrechnung ist nicht linear, da die Flugzeit propotional zu $\sqrt{m/q}$ ist. Um das Spektrum korrekt skalieren zu können, werden die Peaks mit einem Referenzspektrum verglichen, um sie identifizieren zu können. Im Fall der Kalibrationsmessung mit Argon wurde ein Spektrum aus \cite{Straub} verwendet, bei dem die Peaks als 1 bis 4-fach geladene Argonionen identifiziert wurden. Anhand dieser Information kann das Spektrum skaliert werden, um die Masse-zu-Ladungsverhältnisse auf der horizontalen Achse zu erhalten. Abbildung \ref{fig:ar} zeigt das Flugzeitspektrum von Argon bei Elektronenenergien von 60, 80 und 100 eV und Abbildung \ref{fig:ar_scaled} das skalierte. 
+
+Die Peaks der 1 bis 4-fach geladenen Argonionen sind in den Spektren gut zu erkennen. Es ist eindeutig zu erkennen, dass die Zahl der Ionen mit der Elektronenenergie steigt.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{Ar60-100.png}
+    \caption[Flugzeitspektrum von Argon bei Elektronenenergie 60, 80 und 100 eV]{Flugzeitspektrum von Argon bei Elektronenenergien von 60, 80 und 100 eV. Die Messungen sind jeweils über 60 Sekunden entstanden.}
+    \label{fig:ar}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{Ar60-100_scaled.png}
+    \caption[Skaliertes Massenspektrum von Argon bei Elektronenenergie 100 eV]{Flugzeitspektrum von Argon bei Elektronenenergien von 60, 80 und 100 eV. Die Messungen sind jeweils über 60 Sekunden entstanden.}
+    \label{fig:ar_scaled}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \caption[Auszug der Ionisierungsquerschnitte von Argon aus Straub \textit{et al.} \cite{Straub}]{Auszug der Ionisierungsquerschnitte von Argon aus Straub \textit{et al.} \cite{Straub}}
+    \begin{tabular}{r c c c c c}
+        \toprule
+        \textbf{Energy} & $\sigma^+$ & $\sigma^{2+}$ & $\sigma^{3+}$ & $\sigma^{4+}$ & $\sigma^{\text{total}}$ \\
+        (eV) & ($10^{-16}$ cm$^2$) & ($10^{-17}$ cm$^2$) & ($10^{-19}$ cm$^2$) & ($10^{-19}$ cm$^2$) & ($10^{-16}$ cm$^2$) \\
+        \midrule
+        %17  & 0.017  &        &        &        & 0.017  \\
+        %20  & 0.46   &        &        &        & 0.46   \\
+        %25  & 1.24   &        &        &        & 1.24   \\
+        %30  & 1.84   &        &        &        & 1.84   \\
+        %35  & 2.26   &        &        &        & 2.26   \\
+        %40  & 2.55   &        &        &        & 2.55   \\
+        %45  & 2.66   & 0.0048 &        &        & 2.66   \\
+        50  & 2.70   & 0.128  &        &        & 2.73   \\
+        %55  & 2.69   & 0.418  &        &        & 2.77   \\
+        %60  & 2.67   & 0.856  &        &        & 2.84   \\
+        %65  & 2.67   & 1.21   &        &        & 2.91   \\
+        %70  & 2.67   & 1.46   &        &        & 2.96   \\
+        %75  & 2.66   & 1.56   &        &        & 2.97   \\
+        %80  & 2.69   & 1.70   &        &        & 3.03   \\
+        %85  & 2.70   & 1.79   &        &        & 3.06   \\
+        %90  & 2.69   & 1.84   &        &        & 3.06   \\
+        %95  & 2.67   & 1.90   & 0.51   &        & 3.05   \\
+        100 & 2.64   & 1.89   & 1.03   &        & 3.02   \\
+        %110 & 2.61   & 1.91   & 2.21   &        & 3.00   \\
+        %120 & 2.55   & 1.87   & 3.23   &        & 2.93   \\
+        %140 & 2.45   & 1.77   & 4.94   &        & 2.81   \\
+        %160 & 2.35   & 1.65   & 5.57   &        & 2.70   \\
+        %180 & 2.27   & 1.58   & 5.68   &        & 2.60   \\
+        %200 & 2.18   & 1.44   & 5.53   &        & 2.49   \\
+        %225 & 2.10   & 1.31   & 5.30   &        & 2.37   \\
+        %250 & 1.99   & 1.25   & 5.23   &        & 2.25   \\
+        %275 & 1.87   & 1.13   & 5.09   &        & 2.11   \\
+        %300 & 1.79   & 1.08   & 5.03   &        & 2.02   \\
+        %350 & 1.63   & 0.953  & 5.99   & 0.17   & 1.84   \\
+        400 & 1.51   & 0.872  & 6.32   & 0.44   & 1.71   \\
+        %450 & 1.39   & 0.759  & 6.50   & 0.77   & 1.57   \\
+        %500 & 1.31   & 0.679  & 6.97   & 1.07   & 1.47   \\
+        %550 & 1.23   & 0.623  & 7.08   & 1.18   & 1.38   \\
+        %600 & 1.16   & 0.575  & 7.41   & 1.32   & 1.30   \\
+        %650 & 1.09   & 0.552  & 7.19   & 1.27   & 1.23   \\
+        %700 & 1.03   & 0.524  & 7.23   & 1.33   & 1.16   \\
+        %750 & 0.976  & 0.496  & 6.97   & 1.42   & 1.10   \\
+        %800 & 0.932  & 0.456  & 6.96   & 1.50   & 1.05   \\
+        %850 & 0.901  & 0.425  & 7.09   & 1.42   & 1.01   \\
+        %900 & 0.865  & 0.419  & 6.51   & 1.33   & 0.973  \\
+        %950 & 0.824  & 0.394  & 6.51   & 1.36   & 0.927  \\
+        1000 & 0.795 & 0.374  & 6.57   & 1.32   & 0.895  \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Restgasspektrum}
 Eine weitere Möglichkeit zur Überprüfung des Massenspektrometers ist die Aufnahme eines Restgasspektrums. Hierbei wird kein Gas in die Kammer eingelassen und lediglich der atmosphärische Hintergrund in der Kammer gemessen. Dieser besteht aus verschiedenen Restgasen, die durch die Elektronenstoßionisation genauso ionisiert werden können. In einem Vakuum erwartet man vorallem Rückstände von Wassermolekülen, sowie stabiler Kohlenstoffverbindungen, die bei der Vakuumbildung aus den Wänden der Kammer gelöst werden, als auch Reste von Stickstoff und Sauerstoff aus der Luft. Außerdem können besonders leichte Gase, hier vorallem Wasserstoff, übrig bleiben, da sie besonders flüchtig sind und die Vakuumpumpen sie weniger effektiv entfernen können. Es ist zusätzlich praktisch die Restgasverteilung zu kennen, um sie bei der Auswertung von Messungen berücksichtigen zu können. Aufgrund der geringen Dichte und damit niedrigem Ionisierungsquerschnitt muss diese Messung lange durchgeführt werden. 
 
 Wie bereits bei der Kalibrationsmessung muss das Massespektrum neu skaliert werden, um die Masse-zu-Ladungsverhältnisse der Ionen zu bestimmen. Dafür wird für einige der Peaks anhand von den Erwartungen eine Annahme getroffen, welchem Verhältnis sie entsprechen könnten. Für die Identifikation der Ionen wurde angenommen, das der größte Peak ionisierten Wassermolekülen
@@ -23,15 +95,20 @@ Wie erwartet können die größten Peaks auf ionisierte Wassermoleküle, sowie W
     \label{fig:rest}
 \end{figure}
 
-\subsection{Ermittlung des Elektronenstrahlprofils aus den Positionsdaten}
-Die Positionen der detektierten Ionen auf dem Detektor können genutzt werden, um das Strahlprofil, also die räumliche Verteilung der Teilchen in einem Schnitt des Strahls, zu bestimmen. Um das Strahlprofil über die ganze abgebildete Länge zu mitteln, wird Daten-Binning genutzt. Das bedeutet, dass für jede y-Koordinate in einem \textit{Bin} die Counts aller detektierten Ionen aufsummiert werden. Das Ergebnis ist ein Histogramm, das die räumliche Verteilung der Elektronen entlange der y-Achse zeigt. Das Ergebnis ist in Abb. \ref{fig:Strahlprofil} dargestellt. Für das Profil des Strahls wird eine Gauß-Verteilung erwartet, da thermische Effekte und Beugung die Position der Elektronen zufällig beeinflussen. Mit einem Fit der Daten mit einer Gauß-Funktion kann die Breite des Strahls bestimmt werden. In der Abbildung ist zu erkennen, dass die Abweichung der Daten vom Fit sehr klein ist. Über die Parameter der gefittetn Funktion kann die volle Breite bei halbem Maximum (FWHM) des Strahls bestimmt werden. Sie beträgt 1.94 mm. 
+\section{Auswertung der Positionsdaten}
+Anhand der vom Detektor aufgenommenen Positionsdaten der Ionen, können Rückschlüsse auf den Entstehungsort der Ionen gezogen werden. Abbildung \ref{fig:Strahl} zeigt einen Plot dieser Daten für eine Messung mit Argonionen. Es ist zu erkennen, dass die Ionen, wie erwartet, entlang eines horizontalen Streifens entstehen, der seitlich abgeschnitten ist. Die Ionen wurden durch das 2 cm große Loch in der Deckenplatte des Beschleunigungskondesators auf den Detektor geschossen. Deshalb ist das Abbild des Elektronenstrahls seitlich begrenzt. Die Entstehungsorte der Ionen sind offensichtlich stark mit dem Strahl verbunden, was zeigt, dass die Ionen entlang des Strahls entstehen und nicht abgelenkt werden oder aus anderen Quellen stammen.
 
+\subsection{Annomalien}
+Auffällig sind jedoch die Überhöhungen an den seitlichen Rändern des Strahls, sowie die Länge von 28 mm. Bei geraden Flugbahnen der Ionen würde ein Abbild von etwa 20 mm Länge erwartet werden. Anders als bei einem Ionenstrahl, bei dem die Coloumbabstoßung eine Aufweitung bewirkt, sollte kein solcher Effekt unter der Einzelstoßbedingung auftreten. Beide dieser Effekte sollen mit der Simulation der Ionenoptik überprüft werden, um eine mögliche Erklärung zu finden.x
 \begin{figure}
     \centering
     \includegraphics[width=1.05\textwidth]{Strahl.png}
-    \caption[Abbild des Strahls auf dem Detektor]{Positionsbestimmung der detektierten Teilche auf dem Detektor zeigen den Strahl auf dem Detektor. Da der Detektor schief verbaut ist, wurde das Bild im Nachhinein gedreht. Das Abbild des Strahls ist seitlich begrenzt, da die Ionen durch das 2 cm große Loch in der Deckenplatte auf den Detektor gelangen.}
+    \caption[Abbild des Strahls auf dem Detektor]{Positionsbestimmung der detektierten Teilche auf dem Detektor zeigen den Strahl auf dem Detektor. Die Anzahl der Treffer in einem Pixel wird vom Grauton gezeigt. Da der Detektor schief verbaut ist, wurde das Bild im Nachhinein gedreht. Das Abbild des Strahls ist seitlich begrenzt, da die Ionen durch das 2 cm große Loch in der Deckenplatte auf den Detektor gelangen.}
     \label{fig:Strahl} 
 \end{figure}
+
+\subsection{Ermittlung des Elektronenstrahlprofil}
+Die Positionen der detektierten Ionen auf dem Detektor können genutzt werden, um das Strahlprofil, also die räumliche Verteilung der Teilchen in einem Schnitt des Strahls, zu bestimmen. Um das Strahlprofil über die ganze abgebildete Länge zu mitteln, wird Daten-Binning genutzt. Das bedeutet, dass für jede y-Koordinate in einem \textit{Bin} die Counts aller detektierten Ionen aufsummiert werden. Das Ergebnis ist ein Histogramm, das die räumliche Verteilung der Elektronen entlange der y-Achse zeigt. Das Ergebnis ist in Abb. \ref{fig:Strahlprofil} dargestellt. Für das Profil des Strahls wird eine Gauß-Verteilung erwartet, da thermische Effekte und Beugung die Position der Elektronen zufällig beeinflussen. Mit einem Fit der Daten mit einer Gauß-Funktion kann die Breite des Strahls bestimmt werden. In der Abbildung ist zu erkennen, dass die Abweichung der Daten vom Fit sehr klein ist. Über die Parameter der gefittetn Funktion kann die volle Breite bei halbem Maximum (FWHM) des Strahls bestimmt werden. Sie beträgt 1.94 mm. 
 
 \begin{figure}
     \centering
