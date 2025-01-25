@@ -28,12 +28,12 @@
 \contentsline {subsection}{\numberline {3.6.2}Positionssensitive Auflösung}{43}{subsection.3.6.2}%
 \contentsline {chapter}{\numberline {4}Auswertung}{47}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Kalibrationsmessung mit Argon}{47}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Restgasspektrum}{48}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Auswertung der Positionsdaten}{50}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Annomalien}{51}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Ermittlung des Elektronenstrahlprofil}{51}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Simulation der Ionenoptik}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}\textit {SIMION}: Methodik und Limitation}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Modellierung und Konfiguration}{54}{section.5.2}%
-\contentsline {chapter}{\numberline {A}Anhang}{57}{appendix.A}%
-\contentsline {chapter}{Literaturverzeichnis}{59}{section*.28}%
+\contentsline {section}{\numberline {4.2}Restgasspektrum}{50}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Auswertung der Positionsdaten}{51}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Annomalien}{52}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Ermittlung des Elektronenstrahlprofil}{52}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Simulation der Ionenoptik}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}\textit {SIMION}: Methodik und Limitation}{55}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Modellierung und Konfiguration}{56}{section.5.2}%
+\contentsline {chapter}{\numberline {A}Anhang}{59}{appendix.A}%
+\contentsline {chapter}{Literaturverzeichnis}{61}{section*.30}%

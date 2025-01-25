@@ -3,13 +3,13 @@
 Eine Simulation der Ionenoptik des Massenspektrometers ist sinvoll, um die Messergebnisse zu überprüfen, die Genauigkeit des Massenspektrometers zu bestimmen und Optimierungsansätze herrauszuarbeiten. Dafür wird das Programm \textit{SIMION} genutzt, das die Bewegung von geladenen Teilchen in elektrischen und magnetischen Feldern simulieren kann. Im Vergleich zu anderen Programmen ist \textit{SIMION} besonders geeignet, da es auf Ionen- und Elektronenoptik spezialisiert ist und die Möglichkeit bietet, die Simulationen mit geringem Aufwand mit eigenen Programmen zu erweitern. Im Folgenden soll die Methodik der Simulation und die Limitationen erläutert werden und im Anschluss die Ergebnisse der Simulationen präsentiert werden.
 
 \section{\textit{SIMION}: Methodik und Limitation}
-Zu Grunde der Simulationen liegt bei \textit{SIMION} die numerische Lösung der Laplace-Gleichung (\ref{eq:laplace}) für das elektrische Potential $\Phi$ in einem gegebenen Raum \cite{SIMION}.
+Zugrunde der Simulationen liegt bei \textit{SIMION} die numerische Lösung der Laplace-Gleichung (\ref{eq:laplace}) für das elektrische Potential $\Phi$ in einem gegebenen Raum \cite{SIMION}.
 \begin{equation}
     \label{eq:laplace}
     \nabla^2 \Phi = 0.
 \end{equation}
 Um diese partielle Differentialgleichung zu lösen, nutzt das Programm finite Differenzverfahren (FDM), mit denen eine Ableitung über die Differenz zweier benachbarter Punkte approximiert wird. Dafür muss der Raum diskretisiert, also in ein Gitter aus Punkten aufgeteilt werden. Dabei ist es möglich mehrere Gitter mit verschiedenen Auflösungen zu definieren und diese innerhalb einer Simulation zu nutzen. Damit die iterative Lösung der Laplace-Gleichung schnell konvergiert, wird Überrelaxation (engl. \textit{Optimized Over-Relaxation, OOR}) verwendet. Statt bei jeder Iteration exakt nach der FDM zu aktualisieren, wird eine gewichtete Mischung aus der neuen und alten Lösung genommen. Um das Potential eines Gitters in jedem Punkt errechnen zu können, werden als Randbedingungen vom Nutzer definierte Elektroden und die Ränder der Simulation verwendet.
-Elektroden bilden dabei Dirichlet-Randbedinungen, welche das genaue Potential an dem Ort festlegen. Für die Ränder der Simulation werden Neumann-Randbedinungen angenommen, die die Ableitung des Potentials entlang der zum Rand normalen Richtung festlegen. Diese werden auf 0 definiert, was den Vorteil hat, dass sich das Elektrische Feld 
+Elektroden bilden dabei Dirichlet-Randbedinungen, welche das genaue Potential an dem Ort festlegen. Für die Ränder der Simulation werden Neumann-Randbedinungen angenommen, die die Ableitung des Potentials entlang der zum Rand normalen Richtung festlegen. Diese werden auf 0 definiert, was den Vorteil hat, dass sich das elektrische Feld 
 \begin{equation}
     \vec E = -\nabla \Phi
 \end{equation}
@@ -25,7 +25,7 @@ Um die Ionenoptik der derzeit verwendeten Geometrie zu untersuchen, muss dieser 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{Model.png}
-    \caption[Modell des Massenspektrometers in \textit{SIMION}]{Modell des Massenspektrometers in \textit{SIMION}. Die Elektroden sind in beige dargestellt, die Flugbahnen der Ionen in rot.}
+    \caption[Modell des Massenspektrometers in \textit{SIMION}]{Modell des Massenspektrometers in \textit{SIMION}. Die Elektroden sind in Beige dargestellt, die Flugbahnen der Ionen in Rot.}
     \label{fig:model}
 \end{figure}
 
@@ -39,4 +39,4 @@ Die Art der Teilchen, so wie ihre Häufigkeitsverteilung können mit einem \text
     \left< E_{\text{kin}} \right> = \frac{3}{2} k_B T_{Raum} \approx \frac{1}{25} \text{ eV}.
 \end{equation}
 
-Um dieselben Informationen aus der Simulation zu gewinnen, wie sie auch im Experiment vom Detektor aufgenommen werden, werden Flugzeit und Position jedes Teilchens zum Auftreffpunkt aufgezeichnet. Diese können dann mit den selben Methoden wie die experimentellen Daten ausgewertet werden. Im Folgenden werden verschiedene Simulationen durchgeführt, um die Ionenoptik zu untersuchen. Dafür sollen zunächst die Ergebnisse aus dem Experiment nachsimuliert werden, um die Genauigkeit der Simulation zu überprüfen. 
+Um dieselben Informationen aus der Simulation zu gewinnen, wie sie auch im Experiment vom Detektor aufgenommen werden, werden Flugzeit und Position jedes Teilchens zum Auftreffpunkt aufgezeichnet. Diese können dann mit denselben Methoden wie die experimentellen Daten ausgewertet werden. Im Folgenden werden verschiedene Simulationen durchgeführt, um die Ionenoptik zu untersuchen. Dafür sollen zunächst die Ergebnisse aus dem Experiment nachsimuliert werden, um die Genauigkeit der Simulation zu überprüfen. 
