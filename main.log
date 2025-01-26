@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  26 JAN 2025 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  26 JAN 2025 17:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -115,6 +115,8 @@ Package tocbasic Info: omitting babel extension for `lot'
 \c@table=\count269
 Class scrreprt Info: Redefining `\numberline' on input line 7428.
 \bibindent=\dimen141
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/xr.sty
+Package: xr 2024-04-10 v6.00 eXternal References (DPC)
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks18
@@ -1391,16 +1393,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[10]
-
-[11
-
-]
-
-[12
-
-
-] (./Einführung.tex
+[10] (./Einführung.tex
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -1422,7 +1415,9 @@ Underfull \vbox (badness 1509) has occurred while \output is active []
 
 
 
-[13
+[11
+
+
 
 
 
@@ -1431,39 +1426,39 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+[12]
+
+[13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
 [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[16]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[17]
-<images/Straub.png, id=277, 1066.98625pt x 452.69125pt>
+<images/Straub.png, id=285, 1066.98625pt x 452.69125pt>
 File: images/Straub.png Graphic file (type png)
 <use images/Straub.png>
 Package pdftex.def Info: images/Straub.png  used on input line 68.
 (pdftex.def)             Requested size: 362.08733pt x 153.62286pt.
 )
 
-[18 <./images/Straub.png>] (./Elektronenstoßionisation.tex
+[16 <./images/Straub.png>] (./Elektronenstoßionisation.tex
 chapter 2.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[19
+[17
 
 
 
 ]
-<images/EA.png, id=298, 685.56125pt x 287.0725pt>
+<images/EA.png, id=305, 685.56125pt x 287.0725pt>
 File: images/EA.png Graphic file (type png)
 <use images/EA.png>
 Package pdftex.def Info: images/EA.png  used on input line 25.
@@ -1474,50 +1469,50 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[20]
+[18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[21 <./images/EA.png>]
+[19 <./images/EA.png>]
 
-[22]
+[20]
 
-[23]
+[21]
 Underfull \vbox (badness 1057) has occurred while \output is active []
 
 
 
-[24]
+[22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+[23]
+
+[24])
+
 [25]
 
-[26])
-
-[27]
-
-[28
+[26
 
 
 ] (./Experimenteller Aufbau.tex
 chapter 3.
 
 
-[29
+[27
 
 ]
 Underfull \vbox (badness 1215) has occurred while \output is active []
 
 
 
-[30]
+[28]
 
-LaTeX Warning: Reference `chap:Sim' on page 31 undefined on input line 27.
+LaTeX Warning: Reference `chap:Sim' on page 29 undefined on input line 27.
 
-<images/Restgas_tof.png, id=379, 758.835pt x 361.35pt>
+<images/Restgas_tof.png, id=387, 758.835pt x 361.35pt>
 File: images/Restgas_tof.png Graphic file (type png)
 <use images/Restgas_tof.png>
 Package pdftex.def Info: images/Restgas_tof.png  used on input line 32.
@@ -1527,8 +1522,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[31 <./images/Restgas_tof.png>]
-<images/SchematischerAufbau.png, id=387, 774.895pt x 1192.455pt>
+[29 <./images/Restgas_tof.png>]
+<images/SchematischerAufbau.png, id=394, 774.895pt x 1192.455pt>
 File: images/SchematischerAufbau.png Graphic file (type png)
 <use images/SchematischerAufbau.png>
 Package pdftex.def Info: images/SchematischerAufbau.png  used on input line 43.
@@ -1539,10 +1534,10 @@ LaTeX Warning: Float too large for page by 114.91559pt on input line 46.
 
 
 
-[32]
+[30]
 
-[33 <./images/SchematischerAufbau.png>]
-<images/EGun.png, id=398, 952.55875pt x 717.68124pt>
+[31 <./images/SchematischerAufbau.png>]
+<images/EGun.png, id=406, 952.55875pt x 717.68124pt>
 File: images/EGun.png Graphic file (type png)
 <use images/EGun.png>
 Package pdftex.def Info: images/EGun.png  used on input line 53.
@@ -1552,8 +1547,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[34 <./images/EGun.png>]
-<images/Kammer_3D.png, id=405, 791.95876pt x 774.895pt>
+[32 <./images/EGun.png>]
+<images/Kammer_3D.png, id=413, 791.95876pt x 774.895pt>
 File: images/Kammer_3D.png Graphic file (type png)
 <use images/Kammer_3D.png>
 Package pdftex.def Info: images/Kammer_3D.png  used on input line 64.
@@ -1565,28 +1560,28 @@ Overfull \hbox (80.46317pt too wide) in paragraph at lines 64--65
 
 
 
-[35]
+[33]
 
-[36 <./images/Kammer_3D.png>]
-<images/MCP.png, id=417, 511.9125pt x 281.05pt>
+[34 <./images/Kammer_3D.png>]
+<images/MCP.png, id=425, 511.9125pt x 281.05pt>
 File: images/MCP.png Graphic file (type png)
 <use images/MCP.png>
 Package pdftex.def Info: images/MCP.png  used on input line 98.
 (pdftex.def)             Requested size: 321.85881pt x 176.70648pt.
-<images/MCP_Sensitivity.png, id=420, 418.4433pt x 320.8788pt>
+<images/MCP_Sensitivity.png, id=428, 418.4433pt x 320.8788pt>
 File: images/MCP_Sensitivity.png Graphic file (type png)
 <use images/MCP_Sensitivity.png>
 Package pdftex.def Info: images/MCP_Sensitivity.png  used on input line 107.
 (pdftex.def)             Requested size: 321.85881pt x 246.81303pt.
 
 
-[37]
+[35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[38 <./images/MCP.png>]
-<images/DLD.png, id=436, 416.55624pt x 221.82875pt>
+[36 <./images/MCP.png>]
+<images/DLD.png, id=443, 416.55624pt x 221.82875pt>
 File: images/DLD.png Graphic file (type png)
 <use images/DLD.png>
 Package pdftex.def Info: images/DLD.png  used on input line 119.
@@ -1596,77 +1591,77 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[39 <./images/MCP_Sensitivity.png>]
+[37 <./images/MCP_Sensitivity.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[40 <./images/DLD.png>]
-<images/ToF_Signals.png, id=452, 1042.89626pt x 795.97375pt>
+[38 <./images/DLD.png>]
+<images/ToF_Signals.png, id=461, 1042.89626pt x 795.97375pt>
 File: images/ToF_Signals.png Graphic file (type png)
 <use images/ToF_Signals.png>
 Package pdftex.def Info: images/ToF_Signals.png  used on input line 135.
 (pdftex.def)             Requested size: 362.08733pt x 276.3602pt.
-<images/cfd.png, id=454, 2890.8pt x 1239.63126pt>
+<images/cfd.png, id=463, 2890.8pt x 1239.63126pt>
 File: images/cfd.png Graphic file (type png)
 <use images/cfd.png>
 Package pdftex.def Info: images/cfd.png  used on input line 146.
 (pdftex.def)             Requested size: 281.62416pt x 120.75479pt.
 
 
-[41]
+[39]
 
-[42 <./images/ToF_Signals.png>]
-<images/Signalverlauf.png, id=466, 462.528pt x 346.896pt>
+[40 <./images/ToF_Signals.png>]
+<images/Signalverlauf.png, id=474, 462.528pt x 346.896pt>
 File: images/Signalverlauf.png Graphic file (type png)
 <use images/Signalverlauf.png>
 Package pdftex.def Info: images/Signalverlauf.png  used on input line 158.
 (pdftex.def)             Requested size: 362.08733pt x 271.5782pt.
 
 
-[43 <./images/cfd.png>]
+[41 <./images/cfd.png>]
 
-[44 <./images/Signalverlauf.png>]
-<images/PosSig.png, id=479, 973.6375pt x 463.7325pt>
+[42 <./images/Signalverlauf.png>]
+<images/PosSig.png, id=486, 973.6375pt x 463.7325pt>
 File: images/PosSig.png Graphic file (type png)
 <use images/PosSig.png>
 Package pdftex.def Info: images/PosSig.png  used on input line 168.
 (pdftex.def)             Requested size: 362.08733pt x 172.45575pt.
 )
 
-[45 <./images/PosSig.png>]
+[43 <./images/PosSig.png>]
 
-[46
+[44
 
 
 ] (./Auswertung.tex
 chapter 4.
-<images/Ar60-100.png, id=489, 758.835pt x 361.35pt>
+<images/Ar60-100.png, id=497, 758.835pt x 361.35pt>
 File: images/Ar60-100.png Graphic file (type png)
 <use images/Ar60-100.png>
 Package pdftex.def Info: images/Ar60-100.png  used on input line 14.
 (pdftex.def)             Requested size: 402.32199pt x 191.58626pt.
 
 
-[47
+[45
 
 ]
-<images/tof_energy.png, id=497, 462.528pt x 346.896pt>
+<images/tof_energy.png, id=505, 462.528pt x 346.896pt>
 File: images/tof_energy.png Graphic file (type png)
 <use images/tof_energy.png>
 Package pdftex.def Info: images/tof_energy.png  used on input line 24.
 (pdftex.def)             Requested size: 281.62416pt x 211.22513pt.
 
 
-[48 <./images/Ar60-100.png>]
+[46 <./images/Ar60-100.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[49 <./images/tof_energy.png>]
+[47 <./images/tof_energy.png>]
 
-[50]
-<images/Ar_scaled.png, id=518, 1025.5113pt x 497.9403pt>
+[48]
+<images/Ar_scaled.png, id=525, 1025.5113pt x 497.9403pt>
 File: images/Ar_scaled.png Graphic file (type png)
 <use images/Ar_scaled.png>
 Package pdftex.def Info: images/Ar_scaled.png  used on input line 40.
@@ -1678,8 +1673,8 @@ Overfull \hbox (2.78763pt too wide) in paragraph at lines 40--41
 
 
 
-[51 <./images/Ar_scaled.png>]
-<images/Ar_integrated.png, id=532, 758.835pt x 361.35pt>
+[49 <./images/Ar_scaled.png>]
+<images/Ar_integrated.png, id=540, 758.835pt x 361.35pt>
 File: images/Ar_integrated.png Graphic file (type png)
 <use images/Ar_integrated.png>
 Package pdftex.def Info: images/Ar_integrated.png  used on input line 56.
@@ -1689,21 +1684,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[52
+[50
 
 
  <./images/Ar_integrated.png>]
 
-[53]
-<images/Restgas.png, id=550, 758.835pt x 361.35pt>
+[51]
+<images/Restgas.png, id=558, 758.835pt x 361.35pt>
 File: images/Restgas.png Graphic file (type png)
 <use images/Restgas.png>
 Package pdftex.def Info: images/Restgas.png  used on input line 149.
 (pdftex.def)             Requested size: 422.43932pt x 201.16365pt.
 
 
-[54 <./images/Restgas.png>]
-<images/Strahl.png, id=560, 630.9171pt x 224.037pt>
+[52 <./images/Restgas.png>]
+<images/Strahl.png, id=568, 630.9171pt x 224.037pt>
 File: images/Strahl.png Graphic file (type png)
 <use images/Strahl.png>
 Package pdftex.def Info: images/Strahl.png  used on input line 161.
@@ -1713,7 +1708,7 @@ Overfull \hbox (20.11732pt too wide) in paragraph at lines 161--162
  [][] 
  []
 
-<images/Strahl3D.png, id=561, 659.1024pt x 508.0581pt>
+<images/Strahl3D.png, id=569, 659.1024pt x 508.0581pt>
 File: images/Strahl3D.png Graphic file (type png)
 <use images/Strahl3D.png>
 Package pdftex.def Info: images/Strahl3D.png  used on input line 168.
@@ -1723,19 +1718,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[55 <./images/Strahl.png>]
+[53 <./images/Strahl.png>]
 
-[56 <./images/Strahl3D.png>]
-<images/Strahlprofil.png, id=574, 462.528pt x 346.896pt>
+[54 <./images/Strahl3D.png>]
+<images/Strahlprofil.png, id=581, 462.528pt x 346.896pt>
 File: images/Strahlprofil.png Graphic file (type png)
 <use images/Strahlprofil.png>
 Package pdftex.def Info: images/Strahlprofil.png  used on input line 178.
 (pdftex.def)             Requested size: 281.62416pt x 211.22513pt.
 )
 
-[57 <./images/Strahlprofil.png>]
+[55 <./images/Strahlprofil.png>]
 
-[58
+[56
 
 
 ] (./Simulation.tex
@@ -1749,26 +1744,31 @@ Overfull \hbox (2.6589pt too wide) in paragraph at lines 6--7
 
 
 
-[59
+[57
 
 ]
-<images/Model.png, id=596, 2021.5525pt x 541.02126pt>
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 13.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Overfull \hbox (3.28625pt too wide) in paragraph at lines 14--15
+[]\T1/ptm/m/n/10.95 Neumann-Randbedingungen: Die Ab-lei-tung des Po-ten-ti-als ent-lang der nor-ma-len Rich-
+ []
+
+<images/Model.png, id=603, 2021.5525pt x 541.02126pt>
 File: images/Model.png Graphic file (type png)
 <use images/Model.png>
-Package pdftex.def Info: images/Model.png  used on input line 27.
+Package pdftex.def Info: images/Model.png  used on input line 26.
 (pdftex.def)             Requested size: 402.32199pt x 107.66573pt.
 
 
-[60])
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[58]
 
+[59 <./images/Model.png>])
 
-
-[61 <./images/Model.png>]
-
-[62] (./Anhang.tex
+[60] (./Anhang.tex
 chapter A.
-<images/Fly2.png, id=614, 499.8675pt x 793.96625pt>
+<images/Fly2.png, id=620, 499.8675pt x 793.96625pt>
 File: images/Fly2.png Graphic file (type png)
 <use images/Fly2.png>
 Package pdftex.def Info: images/Fly2.png  used on input line 33.
@@ -1783,13 +1783,13 @@ LaTeX Warning: Float too large for page by 112.40958pt on input line 36.
 
 )
 
-[63
+[61
 
 
 
 ]
 
-[64 <./images/Fly2.png>]
+[62 <./images/Fly2.png>]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 147.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1800,12 +1800,12 @@ Overfull \hbox (17.27834pt too wide) in paragraph at lines 148--148
 
 
 
-[65
+[63
 
 
 ]
 
-[66] (./main.aux)
+[64] (./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1821,18 +1821,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42636 strings out of 473584
- 855676 string characters out of 5728329
+ 42723 strings out of 473584
+ 857013 string characters out of 5728329
  1944905 words of memory out of 5000000
- 64709 multiletter control sequences out of 15000+600000
- 625700 words of font info for 115 fonts, out of 8000000 for 9000
+ 64784 multiletter control sequences out of 15000+600000
+ 626014 words of font info for 116 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,16n,120p,10948b,3240s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,16n,120p,10963b,3240s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (66 pages, 7244152 bytes).
+Output written on main.pdf (64 pages, 7247003 bytes).
 PDF statistics:
- 879 PDF objects out of 1000 (max. 8388607)
- 703 compressed objects within 8 object streams
- 178 named destinations out of 1000 (max. 500000)
- 473 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 912 PDF objects out of 1000 (max. 8388607)
+ 738 compressed objects within 8 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 537 words of extra memory for PDF output out of 10000 (max. 10000000)
 
