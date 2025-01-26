@@ -9,20 +9,6 @@ Um die Anlage mit einem bereits gut untersuchten Gas zu Testen, wurde eine Testr
 
 Die Auswertung der Messdaten erfolgt über einen digitalen Vielkanalanalysator (engl. \textit{multi channel analyzer}, MCA), der auf einem Computer Histogramme der aus der Flugzeit generieten Pulshöhen erstellt. Der MCA hat 4096 diskreten Kanäle, welche den Zeitbereich von 0 bis zur maximalen Zeit des TPHC abdecken. Diese werden dann mit Python und \textit{Matplotlib}, \textit{SciPy} und \textit{numpy} weiter ausgewertet und dargestellt. 
 
-Abbildung \ref{fig:ar} zeigt ein unskaliertes Flugzeitspektrum von Argon bei verschiedenen Energien. Es ist zu erkennen, dass die Peaks mit steigender Elektronenenergie schärfer werden und es einen Zusammenhang zwischen der Elektronenenergie und der Flugzeit gibt. Woher genau dieser Zusammenhang kommt, kann nicht aus den Daten abgeleitet werden, da ein höherer Energieübertrag auf die Gasatome nicht direkt die Flugzeit beeinflussen kann. Es kann aber vermutet werden, dass dieses Phänomen mit der verzögerten Extraktion der Ionen aus dem Kondensator zusammenhängt, die Ionen mit höheren kintischen Energien schneller beschleunigt. Genauere Untersuchungen folgen im Kapitel \ref{chap:Simulation} zur Simulation. Anhand der mittleren Flugzeit des größten Peaks der verschiedenen Spektren kann der Zusammenhang zwischen der Elektronenenergie und der Flugzeit untersucht werden.
-Abbildung \ref{fig:tof_energy} zeigt die Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Es ist zu erkennen, dass die Flugzeit mit steigender Elektronenenergie sinkt. Ein Fit der Form $t = a\sqrt{E} + b$ zeigt, dass die Flugzeit propotional zu $\sqrt{E}$ ist.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\textwidth]{tof_energy.png}
-    \caption[Abbildung TOF über Elektronenenergie]{Abbildung der Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Ein Fit zeigt, dass eine Wurzelfunktion die Daten annähert.}
-    \label{fig:tof_energy}
-\end{figure}
-
-Zunächst muss das Flugzeitspektrum in ein Massenspektrum umgerechnet werden. Diese Umrechnung ist nicht linear, da die Flugzeit propotional zu $\sqrt{m/q}$ ist. Um das Spektrum korrekt skalieren zu können, werden die Peaks mit einem Referenzspektrum verglichen, um sie identifizieren zu können. Im Fall der Kalibrationsmessung mit Argon wurde ein Spektrum aus \cite{Straub} verwendet, bei dem die Peaks als 1 bis 4-fach geladene Argonionen identifiziert wurden. Anhand dieser Information kann das Spektrum skaliert werden, um die Masse-zu-Ladungsverhältnisse auf der horizontalen Achse zu erhalten. Abbildung \ref{fig:ar} zeigt das Flugzeitspektrum von Argon bei Elektronenenergien von 60, 80 und 100 eV und Abbildung \ref{fig:ar_scaled} das skalierte. 
-
-Die Peaks der 1 bis 4-fach geladenen Argonionen sind in den Spektren gut zu erkennen. Es ist eindeutig zu erkennen, dass die Zahl der Ionen mit der Elektronenenergie steigt.
-
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{Ar60-100.png}
@@ -30,19 +16,55 @@ Die Peaks der 1 bis 4-fach geladenen Argonionen sind in den Spektren gut zu erke
     \label{fig:ar}
 \end{figure}
 
+Abbildung \ref{fig:ar} zeigt ein unskaliertes Flugzeitspektrum von Argon bei verschiedenen Energien. Es ist zu erkennen, dass die Peaks mit steigender Elektronenenergie schärfer werden und es einen Zusammenhang zwischen der Elektronenenergie und der Flugzeit gibt. Woher genau dieser Zusammenhang kommt, kann nicht aus den Daten abgeleitet werden, da ein höherer Energieübertrag auf die Gasatome nicht direkt die Flugzeit beeinflussen kann. Es kann aber vermutet werden, dass dieses Phänomen mit der verzögerten Extraktion der Ionen aus dem Kondensator zusammenhängt, die Ionen mit höheren kintischen Energien schneller beschleunigt. Genauere Untersuchungen folgen im Kapitel \ref{chap:Simulation} zur Simulation. Anhand der mittleren Flugzeit des größten Peaks der verschiedenen Spektren kann der Zusammenhang zwischen der Elektronenenergie und der Flugzeit untersucht werden.
+Abbildung \ref{fig:tof_energy} zeigt die Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Es ist zu erkennen, dass die Flugzeit mit steigender Elektronenenergie sinkt. Ein Fit der Form $t = a\sqrt{E} + b$ zeigt, dass die Flugzeit propotional zu $\sqrt{E}$ ist.
+
 \begin{figure}
     \centering
-    \includegraphics[width=1\textwidth]{Ar60-100_scaled.png}
-    \caption[Skaliertes Massenspektrum von Argon bei Elektronenenergie 100 eV]{Flugzeitspektrum von Argon bei Elektronenenergien von 60, 80 und 100 eV. Die Messungen sind jeweils über 60 Sekunden entstanden.}
-    \label{fig:ar_scaled}
+    \includegraphics[width=.7\textwidth]{tof_energy.png}
+    \caption[Abbildung TOF über Elektronenenergie]{Abbildung der Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Ein Fit zeigt, dass eine Wurzelfunktion die Daten annähert.}
+    \label{fig:tof_energy}
 \end{figure}
 
-\begin{table}[h]
+\subsection{Transformation in ein Massenspektrum}
+Für eine weitere Analyse muss das Flugzeitspektrum in ein Massenspektrum transformiert werden. Diese Transformation ist nicht linear, da die Flugzeit propotional zu $\sqrt{m/q}$ ist. Um das Spektrum korrekt skalieren zu können, werden die Peaks mit einem Referenzspektrum verglichen und einzelne identifiziert. Im Fall der Kalibrationsmessung mit Argon wurde ein Spektrum von Straub \textit{et al.} \cite{Straub} als Vergleich verwendet, bei dem die Peaks von ein- bis vierfach geladenen Argonionen identifiziert wurden. Anhand dieser Information kann das Spektrum skaliert werden, um die Masse-zu-Ladungsverhältnisse auf der horizontalen Achse zu erhalten. Die Transformationsfunktion hat die Form $a\sqrt{t}+bt+c$, wobei die Parameter über die Zuordnung des Masse-zu-Ladungsverhältnisses von mindestens drei Punkten ermittelt werden können. 
+
+Um einen Vergleich mehrerer Spektren zu ermöglichen, werden die Spektren zunächst normalisiert. Das bedeutet, dass die Fläche des größten Peaks (Ar$^+$) auf 1 gesetzt wird. Da sich der Ionisationsquerschnitt mit der Elektronenenergie ändert, werden die Spektren anschließend mit den Werten für $\sigma^+$ gewichtet. Der Count der Ionen geht direkt proportional in den Ionisierungsquerschnitt $\sigma^+$ ein. Tabelle \ref{tab:argon} zeigt einen Auszug der Ionisierungsquerschnitte von Argon aus \cite{Straub}.
+
+\subsection{Analyse und Vergleich der Ergebnisse}
+Abbildung \ref{fig:ar_scaled} zeigt das Spektrum aus Abbildung \ref{fig:ar} nach Anwendung der Transformationsfunktion und Normalisierung. Die Peaks der ein- bis vierfach geladenen Argonionen sind in den Spektren gut zu erkennen. Außerdem sind einige weitere Peaks mit Fragmenten von Wasser, Kohlenstoff und atmosphärischen Gasen sichtbar. Diese werden im nächsten Abschnitt besprochen. Die Spektren zeigen auch, dass erst beim Erreichen einer bestimmten Elektronennergie Mehrfachionisationprozesse stattfinden können. Die Wirkungsquerschnitte für die Mehrfachionisationen sind zwar deutlich kleiner als für die DI, dennoch nimmt der Anteil der DI als Folge mit steigender Elektronenerngie ab. Dass dieser Effekt sichtbar ist, zeigt, dass die Ionisation in der Anlage erfolgreich unter Einzelstoßbedingungen stattfindet.
+
+\begin{landscape}
+    \begin{figure}
+        \centering
+        \hspace*{-3cm}\includegraphics[width=1.7\textwidth]{Ar_scaled.png}
+        \caption[Skaliertes Massenspektrum von Argon bei verschiedenen Elektronenenergie]{Masse-zu-Ladungsspektrum von Argon bei Elektronenenergien von 100, 400 und 1000 eV. Die Messungen sind jeweils über 30 Minuten entstanden. Die Spektren wurden normarlisiert und sind mit den Werten aus \ref{tab:argon} gewichtet dargestellt. Außerdem wurden sie mit einem gauß'schen 1D-Filter ($\sigma = 1$) leicht geglättet, um sie besser vergleichen zu können.}
+        \label{fig:ar_scaled}
+    \end{figure}
+\end{landscape}
+
+Obwohl die Werte für die Ionisierungsquerschnitte aufgrund der defekten Kanone nicht direkt ermittelt werden können, soll anhand der relativen Häufigkeiten der Ionen eine qualitative Aussage über die relativen Ionisierungsquerschnitte getroffen werden. Das bedeutet, dass das Verhältnis $\sigma^+$/$\sigma^{2+}$ dem Verhältnis der Flächen $A(\text{Ar}^+)$/$A(\text{Ar}^{2+})$ entsprechen sollte. Dies kann mit einem direkten Vergleich  mit den Werten aus \ref{tab:argon} überprüft werden. Abbildung \ref{fig:ar_ratio} zeigt die Grenzen der Integration und die Bestimmung der Verhältnisse. Für einen einfachen Vergleich wurde die Fläche des Ar$^+$-Peaks auf 0.795 gesetzt, dem entsprechenden Quersschnitt aus Tab. \ref{tab:argon}. In Tabelle \ref{tab:vergleich} sind die normierten Werte der Ionen und die prozentualen Abweichungen zu den Werten von Straub \textit{et al.} \cite{Straub} angegeben. Es ist zu erkennen, dass die Werte für die ein- und zweifach geladenen Ionen besser übereinstimmen, während die Werte für die dreifach und vierfach geladenen Ionen größere prozentuale Abweichungen haben. Dies ist vermutlich auf die geringe Anzahl an Ionen zurückzuführen, die bei höheren Energien entstehen. Insgesamt zeigt die qualitative Auswertung, dass die Anlage erfolgreich arbeitet, da die relativen Häufigkeiten der Ionen den Erwartungen in etwa entsprechen. 
+
+Beim Summieren der einzelnen Querschnitte zum totalen Querschnitt werden die Werte entsprechend der Ladung gewichtet:
+\begin{equation}
+    \sigma^{\text{total}} = \sigma^+ + 2\sigma^{2+} + 3\sigma^{3+} + 4\sigma^{4+}.
+\end{equation}
+Die Summe der normierten Ionenzahlen Tabelle \ref{tab:vergleich} equivalent berechnet.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{Ar_integrated.png}
+    \caption[Integration eines gewichteten Argonspektrums bei 1000 eV]{Integration eines gewichteten Argonspektrums bei 1000 eV.}
+    \label{fig:ar_ratio}
+\end{figure}
+
+\begin{table}
     \centering
     \caption[Auszug der Ionisierungsquerschnitte von Argon aus Straub \textit{et al.} \cite{Straub}]{Auszug der Ionisierungsquerschnitte von Argon aus Straub \textit{et al.} \cite{Straub}}
+    \label{tab:argon}
     \begin{tabular}{r c c c c c}
         \toprule
-        \textbf{Energy} & $\sigma^+$ & $\sigma^{2+}$ & $\sigma^{3+}$ & $\sigma^{4+}$ & $\sigma^{\text{total}}$ \\
+        \textbf{Energie} & $\sigma^+$ & $\sigma^{2+}$ & $\sigma^{3+}$ & $\sigma^{4+}$ & $\sigma^{\text{total}}$ \\
         (eV) & ($10^{-16}$ cm$^2$) & ($10^{-17}$ cm$^2$) & ($10^{-19}$ cm$^2$) & ($10^{-19}$ cm$^2$) & ($10^{-16}$ cm$^2$) \\
         \midrule
         %17  & 0.017  &        &        &        & 0.017  \\
@@ -91,10 +113,32 @@ Die Peaks der 1 bis 4-fach geladenen Argonionen sind in den Spektren gut zu erke
     \end{tabular}
 \end{table}
 
+
+\begin{table}
+    \centering
+    \caption[Normierte Anzahl von Ionen und Abweichung zu Werten von Straub \textit{et al.}]{Normierte Anzahl von Ionen dargestellt wie in Tab. \ref{tab:argon}. In Klammern sind die prozentualen Abweichungen zu den Werten von Straub \textit{et al.} \cite{Straub} angegeben.}
+    \label{tab:vergleich}
+    \begin{tabular}{r c c c c c}
+        \toprule
+        \text{} & \multicolumn{5}{c}{\textbf{normierte Anzahl von Ionen}} \\ 
+
+        \textbf{Energie} & $Ar^+$ & $Ar^{2+}$ & $Ar^{3+}$ & $Ar^{4+}$ & gew. Summe \\
+        (eV) & (1) & ($10^{-1}$) & ($10^{-3}$) & ($10^{-3}$) & ($1$) \\
+        \midrule
+        50  & {TODO}  & {TODO}  & {}  & {}  & {TODO}   \\
+        100 & 2.64  & 1.42 \textcolor{gray}{(24.9\ \%)} & 4.04 \textcolor{gray}{(292.2\ \%)} & {} & 2.94 \textcolor{gray}{(7.1\ \%)} \\
+        400 & 1.51  & 0.602 \textcolor{gray}{(31.0\ \%)} & 4.62 \textcolor{gray}{(26.9\ \%)} & 0 \textcolor{gray}{(100\ \%)} & 1.64 \textcolor{gray}{(4.3\ \%)} \\
+        1000 & 0.795  & 0.278 \textcolor{gray}{(25.7\ \%)} & 3.98 \textcolor{gray}{(39.4\ \%)} & 0.763 \textcolor{gray}{(42.2\ \%)} & 0.86 \textcolor{gray}{(4.1\ \%)} \\
+               
+        
+        \bottomrule
+    \end{tabular}
+\end{table}
+
 \section{Restgasspektrum}
 Eine weitere Möglichkeit zur Überprüfung des Massenspektrometers ist die Aufnahme eines Restgasspektrums. Hierbei wird kein Gas in die Kammer eingelassen und lediglich der atmosphärische Hintergrund in der Kammer gemessen. Dieser besteht aus verschiedenen Restgasen, die durch die Elektronenstoßionisation genauso ionisiert werden können. In einem Vakuum erwartet man vorallem Rückstände von Wassermolekülen, sowie stabiler Kohlenstoffverbindungen, die bei der Vakuumbildung aus den Wänden der Kammer gelöst werden, als auch Reste von Stickstoff und Sauerstoff aus der Luft. Außerdem können besonders leichte Gase, hier vorallem Wasserstoff, übrig bleiben, da sie besonders flüchtig sind und die Vakuumpumpen sie weniger effektiv entfernen können. Es ist zusätzlich praktisch die Restgasverteilung zu kennen, um sie bei der Auswertung von Messungen berücksichtigen zu können. Aufgrund der geringen Dichte und damit niedrigem Ionisierungsquerschnitt muss diese Messung lange durchgeführt werden. 
 
-Wie bereits bei der Kalibrationsmessung muss das Massespektrum neu skaliert werden, um die Masse-zu-Ladungsverhältnisse der Ionen zu bestimmen. Dafür wird für einige der Peaks anhand von den Erwartungen eine Annahme getroffen, welchem Verhältnis sie entsprechen könnten. Für die Identifikation der Ionen wurde angenommen, das der größte Peak ionisierten Wassermolekülen
+Wie bereits bei der Kalibrationsmessung muss das Massespektrum transformiert werden, um die Masse-zu-Ladungsverhältnisse der Ionen zu bestimmen. Dafür wird für einige der Peaks anhand von den Erwartungen eine Annahme getroffen, welchem Verhältnis sie entsprechen könnten. Für die Identifikation der Ionen wurde angenommen, das der größte Peak ionisierten Wassermolekülen
 entspricht und der erste Peak ionisiertem Wasserstoff. Das resultierende, skalierte Restgasspektrum ist in Abb. \ref{fig:rest} dargestellt.
 
 Wie erwartet können die größten Peaks auf ionisierte Wassermoleküle, sowie Wasserstoff zurückgeführt werden. Auch die Peaks von molekularem Stickstoff, Sauerstoff und vermutlich Kohlenstoffdioxid sind gut zu erkennen. Die Struktur und Übereinstimmung des Restgasspektrums zeigen, dass die Anlage korrekt funktioniert und zur Identifikation von Produktionen taugt. Außerdem ist zu erkennen, dass Massendifferenzen von 1 $u$ im Bereich leichter Ionen aufgelöst werden können. 
@@ -108,7 +152,7 @@ Wie erwartet können die größten Peaks auf ionisierte Wassermoleküle, sowie W
 \end{figure}
 
 \section{Auswertung der Positionsdaten}
-Anhand der vom Detektor aufgenommenen Positionsdaten der Ionen, können Rückschlüsse auf den Entstehungsort der Ionen gezogen werden. Abbildung \ref{fig:Strahl} zeigt einen Plot dieser Daten für eine Messung mit Argonionen. Es ist zu erkennen, dass die Ionen, wie erwartet, entlang eines horizontalen Streifens entstehen, der seitlich abgeschnitten ist. Die Ionen wurden durch das 2 cm große Loch in der Deckenplatte des Beschleunigungskondesators auf den Detektor geschossen. Deshalb ist das Abbild des Elektronenstrahls seitlich begrenzt. Die Entstehungsorte der Ionen sind offensichtlich stark mit dem Strahl verbunden, was zeigt, dass die Ionen entlang des Strahls entstehen und nicht abgelenkt werden oder aus anderen Quellen stammen.
+Anhand der vom Detektor aufgenommenen Positionsdaten der Ionen, können Rückschlüsse auf den Entstehungsort der Ionen gezogen werden. Abbildung \ref{fig:Strahl} zeigt einen Plot dieser Daten für eine Messung mit Argonionen. Es ist zu erkennen, dass die Ionen, wie erwartet, entlang eines horizontalen Streifens entstehen, der seitlich abgeschnitten ist. Die Ionen wurden durch das 2 cm große Loch in der Deckenplatte des Beschleunigungskondesators auf den Detektor geschossen. Deshalb ist das Abbild des Elektronenstrahls seitlich begrenzt. Die Entstehungsorte der Ionen sind offensichtlich stark mit dem Strahl verbunden, was zeigt, dass die Ionen entlang des Strahls entstehen und nicht wesentlich abgelenkt werden oder aus anderen Quellen stammen.
 
 \subsection{Annomalien}
 Auffällig sind jedoch die Überhöhungen an den seitlichen Rändern des Strahls, die in Abbildung \ref{fig:Strahl3D} besonders deutlich zu erkennen sind. Außerdem ist die Länge des Abbilds von 28 mm unvorhergesehen. Bei geraden Flugbahnen der Ionen würde ein Abbild von etwa 20 mm Länge erwartet werden, entsprechend dem Loch in der Deckenplatte. Anders als bei einem Ionenstrahl, bei dem die Coloumbabstoßung eine Aufweitung bewirkt, sollte kein solcher Effekt unter der Einzelstoßbedingung auftreten. Beide dieser Effekte sollen mit der Simulation der Ionenoptik überprüft werden, um eine mögliche Erklärung zu finden. Die leichte Wölbung des Strahls war während des Experiments konstant und kann nur auf eine Ungenauigkeit der vom Detektor ermittelten Positionen zurückgeführt werden. 
@@ -121,8 +165,8 @@ Auffällig sind jedoch die Überhöhungen an den seitlichen Rändern des Strahls
 
 \begin{figure}
     \centering
-    \includegraphics[width=.8\textwidth]{Strahl3D.png}
-    \caption[Dreidimensionales Abbild des Strahls auf dem Detektor]{Dreidimensionales Abbild des Strahls auf dem Detektor. Die Anzahl der Treffer ist absolut dargestellt.}
+    \includegraphics[width=.85\textwidth]{Strahl3D.png}
+    \caption[Dreidimensionales Abbild des Strahls auf dem Detektor]{Dreidimensionales Abbild des Strahls auf dem Detektor. Die Anzahl der Treffer ist absolut dargestellt. Die Überhöhungen an den Rändern des Strahls sind gut zu erkennenbar. Das Bild zeigt die tatsächliche Ausrichtung des Detektors relativ zum Strahl.}
     \label{fig:Strahl3D} 
 \end{figure}
 
@@ -131,7 +175,7 @@ Die Positionen der detektierten Ionen auf dem Detektor können genutzt werden, u
 
 \begin{figure}
     \centering
-    \includegraphics[width=1\textwidth]{Strahlprofil.png}
+    \includegraphics[width=.7\textwidth]{Strahlprofil.png}
     \caption[Gemitteltes Strahlprofil]{Gemitteltes Strahlprofil aus den Positionen der detektierten Ionen. Die Daten wurden mit einem Gaußfit gefittet, um die Breite des Strahls zu bestimmen. In grau-schraffiert eingezeichnet ist die volle Breite bei halbem Maximum (FWHM) des Strahls abgebildet.}
     \label{fig:Strahlprofil} 
 \end{figure}
