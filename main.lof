@@ -4,7 +4,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Schematische Darstellung der Anregungs-Autoionisation für ein Atom.}}{19}{figure.caption.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Flugzeitspektrum der Restgase}}{29}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Flugzeitspektrum der Restgase}}{30}{figure.caption.7}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Schematischer Aufbau des Experiments}}{31}{figure.caption.8}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Querschnitt der Elektronenkanone}}{32}{figure.caption.9}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces 3D-Modell der Vakuumkammer mit Plattenkondensator}}{34}{figure.caption.10}%
@@ -16,15 +16,16 @@
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Aufgenommenener Verlauf der relevanten Signale der ToF-Messung}}{42}{figure.caption.17}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Signalfluß für die positionssensitive Messung}}{43}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Flugzeitspektrum von Argon bei Elektronenenergie 60, 80 und 100 eV}}{46}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Abbildung TOF über Elektronenenergie}}{47}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Skaliertes Massenspektrum von Argon bei verschiedenen Elektronenenergie}}{49}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Integration eines gewichteten Argonspektrums bei 1000 eV}}{50}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Masse-zu-Ladungsspektrum der Restgase}}{52}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Logaritmisches Abbild des Strahls auf dem Detektor}}{53}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Dreidimensionales Abbild des Strahls auf dem Detektor}}{54}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Gemitteltes Strahlprofil}}{55}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flugzeitspektrum von Argon bei Elektronenenergie von 50 bis 1000 eV}}{46}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Zusammenhang zwischen TOF und Elektronenenergie}}{47}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Flugzeitspektren von Argon bei 50 eV mit unterschiedlichen Extraktionsverzögerungen.}}{49}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Skaliertes Massenspektrum von Argon bei verschiedenen Elektronenenergien}}{50}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Integration eines gewichteten Argonspektrums bei 1000 eV}}{51}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Masse-zu-Ladungsspektrum der Restgase}}{54}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Logaritmisches Abbild des Strahls auf dem Detektor}}{55}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Dreidimensionales Abbild des Strahls auf dem Detektor}}{55}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Gemitteltes Strahlprofil}}{56}{figure.caption.29}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Modell des Massenspektrometers in \textit {SIMION}}}{59}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Modell des Massenspektrometers in \textit {SIMION}}}{59}{figure.caption.30}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ionenverteilung .fly2-File}}{62}{figure.caption.31}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ionenverteilung .fly2-File}}{62}{figure.caption.32}%

@@ -18,11 +18,16 @@ Durch Anlegen eines elektrischen Feldes, können elektrisch geladene Teilchen ü
     \label{eq:beschleunigung}
     a = \frac{q_i}{m_i} \cdot E.
 \end{equation}
-Die Flugzeit $t_f$ der Ionen über einer festen Strecke $d$ im Feld kann dann wie folgt beschrieben werden:
+Die Flugzeit $t_f$ der Ionen über einer festen Strecke $d_1$ im Feld kann dann wie folgt beschrieben werden:
 \begin{equation}
-    t_f = \sqrt{\frac{m_i}{q_i}} \cdot \sqrt{\frac{2d}{E}} = \sqrt{\frac{m_i}{q_i}} \cdot \sqrt{\frac{2}{U}} \cdot d.
+    t_f = \sqrt{\frac{m_i}{q_i}} \cdot \sqrt{\frac{2d}{E}} = \sqrt{\frac{m_i}{q_i}} \cdot \sqrt{\frac{2}{U}} \cdot d_1.
 \end{equation}
-Hieraus ist offensichtlich, dass eine Variation der Flugzeit allein von ihrem Masse-zu-Ladungsverhältnis $\frac{m_i}{q_i}$ abhängt, wenn die Spannung $U$ und der Abstand $d$ konstant bleiben. Treten die Ionen aus dem Feld aus fliegen sie weiter mit konstanter Geschwindigkeit, unabhängig ihrer Eigenschaften. Ein Flugzeitspektrum zeigt dann höher geladene Ionen desselben Elements mit einer geringeren Flugzeit. In der Theorie ist dises Spektrum diskret für verschiedene Masse zu Ladungsverhältnisse, im Labor sind die Peaks jedoch etwas ausgedehnt, wie in Abbildung \ref{fig:rest_tof} zu sehen. Das liegt daran, dass der Ort der Entstehung der Teilchen nicht genau gemessen werden kann, sondern von der Breite des Elektronenstrahls abhängt.
+Hieraus ist offensichtlich, dass eine Variation der Flugzeit allein von ihrem Masse-zu-Ladungsverhältnis $\frac{m_i}{q_i}$ abhängt, wenn die Spannung $U$ und der Abstand $d_1$ konstant bleiben. Treten die Ionen aus dem Feld aus fliegen sie weiter mit konstanter Geschwindigkeit, unabhängig ihrer Eigenschaften. Ein Flugzeitspektrum zeigt dann höher geladene Ionen desselben Elements mit einer geringeren Flugzeit. Die gesamte Flugzeit zum Detektor in der Entfernung $d_2$ ist gegeben durch folgenden Zusammenhang:
+\begin{equation}
+    t_{\text{tot}} = \sqrt{\frac{m_i}{q_i U}} \left( \sqrt{2} d_1 + d_2 \right).
+    \label{eq:time}
+\end{equation}
+In der Theorie ist dises Spektrum diskret für verschiedene Masse zu Ladungsverhältnisse, im Labor sind die Peaks jedoch etwas ausgedehnt, wie in Abbildung \ref{fig:rest_tof} zu sehen. Das liegt daran, dass der Ort der Entstehung der Teilchen nicht genau gemessen werden kann, sondern von der Breite des Elektronenstrahls abhängt.
 
 Um die Flugzeit experimentell zu bestimmen, wird ein Start- und Stoppsignal benötigt. Der Startzeitpunkt muss den Eintritt in das elektrische Feld markieren und der Stoppzeitpunkt das Auftreffen auf einen Detektor. Kritisch ist dabei, die Flugzeit mit hinreichender Genauigkeit unabhängig vom Ion zu bestimmen. Typische Flugzeiten sind in diesem Aufbau in der Größenordnung von Mikrosekunden. Wie auch in der Arbeit von Straub et al. wird ein Pulsgenerator verwendet, der einen Hochspannungspuls auf einer Ablenkplatte, und damit das elektrische Feld zur Beschleunigung der Ionen erzeugt. Der Puls, der diese Spannung triggert wird auch als Startsignal verwendet. Diese Flugzeitmessung wird in Kapitel \ref{chap:Sim} auch ausgiebig simuliert.
 
