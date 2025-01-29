@@ -1,52 +1,53 @@
 \babel@toc {german}{}\relax 
-\contentsline {chapter}{\numberline {1}Einführung}{11}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Zielsetzung}{13}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Wisschenschaftlicher Kontext}{13}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Grundlagen der Elektronenstoßionisation}{17}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Ionisationsprozesse}{17}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Mehrstufige Ionisationsprozesse}{18}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Resonante Prozesse}{20}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Ionisierungsquerschnitt}{20}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Ansätze theoretischer Beschreibungen}{21}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Lotz-Formel}{22}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Störungstheorie}{22}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Einzelstoßbedingung}{24}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Einzelstoßbedingung aus der Perspektive des Atoms}{24}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Einzelstoßbedingung aus der Perspektive des Elektrons}{25}{subsection.2.4.2}%
-\contentsline {chapter}{\numberline {3}Experimenteller Aufbau}{27}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Methodik}{27}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Ionisation}{27}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Flugzeitmessung}{28}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Vakuumkammer und Druckmessung}{29}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Elektronenstrahl und Ablenkplatte}{30}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Detektorsystem}{33}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Mikrokanalplatten}{35}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Positionsbestimmung}{37}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Konditionierung des Detektors}{38}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Signalverarbeitung}{39}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Flugzeitmessung}{39}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Positionssensitive Auflösung}{41}{subsection.3.6.2}%
-\contentsline {chapter}{\numberline {4}Auswertung}{45}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Kalibrationsmessung mit Argon}{45}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Zusammenhang von Flugzeit und Elektronenenergie}{46}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Transformation in ein Massenspektrum}{47}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Unsicherheiten}{48}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Extraktionverzögerung}{48}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Analyse und Vergleich der Ergebnisse}{49}{subsection.4.1.5}%
-\contentsline {section}{\numberline {4.2}Restgasspektrum}{51}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Auswertung der Positionsdaten}{53}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Annomalien}{54}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Ermittlung des Elektronenstrahlprofil}{56}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Simulation der Ionenoptik}{57}{chapter.5}%
-\contentsline {section}{\numberline {5.1}\textit {SIMION}: Methodik und Limitation}{57}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Modellierung und Konfiguration}{58}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Initialisierung der Ionen}{59}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Extraktion der Ionen}{60}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Vergleich der Simulation mit dem Experiment}{60}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Untersuchung der Ionenoptik}{60}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Einfluss der Flugstrecke}{60}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Einfluss der Extraktionsverzögerung}{60}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Auflösungsvermögen}{60}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Zusammenfassung und Ausblick}{60}{section.5.5}%
-\contentsline {chapter}{\numberline {A}Anhang}{61}{appendix.A}%
-\contentsline {chapter}{Literaturverzeichnis}{63}{section*.33}%
+\contentsline {chapter}{\numberline {1}Einführung}{13}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Zielsetzung}{15}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Wisschenschaftlicher Kontext}{16}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Grundlagen der Elektronenstoßionisation}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Ionisationsprozesse}{19}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Mehrstufige Ionisationsprozesse}{20}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Resonante Prozesse}{22}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Ionisierungsquerschnitt}{22}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Ansätze theoretischer Beschreibungen}{23}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Lotz-Formel}{24}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Störungstheorie}{24}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Einzelstoßbedingung}{26}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Einzelstoßbedingung aus der Perspektive des Atoms}{26}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Einzelstoßbedingung aus der Perspektive des Elektrons}{27}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3}Experimenteller Aufbau}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Methodik}{29}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Ionisation}{29}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Flugzeitmessung}{30}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Verzögerung der Extraktion}{32}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Vakuumkammer und Druckmessung}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Elektronenstrahl und Ablenkplatte}{34}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Detektorsystem}{35}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Mikrokanalplatten}{37}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Positionsbestimmung}{39}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Konditionierung des Detektors}{40}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Signalverarbeitung}{41}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Flugzeitmessung}{41}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Positionssensitive Auflösung}{43}{subsection.3.6.2}%
+\contentsline {chapter}{\numberline {4}Auswertung}{47}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Kalibrationsmessung mit Argon}{47}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Zusammenhang von Flugzeit und Elektronenenergie}{48}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Transformation in ein Massenspektrum}{49}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Unsicherheiten}{50}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Extraktionverzögerung}{50}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Analyse und Vergleich der Ergebnisse}{51}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Restgasspektrum}{53}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Auswertung der Positionsdaten}{55}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Annomalien}{56}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Ermittlung des Elektronenstrahlprofil}{58}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Simulation der Ionenoptik}{59}{chapter.5}%
+\contentsline {section}{\numberline {5.1}\textit {SIMION}: Methodik und Limitation}{59}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Modellierung und Konfiguration}{60}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Initialisierung der Ionen}{61}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Extraktion der Ionen}{62}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Vergleich der Simulation mit dem Experiment}{62}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Untersuchung der Ionenoptik}{65}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Einfluss der Flugstrecke}{65}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Untersuchung zur Energie-Flugzeit-Korrelation}{65}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Auflösungsvermögen}{65}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Zusammenfassung und Ausblick}{65}{section.5.5}%
+\contentsline {chapter}{\numberline {A}Anhang}{67}{appendix.A}%
+\contentsline {chapter}{Literaturverzeichnis}{69}{section*.36}%

@@ -29,15 +29,18 @@ Hieraus ist offensichtlich, dass eine Variation der Flugzeit allein von ihrem Ma
 \end{equation}
 In der Theorie ist dises Spektrum diskret für verschiedene Masse zu Ladungsverhältnisse, im Labor sind die Peaks jedoch etwas ausgedehnt, wie in Abbildung \ref{fig:rest_tof} zu sehen. Das liegt daran, dass der Ort der Entstehung der Teilchen nicht genau gemessen werden kann, sondern von der Breite des Elektronenstrahls abhängt.
 
-Um die Flugzeit experimentell zu bestimmen, wird ein Start- und Stoppsignal benötigt. Der Startzeitpunkt muss den Eintritt in das elektrische Feld markieren und der Stoppzeitpunkt das Auftreffen auf einen Detektor. Kritisch ist dabei, die Flugzeit mit hinreichender Genauigkeit unabhängig vom Ion zu bestimmen. Typische Flugzeiten sind in diesem Aufbau in der Größenordnung von Mikrosekunden. Wie auch in der Arbeit von Straub et al. wird ein Pulsgenerator verwendet, der einen Hochspannungspuls auf einer Ablenkplatte, und damit das elektrische Feld zur Beschleunigung der Ionen erzeugt. Der Puls, der diese Spannung triggert wird auch als Startsignal verwendet. Diese Flugzeitmessung wird in Kapitel \ref{chap:Sim} auch ausgiebig simuliert.
+Um die Flugzeit experimentell zu bestimmen, wird ein Start- und Stoppsignal benötigt. Der Startzeitpunkt muss den Eintritt in das elektrische Feld markieren und der Stoppzeitpunkt das Auftreffen auf einen Detektor. Kritisch ist dabei, die Flugzeit mit hinreichender Genauigkeit unabhängig vom Ion zu bestimmen. Typische Flugzeiten sind in diesem Aufbau in der Größenordnung von Mikrosekunden. Wie auch in der Arbeit von Straub et al. wird ein Pulsgenerator verwendet, der einen Hochspannungspuls auf einer Ablenkplatte, und damit das elektrische Feld zur Beschleunigung der Ionen erzeugt. Der Puls, der diese Spannung triggert wird auch als Startsignal verwendet.
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \hspace*{-.8cm}
     \includegraphics[width=.95\textwidth]{Restgas_tof.png}
     \caption[Flugzeitspektrum der Restgase]{Unskaliertes Flugzeitspektrum der Restgase in der Vakuumkammer. Die Zeitachse ist in willkürlichen Einheiten angegeben. Zur Bestimmung der Masse-zu-Ladungsverhältnisse muss das Spektrum anhand einiger Annahmen skaliert werden.}
     \label{fig:rest_tof}
 \end{figure}
+
+\subsection{Verzögerung der Extraktion}
+Wie bereits erwähnt arbeitet die \textit{Zero-B}-Anlage mit der DETOF-Methode, bei der die Extraktion der Ionen nach der Ionisation verzögert wird. Dadurch kann der Unterschied in der Flugzeit der Ionen aufgrund ihrer unterschiedlichen thermischen Bewegungsrichtung weitesgehend kompensiert werden. Durch die Verzögerung der Extraktion, entfernen sich Ionen, die einen Anteil ihrer Geschwindigkeit in Richtung des Detektors haben, von der Extraktionsplatte. Ionen mit entgegengesetzter Flugrichtung kommen näher. Bei anschließender Beschleunigung werden die Ionen stärker beschleunigt, die sich näher zur Platte bewegt haben und ohne Verzögerung eine kleinere Geschwindigkeit beim Verlassen des Beschleunigungskondensators gehabt hätten. Das liegt daran, dass sie sich länger im Feld befinden. Die Flugzeit hängt dann stärker von der Masse und Ladung der Teilchen ab, was in einer besseren Auflösung des Massenspektrometers resultiert.
 
 \section{Vakuumkammer und Druckmessung}
 Die Experimente finden in einer Vakuumanlage mit einer kubischen Hauptkammer statt, von der alle anderen Komponenten abzweigen. Die Kammer hat eine Seitenlänge von 30 cm. Sie besteht auch $\mu$-Metall, damit das Magnetfeld im Inneren der Kammer minimal ist. Das ist wichtig, damit die Elektronen nicht von äußeren Magnetfeldern abgelenkt werden. Die Abschirmung reduziert das Magnetfeld auf unter 15 mG \cite{Holzte}. Die Kammer ist mit einer Turbomolekularpumpe und einer Vorpumpe ausgestattet. Diese können ein Vakuum in der Größenordnung von 10$^{-8}$ mBar nach Ausheizen der Kammer erreichen. Am überliegenden Flange ist ein kapazitiver Drucksensor angebracht, der \textit{MKS Barathron 690A.1TRB}. Dieser misst den Druck bis zu 3 $\cdot 10^{-6}$ mbar mit einer Genauigkeit von 0,08 \%. Dafür wird das Restgas auf \ang{45}C aufgeheizt. Die Temperaturdifferenz zum restlichen Aufbau muss später berücksichtig werden. Ein zweiter Druckmesser ist ein Bayard-Alpert-Glühkathoden-Ionisationsvakuummeter, welches Drücke bis unter $10^{-8}$ mbar messen kann. Dieses dient als Referenz, damit das genauere kapazitive Messystem genullt werden kann und erweist sich als ausgesprochen praktisch bei der Arbeit mit dem Hochvakuum.
@@ -56,7 +59,7 @@ Für die Elektronenstoßionisation ist eine Heizkathoden-Elektronenkanone an ein
 \begin{figure}
     \centering
     \includegraphics[width=.8\textwidth]{EGun.png}
-    \caption[Querschnitt der Elektronenkanone]{Querschnitt der Elektronenkanone von Kimball Physics. Die Elektronen werden durch eine Heizkathode (Cathode) erzeugt und durch eine Gitterspannung (Grid) beschleunigt. Sie können fokussiert und abgelenkt werden.}
+    \caption[Querschnitt der \textit{firing unit} der Elektronenkanone]{Querschnitt der \textit{firing unit} der Elektronenkanone von Kimball Physics. Die Elektronen werden durch eine Heizkathode (Cathode) erzeugt und durch eine Spannung (Anode) beschleunigt. Das Gitter (Grid) kann genutzt werden, um den Extraktionsstrom der Kanone zu Pulse. Die Elektronen können fokussiert und abgelenkt werden.}
     \label{fig:EGun}
 \end{figure}
 
@@ -100,7 +103,7 @@ Die Mikrokanalplatten des Detektors dienen der Verstärkung von eintreffenden Si
 
 \begin{figure}
     \centering
-    \includegraphics[width=.8\textwidth]{MCP.png}
+    \includegraphics[width=.7\textwidth]{MCP.png}
     \caption[Schnitt und Funktionsprinzip einer MCP]{Schnitt und Funktionsprinzip einer MCP aus \cite{MCP}, hier dargestellt mit einem eintretenden Elektron. (102) Haltungsflange, (101) Mikrokanäle aus Glas, (103) Elektron, welches in den Kanal eintritt, (104) erzeugte Sekundärelektronen, (105) Spannungsversorgung der Platten}
     \label{fig:MCP} 
 \end{figure}
@@ -109,7 +112,7 @@ Typischerweise werden zwei MCPs hintereinander verwendet, wobei sie um \ang{180}
 
 \begin{figure}
     \centering
-    \includegraphics[width=.8\textwidth]{MCP_Sensitivity.png}
+    \includegraphics[width=.6\textwidth]{MCP_Sensitivity.png}
     \caption[Detektionsrate in Abhängigkeit der Frontplattenspannung]{Detektionsrate in Abhängigkeit der Frontplattenspannung. Die Rate steigt ab einem negativem Potential von 2300 V stark an und erreicht erst bei einer Spannung größer 2550 V ein Plateau}
     \label{fig:Frontplattenspannung}
 \end{figure}
@@ -117,11 +120,11 @@ Typischerweise werden zwei MCPs hintereinander verwendet, wobei sie um \ang{180}
 Die auf die Frontplatte angelegte Spannung bestimmt, mit welcher Energie die Ionen auf die Platte treffen. Im Optimalfall sollte sie so hoch einstellt werden, dass die Detektionsrate unabhängig von der Spannung wird. Ziel ist, das alle auf den Dektektor treffenden Ionen genügend Energie haben, um Elektronen auszulösen und somit detektiert zu werden. Abbildung \ref{fig:Frontplattenspannung} zeigt den Zusammenhang von Frontplattenspannung und Detektionsrate. Sie bildet das Ergebnis einer Messreihe der Counts bei konstantem Gasdruck und Elektronenstrahlparametern bei verschiedenen MCP-Spannungen ab. Um die Rate zu erhalten werden die Counts durch die Zeit der Messung geteilt. Anhand der Werte ist zu erkennen, dass es nicht möglich ist, mit diesem MCP-Detektor vollständig in der Sättigung zu arbeiten, wenn der empfohlene Spannungsbereich eingehalten wird, da auch bei maximaler Spannung eine Erhöhung der Spannung zu einer Erhöhung in der Rate führt. Trotzdem nimmt diese Zunahme bei einer Spannung größer als 2400 V ab. Bei der Aufnahme sämtlicher Daten werden im Folgenden deshalb Spannungen größer 2400 V gewählt, um möglichst viele Ionen nachweisen zu können.
 
 \subsection{Positionsbestimmung}
-Wie in \cite{Detektorsystem} dargestellt, gibt es unterschiedliche Ansätze die zweidimensionale Positionsinformation der durch die Platten erzeugten Ladungswolke zu ermitteln. Das hier verwendete Konzept macht sich zu Nutzen, dass eine auf ein Drahtgitter treffende Ladungswolke ein elektrisches Signal in den Leitern erzeugt. Dieses hat eine Laufzeit in der Größenordnung einiger Nanosekunde bis es an den Enden des Leiters ankommt. Anhand dieser Laufzeitdifferenz kann die Position auf dem Detektor in einer Dimension bestimmt werden. Mithilfe eines zweiten, um \ang{90} gedrehten, Leiters, kann die Position zweidimensional dargestellt werden. In Abbildung \ref{fig:DLD} ist die Drahtstruktur für die Messung einer Dimension gezeigt. Der Detektor hat eine aktive Fläche mit einem Durchmesser von 80 mm. In dieser Arbeit ist die Bestimmung der Auftreffpositionen zweitrangig und wird in erster Linie dafür verwendet zu validieren, dass die Ionen tatsächlich primär aus der Elektronenstoßionisation stammen und nicht zufällig verteilt sind. Der Geburtsort der Ionen wird auf dem Bild des Detektors indirekt abgebildet und zeigt deutlich den Strahl der Elektronenkanone. Die Auswertung der Positionsbestimmung erfolgt in Kapitel \ref{chap:Auswertung}.
+Wie in \cite{Detektorsystem} dargestellt, gibt es unterschiedliche Ansätze die zweidimensionale Positionsinformation der durch die Platten erzeugten Ladungswolke zu ermitteln. Das hier verwendete Konzept macht sich zu Nutzen, dass eine auf ein Drahtgitter treffende Ladungswolke ein elektrisches Signal in den Leitern erzeugt. Dieses hat eine Laufzeit in der Größenordnung einiger Nanosekunde bis es an den Enden des Leiters ankommt. Anhand dieser Laufzeitdifferenz kann die Position auf dem Detektor in einer Dimension bestimmt werden. Mithilfe eines zweiten, um \ang{90} gedrehten, Leiters, kann die Position zweidimensional dargestellt werden. In Abbildung \ref{fig:DLD} ist die Drahtstruktur für die Messung einer Dimension gezeigt. Der Detektor hat eine aktive Fläche mit einem Durchmesser von 80 mm. In dieser Arbeit ist die Bestimmung der Auftreffpositionen zweitrangig und wird in erster Linie dafür verwendet zu validieren, dass die Ionen tatsächlich primär aus der Elektronenstoßionisation stammen und nicht zufällig verteilt sind. Der Geburtsort der Ionen wird auf dem Bild des Detektors indirekt abgebildet und zeigt deutlich den Strahl der Elektronenkanone. Die Auswertung der Positionsbestimmung erfolgt in Kapitel \ref{chap:Auswertung} zur Auswertung.
 
 \begin{figure}
     \centering
-    \includegraphics[width=.6\textwidth]{DLD.png}
+    \includegraphics[width=.5\textwidth]{DLD.png}
     \caption[Funktionsprinzip der Laufzeitmessung des Detektors]{Funktionsprinzip der Laufzeitmessung in einer Dimension aus \cite{Detektorsystem}. Der Leiter ist mäanderförmig aufgebaut, um die Laufzeit zu verlängern und die Positionsgenauigkeit zu erhöhen. Das Signal propagiert in beide Richtungen mit der effektiven Geschwindigkeit $v_\perp$.}
     \label{fig:DLD} 
 \end{figure}
@@ -137,7 +140,7 @@ Eine schematische Übersicht der Verarbeitung ist in Abbildung \ref{fig:ToF} zu 
 
 \begin{figure} 
     \centering
-    \includegraphics[width=.9\textwidth]{ToF_Signals.png}
+    \includegraphics[width=.95\textwidth]{ToF_Signals.png}
     \caption[Schematisch dargestellter Signalfluß der ToF-Messung]{Schematisch dargestellter Signalfluß der ToF-Messung. Der Signalfluß erfolgt, mit Ausname der Elektronenkanone, von links nach rechts. Die verwendeten Geräte sind stark vereinfacht abgebildet, wobei die wichtigsten Einstellungen inkludiert wurden. Die jeweilige Form der Signale ist über den Verbindungen gezeigt und ist rein qualitativ. Power Supplies sowie Anzeigegeräte sind nicht abgebildet.}
     \label{fig:ToF} 
 \end{figure}
@@ -148,7 +151,7 @@ Für die Bestimmumg des Auftreffzeitpunktes wird vom Detektor ein Spannungssigna
 
 \begin{figure}
     \centering
-    \includegraphics[width=.7\textwidth]{cfd.png}
+    \includegraphics[width=.4\textwidth]{cfd.png}
     \caption[Prinzip des Constant Fraction Discriminators]{Prinzip des Constant Fraction Discriminators. Links: Zeitpunkte beim Überschreiten eines Schwellwertes sind unterschiedlich, rechts: Der Zeitpunkt beim Überschreiten eines Bruchteils des Signals ist unabhängig vom Pegel.\\
     \small Quelle: https://commons.wikimedia.org/w/index.php?curid=534201}
     \label{fig:CFD} 
@@ -170,7 +173,7 @@ In Abbildung \ref{fig:pos} ist der Signalfluß der positionssensitiven Messung s
 
 \begin{figure}
     \centering
-    \includegraphics[width=.9\textwidth]{PosSig.png}
+    \includegraphics[width=.6\textwidth]{PosSig.png}
     \caption[Signalfluß für die positionssensitive Messung]{Signalfluß für die positionssensitive Messung}
     \label{fig:pos} 
 \end{figure}

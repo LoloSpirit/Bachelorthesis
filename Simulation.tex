@@ -24,7 +24,7 @@ Um die Ionenoptik der derzeit verwendeten Geometrie zu untersuchen, muss dieser 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{Model.png}
-    \caption[Modell des Massenspektrometers in \textit{SIMION}]{Modell des Massenspektrometers in \textit{SIMION}. Die Elektroden sind in Beige dargestellt, die Flugbahnen der Ionen in Rot.}
+    \caption[Modell des Massenspektrometers in \textit{SIMION}]{Modell des Massenspektrometers in \textit{SIMION}. Die Elektroden sind in Beige dargestellt, die Flugbahnen der Ionen in Rot. Dargestellt ist die Geometrie einer Flugstrecke von 410 mm.}
     \label{fig:model}
 \end{figure}
 
@@ -33,7 +33,7 @@ Auf der Bodenplatte (in der Simulation links) wird ein positives Potential von m
 \subsection{Initialisierung der Ionen}
 Die Interaktion der Elektronen mit dem Neutralgas wird in der Simulation nicht berücksichtigt. Stattdessen werden die Ionen im Pfad des Elektronenstrahls erschaffen, also in einem Streifen paralell zu den Platten. Um die räumliche Ausdehnung des Strahls zu berücksichtigen und, wie auch im Experiment zu beobachten, eine Verteilung der Flugstrecken der Ionen zu erhalten, wird das in der Auswertung des Strahlprofils bestimmte Profil des Elektronenstrahls genutzt. Die Ionen werden dann mit einer FWHM von $1.95$ mm um die Linie des Strahls gauß-verteilt. Da das Experiment von der Einzelstoßbedingung ausgeht, kann ein Ion nach dem Anderen simuliert werden und die Wechselwirkung zwischen Ionen vernachlässigt werden.
 
-Die Art der Teilchen, so wie ihre Häufigkeitsverteilung können mit einem \textit{.fly2}-File definiert werden. Auch die räumliche Verteilung des Strahls wurde hierüber implementiert. Die verwendete Datei ist im Anhang \ref{fly2} zu finden. Für die kinetische Energie der Teilchen wird 1/25 eV angenommen. Dieser Wert ergibt sich, wenn man eine Maxwell-Boltzmann-Verteilung für die kinetische 
+Die Art der Teilchen, so wie ihre Häufigkeitsverteilung können mit einem \textit{.fly2}-File definiert werden. Auch die räumliche Verteilung des Strahls wurde hierüber implementiert. Die verwendete Datei ist im Anhang \ref{fly2} zu finden. Für die kinetische Energie der Teilchen wird aufgrund der thermischen Bewegung angenommen. Dieser Wert ergibt sich, wenn man eine Maxwell-Boltzmann-Verteilung für die kinetische 
 Energie der Ionen annimmt und die Temperatur der Ionen auf 300 K (Raumtemperatur) setzt: 
 \begin{equation}
     \label{eq:kin}
@@ -41,15 +41,60 @@ Energie der Ionen annimmt und die Temperatur der Ionen auf 300 K (Raumtemperatur
 \end{equation}
 
 \subsection{Extraktion der Ionen}
-Die Extraktion der Ionen erfolgt durch die Anlegung eines elektrischen Feldes zwischen den Platten, wie im Experiment. Damit der Vergleich so präzise wie möglich ist, wird das Potential auf der Bodenplatte zeitabhängig verändert. Dabei wird die Spannung von 0 auf 5000 V mit einer linearen Rampe in 50 ns erhöht. Die Zeitabhängigkeit wurde dem Signalverlauf (dargestellt in \ref{fig:Signal}) entnommen. Die Ionen werden dann in einem Zeitfenster von 4 $\mu s$ extrahiert. Um das zeitabhängige Potential umzusetzen, wird ein \textit{Workbench}-File genutzt, das die Spannung in Abhängigkeit der Zeit definiert. In \textit{SIMION} können Potentiale angepasst werden, ohne das gesamte Potential-Array neu berechnen zu müssen. Dies ist möglich, da die Potentiale durch eine Überlagerung von Spannungen auf bereits existierenden Elektroden definiert sind.
+Die Extraktion der Ionen erfolgt durch die Anlegung eines elektrischen Feldes zwischen den Platten, wie im Experiment. Damit der Vergleich so präzise wie möglich ist, wird das Potential auf der Bodenplatte zeitabhängig verändert. Dabei wird die Spannung von 0 auf 5000 V mit einer linearen Rampe in 50 ns erhöht, nachdem die Extraktionsverzögerung abgewartet wurde. Die Zeitabhängigkeit wurde dem Signalverlauf (dargestellt in \ref{fig:Signal}) entnommen. Die Ionen werden dann in einem Zeitfenster von 4 $\mu s$ extrahiert. Um das zeitabhängige Potential umzusetzen, wird ein \textit{Workbench}-File genutzt, das die Spannung in Abhängigkeit der Zeit definiert. In \textit{SIMION} können Potentiale angepasst werden, ohne das gesamte Potential-Array neu berechnen zu müssen. Dies ist möglich, da die Potentiale durch eine Überlagerung von Spannungen auf bereits existierenden Elektroden definiert sind.
 
 \section{Vergleich der Simulation mit dem Experiment}
 Um dieselben Informationen aus der Simulation zu gewinnen, wie sie auch im Experiment vom Detektor aufgenommen werden, werden Flugzeit und Position jedes Teilchens zum Auftreffpunkt aufgezeichnet. Diese können dann mit denselben Methoden wie die experimentellen Daten ausgewertet werden. Im Folgenden werden verschiedene Simulationen durchgeführt, um die Ionenoptik zu untersuchen. Dafür sollen zunächst die Ergebnisse aus dem Experiment nachsimuliert werden, um die Genauigkeit der Simulation zu überprüfen. 
 
 
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{Restgas_Sim.png}
+    \caption[Simuliertes Restgasspektrum]{Ein simuliertes Restgasspektrum, die Ionenverteilung wurde anhand der Auswertung des Restgasspektrums gesetzt.}
+    \label{fig:Restgas_Sim}
+\end{figure}
+
+Implementiert man einen Ionenverteilung ähnlich der in der Auswertung des Restgasspektrums bestimmten, kann man ein vergleichbares Flugzeitspektrum aus simulierten Daten generieren. Abbildung \ref{fig:Restgas_Sim} zeigt ein solches Ergebnis. Die Flugzeitverteilung der Ionen ist ähnlich der im Experiment beobachteten. Die zeitliche Abweichung der simulierten Peaks zu den echten Daten beträgt weniger als 100 ns und kommt wahrscheinlich durch die vereinfachte lineare Umsetzung der kapazitiven Beschleunigungsplatte zustande. In der Simulation wird bestätigt, dass die Ionen in einem Zeitfenster von 4 $\mu s$ extrahiert werden. Die Peaks sind schärfer als im Experiment und es ist deutlich weniger Rauschen vorhanden. Das liegt daran, dass die Simulation keine Störeffekte berücksichtigt und der Detektor idealisiert ist. Dass das Ergebnis kein Linienspektrum ist, liegt daran, dass der Strahl als räumlich ausgedehnt simuliert wird.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.65\textwidth]{Sim_Positions_Scatter.png}
+    \caption[Streudiagramm der simulierten Ionenposition auf dem Detektor ]{Die Position der Ionen auf dem Detektor als Streudiagramm ohne Diskretisierung.}
+    \label{fig:sim_pos_scatter}
+\end{figure}
+
+Nicht nur die Flugzeit, sondern auch die räumliche Verteilung der Ionen kann mit der Simulation überprüft werden. Dafür wird die Position der Ionen beim Auftreffen auf den Detektor aufgezeichnet. Abbildung \ref{fig:sim_pos_scatter} zeigt ein Streudiagramm der Orte. Da anders als in der Realität keine Auflösungsbegrenzung durch den Detektor existiert, ist die räumliche Auflösung Punkte lediglich durch die Genauigkeit der Darstellung in \textit{SIMION} begrenzt.
+
+Um vergleichbare Daten zu erhalten, wird der Ort diskretisiert. Die Detektorfläche wird in 280x280 Pixel unterteilt und in Abbildung \ref{fig:sim_pos_both}, wie auch in der Auswertung, dargestellt. Aufällig ist, dass die Ionen in der Simulation eine kürzere Fläche einnehmen als im Experiment. Die Länge des Abbilds des simulierten Strahls ist mit etwa 24 mm kürzer als der 28 mm lange Streifen aus dem Experiment. Eine Überhöhung an den Rändern des Strahls ist in der Simulation nicht zu erkennen und die Ursache weiter unbekannt.
+
+Die Aufweitung des Strahls ist mit der thermischen Bewegung der Ionen zu erklären. Um diesen Zusammenhang sichtbar zu machen sind in Abbildung \ref{fig:sim_pos_both} die Auftrefforte der Ionen bei unterschiedlichen kinetischen Energien dargestellt. Erhöht man die kinetische Energie der Teilchen sieht man, dass das Abbild des Strahls deutlich breiter wird. Dennoch wird die Länge von 28 mm nicht erreicht. Beim Vergleich mit den Dimensionen aus der Auswertung ist eindeutig, dass die Annahme von 1/25 eV deutlich näher an den experimentellen Daten liegt. 
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{.43\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Sim_Positions.png}
+        \caption{Ionen bei 1/25 eV kinetischer Energie}
+        \label{fig:sim_pos}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}{.45\textwidth}
+        \centering
+        \includegraphics[width=1\linewidth]{Sim_Positions_Kinetic.png}
+        \caption{Ionen bei 1/5 eV kinetischer Energie}
+        \label{fig:sim_pos_kinetic}
+    \end{subfigure}
+    \caption[Simuliertes Abbild des Strahls auf dem Detektor bei verschiedenen Energien]{Logarithmisches Abbild des simulierten Strahls auf dem Detektor bei unterschiedlichen kinetischen Energien. Die Länge des tatsächlichen Strahls ist als Vergleich eingezeichnet. Die Bilder sind deutlich weniger gesättigt, da nicht annähernd so viele Ionen simuliert wurden, wie im Experiment über einen längeren Zeitraum gesammelt wurden. Einen Hintergrund wie im Experiment gibt es in der Simulation nicht.}
+    \label{fig:sim_pos_both}
+\end{figure}
+
+Anhand dieser Vergleiche kann bereits festgestellt werden, dass die Simulation der Ionenoptik in \textit{SIMION} eine gute Übereinstimmung mit den experimentellen Daten zeigt, auch wenn nicht alle Phänomene abgebildet werden können. Die Simulation kann also genutzt werden, um die Ionenoptik des Massenspektrometers zu untersuchen und Optimierungsansätze zu finden.
+
+
 \section{Untersuchung der Ionenoptik}
+
 \subsection{Einfluss der Flugstrecke}
-\subsection{Einfluss der Extraktionsverzögerung}
+\subsection{Untersuchung zur Energie-Flugzeit-Korrelation}
 \label{sec:delay}
 \subsection{Auflösungsvermögen}
 

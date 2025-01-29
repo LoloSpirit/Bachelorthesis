@@ -1,31 +1,34 @@
 \babel@toc {german}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Anlage zur Messung von Ionisationsquerschnitten aus \blx@tocontentsinit {0}\cite {Straub2}}}{16}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Anlage zur Messung von Ionisationsquerschnitten aus \blx@tocontentsinit {0}\cite {Straub2}}}{18}{figure.caption.5}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematische Darstellung der Anregungs-Autoionisation für ein Atom.}}{19}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematische Darstellung der Anregungs-Autoionisation für ein Atom.}}{21}{figure.caption.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Flugzeitspektrum der Restgase}}{30}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematischer Aufbau des Experiments}}{31}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Querschnitt der Elektronenkanone}}{32}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 3D-Modell der Vakuumkammer mit Plattenkondensator}}{34}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Schnitt und Funktionsprinzip einer MCP}}{36}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Detektionsrate in Abhängigkeit der Frontplattenspannung}}{37}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Funktionsprinzip der Laufzeitmessung des Detektors}}{38}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Schematisch dargestellter Signalfluß der ToF-Messung}}{40}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Prinzip des Constant Fraction Discriminators}}{41}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Aufgenommenener Verlauf der relevanten Signale der ToF-Messung}}{42}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Signalfluß für die positionssensitive Messung}}{43}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Flugzeitspektrum der Restgase}}{31}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematischer Aufbau des Experiments}}{33}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Querschnitt der \textit {firing unit} der Elektronenkanone}}{34}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 3D-Modell der Vakuumkammer mit Plattenkondensator}}{36}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Schnitt und Funktionsprinzip einer MCP}}{38}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Detektionsrate in Abhängigkeit der Frontplattenspannung}}{39}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Funktionsprinzip der Laufzeitmessung des Detektors}}{40}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Schematisch dargestellter Signalfluß der ToF-Messung}}{42}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Prinzip des Constant Fraction Discriminators}}{43}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Aufgenommenener Verlauf der relevanten Signale der ToF-Messung}}{44}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Signalfluß für die positionssensitive Messung}}{45}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Flugzeitspektrum von Argon bei Elektronenenergie von 50 bis 1000 eV}}{46}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Zusammenhang zwischen TOF und Elektronenenergie}}{47}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Flugzeitspektren von Argon bei 50 eV mit unterschiedlichen Extraktionsverzögerungen.}}{49}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Skaliertes Massenspektrum von Argon bei verschiedenen Elektronenenergien}}{50}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Integration eines gewichteten Argonspektrums bei 1000 eV}}{51}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Masse-zu-Ladungsspektrum der Restgase}}{54}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Logaritmisches Abbild des Strahls auf dem Detektor}}{55}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Dreidimensionales Abbild des Strahls auf dem Detektor}}{55}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Gemitteltes Strahlprofil}}{56}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flugzeitspektrum von Argon bei Elektronenenergie von 50 bis 1000 eV}}{48}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Zusammenhang zwischen TOF und Elektronenenergie}}{49}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Flugzeitspektren von Argon bei 50 eV mit unterschiedlichen Extraktionsverzögerungen.}}{51}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Skaliertes Massenspektrum von Argon bei verschiedenen Elektronenenergien}}{52}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Integration eines gewichteten Argonspektrums bei 1000 eV}}{53}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Masse-zu-Ladungsspektrum der Restgase}}{56}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Logarithmisches Abbild des Strahls auf dem Detektor}}{57}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Dreidimensionales Abbild des Strahls auf dem Detektor}}{57}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Gemitteltes Strahlprofil}}{58}{figure.caption.29}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Modell des Massenspektrometers in \textit {SIMION}}}{59}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Modell des Massenspektrometers in \textit {SIMION}}}{61}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Simuliertes Restgasspektrum}}{63}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Streudiagramm der simulierten Ionenposition auf dem Detektor }}{63}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Simuliertes Abbild des Strahls auf dem Detektor bei verschiedenen Energien}}{64}{figure.caption.33}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ionenverteilung .fly2-File}}{62}{figure.caption.32}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ionenverteilung .fly2-File}}{68}{figure.caption.35}%
