@@ -92,9 +92,40 @@ Anhand dieser Vergleiche kann bereits festgestellt werden, dass die Simulation d
 
 
 \section{Untersuchung der Ionenoptik}
+Die folgende Untersuchung der Ionenoptik soll verschiedene Optimierungsansätze für das Massenspektrometer liefern. Dafür wurden geometrische Parameter variiert und die Auswirkungen auf die Flugzeit und die Position der Ionen auf dem Detektor untersucht. Besonders interessant ist der Einfluss der Flugstrecke auf die Flugzeitverteilung. Außerdem soll die Energie-Flugzeit-Korrelation untersucht werden und die Energieauflösung des Massenspektrometers zu bestimmen.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{.48\textwidth}
+        \centering
+        \includegraphics[width=.8\textwidth]{210_3D.png}
+        \caption{Die Trajektorien der Ionen in 3D. Ein konvergenter Strahl ist in nähe des Detektors (rechts) zu erkennen.}
+        \label{fig:210}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}{.48\textwidth}
+        \centering
+        \includegraphics[width=.8\textwidth]{PE.png}
+        \caption{Darstellung der Potentiellen Energie in 3D. Das Potential wird vom grünen Gitter dargestellt. Äquipotentiallinien sind in Blau eingezeichnet.}
+        \label{fig:PE}
+    \end{subfigure}
+    \caption[Simulation mit verkürzter Flugstrecke]{Simulation mit verkürzter Flugstrecke. Trajektorien der Ionen sind in Rot dargestellt.}
+    \label{fig:210_PE}
+\end{figure}
 
 \subsection{Einfluss der Flugstrecke}
+Alle bisher gezeigten Spektren wurden bei einer gesamten Flugstrecke von etwa 41 cm aufgenommen. Der Abstand des Beschleunigungskondensators ist bei 6 cm festgelegt. Diese Strecke ist fast vollständig in der Flugstrecke inkludiert, da der Elektronenstrahl den Kondensator in der Nähe (6 mm Entfernung) der Bodenplatte durchquert. Um den Einfluss der Flugstrecke zu untersuchen, wurden Simulationen mit 21 cm, etwa der Hälfte der Strecke, durchgeführt. Dafür ist der Detektor um 20 cm verschoben worden. Abbildung \ref{fig:210_PE} zeigt die Geometrie, sowie das Potential in der Simulation mit der verkürzten Strecke. Es ist zu erkennen, dass der Strahl deutlich auf den Detektor fokussiert wird. Schaut man sich \ref{fig:PE} an, so sieht man, dass die Einzellinse, die komplett auf Masse liegt, aufgrund der hohen Potentialdifferenz zum Detektor bei -2500 V eine starke Fokussierung der Ionen bewirkt. Dieser Effekt ist sehr viel stärker als bei der größeren Entfernung. 
+
+Ein Vergleich der Masse-zu-Ladungsspektren ist in Abbildung \ref{fig:410_210} zu sehen. Es ist ein deutlicher Unterschied in der schärfe der Peaks sichtbar. Besonders bei der Auswertung der höhergeladenen Argonionen sind die Daten der kleineren Geometrie höherwertig. Der TPHC müsste aufgrund der verkürzten Flugzeit auf ein Maximum von 3 $\mu$s eingestellt werden. Nicht beachtet wurde hierbei, dass der Fehler bei der Bestimmung der Flugzeit mit dem realen TPHC einen prozentual höheren Einfluss hätte. Die Simulation zeigt, dass eine kürzere Flugstrecke zu einer besseren Auflösung des Massenspektrometers führt. Ein Positionsplot bestätigt den konvergenten Strahl, der auf den Detektor fokussiert wird. Das Abbild des Strahls ist nur noch etwa 20 mm lang. Er ist im Anhang \ref{fig:pos_210} zu finden.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{410_210_Ar1000eV.png}
+    \caption[Vergleich der Masse-zu-Ladungsspektren bei unterschiedlichen Flugstrecken]{Vergleich der Masse-zu-Ladungsspektren bei unterschiedlichen Flugstrecken. In Schwarz wurde die kürzere Distanz dargestellt. Die Flugzeitspektren wurden mit unterschiedlichen Transformationsfunktionen umgerechnet, da die kürzere Distanz die Flugzeit deutlich verkürzt. Die Ionenverteilung entspricht der in der Auswertung bestimmten für Argon bei 1000 eV.}
+    \label{fig:410_210}
+\end{figure}
 \subsection{Untersuchung zur Energie-Flugzeit-Korrelation}
+
 \label{sec:delay}
 \subsection{Auflösungsvermögen}
 
