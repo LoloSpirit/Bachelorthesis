@@ -12,7 +12,7 @@ Die Auswertung der Messdaten erfolgt über einen digitalen Vielkanalanalysator (
 \begin{figure}
     \centering
     \hspace{-1.6cm}\includegraphics[width=1.1\textwidth]{Ar50-1000eV.png}
-    \caption[Flugzeitspektrum von Argon bei Elektronenenergie von 50 bis 1000 eV]{Flugzeitspektrum von Argon bei Elektronenenergie von 50 bis 1000 eV. Die Messungen sind jeweils über 60 Sekunden entstanden.}
+    \caption[Flugzeitspektrum von Argon bei Elektronenenergien von 50 bis 1000 eV]{Flugzeitspektrum von Argon bei Elektronenenergien von 50 bis 1000 eV. Die Messungen sind jeweils über 60 Sekunden entstanden.}
     \label{fig:ar}
 \end{figure}
 
@@ -20,12 +20,12 @@ Abbildung \ref{fig:ar} zeigt unskalierte Flugzeitspektren von Argon bei Elektron
 
 \subsection{Zusammenhang von Flugzeit und Elektronenenergie}
 Woher genau dieser Zusammenhang kommt, kann nicht direkt aus den Daten abgeleitet werden, da ein höherer Energieübertrag auf die Gasatome nicht direkt die Flugzeit beeinflussen kann. Es kann aber vermutet werden, dass dieses Phänomen mit der verzögerten Extraktion der Ionen aus dem Kondensator zusammenhängt, die Ionen mit höheren kinetischen Energien schneller beschleunigt. Genauere Untersuchungen folgen in Kapitel \ref{sec:delay} zur Simulation. Anhand der mittleren Flugzeit des größten Peaks der verschiedenen Spektren kann der Zusammenhang zwischen der Elektronenenergie und der Flugzeit untersucht werden.
-Abbildung \ref{fig:tof_energy} zeigt die Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Es ist zu erkennen, dass die Flugzeit mit steigender Elektronenenergie $E$ sinkt. Ein Fit der Form $t = a\sqrt{E} + b$ zeigt, dass die Flugzeit propotional zu $\sqrt{E}$ ist.
+Abbildung \ref{fig:tof_energy} zeigt die Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Es ist zu erkennen, dass die Flugzeit mit steigender Elektronenenergie $E$ sinkt. Ein Fit der Form $t = -a\sqrt{E} + b$ zeigt, dass die Flugzeit propotional zu $-\sqrt{E}$ ist.
 
 \begin{figure}
     \centering
     \includegraphics[width=.7\textwidth]{tof_energy.png}
-    \caption[Zusammenhang zwischen TOF und Elektronenenergie]{Abbildung der Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Ein Fit zeigt, dass eine Funktion der Form $t = a\sqrt{E} + b$ den Zusammenhang gut beschreibt.}
+    \caption[Zusammenhang zwischen TOF und Elektronenenergie]{Abbildung der Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Ein Fit zeigt, dass eine Funktion der Form $t = -a\sqrt{E} + b$ den Zusammenhang gut beschreibt.}
     \label{fig:tof_energy}
 \end{figure}
 
@@ -60,7 +60,7 @@ Die Verzögerung der Extraktion bei der DETOF-Methode ermöglicht schärfere Flu
         \caption{Argon bei 50 eV mit 600 ns Extraktionsverzögerung}
         
     \end{subfigure}
-    \caption{Flugzeitspektren von Argon bei 50 eV mit unterschiedlichen Extraktionsverzögerungen.}
+    \caption[Einfluß der Extraktionsverzögerung auf Flugzeitspektren]{Flugzeitspektren von Argon bei 50 eV mit unterschiedlichen Extraktionsverzögerungen.}
     \label{fig:delay}
 \end{figure}
 
@@ -183,7 +183,8 @@ Wie erwartet können die größten Peaks auf ionisierte Wassermoleküle, sowie W
 Anhand der vom Detektor aufgenommenen Positionsdaten der Ionen, können Rückschlüsse auf den Entstehungsort der Ionen gezogen werden. Abbildung \ref{fig:Strahl} zeigt einen Plot dieser Daten für eine Messung mit Argonionen. Es ist zu erkennen, dass die Ionen, wie erwartet, entlang eines horizontalen Streifens entstehen, der seitlich abgeschnitten ist. Die Ionen wurden durch das 2 cm große Loch in der Deckenplatte des Beschleunigungskondesators auf den Detektor geschossen. Deshalb ist das Abbild des Elektronenstrahls seitlich begrenzt. Die Entstehungsorte der Ionen sind offensichtlich stark mit dem Strahl verbunden, was zeigt, dass die Ionen entlang des Strahls entstehen und nicht wesentlich abgelenkt werden oder aus anderen Quellen stammen.
 
 \subsection{Annomalien}
-Auffällig sind jedoch die Überhöhungen an den seitlichen Rändern des Strahls, die in Abbildung \ref{fig:Strahl3D} besonders deutlich zu erkennen sind. Außerdem ist die Länge des Abbilds von 28 mm unvorhergesehen. Bei geraden Flugbahnen der Ionen würde ein Abbild von etwa 20 mm Länge erwartet werden, entsprechend dem Loch in der Deckenplatte. Anders als bei einem Ionenstrahl, bei dem die Coloumbabstoßung eine Aufweitung bewirkt, sollte kein solcher Effekt unter der Einzelstoßbedingung auftreten. Beide dieser Effekte sollen mit der Simulation der Ionenoptik überprüft werden, um eine mögliche Erklärung zu finden. Die leichte Wölbung des Strahls war während des Experiments konstant und kann nur auf eine Ungenauigkeit der vom Detektor ermittelten Positionen zurückgeführt werden. 
+\label{sec:Annomalien}
+Auffällig sind jedoch die Überhöhungen an den seitlichen Rändern des Strahls, die in Abbildung \ref{fig:Strahl3D} besonders deutlich zu erkennen sind. Außerdem ist die Länge des Abbilds von 28 mm unvorhergesehen. Bei geraden Flugbahnen der Ionen würde ein Abbild von etwa 20 mm Länge erwartet werden, entsprechend dem Loch in der Deckenplatte. Anders als bei einem Ionenstrahl, bei dem die Coloumbabstoßung eine Aufweitung bewirkt, sollte kein solcher Effekt unter der Einzelstoßbedingung auftreten. Dennoch ist es statistisch möglich, dass mehrere Ionen gleichzeitig extrahiert werden, auch wenn es im Mittel nur ein Ion ist. Das könnte für die Verbreiterung des Strahls und für die Erhöhung an den Seiten verantwortlich sein. Außerdem kann die thermische Bewegung der Gasteilchen das Abbild des Strahls verschwimmen lassen, sodass dieser breiter erscheint. Beide dieser Effekte sollen mit einer Simulation der Ionenoptik überprüft werden. Die leichte Wölbung des Strahls war während des Experiments konstant und kann nur auf eine Ungenauigkeit der vom Detektor ermittelten Positionen zurückgeführt werden. 
 \begin{figure}
     \centering
     \includegraphics[width=1.05\textwidth]{Strahl.png}

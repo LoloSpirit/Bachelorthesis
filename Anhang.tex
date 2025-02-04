@@ -1,5 +1,7 @@
 \appendix
-\chapter{Anhang}
+% remove header trickery
+\chapter[]{Anhang}
+\addcontentsline{toc}{chapter}{A\ \ Anhang}
 \begin{table}[H]
     \caption{Spannungswerte bei der Konditionierung}
     \label{tab:Konditionierung}
@@ -27,25 +29,30 @@
         \bottomrule     
     \end{tabular}
 \end{table}
+\clearpage
+\section{Ergänzendes zur Simulation}
+Alle Skripte, sowie die gesamte ionenoptische Simulation, die im Verlauf dieser Arbeit entwickelt wurden, stehen zur freien Verfügung und sind im GitLab der JLU Gießen unter folgendem Link zu finden: \url{https://gitlab.ub.uni-giessen.de/so9354/zerob-software}.
+
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.05\textwidth]{Fly2.png}
-    \caption[Ionenverteilung .fly2-File]{.fly2-File zur Definition der Ionenverteilung in \textit{SIMION} in der Programmiersprache Lua.}
-    \label{fly2}
-\end{figure}
-
-\section{Zusätliche Ergebnisse aus der Simulation}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=.6\textwidth]{Pos_210.png}
+    \includegraphics[width=.55\textwidth]{Pos_210.png}
     \caption[Positionsplot des konvergenten Strahls]{Positionsplot des konvergenten Strahls bei einer Flugstrecke von 210 mm.}
     \label{fig:pos_210}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.6\textwidth]{Pos_Forward_Bias.png}
+    \includegraphics[width=.55\textwidth]{Pos_Forward_Bias.png}
     \caption[Positionsplot mit Vorzugsrichtung der thermischen Bewegung]{Positionsplot mit Vorzugsrichtung der thermischen Bewegung der Ionen. Die Richtungsverteilung der thermischen Bewegung (hier 1/5 eV) ist in einem Kegel um die x-Achse gegeben. Der Öffnungswinkel des Kegels beträgt 110°. Versucht wurde die Verschiebung in x-Richtung des Strahl im Expermiments nachzuvollziehen. Allerdings ist kein wesentlicher Unterschied zu Abbildung \ref{fig:sim_pos_kinetic} erkennbar.}
     \label{fig:pos_bias}
+\end{figure}   
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.05\textwidth]{Fly2.png}
+    \caption[Ionenverteilung .fly2-File]{.fly2-File zur Definition der Ionenverteilung in \textit{SIMION} in der Programmiersprache Lua.}
+    \label{fly2}
 \end{figure}

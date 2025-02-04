@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  29 JAN 2025 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  4 FEB 2025 12:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1384,18 +1384,19 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 41--48
 [9
 
 
-] (./main.lot)
+]
+
+[10] (./main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
 
 
-[10]
+[11
 
-[11]
+]
 
 [12
-
 
 ] (./EinfÃ¼hrung.tex
 chapter 1.
@@ -1423,6 +1424,8 @@ Underfull \vbox (badness 1509) has occurred while \output is active []
 
 
 
+
+
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1435,12 +1438,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [15]
 
+LaTeX Warning: Reference `tab:propellants' on page 16 undefined on input line 28.
+
+
+
 [16]
-<images/Straub.png, id=313, 1066.98625pt x 452.69125pt>
+
+LaTeX Warning: Reference `fig:Straub' on page 17 undefined on input line 62.
+
+<images/Straub.png, id=314, 1066.98625pt x 452.69125pt>
 File: images/Straub.png Graphic file (type png)
 <use images/Straub.png>
 Package pdftex.def Info: images/Straub.png  used on input line 67.
 (pdftex.def)             Requested size: 362.08733pt x 153.62286pt.
+
+LaTeX Warning: Reference `chap:Aufbau' on page 17 undefined on input line 68.
+
+
+LaTeX Warning: Reference `chap:Aufbau' on page 17 undefined on input line 68.
+
+
+LaTeX Warning: Reference `chap:ion' on page 17 undefined on input line 71.
+
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1460,12 +1479,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<images/EA.png, id=341, 685.56125pt x 287.0725pt>
+
+LaTeX Warning: Reference `fig:EA' on page 20 undefined on input line 22.
+
+<images/EA.png, id=338, 685.56125pt x 287.0725pt>
 File: images/EA.png Graphic file (type png)
 <use images/EA.png>
 Package pdftex.def Info: images/EA.png  used on input line 25.
 (pdftex.def)             Requested size: 362.08733pt x 151.62643pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1479,6 +1500,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [21 <./images/EA.png>]
 
 [22]
+
+LaTeX Warning: Reference `chap:EinzelstoÃŸ' on page 23 undefined on input line 62.
+
+
 
 [23]
 Underfull \vbox (badness 1057) has occurred while \output is active []
@@ -1502,173 +1527,235 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] (./Experimenteller Aufbau.tex
 chapter 3.
 
+LaTeX Warning: Reference `fig:Aufbau' on page 29 undefined on input line 3.
+
+
+LaTeX Warning: Reference `chap:Aufbau' on page 29 undefined on input line 9.
+
+
 
 [29
 
 ]
-Underfull \vbox (badness 1215) has occurred while \output is active []
+
+LaTeX Warning: Reference `eq:beschleunigung' on page 30 undefined on input line 16.
 
 
 
 [30]
-<images/Restgas_tof.png, id=422, 758.835pt x 361.35pt>
-File: images/Restgas_tof.png Graphic file (type png)
-<use images/Restgas_tof.png>
-Package pdftex.def Info: images/Restgas_tof.png  used on input line 37.
-(pdftex.def)             Requested size: 382.20465pt x 182.00337pt.
+
+LaTeX Warning: Reference `fig:rest_tof' on page 31 undefined on input line 30.
 
 
-[31 <./images/Restgas_tof.png>]
-<images/SchematischerAufbau.png, id=431, 774.895pt x 1192.455pt>
+
+[31]
+<images/SchematischerAufbau.png, id=421, 774.895pt x 1192.455pt>
 File: images/SchematischerAufbau.png Graphic file (type png)
 <use images/SchematischerAufbau.png>
-Package pdftex.def Info: images/SchematischerAufbau.png  used on input line 51.
+Package pdftex.def Info: images/SchematischerAufbau.png  used on input line 43.
 (pdftex.def)             Requested size: 402.32199pt x 619.11583pt.
 
 
-LaTeX Warning: Float too large for page by 114.91559pt on input line 54.
+LaTeX Warning: Float too large for page by 114.91559pt on input line 46.
+
+
+LaTeX Warning: Reference `fig:EGun' on page 32 undefined on input line 49.
 
 
 
 [32]
 
 [33 <./images/SchematischerAufbau.png>]
-<images/EGun.png, id=442, 964.60374pt x 382.42876pt>
+<images/EGun.png, id=431, 964.60374pt x 382.42876pt>
 File: images/EGun.png Graphic file (type png)
 <use images/EGun.png>
-Package pdftex.def Info: images/EGun.png  used on input line 61.
+Package pdftex.def Info: images/EGun.png  used on input line 53.
 (pdftex.def)             Requested size: 321.85881pt x 127.60236pt.
-
-Underfull \vbox (badness 7379) has occurred while \output is active []
-
 
 
 [34 <./images/EGun.png>]
-<images/Kammer_3D.png, id=449, 791.95876pt x 774.895pt>
+
+LaTeX Warning: Reference `fig:3D' on page 35 undefined on input line 60.
+
+<images/Kammer_3D.png, id=437, 791.95876pt x 774.895pt>
 File: images/Kammer_3D.png Graphic file (type png)
 <use images/Kammer_3D.png>
-Package pdftex.def Info: images/Kammer_3D.png  used on input line 72.
+Package pdftex.def Info: images/Kammer_3D.png  used on input line 64.
 (pdftex.def)             Requested size: 482.78516pt x 472.38966pt.
 
-Overfull \hbox (80.46317pt too wide) in paragraph at lines 72--73
+Overfull \hbox (80.46317pt too wide) in paragraph at lines 64--65
  [] 
  []
+
+
+LaTeX Warning: Reference `tab:MCP' on page 35 undefined on input line 70.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:MCP' on page 35 undefined on input line 94.
 
 
 
 [35]
 
 [36 <./images/Kammer_3D.png>]
-<images/MCP.png, id=461, 511.9125pt x 281.05pt>
+<images/MCP.png, id=447, 511.9125pt x 281.05pt>
 File: images/MCP.png Graphic file (type png)
 <use images/MCP.png>
-Package pdftex.def Info: images/MCP.png  used on input line 106.
+Package pdftex.def Info: images/MCP.png  used on input line 98.
 (pdftex.def)             Requested size: 281.62416pt x 154.61656pt.
+<images/MCP_Sensitivity.png, id=450, 418.4433pt x 320.8788pt>
+File: images/MCP_Sensitivity.png Graphic file (type png)
+<use images/MCP_Sensitivity.png>
+Package pdftex.def Info: images/MCP_Sensitivity.png  used on input line 107.
+(pdftex.def)             Requested size: 241.39565pt x 185.111pt.
+
+
+LaTeX Warning: Reference `fig:Frontplattenspannung' on page 37 undefined on input line 112.
+
 
 
 [37]
-<images/MCP_Sensitivity.png, id=470, 418.4433pt x 320.8788pt>
-File: images/MCP_Sensitivity.png Graphic file (type png)
-<use images/MCP_Sensitivity.png>
-Package pdftex.def Info: images/MCP_Sensitivity.png  used on input line 115.
-(pdftex.def)             Requested size: 241.39565pt x 185.111pt.
 
-Underfull \vbox (badness 1466) has occurred while \output is active []
+[38 <./images/MCP.png> <./images/MCP_Sensitivity.png>]
+
+LaTeX Warning: Reference `fig:DLD' on page 39 undefined on input line 115.
 
 
+LaTeX Warning: Reference `chap:Auswertung' on page 39 undefined on input line 115.
 
-[38 <./images/MCP.png>]
-<images/DLD.png, id=481, 416.55624pt x 221.82875pt>
+<images/DLD.png, id=464, 416.55624pt x 221.82875pt>
 File: images/DLD.png Graphic file (type png)
 <use images/DLD.png>
-Package pdftex.def Info: images/DLD.png  used on input line 127.
+Package pdftex.def Info: images/DLD.png  used on input line 119.
 (pdftex.def)             Requested size: 201.161pt x 107.12308pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `tab:Konditionierung' on page 39 undefined on input line 125.
 
 
 
-[39 <./images/MCP_Sensitivity.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[39]
+
+LaTeX Warning: Reference `fig:ToF' on page 40 undefined on input line 131.
+
+<images/ToF_Signals.png, id=473, 1042.89626pt x 795.97375pt>
+File: images/ToF_Signals.png Graphic file (type png)
+<use images/ToF_Signals.png>
+Package pdftex.def Info: images/ToF_Signals.png  used on input line 135.
+(pdftex.def)             Requested size: 382.20465pt x 291.7122pt.
+
+Underfull \vbox (badness 2790) has occurred while \output is active []
 
 
 
 [40 <./images/DLD.png>]
-<images/ToF_Signals.png, id=497, 1042.89626pt x 795.97375pt>
-File: images/ToF_Signals.png Graphic file (type png)
-<use images/ToF_Signals.png>
-Package pdftex.def Info: images/ToF_Signals.png  used on input line 143.
-(pdftex.def)             Requested size: 382.20465pt x 291.7122pt.
-<images/cfd.png, id=499, 2437.105pt x 1029.8475pt>
+
+[41 <./images/ToF_Signals.png>]
+
+LaTeX Warning: Reference `fig:CFD' on page 42 undefined on input line 142.
+
+<images/cfd.png, id=484, 2437.105pt x 1029.8475pt>
 File: images/cfd.png Graphic file (type png)
 <use images/cfd.png>
-Package pdftex.def Info: images/cfd.png  used on input line 154.
+Package pdftex.def Info: images/cfd.png  used on input line 146.
 (pdftex.def)             Requested size: 160.92633pt x 67.99529pt.
 
+LaTeX Warning: Reference `fig:Signal' on page 42 undefined on input line 152.
 
-[41]
 
-[42 <./images/ToF_Signals.png>]
-<images/Signalverlauf.png, id=510, 381.5856pt x 320.8788pt>
+
+[42 <./images/cfd.png>]
+<images/Signalverlauf.png, id=490, 381.5856pt x 320.8788pt>
 File: images/Signalverlauf.png Graphic file (type png)
 <use images/Signalverlauf.png>
-Package pdftex.def Info: images/Signalverlauf.png  used on input line 166.
+Package pdftex.def Info: images/Signalverlauf.png  used on input line 158.
 (pdftex.def)             Requested size: 362.08733pt x 304.50018pt.
 
 
-[43 <./images/cfd.png>]
+LaTeX Warning: Reference `fig:pos' on page 43 undefined on input line 164.
 
-[44 <./images/Signalverlauf.png>]
-<images/PosSig.png, id=523, 973.6375pt x 463.7325pt>
+
+
+[43 <./images/Signalverlauf.png>]
+<images/PosSig.png, id=497, 973.6375pt x 463.7325pt>
 File: images/PosSig.png Graphic file (type png)
 <use images/PosSig.png>
-Package pdftex.def Info: images/PosSig.png  used on input line 176.
+Package pdftex.def Info: images/PosSig.png  used on input line 168.
 (pdftex.def)             Requested size: 241.39565pt x 114.9705pt.
 )
 
-[45 <./images/PosSig.png>]
-
-[46
-
-
-] (./Auswertung.tex
+[44 <./images/PosSig.png>] (./Auswertung.tex
 chapter 4.
-<images/Ar50-1000eV.png, id=533, 758.835pt x 361.35pt>
+<images/Ar50-1000eV.png, id=503, 758.835pt x 361.35pt>
 File: images/Ar50-1000eV.png Graphic file (type png)
 <use images/Ar50-1000eV.png>
 Package pdftex.def Info: images/Ar50-1000eV.png  used on input line 14.
 (pdftex.def)             Requested size: 442.55664pt x 210.74655pt.
 
 
-[47
+[45
+
+
 
 ]
 
-[48 <./images/Ar50-1000eV.png>]
-<images/tof_energy.png, id=546, 462.528pt x 346.896pt>
+LaTeX Warning: Reference `fig:ar' on page 46 undefined on input line 19.
+
+
+LaTeX Warning: Reference `sec:delay' on page 46 undefined on input line 22.
+
+
+LaTeX Warning: Reference `fig:tof_energy' on page 46 undefined on input line 23.
+
+
+
+[46 <./images/Ar50-1000eV.png>]
+<images/tof_energy.png, id=513, 462.528pt x 346.896pt>
 File: images/tof_energy.png Graphic file (type png)
 <use images/tof_energy.png>
 Package pdftex.def Info: images/tof_energy.png  used on input line 27.
 (pdftex.def)             Requested size: 281.62416pt x 211.22513pt.
 
 
-[49 <./images/tof_energy.png>]
-<images/Ar50-300ns.png, id=559, 464.6961pt x 361.35pt>
+LaTeX Warning: Reference `eq:time' on page 47 undefined on input line 33.
+
+
+
+[47 <./images/tof_energy.png>]
+
+LaTeX Warning: Reference `tab:argon' on page 48 undefined on input line 35.
+
+
+LaTeX Warning: Reference `fig:Signal' on page 48 undefined on input line 48.
+
+
+LaTeX Warning: Reference `fig:delay' on page 48 undefined on input line 48.
+
+<images/Ar50-300ns.png, id=521, 464.6961pt x 361.35pt>
 File: images/Ar50-300ns.png Graphic file (type png)
 <use images/Ar50-300ns.png>
 Package pdftex.def Info: images/Ar50-300ns.png  used on input line 53.
 (pdftex.def)             Requested size: 181.04366pt x 140.78258pt.
-<images/Ar50-600ns.png, id=560, 461.8053pt x 361.35pt>
+<images/Ar50-600ns.png, id=522, 461.8053pt x 361.35pt>
 File: images/Ar50-600ns.png Graphic file (type png)
 <use images/Ar50-600ns.png>
 Package pdftex.def Info: images/Ar50-600ns.png  used on input line 59.
 (pdftex.def)             Requested size: 181.04366pt x 141.65926pt.
 
 
-[50]
+[48]
 
-[51 <./images/Ar50-300ns.png> <./images/Ar50-600ns.png>]
-<images/Ar_scaled.png, id=575, 758.835pt x 361.35pt>
+LaTeX Warning: Reference `fig:ar_scaled' on page 49 undefined on input line 68.
+
+
+LaTeX Warning: Reference `fig:ar' on page 49 undefined on input line 68.
+
+
+
+[49 <./images/Ar50-300ns.png> <./images/Ar50-600ns.png>]
+<images/Ar_scaled.png, id=536, 758.835pt x 361.35pt>
 File: images/Ar_scaled.png Graphic file (type png)
 <use images/Ar_scaled.png>
 Package pdftex.def Info: images/Ar_scaled.png  used on input line 74.
@@ -1679,67 +1766,111 @@ Overfull \hbox (2.78763pt too wide) in paragraph at lines 74--75
  []
 
 
+LaTeX Warning: Reference `tab:argon' on page 50 undefined on input line 75.
 
-[52 <./images/Ar_scaled.png>]
-<images/Ar_integrated.png, id=588, 758.835pt x 361.35pt>
+
+LaTeX Warning: Reference `tab:argon' on page 50 undefined on input line 75.
+
+
+
+[50 <./images/Ar_scaled.png>]
+
+LaTeX Warning: Reference `tab:argon' on page 51 undefined on input line 80.
+
+
+LaTeX Warning: Reference `fig:ar_ratio' on page 51 undefined on input line 80.
+
+
+LaTeX Warning: Reference `tab:argon' on page 51 undefined on input line 80.
+
+
+LaTeX Warning: Reference `tab:vergleich' on page 51 undefined on input line 80.
+
+<images/Ar_integrated.png, id=543, 758.835pt x 361.35pt>
 File: images/Ar_integrated.png Graphic file (type png)
 <use images/Ar_integrated.png>
 Package pdftex.def Info: images/Ar_integrated.png  used on input line 84.
 (pdftex.def)             Requested size: 402.32199pt x 191.58626pt.
 
+LaTeX Warning: Reference `tab:argon' on page 51 undefined on input line 147.
 
-[53
+
+LaTeX Warning: Reference `tab:argon' on page 51 undefined on input line 147.
+
+
+
+[51
 
 
  <./images/Ar_integrated.png>]
 
-[54]
-<images/Restgas.png, id=606, 758.835pt x 361.35pt>
+[52]
+
+LaTeX Warning: Reference `fig:rest' on page 53 undefined on input line 170.
+
+<images/Restgas.png, id=557, 758.835pt x 361.35pt>
 File: images/Restgas.png Graphic file (type png)
 <use images/Restgas.png>
 Package pdftex.def Info: images/Restgas.png  used on input line 177.
 (pdftex.def)             Requested size: 422.43932pt x 201.16365pt.
 
+LaTeX Warning: Reference `fig:rest_tof' on page 53 undefined on input line 178.
+
+
+LaTeX Warning: Reference `fig:rest_tof' on page 53 undefined on input line 178.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: Reference `fig:Strahl' on page 53 undefined on input line 183.
 
-[55]
-<images/Strahl.png, id=616, 630.9171pt x 224.037pt>
+
+
+[53]
+
+LaTeX Warning: Reference `fig:Strahl3D' on page 54 undefined on input line 187.
+
+<images/Strahl.png, id=562, 630.9171pt x 224.037pt>
 File: images/Strahl.png Graphic file (type png)
 <use images/Strahl.png>
-Package pdftex.def Info: images/Strahl.png  used on input line 189.
+Package pdftex.def Info: images/Strahl.png  used on input line 190.
 (pdftex.def)             Requested size: 422.43932pt x 150.00827pt.
 
-Overfull \hbox (20.11732pt too wide) in paragraph at lines 189--190
+Overfull \hbox (20.11732pt too wide) in paragraph at lines 190--191
  [][] 
  []
 
-<images/Strahl3D.png, id=617, 659.1024pt x 508.0581pt>
+<images/Strahl3D.png, id=563, 659.1024pt x 508.0581pt>
 File: images/Strahl3D.png Graphic file (type png)
 <use images/Strahl3D.png>
-Package pdftex.def Info: images/Strahl3D.png  used on input line 196.
+Package pdftex.def Info: images/Strahl3D.png  used on input line 197.
 (pdftex.def)             Requested size: 341.97614pt x 263.60255pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `fig:Strahlprofil' on page 54 undefined on input line 203.
+
+
+Underfull \vbox (badness 2293) has occurred while \output is active []
 
 
 
-[56 <./images/Restgas.png>]
+[54 <./images/Restgas.png>]
 
-[57 <./images/Strahl.png> <./images/Strahl3D.png>]
-<images/Strahlprofil.png, id=630, 462.528pt x 346.896pt>
+[55 <./images/Strahl.png> <./images/Strahl3D.png>]
+<images/Strahlprofil.png, id=576, 462.528pt x 346.896pt>
 File: images/Strahlprofil.png Graphic file (type png)
 <use images/Strahlprofil.png>
-Package pdftex.def Info: images/Strahlprofil.png  used on input line 206.
+Package pdftex.def Info: images/Strahlprofil.png  used on input line 207.
 (pdftex.def)             Requested size: 281.62416pt x 211.22513pt.
 )
 
-[58 <./images/Strahlprofil.png>] (./Simulation.tex
+[56 <./images/Strahlprofil.png>] (./Simulation.tex
 chapter 5.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 5.
+
+LaTeX Warning: Reference `eq:laplace' on page 57 undefined on input line 6.
+
 
 Overfull \hbox (2.6589pt too wide) in paragraph at lines 6--7
 \T1/ptm/m/n/10.95 Zugrunde der Si-mu-la-tio-nen liegt bei \T1/ptm/m/it/10.95 SI-MI-ON \T1/ptm/m/n/10.95 die nu-me-ri-sche Lö-sung der Laplace-Gleichung
@@ -1747,7 +1878,7 @@ Overfull \hbox (2.6589pt too wide) in paragraph at lines 6--7
 
 
 
-[59
+[57
 
 
 
@@ -1760,22 +1891,36 @@ Overfull \hbox (3.28625pt too wide) in paragraph at lines 14--15
 []\T1/ptm/m/n/10.95 Neumann-Randbedingungen: Die Ab-lei-tung des Po-ten-ti-als ent-lang der nor-ma-len Rich-
  []
 
-<images/Model.png, id=646, 2021.5525pt x 541.02126pt>
+
+LaTeX Warning: Reference `fig:model' on page 58 undefined on input line 22.
+
+<images/Model.png, id=590, 2021.5525pt x 541.02126pt>
 File: images/Model.png Graphic file (type png)
 <use images/Model.png>
 Package pdftex.def Info: images/Model.png  used on input line 26.
 (pdftex.def)             Requested size: 402.32199pt x 107.66573pt.
 
 
-[60]
+[58]
 
-[61 <./images/Model.png>]
-<images/Restgas_Sim.png, id=660, 651.8754pt x 333.8874pt>
+LaTeX Warning: Reference `fly2' on page 59 undefined on input line 36.
+
+
+LaTeX Warning: Reference `fig:Signal' on page 59 undefined on input line 44.
+
+
+
+[59 <./images/Model.png>]
+<images/Restgas_Sim.png, id=602, 651.8754pt x 333.8874pt>
 File: images/Restgas_Sim.png Graphic file (type png)
 <use images/Restgas_Sim.png>
 Package pdftex.def Info: images/Restgas_Sim.png  used on input line 52.
 (pdftex.def)             Requested size: 321.85881pt x 164.85954pt.
-<images/Sim_Positions_Scatter.png, id=662, 462.528pt x 346.896pt>
+
+
+LaTeX Warning: Reference `fig:Restgas_Sim' on page 60 undefined on input line 57.
+
+<images/Sim_Positions_Scatter.png, id=603, 462.528pt x 346.896pt>
 File: images/Sim_Positions_Scatter.png Graphic file (type png)
 <use images/Sim_Positions_Scatter.png>
 Package pdftex.def Info: images/Sim_Positions_Scatter.png  used on input line 61.
@@ -1785,15 +1930,28 @@ Underfull \vbox (badness 2932) has occurred while \output is active []
 
 
 
-[62]
+[60]
 
-[63 <./images/Restgas_Sim.png> <./images/Sim_Positions_Scatter.png>]
-<images/Sim_Positions.png, id=676, 268.1217pt x 229.0959pt>
+LaTeX Warning: Reference `fig:sim_pos_scatter' on page 61 undefined on input line 66.
+
+
+LaTeX Warning: Reference `fig:sim_pos_both' on page 61 undefined on input line 68.
+
+
+
+[61 <./images/Restgas_Sim.png> <./images/Sim_Positions_Scatter.png>]
+
+LaTeX Warning: Reference `fig:sim_pos_both' on page 62 undefined on input line 70.
+
+
+LaTeX Warning: Reference `fig:sim_pos_kinetic' on page 62 undefined on input line 70.
+
+<images/Sim_Positions.png, id=615, 268.1217pt x 229.0959pt>
 File: images/Sim_Positions.png Graphic file (type png)
 <use images/Sim_Positions.png>
 Package pdftex.def Info: images/Sim_Positions.png  used on input line 76.
 (pdftex.def)             Requested size: 172.9955pt x 147.8199pt.
-<images/Sim_Positions_Kinetic.png, id=677, 282.5757pt x 228.3732pt>
+<images/Sim_Positions_Kinetic.png, id=616, 282.5757pt x 228.3732pt>
 File: images/Sim_Positions_Kinetic.png Graphic file (type png)
 <use images/Sim_Positions_Kinetic.png>
 Package pdftex.def Info: images/Sim_Positions_Kinetic.png  used on input line 83.
@@ -1803,114 +1961,208 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[64 <./images/Sim_Positions.png> <./images/Sim_Positions_Kinetic.png>]
-<images/210_3D.png, id=684, 913.4125pt x 433.62pt>
+[62 <./images/Sim_Positions.png> <./images/Sim_Positions_Kinetic.png>]
+<images/210_3D.png, id=623, 913.4125pt x 433.62pt>
 File: images/210_3D.png Graphic file (type png)
 <use images/210_3D.png>
-Package pdftex.def Info: images/210_3D.png  used on input line 101.
+Package pdftex.def Info: images/210_3D.png  used on input line 100.
 (pdftex.def)             Requested size: 154.49084pt x 73.33728pt.
-<images/PE.png, id=685, 1195.46625pt x 658.46pt>
+<images/PE.png, id=624, 1195.46625pt x 658.46pt>
 File: images/PE.png Graphic file (type png)
 <use images/PE.png>
-Package pdftex.def Info: images/PE.png  used on input line 108.
+Package pdftex.def Info: images/PE.png  used on input line 107.
 (pdftex.def)             Requested size: 154.49084pt x 85.0904pt.
+
+
+LaTeX Warning: Reference `fig:210_PE' on page 63 undefined on input line 116.
+
+
+LaTeX Warning: Reference `fig:PE' on page 63 undefined on input line 116.
+
+
+LaTeX Warning: Reference `fig:410_210' on page 63 undefined on input line 118.
+
+
+LaTeX Warning: Reference `fig:pos_210' on page 63 undefined on input line 118.
+
 
 Underfull \vbox (badness 1838) has occurred while \output is active []
 
 
 
-[65 <./images/210_3D.png> <./images/PE.png>]
-<images/410_210_Ar1000eV.png, id=696, 758.835pt x 361.35pt>
+[63 <./images/210_3D.png> <./images/PE.png>]
+<images/410_210_Ar1000eV.png, id=631, 758.835pt x 361.35pt>
 File: images/410_210_Ar1000eV.png Graphic file (type png)
 <use images/410_210_Ar1000eV.png>
-Package pdftex.def Info: images/410_210_Ar1000eV.png  used on input line 123.
+Package pdftex.def Info: images/410_210_Ar1000eV.png  used on input line 122.
 (pdftex.def)             Requested size: 402.32199pt x 191.58626pt.
 
-Underfull \hbox (badness 1189) in paragraph at lines 124--124
+Underfull \hbox (badness 1675) in paragraph at lines 123--123
 [][][]|\T1/ptm/m/n/10.95 Ver-gleich der Masse-zu-Ladungsspektren bei un-ter-schied-li-chen Flug-
  []
 
-)
 
-[66 <./images/410_210_Ar1000eV.png>] (./Anhang.tex
-chapter A.
-<images/Fly2.png, id=702, 499.8675pt x 793.96625pt>
-File: images/Fly2.png Graphic file (type png)
-<use images/Fly2.png>
-Package pdftex.def Info: images/Fly2.png  used on input line 33.
-(pdftex.def)             Requested size: 422.43932pt x 671.00984pt.
 
-Overfull \hbox (20.11732pt too wide) in paragraph at lines 33--34
- [][] 
- []
+[64 <./images/410_210_Ar1000eV.png>]
+
+LaTeX Warning: Reference `sec:Annomalien' on page 65 undefined on input line 130.
+
+
+LaTeX Warning: Reference `fig:res' on page 65 undefined on input line 140.
+
+
+
+[65]
+<images/Resolution.png, id=642, 758.835pt x 361.35pt>
+File: images/Resolution.png Graphic file (type png)
+<use images/Resolution.png>
+Package pdftex.def Info: images/Resolution.png  used on input line 144.
+(pdftex.def)             Requested size: 402.32199pt x 191.58626pt.
+
+
+LaTeX Warning: Reference `fig:res_fit' on page 66 undefined on input line 151.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[67
+[66 <./images/Resolution.png>]
+<images/ResolutionFit.png, id=648, 578.16pt x 361.35pt>
+File: images/ResolutionFit.png Graphic file (type png)
+<use images/ResolutionFit.png>
+Package pdftex.def Info: images/ResolutionFit.png  used on input line 155.
+(pdftex.def)             Requested size: 321.85881pt x 201.15813pt.
+
+
+LaTeX Warning: Reference `fig:res' on page 67 undefined on input line 162.
 
 
 
-]
-Overfull \vbox (112.40958pt too high) has occurred while \output is active []
+[67 <./images/ResolutionFit.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[68 <./images/Fly2.png>]
-<images/Pos_210.png, id=714, 292.6935pt x 224.7597pt>
-File: images/Pos_210.png Graphic file (type png)
-<use images/Pos_210.png>
-Package pdftex.def Info: images/Pos_210.png  used on input line 41.
-(pdftex.def)             Requested size: 241.39565pt x 185.37073pt.
-<images/Pos_Forward_Bias.png, id=715, 303.534pt x 226.9278pt>
-File: images/Pos_Forward_Bias.png Graphic file (type png)
-<use images/Pos_Forward_Bias.png>
-Package pdftex.def Info: images/Pos_Forward_Bias.png  used on input line 48.
-(pdftex.def)             Requested size: 241.39565pt x 180.47252pt.
-)
+[68])
 
-[69 <./images/Pos_210.png> <./images/Pos_Forward_Bias.png>]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 150.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Overfull \hbox (17.27834pt too wide) in paragraph at lines 151--151
-\T1/ptm/m/n/10.95 on.'' In: \T1/ptm/m/it/10.95 Zeit-schrift für Phy-sik \T1/ptm/m/n/10.95 206.2 (1967), S. 207^^U210. \T1/ptm/m/sc/10.95 doi\T1/ptm/m/n/10.95 : []$\T1/pcr/m/n/10.95 10 . 1007 / BF01325928$[]\T1/ptm/m/n/10.95 . 
- []
-
-
+[69]
 
 [70
 
 
 ]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 145.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Overfull \hbox (17.27834pt too wide) in paragraph at lines 146--146
+\T1/ptm/m/n/10.95 on.'' In: \T1/ptm/m/it/10.95 Zeit-schrift für Phy-sik \T1/ptm/m/n/10.95 206.2 (1967), S. 207^^U210. \T1/ptm/m/sc/10.95 doi\T1/ptm/m/n/10.95 : []$\T1/pcr/m/n/10.95 10 . 1007 / BF01325928$[]\T1/ptm/m/n/10.95 . 
+ []
 
-[71] (./main.aux)
+
+
+[71
+
+]
+
+[72] (./Anhang.tex
+chapter A.
+
+
+[73
+
+
+
+]
+<images/Pos_210.png, id=690, 292.6935pt x 224.7597pt>
+File: images/Pos_210.png Graphic file (type png)
+<use images/Pos_210.png>
+Package pdftex.def Info: images/Pos_210.png  used on input line 40.
+(pdftex.def)             Requested size: 221.27832pt x 169.9206pt.
+<images/Pos_Forward_Bias.png, id=691, 303.534pt x 226.9278pt>
+File: images/Pos_Forward_Bias.png Graphic file (type png)
+<use images/Pos_Forward_Bias.png>
+Package pdftex.def Info: images/Pos_Forward_Bias.png  used on input line 47.
+(pdftex.def)             Requested size: 221.27832pt x 165.43083pt.
+
+
+LaTeX Warning: Reference `fig:sim_pos_kinetic' on page 74 undefined on input line 48.
+
+
+LaTeX Warning: Reference `fig:sim_pos_kinetic' on page 74 undefined on input line 48.
+
+<images/Fly2.png, id=692, 499.8675pt x 793.96625pt>
+File: images/Fly2.png Graphic file (type png)
+<use images/Fly2.png>
+Package pdftex.def Info: images/Fly2.png  used on input line 55.
+(pdftex.def)             Requested size: 422.43932pt x 671.00984pt.
+
+Overfull \hbox (20.11732pt too wide) in paragraph at lines 55--56
+ [][] 
+ []
+
+)
+
+[74
+
+ <./images/Pos_210.png> <./images/Pos_Forward_Bias.png>]
+Overfull \vbox (112.40958pt too high) has occurred while \output is active []
+
+
+
+[75 <./images/Fly2.png>]
+<images/selbststaendigkeitserklaerung.pdf, id=706, 597.55246pt x 845.07718pt>
+File: images/selbststaendigkeitserklaerung.pdf Graphic file (type pdf)
+<use images/selbststaendigkeitserklaerung.pdf>
+Package pdftex.def Info: images/selbststaendigkeitserklaerung.pdf  used on input line 153.
+(pdftex.def)             Requested size: 563.24832pt x 796.62926pt.
+
+Overfull \hbox (69.87761pt too wide) in paragraph at lines 153--154
+ []| [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 200.829pt on input line 154.
+
+
+
+[76 <./images/selbststaendigkeitserklaerung.pdf>] (./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42877 strings out of 473584
- 860625 string characters out of 5728329
+ 42907 strings out of 473584
+ 861429 string characters out of 5728329
  1945905 words of memory out of 5000000
- 64916 multiletter control sequences out of 15000+600000
- 626014 words of font info for 116 fonts, out of 8000000 for 9000
+ 64937 multiletter control sequences out of 15000+600000
+ 624278 words of font info for 115 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,16n,120p,10963b,3240s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (71 pages, 7050235 bytes).
+Output written on main.pdf (76 pages, 7410075 bytes).
 PDF statistics:
- 1024 PDF objects out of 1200 (max. 8388607)
- 819 compressed objects within 9 object streams
- 205 named destinations out of 1000 (max. 500000)
- 632 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1025 PDF objects out of 1200 (max. 8388607)
+ 812 compressed objects within 9 object streams
+ 214 named destinations out of 1000 (max. 500000)
+ 658 words of extra memory for PDF output out of 10000 (max. 10000000)
 

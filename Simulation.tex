@@ -65,9 +65,9 @@ Implementiert man einen Ionenverteilung ähnlich der in der Auswertung des Restg
 
 Nicht nur die Flugzeit, sondern auch die räumliche Verteilung der Ionen kann mit der Simulation überprüft werden. Dafür wird die Position der Ionen beim Auftreffen auf den Detektor aufgezeichnet. Abbildung \ref{fig:sim_pos_scatter} zeigt ein Streudiagramm der Orte. Da anders als in der Realität keine Auflösungsbegrenzung durch den Detektor existiert, ist die räumliche Auflösung Punkte lediglich durch die Genauigkeit der Darstellung in \textit{SIMION} begrenzt.
 
-Um vergleichbare Daten zu erhalten, wird der Ort diskretisiert. Die Detektorfläche wird in 280x280 Pixel unterteilt und in Abbildung \ref{fig:sim_pos_both}, wie auch in der Auswertung, dargestellt. Aufällig ist, dass die Ionen in der Simulation eine kürzere Fläche einnehmen als im Experiment. Die Länge des Abbilds des simulierten Strahls ist mit etwa 24 mm kürzer als der 28 mm lange Streifen aus dem Experiment. Eine Überhöhung an den Rändern des Strahls ist in der Simulation nicht zu erkennen und die Ursache weiter unbekannt.
+Um vergleichbare Daten zu erhalten, wird der Ort diskretisiert. Die Detektorfläche wird in 280x280 Pixel unterteilt und in Abbildung \ref{fig:sim_pos_both}, wie auch in der Auswertung, dargestellt. Aufällig ist, dass die Ionen in der Simulation einen kürzeren Streifen einnehmen als im Experiment. Die Länge des Abbilds des simulierten Strahls ist mit etwa 24 mm kürzer als der 28 mm lange Streifen aus dem Experiment. Eine Überhöhung an den Rändern des Strahls ist in der Simulation nicht zu erkennen.
 
-Die Aufweitung des Strahls ist mit der thermischen Bewegung der Ionen zu erklären. Um diesen Zusammenhang sichtbar zu machen sind in Abbildung \ref{fig:sim_pos_both} die Auftrefforte der Ionen bei unterschiedlichen kinetischen Energien dargestellt. Erhöht man die kinetische Energie der Teilchen sieht man, dass das Abbild des Strahls deutlich breiter wird. Dennoch wird die Länge von 28 mm nicht erreicht. Beim Vergleich mit den Dimensionen aus der Auswertung ist eindeutig, dass die Annahme von 1/25 eV deutlich näher an den experimentellen Daten liegt. 
+Die Aufweitung des Strahls ist mit der thermischen Bewegung der Ionen zu erklären. Um diesen Zusammenhang sichtbar zu machen sind in Abbildung \ref{fig:sim_pos_both} die Auftrefforte der Ionen bei unterschiedlichen kinetischen Energien dargestellt. Erhöht man die kinetische Energie der Teilchen sieht man, dass das Abbild des Strahls deutlich breiter, nicht aber viel länger wird (Abb. \ref{fig:sim_pos_kinetic}). Die Länge von 28 mm wird nicht erreicht. Beim Vergleich mit den Dimensionen aus der Auswertung ist eindeutig, dass die Annahme von 1/25 eV deutlich näher an den experimentellen Daten liegt. 
 
 \begin{figure}
     \centering
@@ -89,7 +89,6 @@ Die Aufweitung des Strahls ist mit der thermischen Bewegung der Ionen zu erklär
 \end{figure}
 
 Anhand dieser Vergleiche kann bereits festgestellt werden, dass die Simulation der Ionenoptik in \textit{SIMION} eine gute Übereinstimmung mit den experimentellen Daten zeigt, auch wenn nicht alle Phänomene abgebildet werden können. Die Simulation kann also genutzt werden, um die Ionenoptik des Massenspektrometers zu untersuchen und Optimierungsansätze zu finden.
-
 
 \section{Untersuchung der Ionenoptik}
 Die folgende Untersuchung der Ionenoptik soll verschiedene Optimierungsansätze für das Massenspektrometer liefern. Dafür wurden geometrische Parameter variiert und die Auswirkungen auf die Flugzeit und die Position der Ionen auf dem Detektor untersucht. Besonders interessant ist der Einfluss der Flugstrecke auf die Flugzeitverteilung. Außerdem soll die Energie-Flugzeit-Korrelation untersucht werden und die Energieauflösung des Massenspektrometers zu bestimmen.
@@ -125,8 +124,56 @@ Ein Vergleich der Masse-zu-Ladungsspektren ist in Abbildung \ref{fig:410_210} zu
     \label{fig:410_210}
 \end{figure}
 \subsection{Untersuchung zur Energie-Flugzeit-Korrelation}
+Der im Experiment gefundene Zusammenhang zwischen der eingestellten Elektronenenergie und der Flugzeit der Ionen kann nicht direkt in der Simulation überprüft werden, da die Elektronen selbst nicht simuliert werden. Trifft man die Annahme, dass die überschüssige kinetische Energie der Elektronen auf die Ionen übertragen wird, würde man erwarten in der Simulation einen ähnlichen Zusammenhang zu sehen. Dafür wurden verschiedene Simulationen mit unterschiedlichen kinetischen Energien der Ionen durchgeführt. Nach ausgiebieger Prüfung konnte kein Zusammenhang zwischen der kinetischen Energie der Ionen und der Flugzeit gefunden werden. Die Flugzeit der Ionen ist unabhängig von ihrer kinetischen Energie, mit einer kürzeren Extraktionsverzögerung kann lediglich die Peakbreite verändert werden. Daraus lässt sich schließen, dass die Verzögerung auf einen anderen Effekt vor der Ionisiertung zurückzuführen ist. 
+
+\subsection{Untersuchung der räumlichen Annomalien}
+Durch die Untersuchung der räumlichen Verteilung der Produktionen wird deutlich, dass ein, in der Simulation nicht berücksichtigter, Effekt Ursache für die Annomalien im Abbild sein muss. Das bestärkt die Vermutung, dass es zu Wechselwirkung zwischen den Ionen kommt. Wie bereits in \ref{sec:Annomalien} erwähnt, ist es auch bei kontrollierter Produktrate nicht unmöglich, dass innerhalb eines Elektronenpulses mehrere Ionisationsprozesse stattfinden. Die Coloumbabstoßung zwischen den Ionen könnte dann zu einer Aufweitung des Strahls und zu einer Überhöhung am Rand führen. Bedenklich ist allerdings, dass die Überhöhung im Experiment recht stark ausgeprägt ist, was für 
 
 \label{sec:delay}
 \subsection{Auflösungsvermögen}
+Das Auflösungsvermögen eines Massenspektrometer beschreibt, wie gut es in der Lage ist, zwei Ionen mit ähnlicher Masse als getrennte Peaks aufzulösen. Ein hohes Auflösungsvermögen ist besonders wichtig, wenn man Isobare, also Elemente mit nahezu identischen Massen unterscheiden möchte. Für die Untersuchung der meisten Gase in dieser Anlage ist kein besonders hohes Auflösungsvermögen gefordert. Dennoch ist es sinnvoll zu überprüfen, wie hoch das Auflösungsvermögen ist und dieses zu quantifizieren. Mithilfe der Simulation kann das theoretisch erreichbare Auflösungsvermögen bestimmt werden. 
 
-\section{Zusammenfassung und Ausblick}
+Das Auflösungsvermögen ist definiert als 
+\begin{equation}
+    R = \frac{m}{\Delta m},
+\end{equation}
+wobei $m$ die mittlere Masse und $\Delta m$ die FWHM eines Peaks im Massenspektrum ist. Um es zu bestimmen, können in der Simulation Testmassen von 1 bis 60 u in 0.5 u Schritten simuliert werden. Diese werden jeweils einfach geladen und ihre Flugzeit aufgezeichnet. Ein Massenspektrum, dargestellt in Abbildung \ref{fig:res}, ergibt sich nach Transformation der Flugzeitdaten.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{Resolution.png}
+    \caption[Simuliertes Massenspektrum zur Bestimmung des Auflösungsvermögens]{Simuliertes Massenspektrum der Massen 1 bis 60 u (einfach geladen) zur Bestimmung des Auflösungsvermögens bei einer Detektordistanz von 41 cm. Alle Spezies sind mit der gleichen Häufigkeit vertreten. In Schwarz sind die Peaks für ganzzahlige Massen, in Rot die für halbzahlige Massen dargestellt.}
+    \label{fig:res}
+\end{figure}
+
+Ein Zusammenhang zwischen der Schärfe der Peaks und der Masse ist sofort erkennbar. Die Korrelation kommt daher, dass die prozentuale Massen- und damit auch die Flugzeitdifferenz mit steigender Masse abnimmt. So entspricht das Verhältnis der Flugzeiten von 1 zu 2 $u$ 38 \% und das von 29 zu 30 $u$ nur 1.8 \% bei einfacher Ladung. Bei höheren Flugzeiten verschmelzen die Peaks teilweise, sodass eine Identifikation einzelner Häufigkeiten nicht mehr möglich ist. Die Breite der Peaks hängt dabei vorallem von der Breite des Elektronenstrahls ab, da dieser den Entstehungsort der Ionen bestimmt. Auch die Distanz des Detektors hat jedoch einen maßgeblichen Einfluss auf das Auflösungsvermögen. Eine kürzere Flugstrecke und damit Flugzeit führt dazu, dass kleine Geschwindigkeitsunterschiede nicht in signifikante Flugzeitunterschiede umgewandelt werden. Das Auflösungsvermögen ist also umgekehrt proportional zur Flugstrecke nach Verlassen der Beschleunigugnsplatten.
+
+Eine Auswertung des Massenspektrums ist möglich, indem alle Peaks mit einer Gaußfunktion gefittet werden und ihr FWHM errechnet wird. Das Auflösungsvermögen kann dann abhängig von der Masse dargestellt werden. Abbildung \ref{fig:res_fit} zeigt das Ergebnis. Anders als erwartet steigt das Auflösungsvermögen mit steigender Masse, wobei es einem reziproken Verlauf folgt. Ab einer Masse von etwa 10 $u$ ist es weitesgehend konstant und liegt bei etwa 75. Das bedeutet, dass sich die Masse zweier Peaks um mindestens 1/75 der Masse einer der Peaks unterscheiden muss, damit sie als getrennte Peaks identifiziert werden können.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{ResolutionFit.png}
+    \caption[Auswertung des Auflösungsvermögens abhängig von der Masse]{Auswertung des Auflösungsvermögens abhängig von der Masse. Die Datenpunkte sind die Verhältnisse der mittleren Massen und der FWHM der Peaks eines simulierten Spektrums.}
+    \label{fig:res_fit}
+\end{figure}
+
+Vergleich 210mm
+
+Vergleicht man die theoretisch mögliche Auflösung mit Werten aus dem Experiment, fällt auf, dass diese wie erwartet schlechter ist. Insgesamt sind die Peaks im Experiment weniger scharf, was auf die Idealisierung der Simulation und die Breite des Strahls zurückzuführen ist. Es ist nicht möglich ein Spektrum wie in Abbildung \ref{fig:res} aufzunehmen und direkt zu vergleichen. Der qualitative Verlauf des Auflösungsvermögens bei Auswertung eines Restgasspektrums ist jedoch ähnlich und etwa bei der Hälfte des Wertes.
+
+\section{Diskussion und Ausblick}
+Obwohl die Anlage mit einer Fehlfunktion der Elektronenkanone nur eingeschränkt genaue Messungen zulässt, können aus den gemessenen Daten einige Informationen in der Auswertung erarbeitet werden. Die Aufnahme von Argonspektren bei verschiedenen Elektronenenergien hat gezeigt, dass der neue Detektor sowohl zeitlich als auch räumlich sinnvolle Daten aufnehmen kann. Durch einen Vergleich mit Daten von Straub \textit{et al.} \cite{Straub} und die Aufnahme eines Restgasspektrums kann verifiziert werden, dass die Anlage korrekt arbeitet und diese ausreichend gut qualitativ reproduzieren kann. 
+
+Für die Auswertung wurden außerdem einige Skripte entwickelt, die die Transformation und Analyse von Flugzeitspektren vereinfachen. Dabei kann bestätigt werden, dass der Zusammenhang zwischen der Flugzeit und dem Masse-zu-Ladungsverhältnis der erwarteten From entspricht.
+
+Durch eine Untersuchung verschiedener Extraktionsverzögerungen kann eine deutliche Verbesserung in der Auflösung des Massenspektrometers mit einer Verzögerung von 600 ns erreicht werden. Dadurch kann nachvollzogen werden, dass die DETOF-Technik eine vorteilhafte Methode ist, um die Auflösung des Massenspektrometers zu verbessern und das diese mit korrekt dimensionierten Verzögerungszeiten auch bei \textit{Zero-B} sinnvoll anwendbar ist.
+
+Außerdem wurde ein bisher unbekannter Zusammenhang zwischen der Elektronenenergie und der Flugzeit der Ionen gefunden und seine Form beschrieben. Anhand der Positionsdaten des größeren Detektors ist es mögich ein gesamtes Abbild des Elektronenstrahls aufzunehmen und auszuwerten. Die Analyse der Positionsdaten liefert Informationen über das Elektronenstrahlprofil, sowie die Trajektorien der Ionen. Dabei wurde bestätigt, dass die Ionen direkt mit dem Strahl korrelieren und anhand der Rate der Ionen die Einzelstoßbedingung kontrolliert. Trotzdem wurden bisher unzureichend untersuchte Effekte gefunden, wie die Überhöhung des Abbilds des Strahls an den Rändern und dessen Vebreiterung. Einige Gründe können mithilfe einer Simulation ausgeschlossen werden und Vermutungen über die Ursache angestellt werden, die weiteren Untersuchungen unterliegen sollten.
+
+Die Simulation der Ionenoptik des Massenspektrometers in \textit{SIMION} hat gezeigt, dass das Programm eine gute Möglichkeit bietet, die Flugzeit und Trajektorien der Ionen zu untersuchen. Die Funktionsweise des Massenspektrometers kann nachgebildet werden und ist ausreichend verstanden, um die experimentellen Daten gut mit den simulierten vergleichen zu können. Ergebnisse aus dem Experiment können in großen Teilen reproduziert werden, was sowohl die \textit{Zero-B} Anlage als auch die Simulation bestätigt und ihre Aussagekraft verbessert. Anhand der tatsächlichen Geometrie des Massenspektrometers können verschiedene Optimierungsansätze untersucht werden. Besonders die Untersuchung der Flugstrecke hat gezeigt, dass durch eine Veränderung der Geometrie eine deutliche Verbesserung der Auflösung erreicht werden kann. 
+
+Einige der in der Auswertung gefundenen Effekte wurden mit der Simulation überprüft. Während eine geringfügige Aufweitung des Strahls durch die thermische Bewegung der Ionen bestätigt werden konnte, kann die Aufweitung des Strahls, die Überhöhung an den Rändern und die Energie-Flugzeit-Korrelation nicht in dem Maße nachvollzogen werden.
+
+Obwohl diese Effekte die Ergebnisse der Anlage nicht maßgeblich zu beeinflussen scheinen, sind sie dennoch interessant und sollten weiter untersucht werden. Möglich wäre es bespielsweise eine Testreihe bei deutlich kleineren Raten durchzuführen und zu überprüfen, ob die Überhöhungs- und Aufweitungseffekte abnehmen. Außerdem sollte nach Erneuerung der Elektronenkanone überpüft werden, ob die Energie-Flugzeit-Korrelation weiterhin besteht und ob sie mit dem Pulsieren der Gitterspannung zusammenhängen könnte.
+
+Abschließen kann gesagt werden, dass die Weiterentwicklung der \textit{Zero-B} Anlage im Rahmen dieser Arbeit erfolgreich umgesetzt wurde. Die Beschreibung zum Prinzip und Aufbau, sowie die qualitativen Ergebnisse können als Grundlage genutzt werden, um mit der Anlage weitere Gase auf ihre Ionisationseigenschaften hin zu untersuchen. Die ionenoptische Simulation, die etabliert wurde, bietet zudem eine hilfreiche Beschreibung für die Validierung und Optimierung der Anlage. 

@@ -101,8 +101,10 @@ minus 1.2\fontdimen4\font
 \cleardoublepage
 
 \listoffigures
+\clearpage
 \listoftables
-\section*{\LARGE Abkürzungsverzeichnis}
+\clearpage
+\section*{\Large Abkürzungsverzeichnis}
 \begin{acronym}
   \acro{eu}[CFD]{\dotfill Constant Fraction Discriminator}  
   \acro{eu}[DETOF]{\dotfill Delayed Extraction Time of Flight}
@@ -137,16 +139,19 @@ minus 1.2\fontdimen4\font
 \cleardoublepage
 \input{Simulation}
 \cleardoublepage
-\input{Anhang}
-
-\fontsize{12pt}{12pt}\selectfont
-
-% Change Bibliography to References
 \renewcommand\bibname{Literaturverzeichnis}
-\clearpage
 \phantomsection
 \addcontentsline{toc}{chapter}{Literaturverzeichnis}
-
 \printbibliography
+\cleardoublepage
+
+\input{Anhang}
+\fontsize{12pt}{12pt}\selectfont
+
+\begin{figure}
+  \centering
+  \hspace*{-3.2cm}\includegraphics[width=1.4\textwidth]{selbststaendigkeitserklaerung.pdf}
+\end{figure}
+\addcontentsline{toc}{chapter}{Selbstständigkeitserklärung}
 
 \end{document}
