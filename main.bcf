@@ -2400,24 +2400,22 @@
     <bcf:citekey order="29" intorder="1">Lotz</bcf:citekey>
     <bcf:citekey order="30" intorder="1">EII</bcf:citekey>
     <bcf:citekey order="31" intorder="1">Straub</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">Holzte</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">ion</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">Straub</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">Holzte</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">MCP</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">MCP</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">ion</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">Straub</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">MCP</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">MCP</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Detektorsystem</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">Detektorsystem</bcf:citekey>
     <bcf:citekey order="38" intorder="1">Detektorsystem</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">Detektorsystem</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">Detektorsystem</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">Straub</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="41" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="42" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="43" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="44" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="45" intorder="1">Straub</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">Straub</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">SIMION</bcf:citekey>
     <bcf:citekey order="47" intorder="1">Straub</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">SIMION</bcf:citekey>
-    <bcf:citekey order="49" intorder="1">Straub</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -37,7 +37,7 @@
 \contentsline {section}{\numberline {4.2}Restgasspektrum}{51}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Auswertung der Positionsdaten}{53}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Annomalien}{54}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Ermittlung des Elektronenstrahlprofil}{56}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}Ermittlung des Elektronenstrahlprofils}{56}{subsection.4.3.2}%
 \contentsline {chapter}{\numberline {5}Simulation der Ionenoptik}{57}{chapter.5}%
 \contentsline {section}{\numberline {5.1}\textit {SIMION}: Methodik und Limitation}{57}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Modellierung und Konfiguration}{58}{section.5.2}%
