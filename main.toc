@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {3.5}Konditionierung des Detektors}{39}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Signalverarbeitung}{40}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Flugzeitmessung}{41}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Positionssensitive Auflösung}{43}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.2}Positionssensitive Auflösung}{44}{subsection.3.6.2}%
 \contentsline {chapter}{\numberline {4}Auswertung}{45}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Kalibrationsmessung mit Argon}{45}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Zusammenhang von Flugzeit und Elektronenenergie}{46}{subsection.4.1.1}%
@@ -46,10 +46,10 @@
 \contentsline {section}{\numberline {5.3}Vergleich der Simulation mit dem Experiment}{60}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Untersuchung der Ionenoptik}{63}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}Einfluss der Flugstrecke}{63}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Untersuchung zur Energie-Flugzeit-Korrelation}{64}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.2}Untersuchung zur Energie-Flugzeit-Korrelation}{65}{subsection.5.4.2}%
 \contentsline {subsection}{\numberline {5.4.3}Untersuchung der räumlichen Annomalien}{65}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Auflösungsvermögen}{65}{subsection.5.4.4}%
-\contentsline {section}{\numberline {5.5}Diskussion und Ausblick}{67}{section.5.5}%
-\contentsline {chapter}{Literaturverzeichnis}{71}{section*.37}%
+\contentsline {subsection}{\numberline {5.4.4}Auflösungsvermögen}{66}{subsection.5.4.4}%
+\contentsline {section}{\numberline {5.5}Diskussion und Ausblick}{69}{section.5.5}%
+\contentsline {chapter}{Literaturverzeichnis}{73}{section*.40}%
 \contentsline {chapter}{A\ \ Anhang}{73}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Ergänzendes zur Simulation}{74}{section.A.1}%
