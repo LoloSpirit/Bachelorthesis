@@ -7,7 +7,7 @@ Aus diesem Grund kann nur eine qualitative Auswertung einer Kalibrationsmessung 
 \section{Kalibrationsmessung mit Argon}
 Um die Anlage mit einem bereits gut untersuchten Gas zu Testen, wurde eine Testreihe mit Argon durchgeführt. Da es bereits Probleme mit der Bestimmung der Elektronenzahl aufgrund einer Fehlfunktion der Kanone gab, können nur qualitative Aussagen getroffen werden. Ein besonders kleiner Extraktionsstrom der Kanone bei niedrigen Eletrkonenenergien macht eine Messung des Elektronenstroms zu ungenau. Die Bestimmung der Ionisierungsquerschnitt ist nicht möglich, da die Elektronenzahl direkt in die Formel eingeht, es können jedoch qualitative Aussagen über die relativen Häufigkeiten der Ionen getroffen werden, welche propotional zum Ionisierungsquerschnitt sind.
 
-Die Auswertung der Messdaten erfolgt über einen digitalen Vielkanalanalysator (engl. \textit{multi channel analyzer}, MCA), der auf einem Computer Histogramme der aus der Flugzeit generieten Pulshöhen erstellt. Der MCA hat 4096 diskreten Kanäle, welche den Zeitbereich von 0 bis zur maximalen Zeit des TPHC abdecken. Diese werden dann mit Python und \textit{Matplotlib}, \textit{SciPy} und \textit{numpy} weiter ausgewertet und dargestellt. 
+Die Auswertung der Messdaten erfolgt über einen digitalen Vielkanalanalysator (MCA), der auf einem Computer Histogramme der aus der Flugzeit generieten Pulshöhen erstellt. Der MCA hat 4096 diskrete Kanäle, welche den Zeitbereich von 0 bis zur maximalen Zeit des TPHC abdecken. Diese werden dann mit den \textsc{Python}-Bibliotheken \textsc{Matplotlib}, \textsc{SciPy} und \textsc{numpy} weiter ausgewertet und dargestellt. 
 
 \begin{figure}
     \centering
@@ -19,13 +19,13 @@ Die Auswertung der Messdaten erfolgt über einen digitalen Vielkanalanalysator (
 Abbildung \ref{fig:ar} zeigt unskalierte Flugzeitspektren von Argon bei Elektronenenergien von 50 bis 1000 eV. Es ist zu erkennen, dass die Peaks mit steigender Elektronenenergie schärfer werden und es einen Zusammenhang zwischen der Elektronenenergie und der Flugzeit gibt, der im Folgenden genauer untersucht wird. Dass die Peaks schärfer werden ist unter anderem darauf zurückzuführen, dass die Elektronenkanone bei höheren Energien einen schärferen Strahl erzeugt. Die thermische Bewegung der Elektronen hat weniger Einfluss gegenüber der deutlich höheren kinetischen Energie. Der Entstehungsort der Ionen ist dann genauer definiert, was zu schmaleren Peaks führt.
 
 \subsection{Zusammenhang von Flugzeit und Elektronenenergie}
-Woher genau dieser Zusammenhang kommt, kann nicht direkt aus den Daten abgeleitet werden, da ein höherer Energieübertrag auf die Gasatome nicht direkt die Flugzeit beeinflussen kann. Es kann aber vermutet werden, dass dieses Phänomen mit der verzögerten Extraktion der Ionen aus dem Kondensator zusammenhängt, die Ionen mit höheren kinetischen Energien schneller beschleunigt. Genauere Untersuchungen folgen in Kapitel \ref{sec:delay} zur Simulation. Anhand der mittleren Flugzeit des größten Peaks der verschiedenen Spektren kann der Zusammenhang zwischen der Elektronenenergie und der Flugzeit untersucht werden.
-Abbildung \ref{fig:tof_energy} zeigt die Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Es ist zu erkennen, dass die Flugzeit mit steigender Elektronenenergie $E$ sinkt. Ein Fit der Form $t = -a\sqrt{E} + b$ zeigt, dass die Flugzeit propotional zu $-\sqrt{E}$ ist.
+Woher genau der Zusammenhang zwischen Flugzeit und Elektronenenergie kommt, kann nicht direkt aus den Daten abgeleitet werden, da ein höherer Energieübertrag auf die Gasatome nicht direkt die Flugzeit beeinflussen kann. Es kann aber vermutet werden, dass dieses Phänomen mit der verzögerten Extraktion der Ionen aus dem Kondensator zusammenhängt, die Ionen mit höheren kinetischen Energien schneller beschleunigt. Genauere Untersuchungen folgen in Kapitel \ref{sec:delay} zur Simulation. Anhand der mittleren Flugzeit des größten Peaks der verschiedenen Spektren kann der Zusammenhang zwischen der Elektronenenergie und der Flugzeit untersucht werden.
+Abbildung \ref{fig:tof_energy} zeigt die Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Es ist zu erkennen, dass die Flugzeit mit steigender Elektronenenergie $E$ sinkt. Ein Fit der Form $t(E) = -a\sqrt{E} + b$ zeigt, dass die Flugzeit propotional zu $-\sqrt{E}$ ist. $a$ und $b$ sind dabei Fitparameter, die die Steigung und den Offset des Zusammenhangs beschreiben. 
 
 \begin{figure}
     \centering
     \includegraphics[width=.7\textwidth]{tof_energy.png}
-    \caption[Zusammenhang zwischen TOF und Elektronenenergie]{Abbildung der Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Ein Fit zeigt, dass eine Funktion der Form $t = -a\sqrt{E} + b$ den Zusammenhang gut beschreibt.}
+    \caption[Zusammenhang zwischen TOF und Elektronenenergie]{Abbildung der Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Ein Fit zeigt, dass eine Funktion der Form $t(E) = -a\sqrt{E} + b$ den Zusammenhang gut beschreibt.}
     \label{fig:tof_energy}
 \end{figure}
 
@@ -34,9 +34,8 @@ Für eine weitere Analyse muss das Flugzeitspektrum in ein Massenspektrum transf
 
 Um einen Vergleich mehrerer Spektren zu ermöglichen, werden die Spektren zunächst normalisiert. Das bedeutet, dass die Fläche des größten Peaks (Ar$^+$) auf 1 gesetzt wird. Da sich der Ionisationsquerschnitt mit der Elektronenenergie ändert, werden die Spektren anschließend mit den Werten für $\sigma^+$ gewichtet. Der Count der Ionen geht direkt proportional in den Ionisierungsquerschnitt $\sigma^+$ ein. Tabelle \ref{tab:argon} zeigt einen Auszug der Ionisierungsquerschnitte von Argon aus \cite{Straub}.
 
-\subsection{Unsicherheiten}
 Durch die begrenzte Zahl der Kanäle des MCA ergibt sich eine Unsicherheit \begin{equation}
-    \Delta t_{\text{MCA}} = \frac{4 \text{ $\mu$s}}{4096} = 0.977 \text{ ns},
+    \Delta t_{\text{MCA}} = \frac{4 \text{$\mu$s}}{4096} = 0.977 \text{ ns},
 \end{equation} 
 die sich auf eine Masseunsicherheit umrechnen lässt. Dafür muss die Fehlerfortpflanzung der Transformationsfunktion berücksichtigt werden:
 \begin{equation}
@@ -45,16 +44,16 @@ die sich auf eine Masseunsicherheit umrechnen lässt. Dafür muss die Fehlerfort
 $a$ ist dabei der erste Parameter der Transformationsfunktion $f_{Trans}$, der bei einer Elektronenerngie von 100 eV bei einem Argonspektrum 3.02$\times 10^{-6}$ beträgt. Bei einer Flugzeit von 3.5 $\mu$s beträgt dann die Unsicherheit der Masse 0.129 u/e. Das bedeutet, dass eine Masse von 40 u/e mit einer Unsicherheit von 0.129 u/e gemessen wird. Die Auflösung in der Realität kleiner, da die Peaks nicht unendlich schmal sind und sich über mehrere Kanäle erstrecken.
 
 \subsection{Extraktionverzögerung}
-Die Verzögerung der Extraktion bei der DETOF-Methode ermöglicht schärfere Flugzeitpeaks. Für die bisherige Auswertung wurde eine tatsächliche Extraktionsverzögerung von etwa 300 ns verwendet. Das geht aus den Signalen hervor (Abbildung \ref{fig:Signal}). Besonderns bei niedrigen Energien sind die Peaks sehr breit und unsymmetrisch. Eine Verdopplung der Extraktionszeit auf 600 ns macht die Peaks deutlich schärfer und verbessert so auch die darstellbare Auflösung. Abbildung \ref{fig:delay} zeigt die Flugzeitspektren von Argon bei 50 eV mit einer Extraktionsverzögerung von 300 ns und 600 ns. Eine weitere Verlängerung der Extraktionsverzögerung hat nicht denselben Effekt. Aufgrund der deutlichen Verbesserung sind folgende Spektren mit 600 ns Verzögerung aufgenommen worden.
+Die Verzögerung der Extraktion bei der DETOF-Methode ermöglicht schärfere Flugzeitpeaks. Für die bisherige Auswertung wurde eine tatsächliche Extraktionsverzögerung von etwa 300 ns verwendet. Das geht aus den Signalen hervor (Abbildung \ref{fig:Signal}). Besonders bei niedrigen Energien sind die Peaks sehr breit und unsymmetrisch. Eine Verdopplung der Extraktionszeit auf 600 ns macht die Peaks deutlich schärfer und verbessert so auch die darstellbare Auflösung. Abbildung \ref{fig:delay} zeigt die Flugzeitspektren von Argon bei 50 eV mit einer Extraktionsverzögerung von 300 ns und 600 ns. Eine weitere Verlängerung der Extraktionsverzögerung hat nicht denselben Effekt. Aufgrund der deutlichen Verbesserung sind folgende Spektren mit 600 ns Verzögerung aufgenommen worden.
 \begin{figure}
     \centering
-    \begin{subfigure}{.45\textwidth}
+    \begin{subfigure}{.65\textwidth}
         \centering
         \includegraphics[width=1\linewidth]{Ar50-300ns.png}
         \caption{Argon bei 50 eV mit 300 ns Extraktionsverzögerung}
     \end{subfigure}%
     \hfill
-    \begin{subfigure}{.45\textwidth}
+    \begin{subfigure}{.65\textwidth}
         \centering
         \includegraphics[width=1\linewidth]{Ar50-600ns.png}
         \caption{Argon bei 50 eV mit 600 ns Extraktionsverzögerung}
@@ -89,11 +88,11 @@ Obwohl die Werte für die Ionisierungsquerschnitte aufgrund der defekten Kanone 
 \begin{table}
     \centering
     \caption[Auszug der Ionisierungsquerschnitte von Argon aus Straub et al.]{Auszug der Ionisierungsquerschnitte von Argon aus Straub et al. \cite{Straub}. Beim Summieren der einzelnen Querschnitte zum totalen Querschnitt werden die Werte entsprechend der Ladung gewichtet:
-    $\sigma^{\text{total}} = \sigma^+ + 2\sigma^{2+} + 3\sigma^{3+} + 4\sigma^{4+}$.}
+    $\sigma_{\text{total}} = \sigma^+ + 2\sigma^{2+} + 3\sigma^{3+} + 4\sigma^{4+}$.}
     \label{tab:argon}
     \begin{tabular}{r c c c c c}
         \toprule
-        \textbf{Energie} & $\sigma^+$ & $\sigma^{2+}$ & $\sigma^{3+}$ & $\sigma^{4+}$ & $\sigma^{\text{total}}$ \\
+        \textbf{Energie} & $\sigma^+$ & $\sigma^{2+}$ & $\sigma^{3+}$ & $\sigma^{4+}$ & $\sigma_{\text{total}}$ \\
         (eV) & ($10^{-16}$ cm$^2$) & ($10^{-17}$ cm$^2$) & ($10^{-19}$ cm$^2$) & ($10^{-19}$ cm$^2$) & ($10^{-16}$ cm$^2$) \\
         \midrule
         %17  & 0.017  &        &        &        & 0.017  \\
@@ -169,7 +168,7 @@ Eine weitere Möglichkeit zur Überprüfung des Massenspektrometers ist die Aufn
 Wie bereits bei der Kalibrationsmessung muss das Massespektrum transformiert werden, um die Masse-zu-Ladungsverhältnisse der Ionen zu bestimmen. Dafür wird für einige der Peaks anhand von den Erwartungen eine Annahme getroffen, welchem Verhältnis sie entsprechen könnten. Für die Identifikation der Ionen wurde angenommen, das der größte Peak ionisierten Wassermolekülen
 entspricht und der erste Peak ionisiertem Wasserstoff. Das resultierende, skalierte Restgasspektrum ist in Abb. \ref{fig:rest} dargestellt.
 
-Wie erwartet können die größten Peaks auf ionisierte Wassermoleküle sowie Wasserstoff zurückgeführt werden. Auch die Peaks von molekularem Stickstoff, Sauerstoff und vermutlich Kohlenstoffdioxid sind gut zu erkennen. Die Struktur und Übereinstimmung des Restgasspektrums zeigen, dass die Anlage korrekt funktioniert und zur Identifikation von Produktionen taugt. Außerdem ist zu erkennen, dass Massendifferenzen von 1 $u$ im Bereich leichter Ionen aufgelöst werden können. 
+Wie erwartet können die größten Peaks auf ionisierte Wassermoleküle sowie Wasserstoff zurückgeführt werden. Auch die Peaks von molekularem Stickstoff, Sauerstoff und vermutlich Kohlenstoffdioxid sind gut zu erkennen. Die Struktur und Übereinstimmung des Restgasspektrums zeigen, dass die Anlage korrekt funktioniert und zur Identifikation von Produktionen nutzbar ist. Außerdem ist zu erkennen, dass Massendifferenzen von 1 $u$ im Bereich leichter Ionen aufgelöst werden können. 
 
 \begin{figure}[h]
     \centering
@@ -200,7 +199,7 @@ Auffällig sind jedoch die Überhöhungen an den seitlichen Rändern des Strahls
 \end{figure}
 
 \subsection{Ermittlung des Elektronenstrahlprofils}
-Die Positionen der detektierten Ionen auf dem Detektor können genutzt werden, um das Strahlprofil, also die räumliche Verteilung der Teilchen in einem Schnitt des Strahls, zu bestimmen. Um das Strahlprofil über die ganze abgebildete Länge zu mitteln, wird Daten-Binning genutzt. Das bedeutet, dass für jede y-Koordinate in einem \textit{Bin} die Counts aller detektierten Ionen aufsummiert werden. Das Ergebnis ist ein Histogramm, das die räumliche Verteilung der Elektronen entlange der y-Achse zeigt. Es ist in Abb. \ref{fig:Strahlprofil} dargestellt. Für das Profil des Strahls wird eine Gauß-Verteilung erwartet, da thermische Effekte und Beugung die Position der Elektronen zufällig beeinflussen. Mit einem Fit der Daten mit einer Gauß-Funktion kann die Breite des Strahls bestimmt werden. In der Abbildung ist zu erkennen, dass die Abweichung der Daten vom Fit sehr klein ist. Über die Parameter der gefitteten Funktion kann die volle Breite bei halbem Maximum (FWHM) des Strahls bestimmt werden. Sie beträgt 2.93 mm bei 100 eV. Obwohl diese Strahlbreite in die vom Hersteller angegebene Fleckgröße von 5 mm passt, ist sie wahrscheinlich, ähnlich wie die horizontale Länge des Strahls, tatsächlich kleiner. Wenn man annimmt, dass die Vergrößerung entlang der y-Achse ähnlich der entlang der x-Achse ist, sollte der Strahl eine FWHM von etwa 2 mm aufweisen.
+Die Positionen der detektierten Ionen auf dem Detektor können genutzt werden, um das Strahlprofil, also die räumliche Verteilung der Teilchen in einem Schnitt des Strahls, zu bestimmen. Um das Strahlprofil über die ganze abgebildete Länge zu mitteln, wird Daten-\textsc{Binning} genutzt. Das bedeutet, dass für jede y-Koordinate in einem \textsc{Bin} die Counts aller detektierten Ionen aufsummiert werden. Das Ergebnis ist ein Histogramm, das die räumliche Verteilung der Elektronen entlange der y-Achse zeigt. Es ist in Abb. \ref{fig:Strahlprofil} dargestellt. Für das Profil des Strahls wird eine Gauß-Verteilung erwartet, da thermische Effekte und Beugung die Position der Elektronen zufällig beeinflussen. Mit einem Fit der Daten mit einer Gauß-Funktion kann die Breite des Strahls bestimmt werden. In der Abbildung ist zu erkennen, dass die Abweichung der Daten vom Fit sehr klein ist. Über die Parameter der gefitteten Funktion kann die volle Breite bei halbem Maximum (FWHM) des Strahls bestimmt werden. Sie beträgt 2.93 mm bei 100 eV. Obwohl diese Strahlbreite in die vom Hersteller angegebene Fleckgröße von 5 mm passt, ist sie wahrscheinlich, ähnlich wie die horizontale Länge des Strahls, tatsächlich kleiner. Wenn man annimmt, dass die Vergrößerung entlang der y-Achse ähnlich der entlang der x-Achse ist, sollte der Strahl eine FWHM von etwa 2 mm aufweisen.
 
 \begin{figure}
     \centering

@@ -52,6 +52,20 @@
       \field{volume}{2}
       \field{year}{2023}
     \endentry
+    \entry{CFD}{misc}{}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{note}{Bildquelle: Wikimedia Commons}
+      \field{title}{CFD-Prinzip Bild}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://commons.wikimedia.org/w/index.php?curid=534201
+      \endverb
+      \verb{url}
+      \verb https://commons.wikimedia.org/w/index.php?curid=534201
+      \endverb
+    \endentry
     \entry{diamondoids}{report}{}{}
       \true{moreauthor}
       \true{morelabelname}
