@@ -1,7 +1,7 @@
 \babel@toc {german}{}\relax 
 \contentsline {chapter}{\numberline {1}Einführung}{13}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Zielsetzung}{15}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Wisschenschaftlicher Kontext}{16}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Wissenschaftlicher Kontext}{16}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Grundlagen der Elektronenstoßionisation}{19}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Ionisationsprozesse}{19}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Mehrstufige Ionisationsprozesse}{20}{subsection.2.1.1}%
@@ -31,11 +31,11 @@
 \contentsline {section}{\numberline {4.1}Kalibrationsmessung mit Argon}{47}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Zusammenhang von Flugzeit und Elektronenenergie}{48}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Transformation in ein Massenspektrum}{49}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Extraktionverzögerung}{50}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.3}Extraktionsverzögerung}{50}{subsection.4.1.3}%
 \contentsline {subsection}{\numberline {4.1.4}Analyse und Vergleich der Ergebnisse}{51}{subsection.4.1.4}%
 \contentsline {section}{\numberline {4.2}Restgasspektrum}{54}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Auswertung der Positionsdaten}{56}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Annomalien}{57}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}Anomalien}{57}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Ermittlung des Elektronenstrahlprofils}{59}{subsection.4.3.2}%
 \contentsline {chapter}{\numberline {5}Simulation der Ionenoptik}{61}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Methodik und Limitation}{61}{section.5.1}%
@@ -45,7 +45,7 @@
 \contentsline {section}{\numberline {5.3}Vergleich der Simulation mit dem Experiment}{64}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Untersuchung der Ionenoptik}{67}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}Einfluss der Flugstrecke}{67}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Untersuchung der Annomalien}{69}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.2}Untersuchung der Anomalien}{69}{subsection.5.4.2}%
 \contentsline {subsection}{\numberline {5.4.3}Auflösungsvermögen}{70}{subsection.5.4.3}%
 \contentsline {section}{\numberline {5.5}Diskussion und Ausblick}{74}{section.5.5}%
 \contentsline {chapter}{Literaturverzeichnis}{77}{section*.40}%

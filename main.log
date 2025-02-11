@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  10 FEB 2025 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  11 FEB 2025 15:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1477,11 +1477,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <images/EA.png, id=342, 685.56125pt x 287.0725pt>
 File: images/EA.png Graphic file (type png)
 <use images/EA.png>
-Package pdftex.def Info: images/EA.png  used on input line 25.
+Package pdftex.def Info: images/EA.png  used on input line 24.
 (pdftex.def)             Requested size: 362.08733pt x 151.62643pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1655) has occurred while \output is active []
 
 
 
@@ -1498,7 +1501,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [23]
-Underfull \vbox (badness 1057) has occurred while \output is active []
+Underfull \vbox (badness 1112) has occurred while \output is active []
 
 
 
@@ -1523,7 +1526,7 @@ chapter 3.
 [29
 
 ]
-Underfull \vbox (badness 4940) has occurred while \output is active []
+Underfull \vbox (badness 4927) has occurred while \output is active []
 
 
 
@@ -1622,22 +1625,23 @@ Package pdftex.def Info: images/cfd.png  used on input line 148.
 
 [41]
 
-[42 <./images/ToF_Signals.png> <./images/cfd.png>]
-<images/Signalverlauf.png, id=513, 381.5856pt x 320.8788pt>
+[42 <./images/ToF_Signals.png>]
+<images/Signalverlauf.png, id=511, 381.5856pt x 320.8788pt>
 File: images/Signalverlauf.png Graphic file (type png)
 <use images/Signalverlauf.png>
 Package pdftex.def Info: images/Signalverlauf.png  used on input line 159.
 (pdftex.def)             Requested size: 362.08733pt x 304.50018pt.
-<images/PosSig.png, id=515, 973.6375pt x 463.7325pt>
+
+
+[43 <./images/cfd.png>]
+
+[44 <./images/Signalverlauf.png>]
+<images/PosSig.png, id=525, 973.6375pt x 463.7325pt>
 File: images/PosSig.png Graphic file (type png)
 <use images/PosSig.png>
 Package pdftex.def Info: images/PosSig.png  used on input line 169.
 (pdftex.def)             Requested size: 321.85881pt x 153.294pt.
 )
-
-[43]
-
-[44 <./images/Signalverlauf.png>]
 
 [45 <./images/PosSig.png>]
 
@@ -1669,12 +1673,12 @@ Package pdftex.def Info: images/tof_energy.png  used on input line 27.
 <images/Ar50-300ns.png, id=561, 464.6961pt x 361.35pt>
 File: images/Ar50-300ns.png Graphic file (type png)
 <use images/Ar50-300ns.png>
-Package pdftex.def Info: images/Ar50-300ns.png  used on input line 52.
+Package pdftex.def Info: images/Ar50-300ns.png  used on input line 53.
 (pdftex.def)             Requested size: 261.50684pt x 203.34709pt.
 <images/Ar50-600ns.png, id=562, 461.8053pt x 361.35pt>
 File: images/Ar50-600ns.png Graphic file (type png)
 <use images/Ar50-600ns.png>
-Package pdftex.def Info: images/Ar50-600ns.png  used on input line 58.
+Package pdftex.def Info: images/Ar50-600ns.png  used on input line 59.
 (pdftex.def)             Requested size: 261.50684pt x 204.63179pt.
 
 
@@ -1686,10 +1690,10 @@ Package pdftex.def Info: images/Ar50-600ns.png  used on input line 58.
 <images/Ar_scaled.png, id=581, 758.835pt x 361.35pt>
 File: images/Ar_scaled.png Graphic file (type png)
 <use images/Ar_scaled.png>
-Package pdftex.def Info: images/Ar_scaled.png  used on input line 73.
+Package pdftex.def Info: images/Ar_scaled.png  used on input line 74.
 (pdftex.def)             Requested size: 683.94615pt x 325.6972pt.
 
-Overfull \hbox (2.78763pt too wide) in paragraph at lines 73--74
+Overfull \hbox (2.78763pt too wide) in paragraph at lines 74--75
  []| [] 
  []
 
@@ -1699,7 +1703,7 @@ Overfull \hbox (2.78763pt too wide) in paragraph at lines 73--74
 <images/Ar_integrated.png, id=594, 758.835pt x 361.35pt>
 File: images/Ar_integrated.png Graphic file (type png)
 <use images/Ar_integrated.png>
-Package pdftex.def Info: images/Ar_integrated.png  used on input line 83.
+Package pdftex.def Info: images/Ar_integrated.png  used on input line 84.
 (pdftex.def)             Requested size: 402.32199pt x 191.58626pt.
 
 
@@ -1712,7 +1716,7 @@ Package pdftex.def Info: images/Ar_integrated.png  used on input line 83.
 <images/Restgas.png, id=613, 758.835pt x 361.35pt>
 File: images/Restgas.png Graphic file (type png)
 <use images/Restgas.png>
-Package pdftex.def Info: images/Restgas.png  used on input line 176.
+Package pdftex.def Info: images/Restgas.png  used on input line 177.
 (pdftex.def)             Requested size: 422.43932pt x 201.16365pt.
 
 
@@ -1724,17 +1728,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/Strahl.png, id=620, 630.9171pt x 224.037pt>
 File: images/Strahl.png Graphic file (type png)
 <use images/Strahl.png>
-Package pdftex.def Info: images/Strahl.png  used on input line 189.
+Package pdftex.def Info: images/Strahl.png  used on input line 190.
 (pdftex.def)             Requested size: 422.43932pt x 150.00827pt.
 
-Overfull \hbox (20.11732pt too wide) in paragraph at lines 189--190
+Overfull \hbox (20.11732pt too wide) in paragraph at lines 190--191
  [][] 
  []
 
 <images/Strahl3D.png, id=621, 659.1024pt x 508.0581pt>
 File: images/Strahl3D.png Graphic file (type png)
 <use images/Strahl3D.png>
-Package pdftex.def Info: images/Strahl3D.png  used on input line 196.
+Package pdftex.def Info: images/Strahl3D.png  used on input line 197.
 (pdftex.def)             Requested size: 341.97614pt x 263.60255pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1747,7 +1751,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <images/Strahlprofil.png, id=634, 462.528pt x 346.896pt>
 File: images/Strahlprofil.png Graphic file (type png)
 <use images/Strahlprofil.png>
-Package pdftex.def Info: images/Strahlprofil.png  used on input line 206.
+Package pdftex.def Info: images/Strahlprofil.png  used on input line 207.
 (pdftex.def)             Requested size: 281.62416pt x 211.22513pt.
 )
 
@@ -1758,11 +1762,6 @@ Package pdftex.def Info: images/Strahlprofil.png  used on input line 206.
 
 ] (./Simulation.tex
 chapter 5.
-
-Overfull \hbox (0.52422pt too wide) in paragraph at lines 6--7
-\T1/ptm/m/n/10.95 Zugrunde der Si-mu-la-tio-nen liegt bei \T1/ptm/m/sc/10.95 Si-mi-on \T1/ptm/m/n/10.95 die nu-me-ri-sche Lö-sung der Laplace-Gleichung
- []
-
 
 
 [61
@@ -1916,7 +1915,7 @@ Overfull \hbox (17.27834pt too wide) in paragraph at lines 147--147
 
 [78] (./Anhang.tex
 chapter A.
-<images/Resolution_intergration.png, id=785, 740.7675pt x 387.3672pt>
+<images/Resolution_intergration.png, id=786, 740.7675pt x 387.3672pt>
 File: images/Resolution_intergration.png Graphic file (type png)
 <use images/Resolution_intergration.png>
 Package pdftex.def Info: images/Resolution_intergration.png  used on input line 36.
@@ -1933,17 +1932,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 
 [80 <./images/Resolution_intergration.png>]
-<images/Pos_210.png, id=797, 292.6935pt x 224.7597pt>
+<images/Pos_210.png, id=798, 292.6935pt x 224.7597pt>
 File: images/Pos_210.png Graphic file (type png)
 <use images/Pos_210.png>
 Package pdftex.def Info: images/Pos_210.png  used on input line 48.
 (pdftex.def)             Requested size: 221.27832pt x 169.9206pt.
-<images/Pos_Forward_Bias.png, id=798, 303.534pt x 226.9278pt>
+<images/Pos_Forward_Bias.png, id=799, 303.534pt x 226.9278pt>
 File: images/Pos_Forward_Bias.png Graphic file (type png)
 <use images/Pos_Forward_Bias.png>
 Package pdftex.def Info: images/Pos_Forward_Bias.png  used on input line 55.
 (pdftex.def)             Requested size: 221.27832pt x 165.43083pt.
-<images/Fly2.png, id=801, 499.8675pt x 793.96625pt>
+<images/Fly2.png, id=802, 499.8675pt x 793.96625pt>
 File: images/Fly2.png Graphic file (type png)
 <use images/Fly2.png>
 Package pdftex.def Info: images/Fly2.png  used on input line 63.
@@ -1963,7 +1962,7 @@ Overfull \vbox (112.40958pt too high) has occurred while \output is active []
 
 
 [82 <./images/Fly2.png>]
-<images/selbststaendigkeitserklaerung.pdf, id=814, 597.55246pt x 845.07718pt>
+<images/selbststaendigkeitserklaerung.pdf, id=815, 597.55246pt x 845.07718pt>
 File: images/selbststaendigkeitserklaerung.pdf Graphic file (type pdf)
 <use images/selbststaendigkeitserklaerung.pdf>
 Package pdftex.def Info: images/selbststaendigkeitserklaerung.pdf  used on input line 154.
@@ -1990,18 +1989,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42952 strings out of 473584
- 862607 string characters out of 5728329
+ 42953 strings out of 473584
+ 862612 string characters out of 5728329
  1945905 words of memory out of 5000000
  64972 multiletter control sequences out of 15000+600000
- 621422 words of font info for 113 fonts, out of 8000000 for 9000
+ 622500 words of font info for 114 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,16n,120p,10963b,2683s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (83 pages, 7618418 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (83 pages, 7626592 bytes).
 PDF statistics:
- 1124 PDF objects out of 1200 (max. 8388607)
- 896 compressed objects within 9 object streams
+ 1129 PDF objects out of 1200 (max. 8388607)
+ 899 compressed objects within 9 object streams
  223 named destinations out of 1000 (max. 500000)
  657 words of extra memory for PDF output out of 10000 (max. 10000000)
 
