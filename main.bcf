@@ -2375,19 +2375,20 @@
     <bcf:citekey order="1" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="2" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="3" intorder="1">ion</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">CO2</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">ion</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">Prop</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">ion</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">Prop</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Iodine</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">ion</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">diamondoids</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">hydrocarbons</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Prop</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">Xenon</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">CO2</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">ion</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Prop</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">ion</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Prop</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Iodine</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">ion</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">diamondoids</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">hydrocarbons</bcf:citekey>
     <bcf:citekey order="14" intorder="1">Prop</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Straub</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">Straub2</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Prop</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Straub</bcf:citekey>
+    <bcf:citekey order="16" intorder="2">Straub2</bcf:citekey>
     <bcf:citekey order="17" intorder="1">other_method</bcf:citekey>
     <bcf:citekey order="18" intorder="1">EITOFMS</bcf:citekey>
     <bcf:citekey order="19" intorder="1">DETOF</bcf:citekey>
@@ -2409,16 +2410,17 @@
     <bcf:citekey order="35" intorder="1">Detektorsystem</bcf:citekey>
     <bcf:citekey order="36" intorder="1">Detektorsystem</bcf:citekey>
     <bcf:citekey order="37" intorder="1">CFD</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">CFD</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">Straub</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">CFD_pic</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">CFD_pic</bcf:citekey>
     <bcf:citekey order="40" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="41" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="42" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="43" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="44" intorder="1">Straub</bcf:citekey>
     <bcf:citekey order="45" intorder="1">Straub</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">SIMION</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">Straub</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">Straub</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">SIMION</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">Straub</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

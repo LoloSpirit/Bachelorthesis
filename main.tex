@@ -9,6 +9,7 @@ BCOR          = 8mm]{scrreprt}
 \usepackage{rotating}
 \usepackage{tikzpagenodes}
 \usepackage[locale=DE]{siunitx}
+\usepackage[section]{placeins}  % Prevents figures from floating above section headers
 \sisetup{math-rm = true}
 \usepackage{amssymb}
 \usepackage{amsmath}
@@ -60,6 +61,8 @@ BCOR          = 8mm]{scrreprt}
 
 
 \addbibresource{reference.bib}
+
+\setcapindent{0pt}
 
 % Page Style
 \pagestyle{fancy}
