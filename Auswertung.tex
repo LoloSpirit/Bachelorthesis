@@ -24,7 +24,7 @@ Abbildung \ref{fig:tof_energy} zeigt die Flugzeit des größten Peaks in Abhäng
 
 \begin{figure}
     \centering
-    \includegraphics[width=.7\textwidth]{tof_energy.png}
+    \includegraphics[width=.8\textwidth]{tof_energy.png}
     \caption[Zusammenhang zwischen TOF und Elektronenenergie]{Abbildung der Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Ein Fit zeigt, dass eine Funktion der Form $t(E) = -a\sqrt{E} + b$ den Zusammenhang gut beschreibt.}
     \label{fig:tof_energy}
 \end{figure}
@@ -42,7 +42,7 @@ die sich auf eine Massenunsicherheit umrechnen lässt. Dafür muss die Fehlerfor
 \begin{equation}
     \Delta m/q = \sqrt{\left(\frac{\partial f_\mathrm{Trans}}{\partial t}\right)^2 \Delta t_{\mathrm{MCA}}^2} = 2at\Delta t_{\mathrm{MCA}}.
 \end{equation}
-$a$ ist dabei der erste Parameter der Transformationsfunktion $f_\mathrm{Trans}$, der bei einer Elektronenenergie von 100 eV bei einem Argonspektrum $3.02 \cdot 10^{-6}$ beträgt. Bei einer Flugzeit von 3.5 $\mu$s beträgt dann die Unsicherheit der Masse 0.129 u/e. Das bedeutet, dass eine Masse von 40 u/e mit einer Unsicherheit von 0.129 u/e gemessen wird. Die Auflösung ist in der Realität kleiner, da die Peaks nicht unendlich schmal sind und sich über mehrere Kanäle erstrecken.
+$a$ ist dabei der erste Parameter der Transformationsfunktion $f_\mathrm{Trans}$, der bei einer Elektronenenergie von 100 eV bei einem Argonspektrum $3.02 \cdot 10^{-6}$ beträgt. Bei einer Flugzeit von 3.5 \textmu{s} beträgt dann die Unsicherheit der Masse 0.129 u/e. Das bedeutet, dass eine Masse von 40 u/e mit einer Unsicherheit von 0.129 u/e gemessen wird. Die Auflösung ist in der Realität kleiner, da die Peaks nicht unendlich schmal sind und sich über mehrere Kanäle erstrecken.
 
 \subsection{Extraktionsverzögerung}
 Die Verzögerung der Extraktion bei der DETOF-Methode ermöglicht schärfere Flugzeitpeaks. Für die bisherige Auswertung wurde eine tatsächliche Extraktionsverzögerung von etwa 300 ns verwendet. Das geht aus den Signalen hervor (Abbildung \ref{fig:Signal}). Besonders bei niedrigen Energien sind die Peaks sehr breit und unsymmetrisch. Eine Verdopplung der Extraktionszeit auf 600 ns macht die Peaks deutlich schärfer und verbessert so auch die darstellbare Auflösung. Abbildung \ref{fig:delay} zeigt die Flugzeitspektren von Argon bei 50 eV mit einer Extraktionsverzögerung von 300 ns und 600 ns. Eine weitere Verlängerung der Extraktionsverzögerung hat nicht denselben Effekt. Aufgrund der deutlichen Verbesserung sind folgende Spektren mit 600 ns Verzögerung aufgenommen worden.
@@ -51,13 +51,13 @@ Die Verzögerung der Extraktion bei der DETOF-Methode ermöglicht schärfere Flu
     \begin{subfigure}{.8\textwidth}
         \centering
         \includegraphics[width=1\linewidth]{Ar50-300ns.png}
-        \caption{Argon bei 50 eV mit 300 ns Extraktionsverzögerung}
+        \caption{Argon bei 50 eV Elektronenenergie mit 300 ns Extraktionsverzögerung}
     \end{subfigure}%
     \hfill
     \begin{subfigure}{.8\textwidth}
         \centering
         \includegraphics[width=1\linewidth]{Ar50-600ns.png}
-        \caption{Argon bei 50 eV mit 600 ns Extraktionsverzögerung}
+        \caption{Argon bei 50 eV Elektronenenergie mit 600 ns Extraktionsverzögerung}
         
     \end{subfigure}
     \caption[Einfluss der Extraktionsverzögerung auf Flugzeitspektren]{Flugzeitspektren von Argon bei 50 eV mit unterschiedlichen Extraktionsverzögerungen.}
@@ -194,7 +194,7 @@ Auffällig sind jedoch die Überhöhungen an den seitlichen Rändern des Strahls
 
 \begin{figure}
     \centering
-    \includegraphics[width=.85\textwidth]{Strahl3D.png}
+    \includegraphics[width=1\textwidth]{Strahl3D.png}
     \caption[Dreidimensionales Abbild des Strahls auf dem Detektor]{Dreidimensionales Abbild des Strahls auf dem Detektor. Die Anzahl der Treffer ist absolut dargestellt. Die Überhöhungen an den Rändern des Strahls sind gut zu erkennbar. Das Bild zeigt die tatsächliche Ausrichtung des Detektors relativ zum Strahl.}
     \label{fig:Strahl3D} 
 \end{figure}
@@ -204,7 +204,7 @@ Die Positionen der detektierten Ionen auf dem Detektor können genutzt werden, u
 
 \begin{figure}
     \centering
-    \includegraphics[width=.7\textwidth]{Strahlprofil.png}
+    \includegraphics[width=.9\textwidth]{Strahlprofil.png}
     \caption[Gemitteltes Strahlprofil]{Gemitteltes Strahlprofil aus den Positionen der detektierten Ionen. Die Daten wurden mit einem Gaußfit gefittet, um die Breite des Strahls zu bestimmen. In grau-schraffiert eingezeichnet ist die volle Breite bei halbem Maximum (FWHM) des Strahls abgebildet.}
     \label{fig:Strahlprofil} 
 \end{figure}

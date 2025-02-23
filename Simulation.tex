@@ -19,7 +19,7 @@ Aufgrund der Neumann-Randbedingungen spiegelt sich das Feld an der Grenze. Dadur
 Limitierend ist allgemein, dass die Teilchen dabei standardmäßig selbst nicht das Potential beeinflussen. Das bedeutet, dass sie auch nicht miteinander wechselwirken können und keine Raumladungseffekte berücksichtigt werden. Da innerhalb dieser Arbeit aber unter Einzelstoßbedingungen gearbeitet wird, ist das nicht relevant. Es gibt allerdings die Möglichkeit eine vereinfachte Coloumbabstoßung zwischen Teilchen zusätzlich zu simulieren auf Kosten der Rechenzeit. Angenommen wird auch, dass die Felder statisch sind und somit werden zeitabhängige Effekte, wie das Induktionsgesetz, nicht berücksichtigt. Es ist aber trotzdem möglich, die Felder in Abhängigkeit der Zeit mit eigener Programmierung zu verändern.
 
 \section{Modellierung und Konfiguration}
-Um die Ionenoptik der derzeit verwendeten Geometrie zu untersuchen, muss dieser akkurat modelliert werden. Anhand der originalen Designdateien des Plattenkondensators konnte eine vereinfachte Geometrie in \textsc{Simion} erstellt werden. Die Elektroden wurden zweidimensional modelliert und dann mit Zylindersymmetrie auf 3D erweitert. Abbildung \ref{fig:model} zeigt das Modell des Massenspektrometers in \textsc{Simion}. Zunächst wurden die derzeitigen Maße der Anlage eingesetzt, anhand der Simulation soll aber der Abstand des Detektors variiert werden.
+Um die Ionenoptik der derzeit verwendeten Geometrie zu untersuchen, muss dieser akkurat modelliert werden. Anhand der originalen Designdateien des Plattenkondensators konnte eine vereinfachte Geometrie in \textsc{Simion} erstellt werden. Die Elektroden wurden zweidimensional modelliert und dann mit Zylindersymmetrie auf 3D erweitert. Abbildung \ref{fig:model} zeigt das Modell des Massenspektrometers in \textsc{Simion}. Zunächst wurden die derzeitigen Maße der Anlage eingesetzt, anhand der Simulation soll aber der Abstand des Detektors variiert werden. Auf der Bodenplatte (in der Simulation links) wird ein positives Potential von mehreren Kilovolt angelegt, während die Deckenplatte und Einzellinse auf Masse (0 V) liegt. Genauso wie im Experiment wird die Linse vorerst nicht verwendet. Der Detektor (in der Simulation rechts) bekommt ein Potential von -2500 V, ähnlich dem in der Anlage. 
 
 \begin{figure}
     \centering
@@ -28,11 +28,10 @@ Um die Ionenoptik der derzeit verwendeten Geometrie zu untersuchen, muss dieser 
     \label{fig:model}
 \end{figure}
 
-Auf der Bodenplatte (in der Simulation links) wird ein positives Potential von mehreren Kilovolt angelegt, während die Deckenplatte und Einzellinse auf Masse (0 V) liegt. Genauso wie im Experiment wird die Linse vorerst nicht verwendet. Der Detektor (in der Simulation rechts) bekommt ein Potential von -2500 V, ähnlich dem in der Anlage. 
+
 
 \subsection{Initialisierung der Ionen}
 Die Interaktion der Elektronen mit dem Neutralgas wird in der Simulation nicht berücksichtigt. Stattdessen werden die Ionen im Pfad des Elektronenstrahls erschaffen, also in einem Streifen parallel zu den Platten. Um die räumliche Ausdehnung des Strahls zu berücksichtigen und, wie auch im Experiment zu beobachten, eine Verteilung der Flugstrecken der Ionen zu erhalten, wird das in der Auswertung des Strahlprofils bestimmte Profil des Elektronenstrahls genutzt. Die Ionen werden dann mit einer FWHM von $1.95$ mm um die Linie des Strahls gauß-verteilt. Da das Experiment von der Einzelstoßbedingung ausgeht, kann ein Ion nach dem Anderen simuliert werden und die Wechselwirkung zwischen Ionen vernachlässigt werden.
-
 Die Art der Teilchen sowie ihre Häufigkeitsverteilung, können mit einem \textsc{.fly2}-File definiert werden. Auch die räumliche Verteilung des Strahls wurde hierüber implementiert. Die verwendete Datei ist im Anhang \ref{fly2} zu finden. Für die kinetische Energie der Teilchen wird 1/40 eV aufgrund thermischen Bewegung angenommen. Dieser Wert ergibt sich, wenn man eine Maxwell-Boltzmann-Verteilung für die kinetische 
 Energie der Ionen annimmt und die Temperatur der Ionen auf 300 K (Raumtemperatur) setzt: 
 \begin{equation}
@@ -41,7 +40,7 @@ Energie der Ionen annimmt und die Temperatur der Ionen auf 300 K (Raumtemperatur
 \end{equation}
 
 \subsection{Extraktion der Ionen}
-Die Extraktion der Ionen erfolgt durch die Anlegung eines elektrischen Feldes zwischen den Platten, analog zum Experiment. Damit der Vergleich so präzise wie möglich ist, wird das Potential auf der Bodenplatte zeitabhängig verändert. Dabei wird die Spannung von 0 auf 5000 V mit einer linearen Rampe in 50 ns erhöht, nachdem die Extraktionsverzögerung abgewartet wurde. Die Zeitabhängigkeit wurde dem Signalverlauf (dargestellt in \ref{fig:Signal}) entnommen. Die Ionen werden dann in einem Zeitfenster von 4 $\mu$s extrahiert. Um das zeitabhängige Potential umzusetzen, wird ein \textsc{Workbench}-File genutzt, das die Spannung in Abhängigkeit der Zeit definiert. In \textsc{Simion} können Potentiale angepasst werden, ohne das gesamte Potential-Array neu berechnen zu müssen. Dies ist möglich, da die Potentiale durch eine Überlagerung von Spannungen auf bereits existierenden Elektroden definiert sind.
+Die Extraktion der Ionen erfolgt durch die Anlegung eines elektrischen Feldes zwischen den Platten, analog zum Experiment. Damit der Vergleich so präzise wie möglich ist, wird das Potential auf der Bodenplatte zeitabhängig verändert. Dabei wird die Spannung von 0 auf 5000 V mit einer linearen Rampe in 50 ns erhöht, nachdem die Extraktionsverzögerung abgewartet wurde. Die Zeitabhängigkeit wurde dem Signalverlauf (dargestellt in \ref{fig:Signal}) entnommen. Die Ionen werden dann in einem Zeitfenster von 4 \textmu{s} extrahiert. Um das zeitabhängige Potential umzusetzen, wird ein \textsc{Workbench}-File genutzt, das die Spannung in Abhängigkeit der Zeit definiert. In \textsc{Simion} können Potentiale angepasst werden, ohne das gesamte Potential-Array neu berechnen zu müssen. Dies ist möglich, da die Potentiale durch eine Überlagerung von Spannungen auf bereits existierenden Elektroden definiert sind.
 
 \section{Vergleich der Simulation mit dem Experiment}
 Um dieselben Informationen aus der Simulation zu gewinnen, wie sie auch im Experiment vom Detektor aufgenommen werden, werden Flugzeit und Position jedes Teilchens zum Auftreffpunkt aufgezeichnet. Diese können dann mit denselben Methoden wie die experimentellen Daten ausgewertet werden. Im Folgenden werden verschiedene Simulationen durchgeführt, um die Ionenoptik zu untersuchen. Dafür sollen zunächst die Ergebnisse aus dem Experiment nachsimuliert werden, um die Genauigkeit der Simulation zu überprüfen. 
@@ -54,7 +53,7 @@ Um dieselben Informationen aus der Simulation zu gewinnen, wie sie auch im Exper
     \label{fig:Restgas_Sim}
 \end{figure}
 
-Implementiert man eine Ionenverteilung ähnlich der in der Auswertung des Restgasspektrums bestimmten, kann man ein vergleichbares Flugzeitspektrum aus simulierten Daten generieren. Abbildung \ref{fig:Restgas_Sim} zeigt ein solches Ergebnis. Die Flugzeitverteilung der Ionen ist ähnlich der im Experiment beobachteten. Die zeitliche Abweichung der simulierten Peaks zu den echten Daten beträgt weniger als 100 ns und kommt wahrscheinlich durch die vereinfachte lineare Umsetzung der kapazitiven Beschleunigungsplatte zustande. In der Simulation wird bestätigt, dass die Ionen in einem Zeitfenster von 4 $\mu$s extrahiert werden. Die Peaks sind schärfer als im Experiment und es ist deutlich weniger Rauschen vorhanden. Das liegt daran, dass die Simulation keine Störeffekte berücksichtigt und der Detektor idealisiert ist. Dass das Ergebnis kein Linienspektrum ist, liegt daran, dass der Strahl als räumlich ausgedehnt simuliert wird.
+Implementiert man eine Ionenverteilung ähnlich der in der Auswertung des Restgasspektrums bestimmten, kann man ein vergleichbares Flugzeitspektrum aus simulierten Daten generieren. Abbildung \ref{fig:Restgas_Sim} zeigt ein solches Ergebnis. Die Flugzeitverteilung der Ionen ist ähnlich der im Experiment beobachteten. Die zeitliche Abweichung der simulierten Peaks zu den echten Daten beträgt weniger als 100 ns und kommt wahrscheinlich durch die vereinfachte lineare Umsetzung der kapazitiven Beschleunigungsplatte zustande. In der Simulation wird bestätigt, dass die Ionen in einem Zeitfenster von 4 \textmu{s} extrahiert werden. Die Peaks sind schärfer als im Experiment und es ist deutlich weniger Rauschen vorhanden. Das liegt daran, dass die Simulation keine Störeffekte berücksichtigt und der Detektor idealisiert ist. Dass das Ergebnis kein Linienspektrum ist, liegt daran, dass der Strahl als räumlich ausgedehnt simuliert wird.
 
 \begin{figure}[H]
     \centering
@@ -117,12 +116,15 @@ Alle bisher gezeigten Spektren wurden bei einer gesamten Flugstrecke von etwa 41
 
 Ein Vergleich der Masse-zu-Ladungsspektren ist in Abbildung \ref{fig:410_210} zu sehen. Es ist ein deutlicher Unterschied in der Schärfe der Peaks sichtbar. Besonders bei der Auswertung der höhergeladenen Argonionen sind die Daten der kleineren Geometrie höherwertig. Der TPHC müsste aufgrund der verkürzten Flugzeit auf ein Maximum von 3 $\mu$s eingestellt werden. Nicht beachtet wurde hierbei, dass der Fehler bei der Bestimmung der Flugzeit mit dem realen TPHC einen prozentual höheren Einfluss hätte. Die Simulation zeigt, dass eine kürzere Flugstrecke zu einer besseren Auflösung des Massenspektrometers führt. Ein Positionsplot bestätigt den konvergenten Strahl, der auf den Detektor fokussiert wird. Das Abbild des Strahls ist nur noch etwa 20 mm lang. Er ist im Anhang \ref{fig:pos_210} zu finden.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\textwidth]{410_210_Ar1000eV.png}
-    \caption[Vergleich der Masse-zu-Ladungsspektren bei unterschiedlichen Flugstrecken]{Vergleich der Masse-zu-Ladungsspektren bei unterschiedlichen Flugstrecken. In Schwarz wurde die kürzere Distanz dargestellt. Die Flugzeitspektren wurden mit unterschiedlichen Transformationsfunktionen umgerechnet, da die kürzere Distanz die Flugzeit deutlich verkürzt. Die Ionenverteilung entspricht der in der Auswertung bestimmten für Argon bei 1000 eV.}
-    \label{fig:410_210}
-\end{figure}
+\begin{landscape}
+    \begin{figure}
+        \centering
+        \hspace*{-2.5cm}\includegraphics[width=1.3\textwidth]{410_210_Ar1000eV.png}
+        \caption[Vergleich der Masse-zu-Ladungsspektren bei unterschiedlichen Flugstrecken]{Vergleich der Masse-zu-Ladungsspektren bei unterschiedlichen Flugstrecken. In Schwarz wurde die kürzere Distanz dargestellt. Die Flugzeitspektren wurden mit unterschiedlichen Transformationsfunktionen umgerechnet, da die kürzere Distanz die Flugzeit deutlich verkürzt. Die Ionenverteilung entspricht der in der Auswertung bestimmten für Argon bei 1000 eV.}
+        \label{fig:410_210}
+    \end{figure}
+\end{landscape}
+
 \subsection{Untersuchung der Anomalien}
 Der im Experiment gefundene Zusammenhang zwischen der eingestellten Elektronenenergie und der Flugzeit der Ionen kann nicht direkt in der Simulation überprüft werden, da die Elektronen selbst nicht simuliert werden. Trifft man die Annahme, dass die überschüssige kinetische Energie der Elektronen auf die Ionen übertragen wird, würde man erwarten in der Simulation einen ähnlichen Zusammenhang zu sehen. Dafür wurden verschiedene Simulationen mit unterschiedlichen kinetischen Energien der Ionen durchgeführt. Nach ausgiebiger Prüfung konnte kein Zusammenhang zwischen der kinetischen Energie der Ionen und der Flugzeit gefunden werden. Die Flugzeit der Ionen ist unabhängig von ihrer kinetischen Energie, mit einer kürzeren Extraktionsverzögerung kann lediglich die Peakbreite verändert werden. Daraus lässt sich schließen, dass die Verzögerung auf einen anderen Effekt vor der Ionisierung zurückzuführen ist. 
 
@@ -142,7 +144,7 @@ wobei $m$ die mittlere Masse und $\Delta m$ die FWHM eines Peaks im Massenspektr
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{Resolution.png}
-    \caption[Simuliertes Massenspektrum (1–60 u, 410 mm) zur Auflösungsbestimmung]{Simuliertes Massenspektrum der Massen 1 bis 60 $u$ (einfach geladen) zur Bestimmung des Auflösungsvermögens bei einer Detektordistanz von 41 cm. Alle Spezies sind mit der gleichen Häufigkeit vertreten. In Schwarz sind die Peaks für ganzzahlige Massen, in Rot auch die für halbzahlige dargestellt.}
+    \caption[Simuliertes Massenspektrum (1–60 u, 410 mm) zur Auflösungsbestimmung]{Simuliertes Massenspektrum der Massen 1 bis 60 $u$ (einfach geladen) zur Bestimmung des Auflösungsvermögens bei einer Detektordistanz von 41 cm. Alle Spezies sind mit der gleichen Häufigkeit vertreten. In Schwarz sind die Peaks für ganzzahlige Massen, in Rot auch die für die Halbzahligen dargestellt.}
     \label{fig:res}
 \end{figure}
 
@@ -150,7 +152,7 @@ Ein Zusammenhang zwischen der Schärfe der Peaks und der Masse ist sofort erkenn
 
 \begin{figure}
     \centering
-    \includegraphics[width=.9\textwidth]{ResolutionFit.png}
+    \includegraphics[width=1\textwidth]{ResolutionFit.png}
     \caption[Auswertung des Auflösungsvermögens abhängig von der Masse (410 mm)]{Auswertung des Auflösungsvermögens abhängig von der Masse. Die Datenpunkte sind die Verhältnisse der mittleren Massen und der FWHM der Peaks eines simulierten Spektrums.}
     \label{fig:res_fit}
 \end{figure}
@@ -166,12 +168,12 @@ Eine Auswertung des Massenspektrums ist möglich, indem alle Peaks mit einer Gau
 
 \begin{figure}
     \centering
-    \includegraphics[width=.9\textwidth]{ResolutionFit210.png}
+    \includegraphics[width=1\textwidth]{ResolutionFit210.png}
     \caption[Auswertung des Auflösungsvermögens abhängig von der Masse (210 mm)]{Auswertung des Auflösungsvermögens abhängig von der Masse bei einer Detektordistanz von 210 mm.}
     \label{fig:res_fit210}
 \end{figure}
 
-Abbildung \ref{fig:res21} zeigt das gleiche simulierte Massenspektrum, jedoch bei einer Detektordis-tanz von 21 cm. Die Peaks sind viel schärfer, sodass auch bei einer Masse von 50 $u$ noch eine Auflösung von über 150 erreicht wird. Das Auflösungsvermögen ist in Abhängigkeit von der Masse in Abbildung \ref{fig:res_fit210} dargestellt. Der Verlauf ist ähnlich, jedoch ist das Auflösungsvermögen etwa doppelt so hoch und steigt noch bis über 60 $u$ an. Die Veränderung der Flugstrecke hat also einen großen Einfluss auf das Auflösungsvermögen der Anlage.
+Abbildung \ref{fig:res21} zeigt das gleiche simulierte Massenspektrum, jedoch bei einer Detektordistanz von 21 cm. Die Peaks sind viel schärfer, sodass auch bei einer Masse von 50 $u$ noch eine Auflösung von über 150 erreicht wird. Das Auflösungsvermögen ist in Abhängigkeit von der Masse in Abbildung \ref{fig:res_fit210} dargestellt. Der Verlauf ist ähnlich, jedoch ist das Auflösungsvermögen etwa doppelt so hoch und steigt noch bis über 60 $u$ an. Die Veränderung der Flugstrecke hat also einen großen Einfluss auf das Auflösungsvermögen der Anlage.
 
 Vergleicht man die theoretisch mögliche Auflösung mit Werten aus dem Experiment, fällt auf, dass diese wie erwartet schlechter ist. Insgesamt sind die Peaks im Experiment weniger scharf, was auf die Idealisierung der Simulation und die Breite des Strahls zurückzuführen ist. Es ist nicht möglich ein Spektrum wie in Abbildung \ref{fig:res} aufzunehmen und direkt zu vergleichen. Der qualitative Verlauf des Auflösungsvermögens bei Auswertung eines Restgasspektrums ist jedoch ähnlich und etwa bei der Hälfte des Wertes.
 

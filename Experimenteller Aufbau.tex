@@ -53,7 +53,7 @@ Für die Elektronenstoßionisation ist eine Heizkathoden-Elektronenkanone an ein
 
 \begin{figure}
     \centering
-    \includegraphics[width=.8\textwidth]{EGun.png}
+    \includegraphics[width=.9\textwidth]{EGun.png}
     \caption[Querschnitt der \textsc{firing unit} der Elektronenkanone]{Querschnitt der \textsc{firing unit} der Elektronenkanone von Kimball Physics. Die Elektronen werden durch eine Heizkathode (Cathode) erzeugt und durch eine Spannung (Anode) beschleunigt. Das Gitter (Grid) kann genutzt werden, um den Extraktionsstrom der Kanone zu pulsen. Die Elektronen können fokussiert und abgelenkt werden.}
     \label{fig:EGun}
 \end{figure}
@@ -65,7 +65,7 @@ In der Mitte der Kammer durchquert der Strahl einen zylindrischen Plattenkondens
 \begin{figure}
     \centering
     \hspace{-2.8cm}\includegraphics[width=1.2\textwidth]{Kammer_3D_annotated.png}
-    \caption[3D-Modell der Vakuumkammer mit Plattenkondensator]{3D-Modell der Vakuumkammer mit Plattenkondensator.  Der Strahl durchquert den zylindrischen Plattenkondensator in der Nähe der Bodenplatte (inks) und die Ionen werden durch eine elektrische Einzellinse (drei Zylinder) hindurch auf die Detektorplatten (nicht abgebildet) extrahiert. Durchsichtig abgebildet sind die Seitenwände der Kammer.}
+    \caption[3D-Modell der Vakuumkammer mit Plattenkondensator]{3D-Modell der Vakuumkammer mit Plattenkondensator.  Der Strahl durchquert den zylindrischen Plattenkondensator in der Nähe der Bodenplatte (links) und die Ionen werden durch eine elektrische Einzellinse (drei Zylinder) hindurch auf die Detektorplatten (nicht abgebildet) extrahiert. Durchsichtig abgebildet sind die Seitenwände der Kammer.}
     \label{fig:3D}
 \end{figure}
 
@@ -99,7 +99,7 @@ Die Mikrokanalplatten des Detektors dienen der Verstärkung von eintreffenden Si
 
 \begin{figure}
     \centering
-    \includegraphics[width=.7\textwidth]{MCP.png}
+    \includegraphics[width=.8\textwidth]{MCP.png}
     \caption[Schnitt und Funktionsprinzip einer MCP]{Schnitt und Funktionsprinzip einer MCP aus \cite{MCP}, hier dargestellt mit einem eintretenden Elektron. (102) Haltungsflansch, (101) Mikrokanäle aus Glas, (103) Elektron, welches in den Kanal eintritt, (104) erzeugte Sekundärelektronen, (105) Spannungsversorgung der Platten}
     \label{fig:MCP} 
 \end{figure}
@@ -108,7 +108,7 @@ Typischerweise werden zwei MCPs hintereinander verwendet, wobei sie um \ang{180}
 
 \begin{figure}
     \centering
-    \includegraphics[width=.6\textwidth]{MCP_Sensitivity.png}
+    \includegraphics[width=.8\textwidth]{MCP_Sensitivity.png}
     \caption[Detektionsrate in Abhängigkeit der Frontplattenspannung]{Detektionsrate in Abhängigkeit der Frontplattenspannung. Die Rate steigt ab einem negativem Potential von 2300 V stark an und erreicht erst bei einer Spannung größer 2550 V ein Plateau}
     \label{fig:Frontplattenspannung}
 \end{figure}
@@ -135,13 +135,13 @@ Die auf der Anode des Detektors entstehenden Signale müssen weiterverarbeitet w
 Eine schematische Übersicht der Verarbeitung ist in Abbildung \ref{fig:ToF} zu finden. Der Signalfluss, angefangen mit dem Startsignal, wird nun beschrieben.
 \begin{figure} 
     \centering
-    \includegraphics[width=.95\textwidth]{ToF_Signals.png}
-    \caption[Schematisch dargestellter Signalfluss der ToF-Messung]{Schematisch dargestellter Signalfluss der ToF-Messung. Der Signalfluss erfolgt, mit Ausname der Elektronenkanone, von links nach rechts. Die verwendeten Geräte sind stark vereinfacht abgebildet, wobei die wichtigsten Einstellungen inkludiert wurden. Die jeweilige Form der Signale ist über den Verbindungen gezeigt und ist rein qualitativ. Power Supplies sowie Anzeigegeräte sind nicht abgebildet.}
+    \includegraphics[width=1\textwidth]{ToF_Signals.png}
+    \caption[Schematisch dargestellter Signalfluss der ToF-Messung]{Schematisch dargestellter Signalfluss der ToF-Messung. Der Signalfluss erfolgt, mit Ausnahme der Elektronenkanone, von links nach rechts. Die verwendeten Geräte sind stark vereinfacht abgebildet, wobei die wichtigsten Einstellungen inkludiert wurden. Die jeweilige Form der Signale ist über den Verbindungen gezeigt und ist rein qualitativ. Power Supplies sowie Anzeigegeräte sind nicht abgebildet.}
     \label{fig:ToF} 
 \end{figure}
 Um das Startsignal zu erzeugen und die Flugzeitmessung überhaupt in Gang zu setzen, wird ein Pulsgenerator verwendet. Dabei handelt es sich um den AVR-E2-C von AVTECH. Die erzeugten Pulse werden direkt zum Triggern der Elektronenkanone verwendet und über einen Delay-Generator (DG) verzögert. Der DG kann sehr genau auf eine Verzögerung einiger Nanosekunden eingestellt werden. Damit ein DG Verzögerungen realisieren kann, wird eine stabile Frequenz benötigt. Diese wird meist durch einen Quarzoszillator erzeugt, ein Kristall über den AC-Pulse angelegt werden. Dieser vibriert mit seiner Resonanzfrequenz aufgrund des Piezo-Effekts und ermöglicht eine genaue Messung der Zeit. Der TTL-Output des DG wird dann verwendet, um die Ablenkspannung für die Ionen zu erzeugen. Gleichzeitig wird ein Marker (scharfer Puls) ausgegeben, der als Startsignal für die Flugzeitmessung verwendet wird.
 
-Für die Bestimmumg des Auftreffzeitpunkts wird vom Detektor ein Spannungssignal ausgegeben, das von einem Ion beim Auftreffen auf die Anode erzeugt wird.  Der Pegel hängt von der kinetischen Energie des Ions ab und hat eine gewisse Varianz. Der Zeitpunkt soll möglichst unabhängig vom Pegel bestimmt werden können. Wird also lediglich ein Schwellwert festgelegt, variiert der Zeitpunkt mit der Steilheit der Flanke. Um den Zeitpunkt unabhängig vom Pegel zu bestimmen, wird ein Constant Fraction Discriminator (CFD) verwendet. Dieser erzeugt ein Ausgangssignal, sobald ein bestimmter Bruchteil des Signals erreicht wird. Abbildung \ref{fig:CFD} zeigt das Prinzip des CFD. Dafür wird im CFD das einlaufende Signal verzögert und mit dem Originalsignal über einen Differenzverstärker verrechnet \cite{CFD}. So ergibt sich ein Nulldurchlauf der Spannung, der von der Verzögerung abhängt, nicht aber von der Amplitude. 
+Für die Bestimmung des Auftreffzeitpunkts wird vom Detektor ein Spannungssignal ausgegeben, das von einem Ion beim Auftreffen auf die Anode erzeugt wird.  Der Pegel hängt von der kinetischen Energie des Ions ab und hat eine gewisse Varianz. Der Zeitpunkt soll möglichst unabhängig vom Pegel bestimmt werden können. Wird also lediglich ein Schwellwert festgelegt, variiert der Zeitpunkt mit der Steilheit der Flanke. Um den Zeitpunkt unabhängig vom Pegel zu bestimmen, wird ein Constant Fraction Discriminator (CFD) verwendet. Dieser erzeugt ein Ausgangssignal, sobald ein bestimmter Bruchteil des Signals erreicht wird. Abbildung \ref{fig:CFD} zeigt das Prinzip des CFD. Dafür wird im CFD das einlaufende Signal verzögert und mit dem Originalsignal über einen Differenzverstärker verrechnet \cite{CFD}. So ergibt sich ein Nulldurchlauf der Spannung, der von der Verzögerung abhängt, nicht aber von der Amplitude. 
 
 \begin{figure}
     \centering
@@ -152,7 +152,7 @@ Für die Bestimmumg des Auftreffzeitpunkts wird vom Detektor ein Spannungssignal
 
 Der über den CFD ermittelte Auftreffzeitpunkt kann dann als Stoppsignal für die Flugzeitmessung dienen. Um die Information über die Zeitdifferenz zwischen dem Start- und Stoppsignal zu erhalten, wird ein Time-to-Pulse-Height-Converter (TPHC) Modul verwendet. Dieses erzeugt ein Signal, dessen Höhe proportional zur zeitlichen Differenz eines Start- und Stopppulses ist. Um diese Funktionalität umzusetzen, wird im TPHC ein Kondensator aufgeladen, wobei die Spannung über den Kondensator proportional zur Ladezeit steigt. Kommt kein Stoppsignal, wird der Kondensator nach einer eingestellten Maximaldauer über einen Widerstand wieder entladen. Schließlich kann der Spannungspuls über einen Analog-Digital-Converter (ADC) digitalisiert und am Computer ausgelesen werden. Abbildung \ref{fig:Signal} zeigt qualitativ den zeitlichen Verlauf der relevanten Signale der Flugzeitmessung. Anhand vieler Messungen kann ein Spektrum der Flugzeiten erstellt werden.
 
-Dank des Pulsgenerators kann die Messung mehrere tausendmal in jeder Sekunde durchgeführt werden. Begrenzend ist dabei die Elektronenkanone, die, wie bereits erwähnt, mit maximal 5 kHz gepulst werden kann. Für die meisten Messungen wurde eine Frequenz von etwa 3 kHz verwendet.
+Mit dem Pulsgenerator kann die Messung mehrere tausendmal in jeder Sekunde durchgeführt werden. Begrenzend ist dabei die Elektronenkanone, die, wie bereits erwähnt, mit maximal 5 kHz gepulst werden kann. Für die meisten Messungen wurde eine Frequenz von etwa 3 kHz verwendet.
 
 \begin{figure}
     \centering
@@ -166,7 +166,7 @@ In Abbildung \ref{fig:pos} ist der Signalfluss der positionssensitiven Messung s
 
 \begin{figure}
     \centering
-    \includegraphics[width=.8\textwidth]{PosSig.png}
+    \includegraphics[width=.9\textwidth]{PosSig.png}
     \caption[Signalfluss für die positionssensitive Messung]{Schematisch dargestellter Signalfluss für die positionssensitive Messung. Die Positionsdaten werden über die Drahtgitter am Detektor erzeugt und über einen Verstärker, CFD und ADC digitalisiert. Die Daten werden dann am Computer ausgewertet.}
     \label{fig:pos} 
 \end{figure}
