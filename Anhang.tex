@@ -1,12 +1,13 @@
 \appendix
 % remove header trickery
 \chapter[]{Anhang}
+\section{Ergänzendes zum Experiment}
 \addcontentsline{toc}{chapter}{A\ \ Anhang}
 \begin{table}[H]
     \caption{Spannungswerte bei der Konditionierung}
     \label{tab:Konditionierung}
     \begin{tabular}{cccc}
-        Spannungsdifferenz in V & Strom in mA &	Widerstand in M$\Omega$ & Zeitinterval in min\\   
+        Spannungsdifferenz in V & Strom in mA &	Widerstand in M$\Omega$ & Zeitintervall in min\\   
         \midrule
             880  & 0,018 & 48,9 & 05:57\\
             980  & 0,021 & 46,7 & 06:39\\
@@ -28,30 +29,30 @@
     \end{tabular}
 \end{table}
 
+\begin{landscape}
+    \begin{figure}[H]
+        \centering
+        \hspace{-4cm}\includegraphics[width=1.6\textwidth]{Resolution_intergration.png}
+        \caption[Gauß-Fit und Integrationsgrenzen bei Bestimmung der Auflösung]{Gauß-Fit und Integrationsgrenzen bei Bestimmung der Auflösung bei einer Detektordistanz von 410 mm. Der Fit ist in Schwarz dargestellt, die Integrationsgrenzen in Rot und die leicht gefilterten Daten in Blau.}
+        \label{fig:integrationsgrenzen}
+    \end{figure}
+\end{landscape}
 
-\begin{figure}[H]
-    \centering
-    \hspace{-1.5cm}\includegraphics[width=1.1\textwidth]{Resolution_intergration.png}
-    \caption[Gauß-Fit und Integrationsgrenzen bei Bestimmung der Auflösung]{Gauß-Fit und Integrationsgrenzen bei Bestimmung der Auflösung bei einer Detektordistanz von 410 mm. Der Fit ist in Schwarz dargestellt, die Integrationsgrenzen in Rot und die leicht gefilterten Daten in Blau.}
-    \label{fig:integrationsgrenzen}
-\end{figure}
 \clearpage
-\section{Ergänzendes zur Simulation}
+\section{Quellcode und Ergebnisse}
 Alle Skripte sowie die gesamte ionenoptische Simulation, die im Verlauf dieser Arbeit entwickelt wurden, stehen zur freien Verfügung und sind im GitLab der JLU Gießen unter folgendem Link zu finden: \url{https://gitlab.ub.uni-giessen.de/so9354/zerob-software}.
-
-
-
+\section{Ergänzendes zur Simulation}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.55\textwidth]{Pos_210.png}
+    \includegraphics[width=.8\textwidth]{Pos_210.png}
     \caption[Positionsplot des konvergenten Strahls]{Positionsplot des konvergenten Strahls bei einer Flugstrecke von 210 mm.}
     \label{fig:pos_210}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.55\textwidth]{Pos_Forward_Bias.png}
-    \caption[Positionsplot mit Vorzugsrichtung der thermischen Bewegung]{Positionsplot mit Vorzugsrichtung der thermischen Bewegung der Ionen. Die Richtungsverteilung der thermischen Bewegung (hier 1/5 eV) ist in einem Kegel um die x-Achse gegeben. Der Öffnungswinkel des Kegels beträgt 110°. Versucht wurde die Verschiebung in x-Richtung des Strahl im Expermiments nachzuvollziehen. Allerdings ist kein wesentlicher Unterschied zu Abbildung \ref{fig:sim_pos_kinetic} erkennbar.}
+    \includegraphics[width=.8\textwidth]{Pos_Forward_Bias.png}
+    \caption[Positionsplot mit Vorzugsrichtung der thermischen Bewegung]{Positionsplot mit Vorzugsrichtung der thermischen Bewegung der Ionen. Die Richtungsverteilung der thermischen Bewegung (hier 1/5 eV) ist in einem Kegel um die x-Achse gegeben. Der Öffnungswinkel des Kegels beträgt 110°. Versucht wurde die Verschiebung in x-Richtung des Strahls im Experiment nachzuvollziehen. Allerdings ist kein wesentlicher Unterschied zu Abbildung \ref{fig:sim_pos_kinetic} erkennbar.}
     \label{fig:pos_bias}
 \end{figure}   
 

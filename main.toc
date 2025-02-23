@@ -49,5 +49,7 @@
 \contentsline {subsection}{\numberline {5.4.3}Auflösungsvermögen}{70}{subsection.5.4.3}%
 \contentsline {section}{\numberline {5.5}Diskussion und Ausblick}{74}{section.5.5}%
 \contentsline {chapter}{Literaturverzeichnis}{79}{section*.40}%
-\contentsline {chapter}{A\ \ Anhang}{81}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Ergänzendes zur Simulation}{83}{section.A.1}%
+\contentsline {section}{\numberline {A.1}Ergänzendes zum Experiment}{81}{section.A.1}%
+\contentsline {chapter}{A\ \ Anhang}{81}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Quellcode und Ergebnisse}{83}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Ergänzendes zur Simulation}{83}{section.A.3}%
