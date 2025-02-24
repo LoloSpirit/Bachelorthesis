@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  24 FEB 2025 20:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  24 FEB 2025 21:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1604,11 +1604,11 @@ Package pdftex.def Info: images/DLD.png  used on input line 123.
 
 
 [40 <./images/DLD.png>]
-<images/ToF_Signals.png, id=503, 8081.19125pt x 6245.3325pt>
+<images/ToF_Signals.png, id=503, 3108.61375pt x 2021.5525pt>
 File: images/ToF_Signals.png Graphic file (type png)
 <use images/ToF_Signals.png>
 Package pdftex.def Info: images/ToF_Signals.png  used on input line 138.
-(pdftex.def)             Requested size: 402.32199pt x 310.85548pt.
+(pdftex.def)             Requested size: 402.32199pt x 261.60805pt.
 
 
 [41]
@@ -1752,11 +1752,11 @@ Overfull \hbox (0.88829pt too wide) in paragraph at lines 185--186
 
 
 [57 <./images/Restgas.png>]
-<images/Strahl3D.png, id=635, 641.61307pt x 570.86073pt>
+<images/Strahl3D.png, id=635, 641.7576pt x 570.933pt>
 File: images/Strahl3D.png Graphic file (type png)
 <use images/Strahl3D.png>
 Package pdftex.def Info: images/Strahl3D.png  used on input line 191.
-(pdftex.def)             Requested size: 462.66783pt x 411.65529pt.
+(pdftex.def)             Requested size: 462.66783pt x 411.60286pt.
 
 Overfull \hbox (31.8931pt too wide) in paragraph at lines 191--192
 []| [] 
@@ -1841,24 +1841,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/210_3D.png Graphic file (type png)
 <use images/210_3D.png>
 Package pdftex.def Info: images/210_3D.png  used on input line 98.
-(pdftex.def)             Requested size: 197.13605pt x 93.58377pt.
+(pdftex.def)             Requested size: 321.85881pt x 152.79483pt.
 <images/PE.png, id=702, 1195.46625pt x 658.46pt>
 File: images/PE.png Graphic file (type png)
 <use images/PE.png>
-Package pdftex.def Info: images/PE.png  used on input line 105.
-(pdftex.def)             Requested size: 197.13605pt x 108.58092pt.
+Package pdftex.def Info: images/PE.png  used on input line 106.
+(pdftex.def)             Requested size: 321.85881pt x 177.27417pt.
 
 
-[67 <./images/210_3D.png> <./images/PE.png>]
+[67]
 
-[68]
+[68 <./images/210_3D.png> <./images/PE.png>]
 <images/410_210_Ar1000eV.png, id=719, 722.7pt x 361.35pt>
 File: images/410_210_Ar1000eV.png Graphic file (type png)
 <use images/410_210_Ar1000eV.png>
-Package pdftex.def Info: images/410_210_Ar1000eV.png  used on input line 121.
+Package pdftex.def Info: images/410_210_Ar1000eV.png  used on input line 122.
 (pdftex.def)             Requested size: 683.94615pt x 341.9738pt.
 
-Overfull \hbox (2.78763pt too wide) in paragraph at lines 121--122
+Overfull \hbox (2.78763pt too wide) in paragraph at lines 122--123
  []| [] 
  []
 
@@ -1873,10 +1873,10 @@ Overfull \hbox (2.78763pt too wide) in paragraph at lines 121--122
 <images/Resolution.png, id=732, 722.7pt x 361.35pt>
 File: images/Resolution.png Graphic file (type png)
 <use images/Resolution.png>
-Package pdftex.def Info: images/Resolution.png  used on input line 144.
+Package pdftex.def Info: images/Resolution.png  used on input line 145.
 (pdftex.def)             Requested size: 434.50848pt x 217.25278pt.
 
-Overfull \hbox (0.88829pt too wide) in paragraph at lines 144--145
+Overfull \hbox (0.88829pt too wide) in paragraph at lines 145--146
 [] [] 
  []
 
@@ -1886,7 +1886,7 @@ Overfull \hbox (0.88829pt too wide) in paragraph at lines 144--145
 <images/ResolutionFit.png, id=739, 491.6769pt x 325.215pt>
 File: images/ResolutionFit.png Graphic file (type png)
 <use images/ResolutionFit.png>
-Package pdftex.def Info: images/ResolutionFit.png  used on input line 153.
+Package pdftex.def Info: images/ResolutionFit.png  used on input line 154.
 (pdftex.def)             Requested size: 362.08733pt x 239.50406pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1897,17 +1897,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <images/Resolution210.png, id=747, 722.7pt x 361.35pt>
 File: images/Resolution210.png Graphic file (type png)
 <use images/Resolution210.png>
-Package pdftex.def Info: images/Resolution210.png  used on input line 161.
+Package pdftex.def Info: images/Resolution210.png  used on input line 162.
 (pdftex.def)             Requested size: 434.50848pt x 217.25278pt.
 
-Overfull \hbox (0.88829pt too wide) in paragraph at lines 161--162
+Overfull \hbox (0.88829pt too wide) in paragraph at lines 162--163
 [] [] 
  []
 
 <images/ResolutionFit210.png, id=750, 502.7583pt x 324.7332pt>
 File: images/ResolutionFit210.png Graphic file (type png)
 <use images/ResolutionFit210.png>
-Package pdftex.def Info: images/ResolutionFit210.png  used on input line 168.
+Package pdftex.def Info: images/ResolutionFit210.png  used on input line 169.
 (pdftex.def)             Requested size: 402.32199pt x 259.86124pt.
 
 
@@ -1961,26 +1961,20 @@ chapter A.
 File: images/Resolution_integration.png Graphic file (type png)
 <use images/Resolution_integration.png>
 Package pdftex.def Info: images/Resolution_integration.png  used on input line 35.
-(pdftex.def)             Requested size: 643.71764pt x 482.81392pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(pdftex.def)             Requested size: 523.0198pt x 392.28432pt.
 
 
-
-[82
-
-]
-Overfull \vbox (117.69193pt too high) has occurred while \output is active []
+LaTeX Warning: Float too large for page by 27.16232pt on input line 38.
 
 
 
-[83 <./images/Resolution_integration.png>]
-<images/Pos_210.png, id=832, 292.6935pt x 224.7597pt>
+[82 <./images/Resolution_integration.png>]
+<images/Pos_210.png, id=828, 292.6935pt x 224.7597pt>
 File: images/Pos_210.png Graphic file (type png)
 <use images/Pos_210.png>
 Package pdftex.def Info: images/Pos_210.png  used on input line 49.
 (pdftex.def)             Requested size: 321.85881pt x 247.15753pt.
-<images/Pos_Forward_Bias.png, id=833, 303.534pt x 226.9278pt>
+<images/Pos_Forward_Bias.png, id=829, 303.534pt x 226.9278pt>
 File: images/Pos_Forward_Bias.png Graphic file (type png)
 <use images/Pos_Forward_Bias.png>
 Package pdftex.def Info: images/Pos_Forward_Bias.png  used on input line 56.
@@ -1990,11 +1984,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[84
+[83
+
 
 
  <./images/Pos_210.png>]
-<images/Fly2.png, id=841, 499.8675pt x 793.96625pt>
+<images/Fly2.png, id=837, 499.8675pt x 793.96625pt>
 File: images/Fly2.png Graphic file (type png)
 <use images/Fly2.png>
 Package pdftex.def Info: images/Fly2.png  used on input line 64.
@@ -2009,13 +2004,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[85 <./images/Pos_Forward_Bias.png>]
+[84 <./images/Pos_Forward_Bias.png>]
 Overfull \vbox (112.40958pt too high) has occurred while \output is active []
 
 
 
-[86 <./images/Fly2.png>]
-<images/selbststaendigkeitserklaerung.pdf, id=853, 597.55246pt x 845.07718pt>
+[85 <./images/Fly2.png>]
+<images/selbststaendigkeitserklaerung.pdf, id=849, 597.55246pt x 845.07718pt>
 File: images/selbststaendigkeitserklaerung.pdf Graphic file (type pdf)
 <use images/selbststaendigkeitserklaerung.pdf>
 Package pdftex.def Info: images/selbststaendigkeitserklaerung.pdf  used on input line 157.
@@ -2030,7 +2025,7 @@ LaTeX Warning: Float too large for page by 200.829pt on input line 158.
 
 
 
-[87 <./images/selbststaendigkeitserklaerung.pdf>] (./main.aux)
+[86 <./images/selbststaendigkeitserklaerung.pdf>] (./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -2042,18 +2037,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43002 strings out of 473584
- 863801 string characters out of 5728329
+ 43001 strings out of 473584
+ 863794 string characters out of 5728329
  1946905 words of memory out of 5000000
  65009 multiletter control sequences out of 15000+600000
  622500 words of font info for 114 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,16n,120p,10963b,2683s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (87 pages, 22823853 bytes).
+Output written on main.pdf (86 pages, 18289242 bytes).
 PDF statistics:
- 1174 PDF objects out of 1200 (max. 8388607)
- 939 compressed objects within 10 object streams
- 231 named destinations out of 1000 (max. 500000)
+ 1170 PDF objects out of 1200 (max. 8388607)
+ 936 compressed objects within 10 object streams
+ 230 named destinations out of 1000 (max. 500000)
  673 words of extra memory for PDF output out of 10000 (max. 10000000)
 
