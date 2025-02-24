@@ -3,7 +3,7 @@
 Eine Simulation der Ionenoptik des Massenspektrometers ist sinnvoll, um die Messergebnisse zu überprüfen, die Genauigkeit des Massenspektrometers zu bestimmen und Optimierungsansätze herauszuarbeiten. Dafür wird das Programm \textsc{Simion} genutzt, das die Bewegung von geladenen Teilchen in elektrischen und magnetischen Feldern simulieren kann. Im Vergleich zu anderen Programmen ist \textsc{Simion} besonders geeignet, da es auf Ionen- und Elektronenoptik spezialisiert ist und die Möglichkeit bietet, die Simulationen mit geringem Aufwand mit eigenen Programmen zu erweitern. Im Folgenden soll die Methodik der Simulation und die Limitationen erläutert werden und im Anschluss die Ergebnisse der Simulationen präsentiert werden.
 
 \section{Methodik und Limitation}
-Bei \textsc{Simion} liegt die numerische Lösung der Laplace-Gleichung (\ref{eq:laplace}) für das elektrische Potential $\Phi$ in einem gegebenen Raum \cite{SIMION} im Mittelpunkt.
+Bei \textsc{Simion} liegt die numerische Lösung der Laplace-Gleichung (\ref{eq:laplace}) für das elektrische Potential $\Phi$ in einem gegebenen Raum \cite{SIMION} im Mittelpunkt:
 \begin{equation}
     \label{eq:laplace}
     \nabla^2 \Phi = 0.
@@ -11,12 +11,12 @@ Bei \textsc{Simion} liegt die numerische Lösung der Laplace-Gleichung (\ref{eq:
 Um diese partielle Differentialgleichung zu lösen, nutzt das Programm finite Differenzverfahren (FDM), mit denen eine Ableitung über die Differenz zweier benachbarter Punkte approximiert wird. Dafür muss der Raum diskretisiert, also in ein Gitter aus Punkten aufgeteilt werden. Dabei ist es möglich, mehrere Gitter mit verschiedenen Auflösungen zu definieren und diese innerhalb einer Simulation zu nutzen. Damit die iterative Lösung der Laplace-Gleichung schnell konvergiert, wird Überrelaxation verwendet. Statt bei jeder Iteration exakt nach der FDM zu aktualisieren, wird eine gewichtete Mischung aus der neuen und alten Lösung genommen. Um das Potential eines Gitters in jedem Punkt errechnen zu können, werden als Randbedingungen vom Nutzer definierte Elektroden und die Ränder der Simulation verwendet. Unterschieden wird dabei zwischen Dirichlet- und Neumann-Randbedingungen:
 \begin{itemize}
     \item {Dirichlet-Randbedingungen:} Das Potential an der Elektrode ist auf einen vom Nutzer angegebenen Wert festgelegt.
-    \item {Neumann-Randbedingungen:} Die Ableitung des Potentials entlang der normalen Richtung zum Rand fest wird festgelegt. In \textsc{Simion} wird $\frac{\partial \Phi}{\partial n} = 0$ gesetzt, was bedeutet, dass das elektrische Feld am Rand keine normale Komponente hat.
+    \item {Neumann-Randbedingungen:} Die Ableitung des Potentials entlang der normalen Richtung zum Rand fest wird festgelegt. In \textsc{Simion} wird ${\partial \Phi}/{\partial n} = 0$ gesetzt, was bedeutet, dass das elektrische Feld am Rand keine normale Komponente hat.
 \end{itemize}
 
 Aufgrund der Neumann-Randbedingungen spiegelt sich das Feld an der Grenze. Dadurch verhält es sich so, als ob der Simulationsbereich künstlich erweitert würde, ohne dass sich Ladungen oder Potentiale jenseits des Rands befinden. Dies verhindert abrupte Feldänderungen an der Grenze und sorgt dafür, dass das Feld innerhalb des Simulationsbereichs realistisch bleibt. Das elektrische Feld $E$ kann dann mit dem errechneten Potential an jedem Ort bestimmt werden, um die Beschleunigung der Lorentzkraft auf geladene Teilchen zu ermitteln. Für die Iteration der Trajektorien wird ein Runge-Kutta-Verfahren 4. Ordnung angewandt. Die zeitliche Schrittweite ist dabei variabel. In einer Simulation werden vom Nutzer definierte Teilchen nacheinander in das Feld gesetzt und ihre Trajektorie berechnet. 
 
-Limitierend ist allgemein, dass die Teilchen dabei standardmäßig selbst nicht das Potential beeinflussen. Das bedeutet, dass sie auch nicht miteinander wechselwirken können und keine Raumladungseffekte berücksichtigt werden. Da innerhalb dieser Arbeit aber unter Einzelstoßbedingungen gearbeitet wird, ist das nicht relevant. Es gibt allerdings die Möglichkeit eine vereinfachte Coloumbabstoßung zwischen Teilchen zusätzlich zu simulieren auf Kosten der Rechenzeit. Angenommen wird auch, dass die Felder statisch sind und somit werden zeitabhängige Effekte, wie das Induktionsgesetz, nicht berücksichtigt. Es ist aber trotzdem möglich, die Felder in Abhängigkeit der Zeit mit eigener Programmierung zu verändern.
+Limitierend ist allgemein, dass die Teilchen dabei standardmäßig selbst nicht das Potential beeinflussen. Das bedeutet, dass sie auch nicht miteinander wechselwirken können und keine Raumladungseffekte berücksichtigt werden. Da innerhalb dieser Arbeit aber unter Einzelstoßbedingungen gearbeitet wird, ist das zunächst nicht relevant. Es gibt allerdings die Möglichkeit eine vereinfachte Coloumbabstoßung zwischen Teilchen zusätzlich zu simulieren auf Kosten der Rechenzeit. Angenommen wird auch, dass die Felder statisch sind und somit werden zeitabhängige Effekte, wie das Induktionsgesetz, nicht berücksichtigt. Es ist aber trotzdem möglich, die Felder in Abhängigkeit der Zeit mit eigener Programmierung zu verändern.
 
 \section{Modellierung und Konfiguration}
 Um die Ionenoptik der derzeit verwendeten Geometrie zu untersuchen, muss dieser akkurat modelliert werden. Anhand der originalen Designdateien des Plattenkondensators konnte eine vereinfachte Geometrie in \textsc{Simion} erstellt werden. Die Elektroden wurden zweidimensional modelliert und dann mit Zylindersymmetrie auf 3D erweitert. Abbildung \ref{fig:model} zeigt das Modell des Massenspektrometers in \textsc{Simion}. Zunächst wurden die derzeitigen Maße der Anlage eingesetzt, anhand der Simulation soll aber der Abstand des Detektors variiert werden. Auf der Bodenplatte (in der Simulation links) wird ein positives Potential von mehreren Kilovolt angelegt, während die Deckenplatte und Einzellinse auf Masse (0 V) liegt. Genauso wie im Experiment wird die Linse vorerst nicht verwendet. Der Detektor (in der Simulation rechts) bekommt ein Potential von -2500 V, ähnlich dem in der Anlage. 
@@ -47,8 +47,7 @@ Um dieselben Informationen aus der Simulation zu gewinnen, wie sie auch im Exper
 
 
 \begin{figure}
-    \centering
-    \includegraphics[width=1\textwidth]{Restgas_Sim.png}
+    \hspace{-1.1cm}\includegraphics[width=1.08\textwidth]{Restgas_Sim.png}
     \caption[Simuliertes Restgasspektrum]{Ein simuliertes Restgasspektrum, die Ionenverteilung wurde anhand der Auswertung des Restgasspektrums gesetzt.}
     \label{fig:Restgas_Sim}
 \end{figure}
@@ -57,7 +56,7 @@ Implementiert man eine Ionenverteilung ähnlich der in der Auswertung des Restga
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.8\textwidth]{Sim_Positions_Scatter.png}
+    \includegraphics[width=.7\textwidth]{Sim_Positions_Scatter.png}
     \caption[Streudiagramm der simulierten Ionenposition auf dem Detektor]{Die Position der Ionen auf dem Detektor als Streudiagramm ohne Diskretisierung.}
     \label{fig:sim_pos_scatter}
 \end{figure}
@@ -70,14 +69,14 @@ Die Aufweitung des Strahls ist mit der thermischen Bewegung der Ionen zu erklär
 
 \begin{figure}
     \centering
-    \begin{subfigure}{.43\textwidth}
+    \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=1\textwidth]{Sim_Positions.png}
         \caption{Ionen bei 1/25 eV kinetischer Energie}
         \label{fig:sim_pos}
     \end{subfigure}%
     \hfill
-    \begin{subfigure}{.45\textwidth}
+    \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=1\linewidth]{Sim_Positions_Kinetic.png}
         \caption{Ionen bei 1/5 eV kinetischer Energie}
@@ -94,16 +93,16 @@ Die folgende Untersuchung der Ionenoptik soll verschiedene Optimierungsansätze 
 
 \begin{figure}
     \centering
-    \begin{subfigure}{.9\textwidth}
+    \begin{subfigure}{.7\textwidth}
         \centering
-        \includegraphics[width=.8\textwidth]{210_3D.png}
+        \includegraphics[width=.7\textwidth]{210_3D.png}
         \caption{Die Trajektorien der Ionen in 3D. Ein konvergenter Strahl ist in nähe des Detektors (rechts) zu erkennen.}
         \label{fig:210}
     \end{subfigure}%
     \vfill
-    \begin{subfigure}{.9\textwidth}
+    \begin{subfigure}{.7\textwidth}
         \centering
-        \includegraphics[width=.8\textwidth]{PE.png}
+        \includegraphics[width=.7\textwidth]{PE.png}
         \caption{Darstellung der potentiellen Energie in 3D. Das Potential wird vom grünen Gitter dargestellt. Äquipotentiallinien sind in Blau eingezeichnet.}
         \label{fig:PE}
     \end{subfigure}
@@ -119,7 +118,7 @@ Ein Vergleich der Masse-zu-Ladungsspektren ist in Abbildung \ref{fig:410_210} zu
 \begin{landscape}
     \begin{figure}
         \centering
-        \hspace*{-2.5cm}\includegraphics[width=1.3\textwidth]{410_210_Ar1000eV.png}
+        \hspace*{-3cm}\includegraphics[width=1.7\textwidth]{410_210_Ar1000eV.png}
         \caption[Vergleich der Masse-zu-Ladungsspektren bei unterschiedlichen Flugstrecken]{Vergleich der Masse-zu-Ladungsspektren bei unterschiedlichen Flugstrecken. In Schwarz wurde die kürzere Distanz dargestellt. Die Flugzeitspektren wurden mit unterschiedlichen Transformationsfunktionen umgerechnet, da die kürzere Distanz die Flugzeit deutlich verkürzt. Die Ionenverteilung entspricht der in der Auswertung bestimmten für Argon bei 1000 eV.}
         \label{fig:410_210}
     \end{figure}
@@ -142,8 +141,7 @@ Das Auflösungsvermögen ist definiert als
 wobei $m$ die mittlere Masse und $\Delta m$ die FWHM eines Peaks im Massenspektrum ist. Um es zu bestimmen, können in der Simulation Testmassen von 1 bis 60 $u$ in 1 $u$ und 0.5 $u$ Schritten simuliert werden. Diese werden jeweils einfach geladen und ihre Flugzeit aufgezeichnet. Ein Massenspektrum, dargestellt in Abbildung \ref{fig:res}, ergibt sich nach Transformation der Flugzeitdaten.
 
 \begin{figure}
-    \centering
-    \includegraphics[width=1\textwidth]{Resolution.png}
+    \hspace{-1.1cm}\includegraphics[width=1.08\textwidth]{Resolution.png}
     \caption[Simuliertes Massenspektrum (1–60 u, 410 mm) zur Auflösungsbestimmung]{Simuliertes Massenspektrum der Massen 1 bis 60 $u$ (einfach geladen) zur Bestimmung des Auflösungsvermögens bei einer Detektordistanz von 41 cm. Alle Spezies sind mit der gleichen Häufigkeit vertreten. In Schwarz sind die Peaks für ganzzahlige Massen, in Rot auch die für die Halbzahligen dargestellt.}
     \label{fig:res}
 \end{figure}
@@ -152,7 +150,7 @@ Ein Zusammenhang zwischen der Schärfe der Peaks und der Masse ist sofort erkenn
 
 \begin{figure}
     \centering
-    \includegraphics[width=1\textwidth]{ResolutionFit.png}
+    \includegraphics[width=.9\textwidth]{ResolutionFit.png}
     \caption[Auswertung des Auflösungsvermögens abhängig von der Masse (410 mm)]{Auswertung des Auflösungsvermögens abhängig von der Masse. Die Datenpunkte sind die Verhältnisse der mittleren Massen und der FWHM der Peaks eines simulierten Spektrums.}
     \label{fig:res_fit}
 \end{figure}
@@ -160,8 +158,7 @@ Ein Zusammenhang zwischen der Schärfe der Peaks und der Masse ist sofort erkenn
 Eine Auswertung des Massenspektrums ist möglich, indem alle Peaks mit einer Gaußfunktion gefittet werden und ihr FWHM errechnet wird. Das Auflösungsvermögen kann dann abhängig von der Masse mit Formel \ref{eq:res} ausgerechnet und dargestellt werden. Abbildung \ref{fig:res_fit} zeigt das Ergebnis abhängig von der Masse. Anders als erwartet steigt das Auflösungsvermögen zunächst mit steigender Masse, wobei es einem reziproken Verlauf folgt (Fit). Ab einer Masse von etwa 10 $u$ ist es weitestgehend konstant und liegt bei etwa 75. Das bedeutet, dass sich die Masse zweier Peaks um mindestens 1/75 der Masse einer der Peaks unterscheiden muss, damit sie als getrennte Peaks identifiziert werden können. Ab einer Masse von etwa 35 $u$ fällt das Auflösungsvermögen wieder ab. Die Peaks werden hier schneller breiter, als die Massenunterschiede zunehmen. Das Auflösungsvermögen ist also nicht konstant, sondern hängt von der Masse der Ionen ab, wobei sein Optimum zwischen 5 und 35 $u$ liegt.
 
 \begin{figure}
-    \centering
-    \includegraphics[width=1\textwidth]{Resolution210.png}
+    \hspace{-1.1cm}\includegraphics[width=1.08\textwidth]{Resolution210.png}
     \caption[Simuliertes Massenspektrum (1–60 u, 210 mm) zur Auflösungsbestimmung]{Simuliertes Massenspektrum wie in Abbildung \ref{fig:res} zur Bestimmung des Auflösungsvermögens bei einer Detektordistanz von 21 cm. Die Peaks sind deutlich schärfer.}
     \label{fig:res21}
 \end{figure}

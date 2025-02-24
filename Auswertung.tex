@@ -10,8 +10,7 @@ Um die Anlage mit einem bereits gut untersuchten Gas zu testen, wurde eine Testr
 Die Auswertung der Messdaten erfolgt über einen digitalen Vielkanalanalysator (MCA), der auf einem Computer Histogramme der aus der Flugzeit generierten Pulshöhen erstellt. Der MCA hat 4096 diskrete Kanäle, welche den Zeitbereich von Null bis zur maximalen Zeit des TPHC abdecken. Diese werden dann mit den \textsc{python}-Bibliotheken \textsc{matplotlib}, \textsc{SciPy} und \textsc{numpy} weiter ausgewertet und dargestellt. 
 
 \begin{figure}
-    \centering
-    \hspace{-1.6cm}\includegraphics[width=1.1\textwidth]{Ar50-1000eV.png}
+    \hspace{-1.1cm}\includegraphics[width=1.08\textwidth]{Ar50-1000eV.png}
     \caption[Flugzeitspektrum von Argon bei Elektronenenergien von 50 bis 1000 eV]{Flugzeitspektrum von Argon bei Elektronenenergien von 50 bis 1000 eV. Die Messungen sind jeweils über 60 Sekunden entstanden.}
     \label{fig:ar}
 \end{figure}
@@ -24,7 +23,7 @@ Abbildung \ref{fig:tof_energy} zeigt die Flugzeit des größten Peaks in Abhäng
 
 \begin{figure}
     \centering
-    \includegraphics[width=.8\textwidth]{tof_energy.png}
+    \includegraphics[width=.7\textwidth]{tof_energy.png}
     \caption[Zusammenhang zwischen TOF und Elektronenenergie]{Abbildung der Flugzeit des größten Peaks in Abhängigkeit der Elektronenenergie. Ein Fit zeigt, dass eine Funktion der Form $t(E) = -a\sqrt{E} + b$ den Zusammenhang gut beschreibt.}
     \label{fig:tof_energy}
 \end{figure}
@@ -48,13 +47,13 @@ $a$ ist dabei der erste Parameter der Transformationsfunktion $f_\mathrm{Trans}$
 Die Verzögerung der Extraktion bei der DETOF-Methode ermöglicht schärfere Flugzeitpeaks. Für die bisherige Auswertung wurde eine tatsächliche Extraktionsverzögerung von etwa 300 ns verwendet. Das geht aus den Signalen hervor (Abbildung \ref{fig:Signal}). Besonders bei niedrigen Energien sind die Peaks sehr breit und unsymmetrisch. Eine Verdopplung der Extraktionszeit auf 600 ns macht die Peaks deutlich schärfer und verbessert so auch die darstellbare Auflösung. Abbildung \ref{fig:delay} zeigt die Flugzeitspektren von Argon bei 50 eV mit einer Extraktionsverzögerung von 300 ns und 600 ns. Eine weitere Verlängerung der Extraktionsverzögerung hat nicht denselben Effekt. Aufgrund der deutlichen Verbesserung sind folgende Spektren mit 600 ns Verzögerung aufgenommen worden.
 \begin{figure}
     \centering
-    \begin{subfigure}{.8\textwidth}
+    \begin{subfigure}{.7\textwidth}
         \centering
         \includegraphics[width=1\linewidth]{Ar50-300ns.png}
         \caption{Argon bei 50 eV Elektronenenergie mit 300 ns Extraktionsverzögerung}
     \end{subfigure}%
     \hfill
-    \begin{subfigure}{.8\textwidth}
+    \begin{subfigure}{.7\textwidth}
         \centering
         \includegraphics[width=1\linewidth]{Ar50-600ns.png}
         \caption{Argon bei 50 eV Elektronenenergie mit 600 ns Extraktionsverzögerung}
@@ -80,8 +79,7 @@ Abbildung \ref{fig:ar_scaled} zeigt das Spektrum aus Abbildung \ref{fig:ar} nach
 Obwohl die Werte für die Ionisierungsquerschnitte aufgrund der defekten Kanone nicht direkt ermittelt werden können, soll anhand der relativen Häufigkeiten der Ionen eine qualitative Aussage über die relativen Ionisierungsquerschnitte getroffen werden. Das bedeutet, dass das Verhältnis $\sigma^+$/$\sigma^{2+}$ dem Verhältnis der Flächen $A(\text{Ar}^+)$/$A(\text{Ar}^{2+})$ entsprechen sollte. Dies kann mit einem direkten Vergleich  mit den Werten aus \ref{tab:argon} überprüft werden. Abbildung \ref{fig:ar_ratio} zeigt die Grenzen der Integration und die Bestimmung der Verhältnisse. Für einen einfachen Vergleich wurde die Fläche des Ar$^+$-Peaks auf 0.795 gesetzt, dem entsprechenden Querschnitt aus Tab. \ref{tab:argon}. In Tabelle \ref{tab:vergleich} sind die normierten Werte der Ionen und die prozentualen Abweichungen zu den Werten von Straub et al. \cite{Straub} angegeben. Es ist zu erkennen, dass die Werte für die ein- und zweifach geladenen Ionen besser übereinstimmen, während die Werte für die dreifach und vierfach geladenen Ionen größere prozentuale Abweichungen haben. Dies ist vermutlich auf die geringe Anzahl an Ionen zurückzuführen, die bei höheren Energien entstehen. Insgesamt zeigt die qualitative Auswertung, dass die Anlage erfolgreich arbeitet, da die relativen Häufigkeiten der Ionen den Erwartungen in etwa entsprechen. 
 
 \begin{figure}
-    \centering
-    \includegraphics[width=1\textwidth]{Ar_integrated.png}
+    \hspace{-1.1cm}\includegraphics[width=1.08\textwidth]{Ar_integrated.png}
     \caption[Integration eines gewichteten Argonspektrums bei 1000 eV]{Integration eines gewichteten Argonspektrums bei 1000 eV.}
     \label{fig:ar_ratio}
 \end{figure}
@@ -172,9 +170,7 @@ entspricht und der erste Peak ionisiertem Wasserstoff. Das resultierende, skalie
 Wie erwartet können die größten Peaks auf ionisierte Wassermoleküle sowie Wasserstoff zurückgeführt werden. Auch die Peaks von molekularem Stickstoff, Sauerstoff und vermutlich Kohlenstoffdioxid sind gut zu erkennen. Die Struktur und Übereinstimmung des Restgasspektrums zeigen, dass die Anlage korrekt funktioniert und zur Identifikation von Produktionen nutzbar ist. Außerdem ist zu erkennen, dass Massendifferenzen von 1 $u$ im Bereich leichter Ionen aufgelöst werden können. 
 
 \begin{figure}[h]
-    \centering
-    \hspace*{-1cm}
-    \includegraphics[width=1.05\textwidth]{Restgas.png}
+    \hspace{-1.1cm}\includegraphics[width=1.08\textwidth]{Restgas.png}
     \caption[Masse-zu-Ladungsspektrum der Restgase]{Masse-zu-Ladungsspektrum der Restgase nach Transformation aus einem Flugzeitspektrum. Die Messung ist über mehrere Stunden entstanden.}
     \label{fig:rest}
 \end{figure}
@@ -186,16 +182,14 @@ Anhand der vom Detektor aufgenommenen Positionsdaten der Ionen können Rückschl
 \label{sec:Anomalien}
 Auffällig sind jedoch die Überhöhungen an den seitlichen Rändern des Strahls, die in Abbildung \ref{fig:Strahl3D} besonders deutlich zu erkennen sind. Außerdem ist die Länge des Abbilds von 28 mm unvorhergesehen. Bei geraden Flugbahnen der Ionen würde ein Abbild von etwa 20 mm Länge erwartet werden, entsprechend dem Loch in der Deckenplatte. Anders als bei einem Ionenstrahl, bei dem die Coloumbabstoßung eine Aufweitung bewirkt, sollte kein solcher Effekt unter der Einzelstoßbedingung auftreten. Dennoch ist es statistisch möglich, dass mehrere Ionen gleichzeitig extrahiert werden, auch wenn es im Mittel nur ein Ion ist. Das könnte für die Verbreiterung des Strahls und für die Erhöhung an den Seiten verantwortlich sein. Außerdem kann die thermische Bewegung der Gasteilchen das Abbild des Strahls verschwimmen lassen, sodass dieser breiter erscheint. Beide dieser Effekte sollen mit einer Simulation der Ionenoptik überprüft werden. Die leichte Wölbung des Strahls war während des Experiments konstant und kann nur auf eine Ungenauigkeit der vom Detektor ermittelten Positionen zurückgeführt werden. 
 \begin{figure}
-    \centering
-    \includegraphics[width=1.05\textwidth]{Strahl.png}
+    \hspace{-1.1cm}\includegraphics[width=1.08\textwidth]{Strahl.png}
     \caption[Logarithmisches Abbild des Strahls auf dem Detektor]{Positionsbestimmung der detektierten Teilchen auf dem Detektor zeigt den Strahl bei einer Elektronenenergie 100 eV auf dem Detektor. Die Anzahl der Treffer in einem Pixel wird logarithmisch skaliert von den Farben angegeben. Da der Detektor schief verbaut ist, wurde das Bild im Nachhinein gedreht. Das Abbild des Strahls ist seitlich begrenzt, da die Ionen durch das 2 cm große Loch in der Deckenplatte auf den Detektor gelangen. Die geometrische Größe des Detektors ist in Schwarz eingezeichnet.}
     \label{fig:Strahl} 
 \end{figure}
 
 \begin{figure}
-    \centering
-    \includegraphics[width=1\textwidth]{Strahl3D.png}
-    \caption[Dreidimensionales Abbild des Strahls auf dem Detektor]{Dreidimensionales Abbild des Strahls auf dem Detektor. Die Anzahl der Treffer ist absolut dargestellt. Die Überhöhungen an den Rändern des Strahls sind gut zu erkennbar. Das Bild zeigt die tatsächliche Ausrichtung des Detektors relativ zum Strahl.}
+    \hspace*{-1cm}\includegraphics[width=1.15\textwidth]{Strahl3D.png}
+    \caption[Dreidimensionale Darstellung des Strahls auf dem Detektor]{Dreidimensionale Darstellung des Strahls auf dem Detektor. Die z-Achse gibt die absoluten Counts. Die Überhöhungen an den Rändern des Strahls sind gut zu erkennbar. Das Bild zeigt die tatsächliche Ausrichtung des Detektors relativ zum Strahl.}
     \label{fig:Strahl3D} 
 \end{figure}
 

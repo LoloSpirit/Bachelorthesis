@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {3.5}Konditionierung des Detektors}{40}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Signalverarbeitung}{41}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Flugzeitmessung}{41}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Positionssensitive Auflösung}{44}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.2}Positionssensitive Auflösung}{45}{subsection.3.6.2}%
 \contentsline {chapter}{\numberline {4}Auswertung}{47}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Kalibrationsmessung mit Argon}{47}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Zusammenhang von Flugzeit und Elektronenenergie}{48}{subsection.4.1.1}%
@@ -44,12 +44,12 @@
 \contentsline {subsection}{\numberline {5.2.2}Extraktion der Ionen}{64}{subsection.5.2.2}%
 \contentsline {section}{\numberline {5.3}Vergleich der Simulation mit dem Experiment}{64}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Untersuchung der Ionenoptik}{67}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Einfluss der Flugstrecke}{68}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.1}Einfluss der Flugstrecke}{67}{subsection.5.4.1}%
 \contentsline {subsection}{\numberline {5.4.2}Untersuchung der Anomalien}{70}{subsection.5.4.2}%
 \contentsline {subsection}{\numberline {5.4.3}Auflösungsvermögen}{70}{subsection.5.4.3}%
 \contentsline {section}{\numberline {5.5}Diskussion und Ausblick}{74}{section.5.5}%
 \contentsline {chapter}{Literaturverzeichnis}{79}{section*.40}%
 \contentsline {section}{\numberline {A.1}Ergänzendes zum Experiment}{81}{section.A.1}%
 \contentsline {chapter}{A\ \ Anhang}{81}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Quellcode und Ergebnisse}{83}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Ergänzendes zur Simulation}{83}{section.A.3}%
+\contentsline {section}{\numberline {A.2}Quellcode und Ergebnisse}{84}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Ergänzendes zur Simulation}{84}{section.A.3}%

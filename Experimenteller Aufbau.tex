@@ -152,11 +152,11 @@ Für die Bestimmung des Auftreffzeitpunkts wird vom Detektor ein Spannungssignal
 
 Der über den CFD ermittelte Auftreffzeitpunkt kann dann als Stoppsignal für die Flugzeitmessung dienen. Um die Information über die Zeitdifferenz zwischen dem Start- und Stoppsignal zu erhalten, wird ein Time-to-Pulse-Height-Converter (TPHC) Modul verwendet. Dieses erzeugt ein Signal, dessen Höhe proportional zur zeitlichen Differenz eines Start- und Stopppulses ist. Um diese Funktionalität umzusetzen, wird im TPHC ein Kondensator aufgeladen, wobei die Spannung über den Kondensator proportional zur Ladezeit steigt. Kommt kein Stoppsignal, wird der Kondensator nach einer eingestellten Maximaldauer über einen Widerstand wieder entladen. Schließlich kann der Spannungspuls über einen Analog-Digital-Converter (ADC) digitalisiert und am Computer ausgelesen werden. Abbildung \ref{fig:Signal} zeigt qualitativ den zeitlichen Verlauf der relevanten Signale der Flugzeitmessung. Anhand vieler Messungen kann ein Spektrum der Flugzeiten erstellt werden.
 
-Mit dem Pulsgenerator kann die Messung mehrere tausendmal in jeder Sekunde durchgeführt werden. Begrenzend ist dabei die Elektronenkanone, die, wie bereits erwähnt, mit maximal 5 kHz gepulst werden kann. Für die meisten Messungen wurde eine Frequenz von etwa 3 kHz verwendet.
+Mit dem Pulsgenerator kann die Messung mehrere tausendmal in jeder Sekunde durchgeführt werden. Begrenzend ist dabei die Elektronenkanone, die mit maximal 5 kHz gepulst werden kann. Für die meisten Messungen wurde eine Frequenz von etwa 3 kHz verwendet.
 
 \begin{figure}
     \centering
-    \includegraphics[width=.9\textwidth]{Signalverlauf.png}
+    \includegraphics[width=1\textwidth]{Signalverlauf.png}
     \caption[Aufgenommener Verlauf der relevanten Signale der ToF-Messung]{Aufgenommener Verlauf der relevanten Signale. (a) zeigt den initialen Spannungspuls aus dem Pulsgenerator, mit dem auch die Elektronenkanone getriggert wird. Über einen Delay-Generator wird das verspätete Signal (c) erzeugt, um die Ablenkspannung (b) anzusteuern. (d) zeigt das Signal, welches auf der Anode des Detektors entsteht, nachdem es durch den CFD gelaufen ist. Die zeitliche Differenz aus (c) und (d) entspricht der Flugzeit}
     \label{fig:Signal} 
 \end{figure}

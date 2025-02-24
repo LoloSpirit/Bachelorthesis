@@ -22,7 +22,7 @@
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Integration eines gewichteten Argonspektrums bei 1000 eV}}{54}{figure.caption.22}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Masse-zu-Ladungsspektrum der Restgase}}{57}{figure.caption.25}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Logarithmisches Abbild des Strahls auf dem Detektor}}{58}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Dreidimensionales Abbild des Strahls auf dem Detektor}}{59}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Dreidimensionale Darstellung des Strahls auf dem Detektor}}{59}{figure.caption.27}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Gemitteltes Strahlprofil}}{60}{figure.caption.28}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Modell des Massenspektrometers in \textsc {Simion}}}{63}{figure.caption.29}%
@@ -36,7 +36,7 @@
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Simuliertes Massenspektrum (1–60 u, 210 mm) zur Auflösungsbestimmung}}{73}{figure.caption.37}%
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Auswertung des Auflösungsvermögens abhängig von der Masse (210 mm)}}{74}{figure.caption.38}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Gauß-Fit und Integrationsgrenzen bei Bestimmung der Auflösung}}{82}{figure.caption.43}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Positionsplot des konvergenten Strahls}}{83}{figure.caption.44}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Positionsplot mit Vorzugsrichtung der thermischen Bewegung}}{84}{figure.caption.45}%
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Ionenverteilung .fly2-File}}{85}{figure.caption.46}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Gauß-Fit und Integrationsgrenzen bei Bestimmung der Auflösung}}{83}{figure.caption.43}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Positionsplot des konvergenten Strahls}}{84}{figure.caption.44}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Positionsplot mit Vorzugsrichtung der thermischen Bewegung}}{85}{figure.caption.45}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Ionenverteilung \textsc {.fly2}-File}}{86}{figure.caption.46}%
