@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  24 FEB 2025 21:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  24 FEB 2025 21:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1451,4 +1451,312 @@ Overfull \hbox (2.55421pt too wide) in paragraph at lines 42--58
 
 <images/Straub.png, id=319, 1066.98625pt x 452.69125pt>
 File: images/Straub.png Graphic file (type png)
-<use images/S
+<use images/Straub.png>
+Package pdftex.def Info: images/Straub.png  used on input line 66.
+(pdftex.def)             Requested size: 362.08733pt x 153.62286pt.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[17]
+
+[18 <./images/Straub.png>] (./Elektronenstoßionisation.tex
+chapter 2.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[19
+
+
+
+]
+<images/EA.png, id=349, 7333.3975pt x 2830.575pt>
+File: images/EA.png Graphic file (type png)
+<use images/EA.png>
+Package pdftex.def Info: images/EA.png  used on input line 24.
+(pdftex.def)             Requested size: 362.08733pt x 139.723pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1655) has occurred while \output is active []
+
+
+
+[20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[21 <./images/EA.png>]
+
+[22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[23]
+Underfull \vbox (badness 1112) has occurred while \output is active []
+
+
+
+[24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[25]
+
+[26])
+
+[27]
+
+[28
+
+
+] (./Experimenteller Aufbau.tex
+chapter 3.
+
+
+[29
+
+]
+Underfull \vbox (badness 4927) has occurred while \output is active []
+
+
+
+[30]
+
+[31]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 38.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+
+[32]
+<images/SchematischerAufbau.png, id=440, 8284.9525pt x 5345.9725pt>
+File: images/SchematischerAufbau.png Graphic file (type png)
+<use images/SchematischerAufbau.png>
+Package pdftex.def Info: images/SchematischerAufbau.png  used on input line 44.
+(pdftex.def)             Requested size: 603.48299pt x 389.34729pt.
+
+
+LaTeX Warning: Float too large for page by 22.97256pt on input line 47.
+
+
+
+[33 <./images/SchematischerAufbau.png>]
+<images/EGun.png, id=447, 6551.47626pt x 2646.88875pt>
+File: images/EGun.png Graphic file (type png)
+<use images/EGun.png>
+Package pdftex.def Info: images/EGun.png  used on input line 56.
+(pdftex.def)             Requested size: 362.08733pt x 146.28612pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[34
+
+
+]
+<images/Kammer_3D_annotated.png, id=453, 791.95876pt x 774.895pt>
+File: images/Kammer_3D_annotated.png Graphic file (type png)
+<use images/Kammer_3D_annotated.png>
+Package pdftex.def Info: images/Kammer_3D_annotated.png  used on input line 67.
+(pdftex.def)             Requested size: 482.78516pt x 472.38966pt.
+
+Overfull \hbox (80.46317pt too wide) in paragraph at lines 67--68
+ [] 
+ []
+
+
+
+[35 <./images/EGun.png>]
+
+[36 <./images/Kammer_3D_annotated.png>]
+
+[37]
+<images/MCP.png, id=473, 1730.465pt x 917.4275pt>
+File: images/MCP.png Graphic file (type png)
+<use images/MCP.png>
+Package pdftex.def Info: images/MCP.png  used on input line 102.
+(pdftex.def)             Requested size: 321.85881pt x 170.63135pt.
+<images/MCP_Sensitivity.png, id=476, 390.7398pt x 268.1217pt>
+File: images/MCP_Sensitivity.png Graphic file (type png)
+<use images/MCP_Sensitivity.png>
+Package pdftex.def Info: images/MCP_Sensitivity.png  used on input line 111.
+(pdftex.def)             Requested size: 321.85881pt x 220.86356pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[38 <./images/MCP.png>]
+
+[39 <./images/MCP_Sensitivity.png>]
+<images/DLD.png, id=493, 416.5161pt x 221.8689pt>
+File: images/DLD.png Graphic file (type png)
+<use images/DLD.png>
+Package pdftex.def Info: images/DLD.png  used on input line 123.
+(pdftex.def)             Requested size: 201.161pt x 107.156pt.
+
+
+[40 <./images/DLD.png>]
+<images/ToF_Signals.png, id=503, 2400.97pt x 1879.02pt>
+File: images/ToF_Signals.png Graphic file (type png)
+<use images/ToF_Signals.png>
+Package pdftex.def Info: images/ToF_Signals.png  used on input line 138.
+(pdftex.def)             Requested size: 402.32199pt x 314.84174pt.
+
+
+[41]
+
+[42 <./images/ToF_Signals.png>]
+<images/cfd.png, id=515, 1027.84pt x 405.515pt>
+File: images/cfd.png Graphic file (type png)
+<use images/cfd.png>
+Package pdftex.def Info: images/cfd.png  used on input line 148.
+(pdftex.def)             Requested size: 321.85881pt x 126.983pt.
+<images/Signalverlauf.png, id=519, 372.9132pt x 312.6882pt>
+File: images/Signalverlauf.png Graphic file (type png)
+<use images/Signalverlauf.png>
+Package pdftex.def Info: images/Signalverlauf.png  used on input line 159.
+(pdftex.def)             Requested size: 402.32199pt x 337.34991pt.
+
+Underfull \vbox (badness 1642) has occurred while \output is active []
+
+
+
+[43 <./images/cfd.png>]
+
+[44 <./images/Signalverlauf.png>]
+<images/PosSig.png, id=534, 973.6375pt x 463.7325pt>
+File: images/PosSig.png Graphic file (type png)
+<use images/PosSig.png>
+Package pdftex.def Info: images/PosSig.png  used on input line 169.
+(pdftex.def)             Requested size: 362.08733pt x 172.45575pt.
+)
+
+[45 <./images/PosSig.png>]
+
+[46
+
+
+] (./Auswertung.tex
+chapter 4.
+<images/Ar50-1000eV.png, id=544, 655.7298pt x 353.6412pt>
+File: images/Ar50-1000eV.png Graphic file (type png)
+<use images/Ar50-1000eV.png>
+Package pdftex.def Info: images/Ar50-1000eV.png  used on input line 13.
+(pdftex.def)             Requested size: 434.50848pt x 234.33743pt.
+
+Overfull \hbox (0.88829pt too wide) in paragraph at lines 13--14
+[] [] 
+ []
+
+
+
+[47
+
+]
+
+[48 <./images/Ar50-1000eV.png>]
+<images/tof_energy.png, id=557, 417.2388pt x 312.6882pt>
+File: images/tof_energy.png Graphic file (type png)
+<use images/tof_energy.png>
+Package pdftex.def Info: images/tof_energy.png  used on input line 26.
+(pdftex.def)             Requested size: 281.62416pt x 211.06496pt.
+
+
+[49 <./images/tof_energy.png>]
+<images/Ar50-300ns.png, id=570, 361.35pt x 361.35pt>
+File: images/Ar50-300ns.png Graphic file (type png)
+<use images/Ar50-300ns.png>
+Package pdftex.def Info: images/Ar50-300ns.png  used on input line 52.
+(pdftex.def)             Requested size: 281.62416pt x 281.62581pt.
+<images/Ar50-600ns.png, id=571, 361.35pt x 361.35pt>
+File: images/Ar50-600ns.png Graphic file (type png)
+<use images/Ar50-600ns.png>
+Package pdftex.def Info: images/Ar50-600ns.png  used on input line 58.
+(pdftex.def)             Requested size: 281.62416pt x 281.62581pt.
+
+
+LaTeX Warning: Float too large for page by 65.65135pt on input line 64.
+
+
+
+[50]
+
+[51]
+
+[52 <./images/Ar50-300ns.png> <./images/Ar50-600ns.png>]
+<images/Ar_scaled.png, id=590, 722.7pt x 361.35pt>
+File: images/Ar_scaled.png Graphic file (type png)
+<use images/Ar_scaled.png>
+Package pdftex.def Info: images/Ar_scaled.png  used on input line 73.
+(pdftex.def)             Requested size: 683.94615pt x 341.9738pt.
+
+Overfull \hbox (2.78763pt too wide) in paragraph at lines 73--74
+ []| [] 
+ []
+
+
+
+[53 <./images/Ar_scaled.png>]
+<images/Ar_integrated.png, id=604, 722.7pt x 361.35pt>
+File: images/Ar_integrated.png Graphic file (type png)
+<use images/Ar_integrated.png>
+Package pdftex.def Info: images/Ar_integrated.png  used on input line 82.
+(pdftex.def)             Requested size: 434.50848pt x 217.25278pt.
+
+Overfull \hbox (0.88829pt too wide) in paragraph at lines 82--83
+[] [] 
+ []
+
+
+
+[54
+
+
+ <./images/Ar_integrated.png>]
+
+[55]
+<images/Restgas.png, id=622, 722.7pt x 361.35pt>
+File: images/Restgas.png Graphic file (type png)
+<use images/Restgas.png>
+Package pdftex.def Info: images/Restgas.png  used on input line 173.
+(pdftex.def)             Requested size: 434.50848pt x 217.25278pt.
+
+Overfull \hbox (0.88829pt too wide) in paragraph at lines 173--174
+[] [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[56]
+<images/Strahl.png, id=629, 715.2321pt x 252.945pt>
+File: images/Strahl.png Graphic file (type png)
+<use images/Strahl.png>
+Package pdftex.def Info: images/Strahl.png  used on input line 185.
+(pdftex.def)             Requested size: 434.50848pt x 153.6671pt.
+
+Overfull \hbox (0.88829pt too wide) in paragraph at lines 185--186
+[] [] 
+ []
+
+
+
+[57 <./images/Restgas.png>]
+<images/Strahl3D.png, id=635, 641.7576pt x 570.933pt>
+File: images/Strahl3D.png Graphic file (type png)
+<use images/Strahl3D.png>
+Package pdftex.def Info: images/Strahl3D.png  used on input line 191.
+(pdftex.def)             Requested size: 462.66783pt x 411.60
