@@ -441,26 +441,10 @@
       \endverb
     \endentry
     \entry{diamondoids}{proceedings}{}{}
-      \name{author}{1}{}{%
-        {{hash=79336af5481593d57edb55ef9dce6002}{%
-           family={Patrick\bibnamedelima Dietz},
-           familyi={P\bibinitperiod\bibinitdelim D\bibinitperiod},
-           given={Kristof\bibnamedelimb Holste\bibnamedelimb et.\bibnamedelimi al},
-           giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod}}}%
-      }
-      \strng{namehash}{79336af5481593d57edb55ef9dce6002}
-      \strng{fullhash}{79336af5481593d57edb55ef9dce6002}
-      \strng{fullhashraw}{79336af5481593d57edb55ef9dce6002}
-      \strng{bibnamehash}{79336af5481593d57edb55ef9dce6002}
-      \strng{authorbibnamehash}{79336af5481593d57edb55ef9dce6002}
-      \strng{authornamehash}{79336af5481593d57edb55ef9dce6002}
-      \strng{authorfullhash}{79336af5481593d57edb55ef9dce6002}
-      \strng{authorfullhashraw}{79336af5481593d57edb55ef9dce6002}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Status report of diamondoids as alternative propellants for ion-thrusters (IEPC-2017-198)}
+      \field{title}{Patrick Dietz, Kristof Holste et. al. Status report of diamondoids as alternative propellants for ion-thrusters (IEPC-2017-198)}
       \field{year}{2017}
     \endentry
     \entry{Iodine}{article}{}{}

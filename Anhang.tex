@@ -29,17 +29,58 @@
     \end{tabular}
 \end{table}
 
-\begin{landscape}
-    \begin{figure}
-        \centering
-        \hspace{-4cm}\includegraphics[width=1.3\textwidth]{Resolution_integration.png}
-        \caption[Gauß-Fit und Integrationsgrenzen bei Bestimmung der Auflösung]{Gauß-Fit und Integrationsgrenzen bei Bestimmung der Auflösung bei einer Detektordistanz von 410 mm. Der Fit ist in Schwarz dargestellt, die Integrationsgrenzen in Rot und die leicht gefilterten Daten in Blau.}
-        \label{fig:integrationsgrenzen}
-    \end{figure}
-\end{landscape}
+\section{Herleitung zur Fehlerfortpflanzung}
+\label{sec:fehlerfortpflanzung}
+Damit die Herleitung der Fehlerfortpflanzung nachvollziehbar ist, wird im Folgenden die integrierten Counts (Fläche) der Peaks als $N_\text{peak}(\text{Ar}^{q+})$ als $N$ bezeichnet. Die Fläche des größten Peaks $N_\text{peak}(\text{Ar}^{+})$ wird als $G$ bezeichnet. Die normierte Fläche des Peaks $N_\text{peak, norm}(\text{Ar}^{q+})$ wird durch $N'$ dargestellt. 
+\begin{equation}
+    N' = \frac{N}{G} \cdot \sigma_+(E).
+\end{equation}
+
+Die Fehlerfortpflanzung erfolgt nach der Gaußschen Fehlerfortpflanzung:
+\begin{equation}
+    \sigma_\text{ges}^2 = \left( \frac{\partial N'}{\partial N} \sigma_N \right)^2 +
+                     \left( \frac{\partial N'}{\partial G} \sigma_G \right)^2 +
+                     \left( \frac{\partial N'}{\partial \sigma_+(E)} \sigma_\sigma \right)^2.
+\end{equation}
+
+Die Ableitungen sind:
+\begin{align*}
+    \frac{\partial N'}{\partial N}&= \frac{\sigma_+(E)}{G}, \\
+    \frac{\partial N'}{\partial G}&= -\frac{N \sigma_+(E)}{G^2}, \\
+    \frac{\partial N'}{\partial \sigma_+(E)}&= \frac{N}{G}.
+\end{align*}
+
+Die Unsicherheiten sind:
+\begin{align*}
+    \sigma_N &= \sqrt{N}, \\
+    \sigma_G &= \sqrt{G}, \\
+    \sigma_\sigma &= 0.035 \cdot \sigma_+(E).
+\end{align*}
+
+Setzt man die Ableitungen und Unsicherheiten in die Gleichung ein:
+\begin{equation}
+    \sigma_\text{ges}^2 = \left(\frac{\sigma_+(E)}{G} \cdot \sqrt{N} \right)^2 +
+                    \left(-\frac{N \sigma_+(E)}{G^2} \cdot \sqrt{G} \right)^2 +
+                    \left(\frac{N}{G} \cdot \sigma_\sigma \right)^2
+\end{equation}
+
+und multipliziert die Terme aus:
+\begin{equation}
+    \sigma_\text{ges}^2 = \frac{\sigma_+(E)^2}{G^2} N + \frac{N^2 \sigma_+(E)^2}{G^4} G + \frac{N^2}{G^2} (0.035 \cdot \sigma_+(E))^2,
+\end{equation}
+
+kann man nach Vereinfachung die Unsicherheit der normierten Anzahl $N'$ bestimmen:
+\begin{equation}
+    \sigma_\text{ges} = \sqrt{\frac{\sigma_+(E)^2}{G^2} N + \frac{N^2 \sigma_+(E)^2}{G^3} + \frac{N^2}{G^2} (0.035 \cdot \sigma_+(E))^2}.
+\end{equation}
+
+Ersetzt man nun die symbolischen Variablen $N$ und $G$ durch die vollständige Bezeichnung ergibt sich:
+\begin{equation}
+    \sigma_\text{ges} = \sqrt{\frac{\sigma_+(E)^2}{N_\text{peak}(\text{Ar}^{+})^2} N_\text{peak}(\text{Ar}^{q+}) + \frac{N_\text{peak}(\text{Ar}^{q+})^2 \sigma_+(E)^2}{N_\text{peak}(\text{Ar}^{+})^3} + \frac{N_\text{peak}(\text{Ar}^{q+})^2}{N_\text{peak}(\text{Ar}^{+})^2} (0.035 \cdot \sigma_+(E))^2}.
+\end{equation}
 
 \clearpage
-\section{Quellcode und Ergebnisse}
+\section{Quellcode und vollständige Ergebnisse der Simulation}
 Alle Skripte sowie die gesamte ionenoptische Simulation, die im Verlauf dieser Arbeit entwickelt wurden, stehen zur freien Verfügung und sind im GitLab der JLU Gießen unter folgendem Link zu finden:
 
 \url{https://gitlab.ub.uni-giessen.de/so9354/zerob-software}.
@@ -58,8 +99,16 @@ Alle Skripte sowie die gesamte ionenoptische Simulation, die im Verlauf dieser A
     \label{fig:pos_bias}
 \end{figure}   
 
+\begin{landscape}
+    \begin{figure}
+        \centering
+        \hspace{-4cm}\includegraphics[width=1.3\textwidth]{Resolution_integration.png}
+        \caption[Gauß-Fit und Integrationsgrenzen bei Bestimmung der Auflösung]{Gauß-Fit und Integrationsgrenzen bei Bestimmung der Auflösung bei einer Detektordistanz von 410 mm. Der Fit ist in Schwarz dargestellt, die Integrationsgrenzen in Rot und die leicht gefilterten Daten in Blau.}
+        \label{fig:integrationsgrenzen}
+    \end{figure}
+\end{landscape}
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=1.05\textwidth]{Fly2.png}
     \caption[Ionenverteilung \textsc{.fly2}-File]{\textsc{.fly2}-File zur Definition der Ionenverteilung in \textsc{SIMION} in der Programmiersprache \textsc{Lua}.}
