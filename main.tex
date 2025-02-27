@@ -4,6 +4,7 @@ BCOR          = 8mm]{scrreprt}
 \usepackage{xr}
 \usepackage[utf8]{inputenc}
 \usepackage{booktabs}
+\usepackage{adjustbox}
 \usepackage{makecell}
 \usepackage[german]{babel}
 \usepackage{rotating}
@@ -93,6 +94,7 @@ minus 1.2\fontdimen4\font
 \input{schmutztitel}
 
 \KOMAoptions{twoside=true}
+\setcounter{page}{1}
 \input{titlepage}
 
 \input{Abstract}
@@ -114,7 +116,7 @@ minus 1.2\fontdimen4\font
   \acro{eu}[EA]{\dotfill Excitation Ionisation}  
   \acro{eu}[FWHM]{\dotfill Full Width at Half Maximum}  
   \acro{eu}[HET]{\dotfill Hall-Effekt-Thruster}  
-  \acro{eu}[JLU]{\dotfill Justus-Liebig-Universit\"{a}t Gie{\ss}en}  
+  \acro{eu}[JLU]{\dotfill Justus-Liebig-Universit\"{a}t (Gie{\ss}en)}  
   \acro{eu}[LEO]{\dotfill Low Earth Orbit}  
   \acro{eu}[MCA]{\dotfill Multi Channel Analyzer}  
   \acro{eu}[MCP]{\dotfill Micro Channel Plate}  
@@ -148,14 +150,14 @@ minus 1.2\fontdimen4\font
 \addcontentsline{toc}{chapter}{Literaturverzeichnis}
 \printbibliography
 \cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Selbstständigkeitserklärung}
+\begin{figure}
+  \centering
+  \hspace*{-2.1cm}\includegraphics[width=1.4\textwidth]{selbststaendigkeitserklaerung.pdf}
+\end{figure}
 
 \input{Anhang}
 \fontsize{12pt}{12pt}\selectfont
 \clearpage
-\begin{figure}
-  \centering
-  \hspace*{-3.5cm}\includegraphics[width=1.4\textwidth]{selbststaendigkeitserklaerung.pdf}
-\end{figure}
-\addcontentsline{toc}{chapter}{Selbstständigkeitserklärung}
-
 \end{document}
