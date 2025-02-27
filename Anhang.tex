@@ -45,9 +45,9 @@ Die Fehlerfortpflanzung erfolgt nach der Gaußschen Fehlerfortpflanzung:
 
 Die Ableitungen sind:
 \begin{align*}
-    \frac{\partial N'}{\partial N}&= \frac{\sigma_+(E)}{G}, \\
-    \frac{\partial N'}{\partial G}&= -\frac{N \sigma_+(E)}{G^2}, \\
-    \frac{\partial N'}{\partial \sigma_+(E)}&= \frac{N}{G}.
+    \frac{\partial N'}{\partial \sigma_+} &= \frac{N}{G}, \\
+    \frac{\partial N'}{\partial N} &= \frac{\sigma_+(E)}{G}, \\
+    \frac{\partial N'}{\partial G} &= -\frac{N \sigma_+(E)}{G^2}.
 \end{align*}
 
 Die Unsicherheiten sind:
@@ -111,6 +111,6 @@ Alle Skripte sowie die gesamte ionenoptische Simulation, die im Verlauf dieser A
 \begin{figure}
     \centering
     \includegraphics[width=1.05\textwidth]{Fly2.png}
-    \caption[Ionenverteilung \textsc{.fly2}-File]{\textsc{.fly2}-File zur Definition der Ionenverteilung in \textsc{SIMION} in der Programmiersprache \textsc{Lua}.}
+    \caption[Ionenverteilung \textsc{.fly2}-File]{\textsc{.fly2}-File zur Definition der Ionenverteilung in \textsc{Simion} in der Programmiersprache \textsc{Lua}.}
     \label{fly2}
 \end{figure}
